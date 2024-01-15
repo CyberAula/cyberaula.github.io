@@ -1,34 +1,18 @@
 import Header from './Header';
 import Footer from './Footer';
 import Carousel from 'react-bootstrap/Carousel'
-import Spinner from "./Spinner";
 import RecentPublications from "./RecentPublications";
 import {useState, useEffect} from 'react';
 import {useLocation } from "react-router-dom";
+import {mycarousel} from "./constants/carousel.js";
 
 
 export default function Home () {
-	const [state, setState] = useState({carousel: [], loading: true});
+	const [carousel, setCarousel] = useState(mycarousel);
 	const location = useLocation();
 
 	useEffect(() => {
-		window.scrollTo(0,0);
-		async function fetchData() {
-		  	try {
-				const response = await fetch(process.env.PUBLIC_URL+"/assets/carousel.json");
-				if (response.ok) {
-				const carousel = await response.json();   
-				console.log("PAPERS", carousel.length);     
-				setState({carousel: carousel, loading: false});
-				} else {
-				console.log('Respuesta de red OK pero respuesta de HTTP no OK');
-				}        				
-			} catch(e) {
-				console.log("ERROR", e);
-			}    
-		}
-	
-		fetchData();
+		window.scrollTo(0,0);		
 	}, []);
 
 		return (
@@ -53,8 +37,8 @@ export default function Home () {
 						</div>
 						<div className="body">
 							<div className="carousel">
-								{state.loading ? <Spinner/>:<Carousel>
-									{state.carousel.map(({label, description, image, url})=>{
+								<Carousel>
+									{carousel.map(({label, description, image, url})=>{
 										return (
 											<Carousel.Item key={label}>
 												<a href={url} target="_blank" rel="noopener noreferrer">
@@ -68,13 +52,12 @@ export default function Home () {
 										);
 									})
 									}
-									</Carousel>
-								}
+									</Carousel>								
 							</div>
 							<div className="latest_publications">
 								<h3>Latest publications</h3>
 								<RecentPublications/>
-								<a href="/research" rel="noopener noreferrer">
+								<a href="/#/research" rel="noopener noreferrer">
 									<div className="more">
 										more...
 									</div>

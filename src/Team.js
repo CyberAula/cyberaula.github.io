@@ -4,38 +4,23 @@ import Footer from './Footer';
 import Spinner from './Spinner';
 import {useState, useEffect} from 'react';
 import {useLocation } from "react-router-dom";
+import { myteam } from './constants/team';
 
 export default function Team (props){
 	const location = useLocation();
-	const [state, setState] = useState({team: [], loading: true});
+	const [team, setTeam] = useState(myteam);
 
 	useEffect(() => {
-		window.scrollTo(0,0);
-		async function fetchData() {
-		  	try {
-				const response = await fetch(process.env.PUBLIC_URL+"/assets/team.json");
-				if (response.ok) {
-				const team = await response.json();   
-				console.log("team", team.length);     
-				setState({team: team, loading: false});
-				} else {
-				console.log('Respuesta de red OK pero respuesta de HTTP no OK');
-				}        				
-			} catch(e) {
-				console.log("ERROR", e);
-			}    
-		}
-	
-		fetchData();
+		window.scrollTo(0,0);		
 	}, []);
 
-		return (
+	return (
 		<div className="team">
 			<Header route={location.pathname}/>
 		    <main>
 		        <section className="teammates">
 		        	{
-		        		state.loading ? <Spinner/> :Object.values(state.team).map(({title,members})=>{
+		        		Object.values(team).map(({title,members})=>{
 	        				return (<div className="teamgrouptitle" key={title}><h2>{title}</h2>
 		        				{members.map(({name, description, photo, github, email})=>{
 		        					const emailAddress = email ? email.split("@"):null;

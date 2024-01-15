@@ -5,36 +5,20 @@ import Filters from './Filters';
 import Spinner from './Spinner';
 import {useState, useEffect} from 'react';
 import {useLocation } from "react-router-dom";
+import { mypublications } from './constants/publications';
 
 export default function Research() {
 	const location = useLocation();
-	const [state, setState] = useState({papers: [], search: "", year: undefined, type: undefined, loading: true});
+	const [state, setState] = useState({papers: mypublications, search: "", year: undefined, type: undefined});
 	
-
 	useEffect(() => {
-		window.scrollTo(0,0);
-		async function fetchData() {
-		  	try {
-				const response = await fetch(process.env.PUBLIC_URL+"/assets/publications.json");
-				if (response.ok) {
-				const papers = await response.json();   
-				console.log("PAPERS", papers.length);     
-				setState({...state, papers: papers, loading: false});
-				} else {
-				console.log('Respuesta de red OK pero respuesta de HTTP no OK');
-				}        				
-			} catch(e) {
-				console.log("ERROR", e);
-			}    
-		}
-	
-		fetchData();
+		window.scrollTo(0,0);		
 	}, []);
 
-		const {papers, search, year, type, loading } = state;
+		const {papers, search, year, type } = state;
 
 		let papersFiltered = null;
-		if (!loading) {
+		
 			papersFiltered=papers.filter(paper => {
     				return (!search || search.toLowerCase()
 							.replace(new RegExp(/\s/g),"")
@@ -66,7 +50,7 @@ export default function Research() {
 					&& (!year || (paper.date && paper.date[0] && paper.date[0].toString() === year))
 					&& (!type || (paper.type && paper.type === type));
 			});
-		}
+		
 
 
 		return (
@@ -76,7 +60,7 @@ export default function Research() {
 			        <section className="research">
 					<Filters search = {search} year={year} type={type} papers={papers} changeSearch={search=>setState({...state, search: search})} changeYear={year=>setState({...state, year: year})} changeType={type=>setState({...state, type: type})} results={papersFiltered instanceof Array ? papersFiltered.length : 0}/>
 			        	{	
-			        		loading ? <Spinner/>: papersFiltered.map(({date,doi,content},ind)=>{
+			        		papersFiltered.map(({date,doi,content},ind)=>{
 			        			return (
 			        				<div key={ind} className="paper">
 			        				    <div className="paper_date">

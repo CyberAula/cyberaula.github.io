@@ -1,34 +1,16 @@
 import React from 'react';
-import Spinner from "./Spinner";
 import {useState, useEffect} from 'react';
-
+import { mypublications } from './constants/publications';
 
 export default function RecentPublications (props) {
-    const [state, setState] = useState({papers: [], loading: true});
+    const [papers, setPapers] = useState(mypublications);
 
     useEffect(() => {
-		window.scrollTo(0,0);
-		async function fetchData() {
-		  	try {
-				const response = await fetch(process.env.PUBLIC_URL+"/assets/publications.json");
-				if (response.ok) {
-				const papers = await response.json();   
-				console.log("PAPERS", papers.length);     
-				setState({papers: papers, loading: false});
-				} else {
-				console.log('Respuesta de red OK pero respuesta de HTTP no OK');
-				}        				
-			} catch(e) {
-				console.log("ERROR", e);
-			}    
-		}
-	
-		fetchData();
+		window.scrollTo(0,0);		
 	}, []);
 
         return <div className="_pubications _recent_publications">
-            {state.loading ? <Spinner/> : state.papers
-                .filter(paper => {
+            { papers.filter(paper => {
                     return (
                         paper.type === "article-journal"
                     );

@@ -1,7 +1,7 @@
 const fs = require("fs");
 const Cite = require('citation-js')
 
-fs.readFile("public/assets/publications.bib", function(err, buf) {
+fs.readFile("src/constants/publications.bib", function(err, buf) {
   	let bib = buf.toString();//.replace(/@\w*{(\w*)/,(a)=>a+Math.floor(10000*Math.random()))
   	let output = new Cite(bib).format('bibliography', {
 	  format: 'html',
@@ -38,7 +38,9 @@ fs.readFile("public/assets/publications.bib", function(err, buf) {
 		}
 	});
 
-	fs.writeFile('public/assets/publications.json', JSON.stringify(str), (err) => {
+	let final_str = "export const mypublications = " + JSON.stringify(str) + ";";
+
+	fs.writeFile('src/constants/publications.js', final_str, (err) => {
 		if (err) throw err;
 	});
 });

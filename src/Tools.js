@@ -6,38 +6,23 @@ import {Link} from "react-router-dom";
 
 import {useState, useEffect} from 'react';
 import {useLocation } from "react-router-dom";
+import {mytools} from "./constants/tools.js";
 
 export default function Tools(props) {
 
     const location = useLocation();
-	const [state, setState] = useState({tools: [], loading: true});
+	const [tools, setTools] = useState(mytools);
 
-	useEffect(() => {
-		window.scrollTo(0,0);
-		async function fetchData() {
-		  	try {
-				const response = await fetch(process.env.PUBLIC_URL+"/assets/tools.json");
-				if (response.ok) {
-				const tools = await response.json();   
-				console.log("tools", tools.length);     
-				setState({tools: tools, loading: false});
-				} else {
-				console.log('Respuesta de red OK pero respuesta de HTTP no OK');
-				}        				
-			} catch(e) {
-				console.log("ERROR", e);
-			}    
-		}
-	
-		fetchData();
+    useEffect(() => {
+		window.scrollTo(0,0);		
 	}, []);
-
-        return (
+    
+	    return (
             <div className="tools">
                 <Header route="/projects"/>
                 <main>
                     <section className="our_tools">
-                        {state.loading ? <Spinner/> : state.tools.map(({title, description, route, logo})=>{
+                        {tools.map(({title, description, route, logo})=>{
                             return (<div className="tool">
                                     <div className="tool_logo">
                                         <CreateLink route={route}><img alt={"Project Logo"} src={process.env.PUBLIC_URL+logo} /></CreateLink>
