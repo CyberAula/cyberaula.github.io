@@ -24,7 +24,7 @@ const nextConfig = {
       unoptimized: true,
     },
 
-    distDir: 'build',
+    distDir: 'mybuild',
   };
   
   export default nextConfig;
