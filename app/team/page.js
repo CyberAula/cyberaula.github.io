@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Filters from "@/components/Filters";
-import Link from 'next/link';
 import { myteam } from '@/constants/team';
 
 
