@@ -33,7 +33,7 @@ export default function Home() {
 							<div className="group_description">
 								<h1>CYBERAULA GROUP</h1>
 								<h2>
-									A research group from the <a rel="noopener noreferrer"  href="http://www.dit.upm.es/" className="link2" target="_blank">   Telematics Engineering Department (DIT) </a>
+									An educational innovation group from the <a rel="noopener noreferrer"  href="http://www.dit.upm.es/" className="link2" target="_blank">   Telematics Engineering Department (DIT) </a>
 									at    <a rel="noopener noreferrer"  href="http://www.upm.es/internacional" className="link2" target="_blank">
 									Universidad Politécnica de Madrid (UPM) </a>
 								</h2>
