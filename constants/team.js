@@ -139,14 +139,7 @@ export const myteam = {
              "photo":"/assets/img/team/samuel-garcia.jpg",
              "github":"https://github.com/samugs13",
              "email": "samuel.garcia.sanchez@alumnos.upm.es"
-          },
-          {
-             "name":"Blanca Querol",
-             "description":"Blanca is a B.A. candidate in Graphic Design at the Superior School of Design in Madrid. She collaborates with the GING as a Graphic Designer.",
-             "photo":"/assets/img/team/blanca-querol.jpg",
-             "github":"https://github.com/",
-             "email": "blancaquerol@gmail.com"
-          }
+          }          
        ]
     }
  }
