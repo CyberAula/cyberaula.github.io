@@ -23,7 +23,9 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
-
+    env: {
+      PUBLIC_URL: "https://cyberaula.github.io"
+    }
   };
   
   export default nextConfig;

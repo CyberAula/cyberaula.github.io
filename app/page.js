@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Carousel from 'react-bootstrap/Carousel';
 import RecentPublications from "@/components/RecentPublications";
 import {mycarousel} from "@/constants/carousel.js";
 
@@ -28,7 +27,7 @@ export default function Home() {
 			        <section className="home">
 						<div className="head">
 							<div className="group_logo">
-								<img alt="logo" className="logo" src="/assets/img/group-logo.png"/>
+								<img alt="logo" className="logo" src="/assets/img/group-logo.svg"/>
 							</div>
 							<div className="group_description">
 								<h1>CYBERAULA GROUP</h1>
@@ -40,23 +39,16 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="body">
-							<div className="carousel">
-								<Carousel>
-									{carousel.map(({label, description, image, url})=>{
-										return (
-											<Carousel.Item key={label}>
-												<a href={url} target="_blank" rel="noopener noreferrer">
-													<img className="image" src={image} alt={label}/>
-													<Carousel.Caption>
-														<h3>{label}</h3>
-														<p>{description}</p>
-													</Carousel.Caption>
-												</a>
-											</Carousel.Item>
-										);
-									})
-									}
-									</Carousel>								
+							<div className="carousel">								
+								/* Carousel removed to remove bootstrap - see ging page to see how it was */
+								<a href="https://www.etsit.upm.es/otros-elementos/noticias.html?tx_news_pi1%5Bnews%5D=696&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=4c592d8df53070d3e17090b296443b76" target="_blank" rel="noopener noreferrer">
+									<img className="image" src="/assets/img/carousel/cyberaula.png" alt="Cyberaula"/>
+									<div class="carousel-caption">
+										<h3>Cyberaula</h3>
+									<p>Awarded by the UPM as the best group of Educational Innovation of 2018</p>
+									</div>									
+								</a>
+																
 							</div>
 							<div className="latest_publications">
 								<h3>Latest publications</h3>

@@ -2,7 +2,7 @@
 
 import { Inter } from "next/font/google";
 import './main.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
 
