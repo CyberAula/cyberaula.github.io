@@ -43,7 +43,7 @@ export default function Home() {
 								/* Carousel removed to remove bootstrap - see ging page to see how it was */
 								<a href="https://www.etsit.upm.es/otros-elementos/noticias.html?tx_news_pi1%5Bnews%5D=696&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=4c592d8df53070d3e17090b296443b76" target="_blank" rel="noopener noreferrer">
 									<img className="image" src="/assets/img/carousel/cyberaula.png" alt="Cyberaula"/>
-									<div class="carousel-caption">
+									<div className="carousel-caption">
 										<h3>Cyberaula</h3>
 									<p>Awarded by the UPM as the best group of Educational Innovation of 2018</p>
 									</div>									

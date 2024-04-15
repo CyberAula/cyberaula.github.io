@@ -17,7 +17,7 @@ export default function Header (props) {
     <header className="nav_bar" id="header_home">
     <a href="/">
       <div className="imagotype">
-        <img class="logoheader" src="/assets/img/group-logo-only.png" alt="logo"/>
+        <img className="logoheader" src="/assets/img/group-logo-only.png" alt="logo"/>
         <div className="logotype">
           CYBERAULA
         </div>
