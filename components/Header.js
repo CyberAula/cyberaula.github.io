@@ -8,7 +8,8 @@ const routes = [
   {route: "/projects", title: "Projects"},
   {route: "/research", title: "Research"},
   {route: "/team", title: "Team"},
-  {route: "/about", title: "About"}
+  {route: "/tools", title: "Tools"},
+  {route: "/about", title: "Contact"}
 ]
 export default function Header (props) {
   const [state, setState] = useState({open: false});
@@ -19,7 +20,7 @@ export default function Header (props) {
       <div className="imagotype">
         <img className="logoheader" src="/assets/img/group-logo-only.png" alt="logo"/>
         <div className="logotype">
-          CYBERAULA
+          GING
         </div>
       </div>
     </a>

@@ -1,0 +1,56 @@
+
+$body-text: 14px, medium
+$sm-text: 16px, semibold //h5
+$md-text: 20px, bold //h4
+$lg-text: 24px, bold //h3
+$xl-text: 28px, bold //h2
+$xxl-text: 32px, bold //h1
+$button: 16px, semibold //buttons
+$slim-weight: 500
+$regular:400
+$semibold:600
+$bold:800
+
+
+html, body
+    h1
+        font-family: "Montserrat", sans-serif
+        font-size: nth($xxl-text,1)
+        font-weight: nth($xxl-text,2)
+
+    h2
+        font-family: "Montserrat", sans-serif
+        font-size: nth($xl-text,1)
+        font-weight: nth($xl-text,2)
+
+    h3
+        font-family: "Montserrat", sans-serif
+        font-size: nth($lg-text,1)
+        font-weight: nth($lg-text,2)
+
+    h4
+        font-family: "Montserrat", sans-serif
+        font-size: nth($md-text,1)
+        font-weight: nth($md-text,2)
+
+    h5
+        font-family: "Montserrat", sans-serif
+        font-size: nth($sm-text,1)
+        font-weight: nth($sm-text,2)
+
+    body
+
+        font-family: "Montserrat", sans-serif
+        font-size: nth($body-text,1)
+        font-weight: nth($body-text,2)
+
+    button
+        font-family: "Montserrat", sans-serif
+        font-size: nth($button,1)
+        font-weight: nth($button,2)
+
+    .smallcaps
+        font-family: "Montserrat", sans-serif
+        font-size: nth($body-text,1)
+        font-weight: $semibold
+        font-variant: small-caps
