@@ -15,8 +15,7 @@ export const myprojects = [
 		"logo": "/assets/img/logos/sgame.png",
 		"route": "https://sgame.etsisi.upm.es",
 		"title": "SGAME",
-		"description": "SGAME is a free web platform aimed at the educational community that allows to easily create web educational games by integrating educational resources into existing games."
-
+		"description": "SGAME is a free web platform aimed at the educational community that allows to easily create web educational games by integrating educational resources into existing games.",
 	},
 	{
 		"logo": "/assets/img/logos/educaInternet.png",

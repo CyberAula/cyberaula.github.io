@@ -1,17 +1,16 @@
 "use client"
 
-import { Inter } from "next/font/google";
-import './main.scss';
-//import 'bootstrap/dist/css/bootstrap.min.css';
-import "./globals.css";
+import { Montserrat } from "next/font/google";
+import './sass/main.scss';
+import "./globals.sass";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }

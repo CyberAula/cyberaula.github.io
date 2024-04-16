@@ -73,6 +73,8 @@ export default function Research() {
 			        				                <div className="paper_title">
 			        				            	<h2 dangerouslySetInnerHTML={{__html: content}}></h2>
 			        				                </div>
+													<div className="paper_subtitle"></div>
+													<div className="paper_doi">{doi}</div>
 			        				            </div>
 			        				        </a>
 			        				    </div>
