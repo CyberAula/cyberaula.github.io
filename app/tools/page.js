@@ -2,8 +2,9 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from 'next/link';
 
+import Link from 'next/link';
+import image from 'next/image';
 import {useState, useEffect} from 'react';
 import {mytools} from "@/constants/tools";
 
@@ -19,7 +20,11 @@ export default function Tools(props) {
             <div className="tools">
                 <Header route="/tools"/>
                 <main>
+                <header className='header'><image src='/assets/img/tools/header_placeholder-02-01.png'></image></header>
                     <section className="our_tools">
+                        
+                        
+                        <h1>Tools</h1>
                         {tools.map(({title, description, route, logo})=>{
                             return (<div className="tool">
                                     <div className="tool_logo">
@@ -27,7 +32,7 @@ export default function Tools(props) {
                                     </div>
 
                                     <div className="tool_main">
-                                        <CreateLink route={route}>
+                                        
                                             <div className="tool_content">
                                                 <div className="tool_title">
                                                     <h2>{title}</h2>
@@ -35,8 +40,9 @@ export default function Tools(props) {
                                                 <div className="tool_description">
                                                     <h3>{description}</h3>
                                                 </div>
+                                                <div className='button_container'><CreateLink route={route}><button>see more</button></CreateLink></div>
                                             </div>
-                                        </CreateLink>
+                                        
                                     </div>
                                 </div>
 

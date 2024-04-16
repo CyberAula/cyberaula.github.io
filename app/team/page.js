@@ -36,7 +36,7 @@ export default function Team (props){
 				        				                <h3>{name}</h3>
 				        				        </div>
 				        				        <div className="mate_description">
-				        				            <p>{description}</p>
+				        				            {/* <p>{description}</p> */}
 													<p><b>{emailAddress ? 
 														(<span>{emailAddress[0]}  <img alt="at" className="at" src={process.env.PUBLIC_URL + "/assets/img/arroba-symbol.svg"}/>
 														 {emailAddress[1]}</span>
