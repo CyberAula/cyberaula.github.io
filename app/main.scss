@@ -4,20 +4,20 @@
 $black: #282828;
 $yellow: #FCCD05;
 $pink: #FFB38F;
-$blue:#17E9E0;
+$blue: #17E9E0;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
 
 $serif_font: 'Lora',
-serif;
+    serif;
 $sans_font: 'Open Sans',
-sans-serif;
+    sans-serif;
 ;
 $helvetica: 'Helvetica Neue',
-Helvetica,
-Arial,
-sans-serif;
+    Helvetica,
+    Arial,
+    sans-serif;
 
 $border1: 5px solid;
 $border2: 5px dashed;
@@ -112,6 +112,7 @@ html {
     font-family: $sans_font;
     margin: 0 auto;
     scroll-behavior: smooth;
+
     a {
         &:hover {
             text-decoration: none;
@@ -124,23 +125,43 @@ header {
     @include nav_bar;
     z-index: 200;
 
+    .imagotype {
+        .logoheader {
+            img {
+
+                width: 100px;
+                height: auto;
+        }
+
+        }
+
+        .logotype {
+            span {
+                @apply text-ca_orange-300;
+            }
+        }
+    }
+
     li {
         &.li-selected {
             a {
                 border-bottom: $border1 $yellow;
+
                 &:hover {
                     border-bottom: $border1 $yellow;
                 }
             }
 
-            
+
         }
 
         a {
             transition: 15ms;
+
             &:hover {
                 border-bottom: $border2 $black;
             }
+
             &:active {
                 border-bottom: $border1 $black;
             }
@@ -155,6 +176,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .nav_bar {
     position: fixed;
     top: 0;
@@ -224,6 +246,7 @@ footer {
 
 .home {
     margin: 0 8rem 0 17rem;
+
     a {
         &:hover {
             color: inherit;
@@ -237,6 +260,7 @@ footer {
         font-size: 4rem;
         margin: 0;
     }
+
     h2 {
         font-family: $serif_font;
         color: $black;
@@ -251,7 +275,7 @@ footer {
         border-bottom: solid 1.5px lighten($color: $black, $amount: 7);
         padding: 6rem 2rem 6rem 5rem;
 
-        .group_logo{
+        .group_logo {
             display: inline-block;
             width: 20%;
             object-fit: contain;
@@ -259,10 +283,12 @@ footer {
             text-align: center;
             vertical-align: middle;
             position: relative;
-            img{
+
+            img {
                 width: 100%;
                 size: auto;
             }
+
             .group_name {
                 font-family: $helvetica;
                 font-weight: bold;
@@ -271,18 +297,22 @@ footer {
                 line-height: 3.35em;
             }
         }
-        .group_description{
+
+        .group_description {
             width: 70%;
         }
     }
-    .body{
+
+    .body {
         padding-top: 4rem;
         display: flex;
         width: 100%;
+
         .carousel {
             display: inline-block;
             width: 95%;
             align-items: center;
+
             img {
                 width: 100%;
                 object-fit: cover;
@@ -295,6 +325,7 @@ footer {
                 color: white;
                 text-shadow: 2px 2px $black;
             }
+
             p {
                 font-family: $helvetica;
                 color: white;
@@ -303,10 +334,12 @@ footer {
                 text-shadow: 2px 2px $black;
             }
         }
-        .latest_publications{
+
+        .latest_publications {
             width: 30%;
             object-fit: cover;
             padding: 10px;
+
             h3 {
                 padding-top: 4%;
                 padding-bottom: 4%;
@@ -316,13 +349,15 @@ footer {
                 text-align: center;
                 color: black;
             }
-            p{
+
+            p {
                 font-size: 1.2rem;
                 text-align: left;
                 color: white;
                 padding: 2% 2% 2% 2%;
             }
-            .more{
+
+            .more {
                 font-size: 1.2rem;
                 font-family: $serif_font;
                 font-weight: bold;
@@ -404,14 +439,17 @@ footer {
     color: white;
     background-color: $black;
     padding: 5rem 0 0 0;
+
     .spinner {
         min-height: calc(100vh - 150px);
         filter: brightness(0) invert(1);
         -webkit-filter: brightness(0) invert(1);
     }
+
     .nav_bar {
         background-color: inherit;
         color: inherit;
+
         .imagotype {
 
             .isotype {
@@ -428,14 +466,15 @@ footer {
 
         li {
             &.li-selected {
-               a {
-                border-bottom: $border1 $pink;
-                &:hover {
+                a {
                     border-bottom: $border1 $pink;
-                }
-               } 
 
-                
+                    &:hover {
+                        border-bottom: $border1 $pink;
+                    }
+                }
+
+
             }
 
             a {
@@ -462,6 +501,7 @@ footer {
                     margin: .8rem 0 0 0;
                     filter: brightness(0) invert(1);
                     -webkit-filter: brightness(0) invert(1);
+
                     img {
                         object-fit: contain;
                         object-position: top;
@@ -472,11 +512,14 @@ footer {
 
                 .project_main {
                     width: 70%;
-                    h2{
+
+                    h2 {
                         font-weight: bold;
                     }
-                    a{
+
+                    a {
                         color: inherit;
+
                         &:hover {
 
                             h2,
@@ -530,14 +573,17 @@ footer {
     color: white;
     background-color: $black;
     padding: 5rem 0 0 0;
+
     .spinner {
         min-height: calc(100vh - 150px);
         filter: brightness(0) invert(1);
         -webkit-filter: brightness(0) invert(1);
     }
+
     .nav_bar {
         background-color: inherit;
         color: inherit;
+
         .imagotype {
 
             .isotype {
@@ -556,6 +602,7 @@ footer {
             &.li-selected {
                 a {
                     border-bottom: $border1 $pink;
+
                     &:hover {
                         border-bottom: $border1 $pink;
                     }
@@ -588,6 +635,7 @@ footer {
                     margin: .8rem 0 0 0;
                     filter: brightness(0) invert(1);
                     -webkit-filter: brightness(0) invert(1);
+
                     img {
                         object-fit: contain;
                         object-position: top;
@@ -598,11 +646,14 @@ footer {
 
                 .tool_main {
                     width: 70%;
-                    h2{
+
+                    h2 {
                         font-weight: bold;
                     }
-                    a{
+
+                    a {
                         color: inherit;
+
                         &:hover {
 
                             h2,
@@ -698,38 +749,49 @@ footer {
 
     main {
         min-height: calc(100vh - 150px);
+
         .research {
-           
+
             .filters {
                 text-align: right;
                 padding: 1rem 5rem 1rem 5rem;
                 display: flex;
                 justify-content: flex-end;
                 flex-wrap: wrap;
-                label, select, input {
+
+                label,
+                select,
+                input {
                     padding: 5px;
                     font-family: "Open Sans", sans-serif;
                     font-size: 1.3rem;
                     margin-right: 1rem;
                 }
-                select, input {
+
+                select,
+                input {
                     border: 1px solid black;
                     margin-right: 3rem;
 
                 }
+
                 label {
                     font-weight: bolder;
                 }
+
                 option {
                     text-align: right;
                 }
+
                 .filter {
                     display: flex;
                     flex-wrap: nowrap;
                     justify-content: center;
                     align-items: flex-start;
                     margin-bottom: 10px;
-                    input, select {
+
+                    input,
+                    select {
                         background-color: $pink;
                         outline: none;
                         height: 40px;
@@ -739,6 +801,7 @@ footer {
 
                 }
             }
+
             .paper {
                 display: flex;
                 flex-flow: row wrap;
@@ -760,22 +823,24 @@ footer {
 
                 .paper_main {
                     width: 70%;
+
                     .paper_title {
-                      h2 {
-                          text-overflow: ellipsis;
-                          overflow: hidden;
-                          font-size: 2.2rem;
-                          font-weight: normal;
-                      }
+                        h2 {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            font-size: 2.2rem;
+                            font-weight: normal;
+                        }
                     }
+
                     .paper_authors {
                         margin: 1.5rem 0 0 0;
                     }
 
                     a {
                         color: $black;
-                        &:hover {
-                        }
+
+                        &:hover {}
                     }
                 }
 
@@ -802,8 +867,8 @@ footer {
 
 @mixin grayscale_element($value) {
     -webkit-filter: #{"grayscale(#{$value})"};
--moz-filter: #{"grayscale(#{$value})"};
-filter:#{"grayscale(#{$value})"};
+ -moz-filter: #{"grayscale(#{$value})"};
+ filter:#{"grayscale(#{$value})"};
 
 }
 
@@ -828,6 +893,7 @@ filter:#{"grayscale(#{$value})"};
     .spinner {
         min-height: calc(100vh - 150px);
     }
+
     .nav_bar {
         background-color: inherit;
         color: $black;
@@ -846,7 +912,7 @@ filter:#{"grayscale(#{$value})"};
 
         li {
             &.li-selected {
-                
+
                 a {
                     border-bottom: $border1 white;
 
@@ -867,15 +933,18 @@ filter:#{"grayscale(#{$value})"};
     main {
         .teammates {
             padding-top: 4rem;
+
             .teamgrouptitle {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: left;
                 padding: 3rem 5rem 1rem 5rem;
+
                 h2 {
                     margin-left: 80px;
                 }
             }
+
             .teammate {
                 display: flex;
                 flex-flow: row wrap;
@@ -884,10 +953,11 @@ filter:#{"grayscale(#{$value})"};
                 padding: 5rem 1rem 5rem 1rem;
                 width: 100%;
 
-                h3{
+                h3 {
                     font-size: 3rem;
                     font-weight: 800;
                 }
+
                 .mate_img {
                     width: 160px;
                     height: 160px;
@@ -921,6 +991,7 @@ filter:#{"grayscale(#{$value})"};
                 &:last-child {
                     // border: none;
                 }
+
                 .at {
                     width: 1em;
                     padding: 1px;
@@ -950,6 +1021,7 @@ filter:#{"grayscale(#{$value})"};
         max-width: 1000px;
         margin: auto;
         margin-top: 100px;
+
         .about_description {
             border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
             padding: 9rem 3rem 6rem 7rem;
@@ -963,9 +1035,11 @@ filter:#{"grayscale(#{$value})"};
             flex-flow: row no-wrap;
             justify-content: space-evenly;
             padding-bottom: 2rem;
+
             .col1 {
                 flex: 1;
                 padding: 1rem 4rem;
+
                 .location_map {
                     height: 500px;
                     width: 700px;
@@ -1031,6 +1105,7 @@ filter:#{"grayscale(#{$value})"};
         font-size: 2rem;
 
     }
+
     p {
         font-size: 1.5rem;
     }
@@ -1121,17 +1196,21 @@ RESPONSIVE
             }
         }
     }
+
     .home {
         margin: 0 4rem 0 4rem;
+
         .body {
             display: flex;
             flex-flow: column;
             align-items: center;
-            .carousel{
+
+            .carousel {
                 align-self: center;
                 margin-left: 13px;
             }
-            .latest_publications{
+
+            .latest_publications {
                 width: 90.2%;
                 align-self: center;
             }
@@ -1143,7 +1222,8 @@ RESPONSIVE
 @media(max-width: 800px) {
     .home {
         margin: 0 4rem 0 5rem;
-        .group_logo{
+
+        .group_logo {
             width: 20%;
             height: 10%;
             border-radius: 50%;
@@ -1156,23 +1236,27 @@ RESPONSIVE
         h2 {
             font-size: 1.5rem;
         }
-      .body{
-        display: block;
-        width: 100%;
-        .carousel {
+
+        .body {
+            display: block;
             width: 100%;
-            margin-left: 0px;
+
+            .carousel {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .latest_publications {
+                width: 100%;
+            }
         }
-        .latest_publications {
-          width: 100%;
-        }
-      }
     }
 
     .projects {
         main {
             .our_projects {
                 padding: 3.5rem 0 0 0;
+
                 .project {
                     padding: 3rem 1rem 3rem 3rem;
 
@@ -1187,17 +1271,21 @@ RESPONSIVE
             }
         }
     }
+
     .tools {
         main {
             .our_tools {
                 padding: 3.5rem 0 0 0;
+
                 .tool {
                     padding: 3rem 1rem 3rem 3rem;
+
                     .tool_title {
                         h2 {
                             font-size: 2rem;
                         }
                     }
+
                     .tool_content {
                         h3 {
                             font-size: 1.5rem;
@@ -1207,21 +1295,27 @@ RESPONSIVE
             }
         }
     }
+
     .team {
 
         .teammates {
             padding-top: 5rem;
+
             .teamgrouptitle {
                 padding: 2rem 2rem 2rem 2rem !important;
+
                 h2 {
                     font-size: 3rem;
                 }
+
                 .teammate {
                     display: flex;
                     flex-flow: column;
+
                     .mate_img {
                         align-self: center;
                     }
+
                     .mate_info {
                         width: 100%;
                     }
@@ -1230,6 +1324,7 @@ RESPONSIVE
             }
         }
     }
+
     .about {
         .about_description {
             padding: 6rem 3rem 6rem 3rem !important;
@@ -1238,12 +1333,14 @@ RESPONSIVE
 }
 
 @media(max-width: 600px) {
-    .responsive-hidden  {
+    .responsive-hidden {
         display: none !important;
     }
+
     .responsive-shown {
         display: block !important;
     }
+
     header {
         width: 100%;
         display: flex;
@@ -1316,13 +1413,15 @@ RESPONSIVE
             }
         }
     }
+
     .parallax__layer {
         position: absolute;
-        top:75px;
+        top: 75px;
         right: 0;
         bottom: 0;
         left: 0;
     }
+
     .home {
         margin: 0 1.6rem 0 2.5rem;
         padding: 1rem 0 0 0;
@@ -1334,20 +1433,24 @@ RESPONSIVE
         h1 {
             font-size: 2.5rem;
         }
+
         .head {
             padding: 0rem 0rem 2rem 0rem;
             display: flex;
             flex-flow: column;
             align-items: center;
+
             .group_description {
                 width: 100%;
             }
         }
+
         .body {
             .carousel {
                 h3 {
                     font-size: 1.5rem;
                 }
+
                 p {
                     font-size: 1rem;
                 }
@@ -1360,9 +1463,11 @@ RESPONSIVE
         main {
             .our_projects {
                 padding: 3.5rem 0 0 0;
+
                 .project {
                     flex-flow: column;
                     padding: 2rem 1rem 2rem 2rem;
+
                     h2 {
                         font-size: 1.6rem;
                     }
@@ -1370,42 +1475,51 @@ RESPONSIVE
                     h3 {
                         font-size: 1.2rem;
                     }
+
                     .project_logo {
                         width: 40%;
                         padding-bottom: 2rem;
                         align-self: center;
                     }
+
                     .project_main {
                         width: 100%;
                         display: flex;
                         flex-flow: column;
+
                         .project_title {
-                           padding: 1rem 0rem 1rem 0rem ;
+                            padding: 1rem 0rem 1rem 0rem;
                         }
                     }
                 }
             }
         }
     }
+
     .tools {
         main {
             .our_tools {
                 padding: 3.5rem 0 0 0;
+
                 .tool {
                     flex-flow: column;
                     padding: 2rem 1rem 2rem 2rem;
+
                     .tool_title {
                         h2 {
                             font-size: 1.2rem;
                         }
                     }
+
                     .tool_logo {
                         width: 40%;
                         padding-bottom: 2rem;
                         align-self: center;
                     }
+
                     .tool_description {
                         width: 140%;
+
                         h3 {
                             font-size: 1rem;
                         }
@@ -1419,31 +1533,38 @@ RESPONSIVE
         h4 {
             font-size: 1.5rem;
         }
+
         h2 {
             font-size: 1.2rem;
         }
+
         i {
             font-size: 1.2rem;
         }
+
         main {
             .research {
-                .filters{
+                .filters {
                     padding-right: 0rem;
                 }
+
                 .paper {
                     flex-flow: column wrap;
                     padding: 2rem 2rem 2rem 2rem;
-                    width:100%;
+                    width: 100%;
 
                     .paper_date {
-                        width:100%;
+                        width: 100%;
                         margin: 0 0 .5rem 0;
                         color: lighten($color: $pink, $amount: 25);
                     }
+
                     .paper_main {
                         width: 100%;
+
                         .paper_title {
                             width: 100%;
+
                             h2 {
                                 font-size: 1.2rem;
                             }
@@ -1460,15 +1581,19 @@ RESPONSIVE
         main {
             .teammates {
                 padding-top: 2rem;
+
                 .teamgrouptitle {
                     padding: 1.5rem 1.5rem 1.5rem 1.5rem !important;
+
                     h2 {
                         margin-left: 20px;
                         font-size: 2rem;
                     }
                 }
+
                 .teammate {
                     padding: 3rem 2rem 3rem 2rem;
+
                     .mate_info {
                         width: 95%;
                     }
@@ -1476,10 +1601,12 @@ RESPONSIVE
                     h2 {
                         font-size: 1.6rem;
                     }
+
                     h3 {
                         padding: 2rem 0rem 1rem 0rem;
                         font-size: 1.6rem;
                     }
+
                     p {
                         font-size: 1.2rem;
                     }
@@ -1491,26 +1618,32 @@ RESPONSIVE
     .about {
         main {
             margin-top: 20px;
+
             .about_description {
                 padding: 9rem 2rem 3rem 2rem;
 
                 h1 {
                     font-size: 1.2rem;
                 }
+
                 p {
                     font-size: 1.2rem;
                 }
 
             }
+
             h2 {
                 padding: 1rem 1rem 1rem 2rem;
             }
+
             .location {
                 flex-flow: column;
+
                 h2 {
                     font-size: 1.6rem;
                     padding: 1rem 1rem 1rem 0rem;
                 }
+
                 h3 {
                     font-size: 1.2rem;
                 }
@@ -1575,6 +1708,7 @@ RESPONSIVE
     }
 
 }
+
 body :not(.menu) a {
     &:hover {
         text-decoration: none;

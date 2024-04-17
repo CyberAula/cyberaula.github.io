@@ -27,7 +27,7 @@ export default function Footer(props) {
          
           <nav>
             <ul>
-				<li class="sections_title smallcaps">sections</li>
+				<li className="sections_title smallcaps">sections</li>
               {routes.map((route, index) => (
                 <li
                   key={index}
