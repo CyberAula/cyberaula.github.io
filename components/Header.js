@@ -8,7 +8,8 @@ const routes = [
   {route: "/projects", title: "Projects"},
   {route: "/research", title: "Research"},
   {route: "/team", title: "Team"},
-  {route: "/about", title: "About"}
+  {route: "/tools", title: "Tools"},
+  {route: "/about", title: "Contact"}
 ]
 export default function Header (props) {
   const [state, setState] = useState({open: false});
