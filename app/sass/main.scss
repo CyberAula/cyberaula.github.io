@@ -1,15 +1,15 @@
-@import 'partials/_courses.sass';
-@import 'partials/_headermenu.sass';
-@import 'partials/_contact.sass';
-@import 'partials/_projects.sass';
-@import 'partials/_publications.sass';
-@import 'partials/_team.sass';
-@import 'partials/_tools.sass';
-@import 'partials/_footer.sass';
-@import 'lib/_responsive.sass';
+@import "partials/_courses.sass";
+@import "partials/_headermenu.sass";
+@import "partials/_contact.sass";
+@import "partials/_projects.sass";
+@import "partials/_publications.sass";
+@import "partials/_team.sass";
+@import "partials/_tools.sass";
+@import "partials/_footer.sass";
+@import "lib/_responsive.sass";
 
-@import 'lib/_type.sass';
-@import 'lib/_variables.sass';
+@import "lib/_type.sass";
+@import "lib/_variables.sass";
 
 * {
   @apply border-2 border-primary; // no funciona :( <-- funciona en el globals.scss though
@@ -19,31 +19,31 @@
     VARIABLES
    ========================================================================== */
 //COLOR
-$blue_primary: #5441FF;
-$orange_accent: #5340FF;
-$burgundry_support: #9F226D;
-$cyan_support: #21E2ED;
-$lilac_support: #AE9FF2;
+$blue_primary: #5441ff;
+$orange_accent: #5340ff;
+$burgundry_support: #9f226d;
+$cyan_support: #21e2ed;
+$lilac_support: #ae9ff2;
 $black: #333333;
 // blues
-$ca-blue-900: #3302BF;
-$ca-blue-800: #4507C9;
-$ca-blue-700: #4F1BE4;
-$ca-blue-600: #5441FF;
+$ca-blue-900: #3302bf;
+$ca-blue-800: #4507c9;
+$ca-blue-700: #4f1be4;
+$ca-blue-600: #5441ff;
 $ca-blue-500: #6e76ff;
 $ca-blue-400: #97a7ff;
 $ca-blue-300: #becaff;
 $ca-blue-200: #dbe2ff;
 $ca-blue-100: #ebf0ff;
-$ca-blue-50: #F5F8FF;
+$ca-blue-50: #f5f8ff;
 //oranges
-$ca-or-300: #FF9900;
-$ca-or-200: #FFBD1B;
-$ca-or-100: #FFE685;
+$ca-or-300: #ff9900;
+$ca-or-200: #ffbd1b;
+$ca-or-100: #ffe685;
 
 //SPACING
-$spacing_xsm:8px;
-$spacing_sm:16px;
+$spacing_xsm: 8px;
+$spacing_sm: 16px;
 $spacing_md: 32px;
 $spacing_lg: 48px;
 $spacing_xl: 64px;
@@ -52,24 +52,18 @@ $spacing_xl: 64px;
 TYPOGRAPHY
  ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 // import monserrat
 // import new sans serif;
 
-$serif_font: 'Lora',
-  serif;
-$sans_font: 'Open Sans',
-  sans-serif;
-;
-$montserrat: 'montserrat', sans-serif;
-$montserrat-alternates: 'Montserrat Alternates', sans-serif;
-$helvetica: 'Helvetica Neue',
-  Helvetica,
-  Arial,
-  sans-serif;
+$serif_font: "Lora", serif;
+$sans_font: "Open Sans", sans-serif;
+$montserrat: "montserrat", sans-serif;
+$montserrat-alternates: "Montserrat Alternates", sans-serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $border1: 5px solid;
 $border2: 5px dashed;
@@ -95,7 +89,7 @@ $extra-bold: 900;
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
-      padding-left: 4rem;
+    padding-left: 4rem;
 
     .isotype {
       display: flex;
@@ -111,8 +105,7 @@ $extra-bold: 900;
       font-weight: $bold;
       font-family: $montserrat-alternates;
       @apply text-primary;
-      padding: 0 12rem 0 .7rem;
-
+      padding: 0 12rem 0 0.7rem;
     }
   }
 
@@ -135,13 +128,11 @@ $extra-bold: 900;
     font-weight: $semi-bold;
     margin: 0 3rem 0 0;
 
-
     ul {
       display: flex;
       flex-flow: wrap row;
       justify-content: space-between;
       font-size: 1.2rem;
-
     }
   }
 }
@@ -159,13 +150,10 @@ $extra-bold: 900;
   &::selection {
     background-color: lighten($color: $blue-primary, $amount: 20);
   }
-
 }
 
 body,
 html {
-
-
   h2 {
     font-weight: lighter;
   }
@@ -190,29 +178,29 @@ html {
     @apply bg-primary text-white;
     font-size: nth($button, 1);
     font-weight: $semibold;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
     &:hover {
       background-position: 100% 0;
-      moz-transition: all .4s ease-in-out;
-      -o-transition: all .4s ease-in-out;
-      -webkit-transition: all .4s ease-in-out;
-      transition: all .4s ease-in-out;
-      background-image: linear-gradient(to right, #5340FF, #9F226D);
+      moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      background-image: linear-gradient(to right, #5340ff, #9f226d);
     }
   }
 }
 
 .home_page {
- // @apply bg-white
+  // @apply bg-white
 }
 
 header {
@@ -229,8 +217,6 @@ header {
           border-bottom: $border1 $ca-or-100;
         }
       }
-
-
     }
 
     a {
@@ -245,7 +231,6 @@ header {
       }
     }
   }
-
 }
 
 .spinner {
@@ -267,7 +252,6 @@ header {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   background-color: $blue-primary;
 }
-
 
 .lang_en {
   font-weight: $extra-bold;
@@ -295,7 +279,6 @@ header {
   background: #555;
 }
 
-
 /* ==========================================================================
  HOME
  ========================================================================== */
@@ -305,11 +288,9 @@ header {
     border-bottom: solid 1.5px lighten($color: $black, $amount: 80);
     transition: none;
   }
-
 }
 
 .home {
-
   margin: 8rem 4rem 0 4rem;
 
   a {
@@ -318,17 +299,15 @@ header {
     }
   }
 
-
   h1 {
     font-weight: 500;
   }
-
 
   .head {
     display: flex;
 
     justify-content: left;
-   // border-bottom: solid 1.5px lighten($color: $black, $amount: 7);
+    // border-bottom: solid 1.5px lighten($color: $black, $amount: 7);
     padding: 6rem 6rem 2rem 0rem;
 
     .group_logo {
@@ -365,20 +344,20 @@ header {
     flex-direction: column;
     width: 100%;
     .award_section {
-      h2 {
-        padding-bottom:1rem;
-      }
-      .award_card{
+      .award_card {
         display: flex;
         flex-direction: row;
         align-self: center;
         align-items: center;
-        .award_icon {
-          background: $ca-or-100;
-          border-radius: 50px;
-          width: 6rem;
-          height: 6rem;
-          padding: 3rem;
+        .award_icon_container {
+          .award_icon {
+            background: $ca-or-100;
+            @apply text-orange-500;
+            border-radius: 70px;
+            width: 6rem;
+            height: 6rem;
+            padding: 1.5rem;
+          }
         }
         .award_card_text {
           padding: 0 0 0 1rem;
@@ -394,7 +373,6 @@ header {
         width: 100%;
         object-fit: cover;
       }
-
     }
 
     .lines_of_act {
@@ -403,7 +381,6 @@ header {
         font-size: nth($body-text, 1);
         margin-bottom: $spacing-sm;
       }
-
     }
 
     .our_goals {
@@ -418,29 +395,33 @@ header {
           width: 50%;
         }
 
-        .body_text {}
+        .body_text {
+        }
       }
-
     }
-    .bullet_elements{
+    .bullet_elements {
       display: flex;
       flex-direction: column;
-      gap:2rem;
+      gap: 2rem;
       margin-bottom: $spacing_lg;
-      .bullet_element{
-        @apply bg-blue-300;
-        @apply text-blue-400;
+      font-weight: 600;
+      .bullet_element {
+        align-items: center;
+        @apply bg-blue-50;
+        @apply text-blue-700;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         display: flex;
-        padding: 1.5rem .5rem 1.5rem .5rem;
+        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
         justify-content: space-between;
-        .title{}
-        .letter{
+        h5 {
+         margin-top:1rem;
+        }
+        .letter {
           font-family: $montserrat-alternates;
           font-weight: $bold;
+          @apply text-blue-300;
         }
-  
       }
     }
     .grid_container {
@@ -450,43 +431,42 @@ header {
       grid-template-rows: auto auto;
       gap: 10px;
     }
-  
+
     .grid_item {
       @apply text-white;
       @apply bg-primary;
-      padding: .5rem 1.5rem .5rem 1.5rem;
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
       border-radius: 8px;
-      h5{
-        font-weight:$semibold ;
+      h5 {
+        font-weight: $semibold;
       }
     }
-  
-    .top_left {
 
+    .top_left {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
-  
+
     .top_mid {
       grid-column: 2 / 4;
       grid-row: 1 / 2;
     }
-  
+
     .top_right {
       grid-column: 4/6;
       grid-row: 1 / 2;
     }
-  
+
     .bottom_left {
       grid-column: 1 / 3;
       grid-row: 2 / 3;
     }
-  
+
     .bottom_mid {
       grid-column: 3 / 4;
       grid-row: 2 / 3;
     }
-  
+
     .bottom_right {
       grid-column: 4 / 6;
       grid-row: 2 / 3;
@@ -525,7 +505,6 @@ header {
       }
     }
   }
-
 }
 
 // .background {
@@ -562,10 +541,6 @@ header {
 //   }
 // }
 
-
-
-
-
 /* ==========================================================================
  PROJECTS
  ========================================================================== */
@@ -586,7 +561,6 @@ header {
     color: inherit;
 
     .imagotype {
-
       .isotype {
         background-color: white;
       }
@@ -595,21 +569,18 @@ header {
         color: white;
         font-weight: $bold;
         text-decoration: none;
-
       }
     }
 
     li {
       &.li-selected {
         a {
-          border-bottom: $border1 ;
+          border-bottom: $border1;
 
           &:hover {
-            border-bottom: $border1 ;
+            border-bottom: $border1;
           }
         }
-
-
       }
 
       a {
@@ -633,7 +604,7 @@ header {
 
         .project_logo {
           width: 10%;
-          margin: .8rem 0 0 0;
+          margin: 0.8rem 0 0 0;
           filter: brightness(0) invert(1);
           -webkit-filter: brightness(0) invert(1);
 
@@ -656,24 +627,20 @@ header {
             color: inherit;
 
             &:hover {
-
               h2,
               h3 {
                 color: pink;
-                transition: .5s;
+                transition: 0.5s;
               }
             }
           }
-
         }
 
         &:last-child {
           // border: none;
         }
       }
-
     }
-
   }
 
   .border_nav_bar {
@@ -696,16 +663,13 @@ header {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-
 }
-
 
 /* ==========================================================================
  TOOLS
  ========================================================================== */
 
 .tools {
-
   @apply bg-white;
 
   main {
@@ -718,16 +682,13 @@ header {
     color: inherit;
 
     .imagotype {
-
       .isotype {
         background-color: white;
       }
 
       .logotype {
-
         font-weight: $bold;
         text-decoration: none;
-
       }
     }
 
@@ -740,8 +701,6 @@ header {
             border-bottom: $border1 pink;
           }
         }
-
-
       }
 
       a {
@@ -755,8 +714,6 @@ header {
   }
 
   main {
-
-
     .our_tools {
       display: flex;
       flex-direction: column;
@@ -781,7 +738,7 @@ header {
 
         .tool_logo {
           width: 10%;
-          margin: .8rem 0 0 0;
+          margin: 0.8rem 0 0 0;
           filter: brightness(0) invert(1);
           -webkit-filter: brightness(0) invert(1);
 
@@ -806,10 +763,8 @@ header {
           }
 
           a {
-
-
-            &:hover {}
-
+            &:hover {
+            }
           }
 
           .button_container {
@@ -822,9 +777,7 @@ header {
           // border: none;
         }
       }
-
     }
-
   }
 
   .border_nav_bar {
@@ -847,10 +800,7 @@ header {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-
 }
-
-
 
 /* ==========================================================================
  RESEARCH
@@ -858,11 +808,10 @@ header {
 
 // .research {
 //   color: inherit;
-  
+
 //   padding: 5rem 0 0 0;
 
 //   .nav_bar {
-    
 
 //     .imagotype {
 
@@ -1011,7 +960,6 @@ header {
 
 // }
 
-
 /* ==========================================================================
  TEAM
  ========================================================================== */
@@ -1034,7 +982,6 @@ header {
 //       transition: all 300ms ease-in-out;
 //   }*/
 // }
-
 
 // .team {
 //   color: $black;
@@ -1161,8 +1108,6 @@ header {
 
 // }
 
-
-
 /* ==========================================================================
  ABOUT
  ========================================================================== */
@@ -1176,7 +1121,6 @@ header {
     .about_description {
       border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
       padding: 9rem 3rem 6rem 7rem;
-
     }
 
     .location {
@@ -1195,7 +1139,6 @@ header {
           height: 500px;
           width: 700px;
           background-color: $ca-or-100;
-
         }
 
         .map-responsive {
@@ -1220,13 +1163,13 @@ header {
 
         .location_info {
           h2 {
-            padding: 1rem 0 .5rem 0;
+            padding: 1rem 0 0.5rem 0;
           }
         }
 
         .contact {
           h2 {
-            padding: 1rem 0 .5rem 0;
+            padding: 1rem 0 0.5rem 0;
           }
         }
       }
@@ -1248,13 +1191,12 @@ header {
     color: $black;
     font-size: 2rem;
     width: 100%;
-    padding: 1rem 0 .5rem 2rem;
+    padding: 1rem 0 0.5rem 2rem;
   }
 
   h3 {
     color: $black;
     font-size: 2rem;
-
   }
 
   p {
@@ -1265,7 +1207,6 @@ header {
     border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
     transition: none;
   }
-
 }
 
 /* =========================================================================
@@ -1281,23 +1222,19 @@ a {
   }
 }
 
-
 /* &::selection {
       background-color: red;
   }*/
-
 
 ul {
   list-style: none;
 }
 
-
 /* =========================================================================
 RESPONSIVE
  ========================================================================== */
 
-@media(max-width: 940px) {
-
+@media (max-width: 940px) {
   header {
     padding: 1.5rem 0 1.6rem 0;
 
@@ -1335,10 +1272,9 @@ RESPONSIVE
       }
     }
   }
-
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .home {
     margin: 0 4rem 0 5rem;
 
@@ -1416,7 +1352,6 @@ RESPONSIVE
   }
 
   .team {
-
     .teammates {
       padding-top: 5rem;
 
@@ -1439,7 +1374,6 @@ RESPONSIVE
             width: 100%;
           }
         }
-
       }
     }
   }
@@ -1451,8 +1385,7 @@ RESPONSIVE
   }
 }
 
-
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .responsive-hidden {
     display: none !important;
   }
@@ -1468,7 +1401,7 @@ RESPONSIVE
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    padding: 1rem 0 .7rem 0;
+    padding: 1rem 0 0.7rem 0;
 
     .imagotype {
       width: 100%;
@@ -1490,7 +1423,7 @@ RESPONSIVE
         font-weight: $extra-bold;
         font-family: $helvetica;
         color: $black;
-        padding: 0 0 0 .7rem;
+        padding: 0 0 0 0.7rem;
       }
     }
 
@@ -1509,7 +1442,6 @@ RESPONSIVE
         padding: 0;
         display: unset;
         cursor: pointer;
-
       }
     }
 
@@ -1520,7 +1452,6 @@ RESPONSIVE
       padding: 2rem 3rem 0 3rem;
       display: none;
 
-
       ul {
         display: flex;
         flex-flow: wrap column;
@@ -1528,7 +1459,7 @@ RESPONSIVE
         font-size: 1.5rem;
 
         li {
-          padding: .8rem 0 0 0;
+          padding: 0.8rem 0 0 0;
         }
       }
     }
@@ -1576,7 +1507,6 @@ RESPONSIVE
         }
       }
     }
-
   }
 
   .projects {
@@ -1675,7 +1605,7 @@ RESPONSIVE
 
           .paper_date {
             width: 100%;
-            margin: 0 0 .5rem 0;
+            margin: 0 0 0.5rem 0;
             color: lighten($color: pink, $amount: 25);
           }
 
@@ -1690,8 +1620,6 @@ RESPONSIVE
               }
             }
           }
-
-
         }
       }
     }
@@ -1749,7 +1677,6 @@ RESPONSIVE
         p {
           font-size: 1.2rem;
         }
-
       }
 
       h2 {
@@ -1777,7 +1704,7 @@ RESPONSIVE
 
   footer {
     padding: 2.5rem 0 2.5rem 0;
-    font-size: .9rem;
+    font-size: 0.9rem;
     width: 100%;
     text-align: center;
 
@@ -1793,7 +1720,6 @@ RESPONSIVE
   }
 
   .background {
-
     .circle {
       width: 15rem;
       height: 15rem;
@@ -1809,7 +1735,7 @@ RESPONSIVE
       height: 0;
       border-style: solid;
       border-width: 0 120.5px 188.9px 98.5px;
-      border-color: transparent transparent #FCCD05 transparent;
+      border-color: transparent transparent #fccd05 transparent;
       position: absolute;
       top: -18%;
       left: -4%;
@@ -1819,14 +1745,13 @@ RESPONSIVE
     .rectangle {
       width: 20rem;
       height: 6rem;
-      background-color: #17E9E0;
+      background-color: #17e9e0;
       position: absolute;
       top: 140%;
       left: 20%;
       transform: rotate(-40deg);
     }
   }
-
 }
 
 body :not(.menu) a {

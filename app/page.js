@@ -8,6 +8,9 @@ import Carousel from "react-bootstrap/Carousel";
 import RecentPublications from "@/components/RecentPublications";
 import { mycarousel } from "@/constants/carousel.js";
 import BulletElement from "@/components/BulletElement";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAward } from '@fortawesome/free-solid-svg-icons'
+
 export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);
 
@@ -35,7 +38,9 @@ export default function Home() {
                 <section className="award_section">
                   <h2> GIE PREMIADO EN 2017 </h2>
                   <div className="award_card">
-                    <div className="award_icon"></div>
+                    <div className="award_icon_container">
+                  <FontAwesomeIcon className="award_icon" icon={faAward} />
+                  </div>
                     <div className="award_card_text">
                       <h4>PREMIO A LOS GRUPOS DE INNOVACIÓN EDUCATIVA</h4>
                       <p>

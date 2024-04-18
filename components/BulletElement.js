@@ -9,8 +9,8 @@ export default function BulletElements(props) {
         <div className="bullet_elements">
             {bulletElements.map(({ title, letter }, index) => (
                 <div key={index} className="bullet_element">
-                    <div className="title">{title}</div>
-                    <div className="letter">{letter}</div>
+                    <h5 className="title pl-8">{title}</h5>
+                    <h1 className="letter pr-8">{letter}</h1>
                 </div>
             ))}
         </div>

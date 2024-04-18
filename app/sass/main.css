@@ -359,7 +359,7 @@ header li a:active {
 }
 .home .body .award_section .award_card .award_icon_container .award_icon {
   background: #ffe685;
-  @apply text-orange-300;
+  @apply text-orange-500;
   border-radius: 70px;
   width: 6rem;
   height: 6rem;
@@ -408,7 +408,7 @@ header li a:active {
 .home .body .bullet_elements .bullet_element {
   align-items: center;
   @apply bg-blue-50;
-  @apply text-blue-900;
+  @apply text-blue-700;
   border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
   display: flex;
@@ -1168,100 +1168,4 @@ RESPONSIVE
 }
 body :not(.menu) a:hover {
   text-decoration: none;
-}
-
-.team main .teammates .teamgrouptitle {
-  display: flex;
-  flex-flow: column wrap;
-}
-.team main .teammates .teamgrouptitle .teammate {
-  display: flex;
-  flex-flow: flow-wrap;
-  width: 100%;
-}
-
-html h1, body h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h2, body h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h3, body h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h4, body h4 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h5, body h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html p, body p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: medium;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html button, body button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-}
-html .smallcaps, body .smallcaps {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  font-variant: small-caps;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-* {
-  @apply border-2 border-red-300;
-}
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-body {
-  /* color: rgb(var(--foreground-rgb)) */
-  @apply text-primary;
-  margin-bottom: 0rem;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}/*# sourceMappingURL=globals.css.map */
+}/*# sourceMappingURL=main.css.map */

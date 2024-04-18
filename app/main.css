@@ -1,130 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.research .main {
-  min-height: calc(100vh - 150px);
-  padding: 5rem 0 0 0;
-}
-.research .main .filters {
-  text-align: right;
-  padding: 1rem 5rem 1rem 5rem;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-.research .main .paper {
-  display: flex;
-}
-.team main .teammates .teamgrouptitle {
-  display: flex;
-  flex-flow: column wrap;
-}
-.team main .teammates .teamgrouptitle .teammate {
-  display: flex;
-  flex-flow: flow-wrap;
-  width: 100%;
-}
-
-footer {
-  width: 100%;
-  padding: 2.5rem;
-  font-size: 1.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @apply bg-primary;
-  @apply text-white;
-}
-footer .footer_mid {
-  display: flex;
-  text-align: center;
-}
-footer .footer_mid .footer_sections {
-  display: flex;
-}
-footer .footer_mid .footer_sections nav ul {
-  display: flex;
-  flex-direction: column;
-}
-footer .footer_right {
-  text-align: right;
-  align-items: right;
-}
-
-ul {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-ul li {
-  margin: 0 1.3rem 0 0;
-}
-
-html h1, body h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h2, body h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h3, body h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h4, body h4 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h5, body h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html p, body p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: medium;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html button, body button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-}
-html .smallcaps, body .smallcaps {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  font-variant: small-caps;
-}
-
-* {
-  @apply border-2 border-primary;
-}
-
 /* ==========================================================================
     VARIABLES
    ========================================================================== */
-/* =========================================================================
-TYPOGRAPHY
- ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 /* ==========================================================================
     GENERAL
    ========================================================================== */
@@ -134,53 +12,23 @@ TYPOGRAPHY
   box-sizing: border-box;
 }
 *::-moz-selection {
-  background-color: #b0a7ff;
+  background-color: #74f2ec;
 }
 *::selection {
-  background-color: #b0a7ff;
+  background-color: #74f2ec;
 }
 
 body,
 html {
   color: black;
-  @apply text-primary;
   font-size: 12px;
-  font-family: "montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0 auto;
   scroll-behavior: smooth;
-}
-body h2,
-html h2 {
-  font-weight: lighter;
-}
-body a,
-html a {
-  font-size: 14px;
-  font-weight: semibold;
 }
 body a:hover,
 html a:hover {
   text-decoration: none;
-}
-body button,
-html button {
-  @apply bg-primary text-white;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 0.5rem 2rem;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-body button:hover,
-html button:hover {
-  background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(to right, #5340ff, #9f226d);
 }
 
 header {
@@ -192,7 +40,6 @@ header {
   align-items: center;
   transition: 0.5s;
   padding: 1.5rem 0 1.5rem 0;
-  box-shadow: 0px 4px 4px 0px rgba(29, 29, 27, 0.15);
   z-index: 200;
 }
 header .imagotype {
@@ -204,19 +51,11 @@ header .imagotype {
   padding-left: 4rem;
 }
 header .imagotype .isotype {
-  display: flex;
-  width: 4rem;
-  height: auto;
+  background-color: #282828;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
   margin: 0 0 0 2rem;
-}
-header .imagotype .logotype {
-  display: flex;
-  width: auto;
-  font-size: 1.7rem;
-  font-weight: 700;
-  font-family: "Montserrat Alternates", sans-serif;
-  @apply text-primary;
-  padding: 0 12rem 0 0.7rem;
 }
 header .menu_icon .close {
   display: none;
@@ -239,20 +78,27 @@ header .menu ul {
   justify-content: space-between;
   font-size: 1.2rem;
 }
+header .imagotype .logoheader img {
+  width: 100px;
+  height: auto;
+}
+header .imagotype .logotype span {
+  @apply text-ca_orange-300;
+}
 header li.li-selected a {
-  border-bottom: 5px solid #ffe685;
+  border-bottom: 5px solid #FCCD05;
 }
 header li.li-selected a:hover {
-  border-bottom: 5px solid #ffe685;
+  border-bottom: 5px solid #FCCD05;
 }
 header li a {
   transition: 15ms;
 }
 header li a:hover {
-  border-bottom: 5px dashed #333333;
+  border-bottom: 5px dashed #282828;
 }
 header li a:active {
-  border-bottom: 5px solid #333333;
+  border-bottom: 5px solid #282828;
 }
 
 .spinner {
@@ -270,7 +116,20 @@ header li a:active {
 
 .box-shadow {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  background-color: #5441ff;
+  background-color: #17E9E0;
+}
+
+footer {
+  padding: 2.5rem;
+  font-size: 1.1rem;
+}
+footer ul {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer ul li {
+  margin: 0 1.3rem 0 0;
 }
 
 .lang_en {
@@ -290,7 +149,7 @@ header li a:active {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #4d4d4d;
+  background: #424242;
 }
 
 /* Handle on hover */
@@ -299,26 +158,38 @@ header li a:active {
 }
 
 /* ==========================================================================
- HOME
- ========================================================================== */
+   HOME
+   ========================================================================== */
 .home_page .border_nav_bar {
-  border-bottom: solid 1.5px white;
+  border-bottom: solid 1.5px #f4f4f4;
   transition: none;
 }
 
 .home {
-  margin: 8rem 4rem 0 4rem;
+  margin: 0 8rem 0 17rem;
 }
 .home a:hover {
   color: inherit;
 }
 .home h1 {
-  font-weight: 500;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: #282828;
+  font-size: 4rem;
+  margin: 0;
+}
+.home h2 {
+  font-family: "Lora", serif;
+  color: #282828;
+  font-size: 2rem;
+  margin: 0;
 }
 .home .head {
   display: flex;
-  justify-content: left;
-  padding: 6rem 6rem 2rem 0rem;
+  flex-grow: revert;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #3a3a3a;
+  padding: 6rem 2rem 6rem 5rem;
 }
 .home .head .group_logo {
   display: inline-block;
@@ -343,30 +214,12 @@ header li a:active {
   line-height: 3.35em;
 }
 .home .head .group_description {
-  width: 60%;
+  width: 70%;
 }
 .home .body {
   padding-top: 4rem;
   display: flex;
-  flex-direction: column;
   width: 100%;
-}
-.home .body .award_section .award_card {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  align-items: center;
-}
-.home .body .award_section .award_card .award_icon_container .award_icon {
-  background: #ffe685;
-  @apply text-orange-300;
-  border-radius: 70px;
-  width: 6rem;
-  height: 6rem;
-  padding: 1.5rem;
-}
-.home .body .award_section .award_card .award_card_text {
-  padding: 0 0 0 1rem;
 }
 .home .body .carousel {
   display: inline-block;
@@ -378,102 +231,30 @@ header li a:active {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home .body .lines_of_act {
-  margin-bottom: 64px;
+.home .body .carousel h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px #282828;
 }
-.home .body .lines_of_act p {
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-.home .body .our_goals {
-  padding-bottom: 2rem;
-  margin-bottom: 64px;
-}
-.home .body .our_goals .text_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-.home .body .our_goals .text_content .title_text {
-  width: 50%;
-}
-.home .body .bullet_elements {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 48px;
-  font-weight: 600;
-}
-.home .body .bullet_elements .bullet_element {
-  align-items: center;
-  @apply bg-blue-50;
-  @apply text-blue-900;
-  border-top-right-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-  display: flex;
-  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
-  justify-content: space-between;
-}
-.home .body .bullet_elements .bullet_element h5 {
-  margin-top: 1rem;
-}
-.home .body .bullet_elements .bullet_element .letter {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 700;
-  @apply text-blue-300;
-}
-.home .body .grid_container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  gap: 10px;
-}
-.home .body .grid_item {
-  @apply text-white;
-  @apply bg-primary;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  border-radius: 8px;
-}
-.home .body .grid_item h5 {
-  font-weight: 600;
-}
-.home .body .top_left {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.home .body .top_mid {
-  grid-column: 2/4;
-  grid-row: 1/2;
-}
-.home .body .top_right {
-  grid-column: 4/6;
-  grid-row: 1/2;
-}
-.home .body .bottom_left {
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
-.home .body .bottom_mid {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.home .body .bottom_right {
-  grid-column: 4/6;
-  grid-row: 2/3;
+.home .body .carousel p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px #282828;
 }
 .home .body .latest_publications {
   width: 30%;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 10px;
-  margin-bottom: 48px;
 }
 .home .body .latest_publications h3 {
   padding-top: 4%;
   padding-bottom: 4%;
-  font-family: "montserrat", sans-serif;
+  font-family: "Lora", serif;
   font-weight: bold;
   font-size: 2.1rem;
   text-align: center;
@@ -489,17 +270,72 @@ header li a:active {
   font-size: 1.2rem;
   font-family: "Lora", serif;
   font-weight: bold;
-  color: #ffe685;
+  color: #FCCD05;
   text-align: left;
   padding: 2% 2% 2% 2%;
 }
 
+.background .circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: #FFB38F;
+  position: absolute;
+  top: 60%;
+  left: 75%;
+}
+.background .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 120.5px 188.9px 98.5px;
+  border-color: transparent transparent #FCCD05 transparent;
+  position: absolute;
+  top: -18%;
+  left: -4%;
+  transform: rotate(85deg);
+}
+.background .rectangle {
+  width: 20rem;
+  height: 6rem;
+  background-color: #17E9E0;
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  transform: rotate(-40deg);
+}
+
+/* PARALAX */
+.parallax {
+  perspective: 2px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+  z-index: -1;
+}
+
 /* ==========================================================================
- PROJECTS
- ========================================================================== */
+   PROJECTS
+   ========================================================================== */
 .projects {
-  color: inherit;
-  @apply bg-white;
+  color: white;
+  background-color: #282828;
   padding: 5rem 0 0 0;
   /*---- Scroll Bar ----*/
   /* Track */
@@ -524,10 +360,10 @@ header li a:active {
   text-decoration: none;
 }
 .projects .nav_bar li.li-selected a {
-  border-bottom: 5px solid;
+  border-bottom: 5px solid #FFB38F;
 }
 .projects .nav_bar li.li-selected a:hover {
-  border-bottom: 5px solid;
+  border-bottom: 5px solid #FFB38F;
 }
 .projects .nav_bar li a:hover {
   border-bottom: 5px dashed white;
@@ -538,7 +374,7 @@ header li a:active {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  border-bottom: solid 1.5px #454545;
+  border-bottom: solid 1.5px #3a3a3a;
   padding: 6rem 2rem 6rem 5rem;
 }
 .projects main .our_projects .project .project_logo {
@@ -566,36 +402,39 @@ header li a:active {
 }
 .projects main .our_projects .project .project_main a:hover h2,
 .projects main .our_projects .project .project_main a:hover h3 {
-  color: pink;
+  color: #FFB38F;
   transition: 0.5s;
 }
 .projects .border_nav_bar {
-  border-bottom: solid 1.5px #454545;
+  border-bottom: solid 1.5px #3a3a3a;
   transition: none;
 }
 .projects ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 .projects ::-webkit-scrollbar-thumb {
-  background: pink;
+  background: #FFB38F;
 }
 .projects ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 /* ==========================================================================
- TOOLS
- ========================================================================== */
+   TOOLS
+   ========================================================================== */
 .tools {
-  @apply bg-white;
+  color: white;
+  background-color: #282828;
+  padding: 5rem 0 0 0;
   /*---- Scroll Bar ----*/
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
-.tools main {
-  padding: 5rem 0 0 0;
-  margin: 8rem 4rem 0 4rem;
+.tools .spinner {
+  min-height: calc(100vh - 150px);
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
 }
 .tools .nav_bar {
   background-color: inherit;
@@ -605,40 +444,27 @@ header li a:active {
   background-color: white;
 }
 .tools .nav_bar .imagotype .logotype {
+  color: white;
   font-weight: 700;
   text-decoration: none;
 }
 .tools .nav_bar li.li-selected a {
-  border-bottom: 5px solid pink;
+  border-bottom: 5px solid #FFB38F;
 }
 .tools .nav_bar li.li-selected a:hover {
-  border-bottom: 5px solid pink;
+  border-bottom: 5px solid #FFB38F;
 }
 .tools .nav_bar li a:hover {
   border-bottom: 5px dashed white;
   text-decoration: none;
   color: inherit;
 }
-.tools main .our_tools {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.tools main .our_tools .header {
-  @apply w-auto;
-  display: block;
-}
-.tools main .our_tools .header image {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 .tools main .our_tools .tool {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  border-radius: 4px;
-  @apply border-gray-200 border-2;
-  padding: 2rem 2rem 2rem 2rem;
+  border-bottom: solid 1.5px #3a3a3a;
+  padding: 6rem 2rem 6rem 5rem;
 }
 .tools main .our_tools .tool .tool_logo {
   width: 10%;
@@ -658,46 +484,251 @@ header li a:active {
   width: 70%;
 }
 .tools main .our_tools .tool .tool_main h2 {
-  @apply text-ca_blue-900;
+  font-weight: bold;
 }
-.tools main .our_tools .tool .tool_main h3 {
-  font-size: 14px;
-  font-weight: 500;
+.tools main .our_tools .tool .tool_main a {
+  color: inherit;
 }
-.tools main .our_tools .tool .tool_main .button_container {
-  display: flex;
-  justify-content: flex-end;
+.tools main .our_tools .tool .tool_main a:hover h2,
+.tools main .our_tools .tool .tool_main a:hover h3 {
+  color: #17E9E0;
+  transition: 0.5s;
 }
 .tools .border_nav_bar {
-  border-bottom: solid 1.5px #454545;
+  border-bottom: solid 1.5px #3a3a3a;
   transition: none;
 }
 .tools ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 .tools ::-webkit-scrollbar-thumb {
-  background: pink;
+  background: #FFB38F;
 }
 .tools ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 /* ==========================================================================
- RESEARCH
- ========================================================================== */
+   RESEARCH
+   ========================================================================== */
+.research {
+  color: #282828;
+  background-color: #FFB38F;
+  padding: 5rem 0 0 0;
+}
+.research .nav_bar {
+  background-color: #FFB38F;
+  color: #282828;
+}
+.research .nav_bar .imagotype .isotype {
+  background-color: #282828;
+}
+.research .nav_bar .imagotype .logotype {
+  color: #282828;
+  font-weight: #282828;
+}
+.research .nav_bar li.li-selected a {
+  border-bottom: 5px solid white;
+}
+.research .nav_bar li.li-selected a:hover {
+  border-bottom: 5px solid white;
+}
+.research .nav_bar li a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.research main {
+  min-height: calc(100vh - 150px);
+}
+.research main .research .filters {
+  text-align: right;
+  padding: 1rem 5rem 1rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.research main .research .filters label,
+.research main .research .filters select,
+.research main .research .filters input {
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+.research main .research .filters select,
+.research main .research .filters input {
+  border: 1px solid black;
+  margin-right: 3rem;
+}
+.research main .research .filters label {
+  font-weight: bolder;
+}
+.research main .research .filters option {
+  text-align: right;
+}
+.research main .research .filters .filter {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.research main .research .filters .filter input,
+.research main .research .filters .filter select {
+  background-color: #FFB38F;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+}
+.research main .research .paper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #ffcbb3;
+  padding: 6rem 2rem 6rem 5rem;
+}
+.research main .research .paper .paper_date {
+  width: 10%;
+  margin: 0.8rem 0 0 0;
+}
+.research main .research .paper .paper_date img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+  height: 100%;
+}
+.research main .research .paper .paper_main {
+  width: 70%;
+}
+.research main .research .paper .paper_main .paper_title h2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+.research main .research .paper .paper_main .paper_authors {
+  margin: 1.5rem 0 0 0;
+}
+.research main .research .paper .paper_main a {
+  color: #282828;
+}
+.research .border_nav_bar {
+  border-bottom: solid 1.5px #ffcbb3;
+  transition: none;
+}
+
 /* ==========================================================================
- TEAM
- ========================================================================== */
+   TEAM
+   ========================================================================== */
+.grayscale {
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 300ms ease-in-out;
+  /*&:hover {
+      @include grayscale_element(0);
+      mix-blend-mode: normal;
+      transition: all 300ms ease-in-out;
+  }*/
+}
+
+.team {
+  color: #282828;
+  background-color: #a3f6f3;
+  padding: 5rem 0 0 0;
+}
+.team .spinner {
+  min-height: calc(100vh - 150px);
+}
+.team .nav_bar {
+  background-color: inherit;
+  color: #282828;
+}
+.team .nav_bar .imagotype .isotype {
+  background-color: #282828;
+}
+.team .nav_bar .imagotype .logotype {
+  color: #282828;
+  font-weight: #282828;
+}
+.team .nav_bar li.li-selected a {
+  border-bottom: 5px solid white;
+}
+.team .nav_bar li.li-selected a:hover {
+  border-bottom: 5px solid white;
+}
+.team .nav_bar li a:hover {
+  color: inherit;
+}
+.team main .teammates {
+  padding-top: 4rem;
+}
+.team main .teammates .teamgrouptitle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 3rem 5rem 1rem 5rem;
+}
+.team main .teammates .teamgrouptitle h2 {
+  margin-left: 80px;
+}
+.team main .teammates .teammate {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: solid 1.5px #d1fbf9;
+  padding: 5rem 1rem 5rem 1rem;
+  width: 100%;
+}
+.team main .teammates .teammate h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.team main .teammates .teammate .mate_img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  /* &:hover {
+      border: $black solid 5px;
+  }*/
+}
+.team main .teammates .teammate .mate_img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.team main .teammates .teammate .mate_info {
+  width: 70%;
+}
+.team main .teammates .teammate .mate_info a:hover h2,
+.team main .teammates .teammate .mate_info a:hover h3 {
+  transition: 1s ease-in-out;
+}
+.team main .teammates .teammate .at {
+  width: 1em;
+  padding: 1px;
+  margin-right: 3px;
+}
+.team .border_nav_bar {
+  border-bottom: solid 1.5px #d1fbf9;
+  transition: none;
+}
+
 /* ==========================================================================
- ABOUT
- ========================================================================== */
+   ABOUT
+   ========================================================================== */
 .about main {
   max-width: 1000px;
   margin: auto;
   margin-top: 100px;
 }
 .about main .about_description {
-  border-bottom: solid 1.5px #cccccc;
+  border-bottom: solid 1.5px #c1c1c1;
   padding: 9rem 3rem 6rem 7rem;
 }
 .about main .location {
@@ -713,7 +744,7 @@ header li a:active {
 .about main .location .col1 .location_map {
   height: 500px;
   width: 700px;
-  background-color: #ffe685;
+  background-color: #FCCD05;
 }
 .about main .location .col1 .map-responsive {
   overflow: hidden;
@@ -739,33 +770,33 @@ header li a:active {
   padding: 1rem 0 0.5rem 0;
 }
 .about main section:last-child {
-  border-bottom: solid 1.5px #cccccc;
+  border-bottom: solid 1.5px #c1c1c1;
 }
 .about h1 {
   font-size: 4rem;
   font-weight: 400;
 }
 .about h2 {
-  color: #333333;
+  color: #282828;
   font-size: 2rem;
   width: 100%;
   padding: 1rem 0 0.5rem 2rem;
 }
 .about h3 {
-  color: #333333;
+  color: #282828;
   font-size: 2rem;
 }
 .about p {
   font-size: 1.5rem;
 }
 .about .border_nav_bar {
-  border-bottom: solid 1.5px #cccccc;
+  border-bottom: solid 1.5px #c1c1c1;
   transition: none;
 }
 
 /* =========================================================================
-LINKS
- ========================================================================== */
+TYPOGRAPHY
+   ========================================================================== */
 a {
   text-decoration: none;
   color: inherit;
@@ -774,16 +805,45 @@ a:visited {
   color: inherit;
 }
 
-/* &::selection {
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: #282828;
+  font-size: 8rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 0;
+  /* &::selection {
       background-color: red;
   }*/
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
 ul {
   list-style: none;
 }
 
 /* =========================================================================
 RESPONSIVE
- ========================================================================== */
+   ========================================================================== */
 @media (max-width: 940px) {
   header {
     padding: 1.5rem 0 1.6rem 0;
@@ -912,19 +972,20 @@ RESPONSIVE
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 4rem;
   }
   header .imagotype .isotype {
-    display: flex;
-    width: 4rem;
-    height: auto;
+    background-color: #282828;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
     margin: 0 0 0 2rem;
   }
   header .imagotype .logotype {
-    display: none;
     font-size: 1.7rem;
     font-weight: 900;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333333;
+    color: #282828;
     padding: 0 0 0 0.7rem;
   }
   header .menu_icon {
@@ -1140,7 +1201,7 @@ RESPONSIVE
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    background-color: pink;
+    background-color: #FFB38F;
     position: absolute;
     top: 35%;
     left: 60%;
@@ -1150,7 +1211,7 @@ RESPONSIVE
     height: 0;
     border-style: solid;
     border-width: 0 120.5px 188.9px 98.5px;
-    border-color: transparent transparent #fccd05 transparent;
+    border-color: transparent transparent #FCCD05 transparent;
     position: absolute;
     top: -18%;
     left: -4%;
@@ -1159,7 +1220,7 @@ RESPONSIVE
   .background .rectangle {
     width: 20rem;
     height: 6rem;
-    background-color: #17e9e0;
+    background-color: #17E9E0;
     position: absolute;
     top: 140%;
     left: 20%;
@@ -1170,98 +1231,6 @@ body :not(.menu) a:hover {
   text-decoration: none;
 }
 
-.team main .teammates .teamgrouptitle {
-  display: flex;
-  flex-flow: column wrap;
-}
-.team main .teammates .teamgrouptitle .teammate {
-  display: flex;
-  flex-flow: flow-wrap;
-  width: 100%;
-}
-
-html h1, body h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h2, body h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h3, body h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h4, body h4 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h5, body h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html p, body p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: medium;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html button, body button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-}
-html .smallcaps, body .smallcaps {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  font-variant: small-caps;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-* {
-  @apply border-2 border-red-300;
-}
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-body {
-  /* color: rgb(var(--foreground-rgb)) */
-  @apply text-primary;
-  margin-bottom: 0rem;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}/*# sourceMappingURL=globals.css.map */
+.logoheader {
+  height: 50px;
+}/*# sourceMappingURL=main.css.map */
