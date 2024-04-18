@@ -30,7 +30,22 @@ export default function Home() {
                   </h1>
                 </div>
               </div>
+
               <div className="body">
+                <section className="award_section">
+                  <h2> GIE PREMIADO EN 2017 </h2>
+                  <div className="award_card">
+                    <div className="award_icon"></div>
+                    <div className="award_card_text">
+                      <h4>PREMIO A LOS GRUPOS DE INNOVACIÓN EDUCATIVA</h4>
+                      <p>
+                        Premio otorgado al GIE CyberAula, coordinado por el
+                        profesor Juan Quemada Vives (E.T.S. DE INGENIEROS DE
+                        TELECOMUNICACIÓN)
+                      </p>
+                    </div>
+                  </div>
+                </section>
                 {/* <div className="carousel">
 								<Carousel>
 									{carousel.map(({label, description, image, url})=>{
@@ -65,8 +80,8 @@ export default function Home() {
                     creation and delivery of new MOOCs, amongst other services
                     of collaborative resources for teaching.
                   </p>
-                  
-                <BulletElement></BulletElement>
+
+                  <BulletElement></BulletElement>
                 </section>
                 <section className="our_goals">
                   <div className="text_content">
@@ -77,12 +92,10 @@ export default function Home() {
                       technology) in education, encouraging e-learning.
                     </div>
                   </div>
-                  
-                    <GridElement/>
-                  
+
+                  <GridElement />
                 </section>
               </div>
-              
             </section>
             <Footer />
           </main>

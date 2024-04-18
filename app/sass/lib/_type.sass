@@ -1,10 +1,10 @@
 
-$body-text: 14px, medium
-$sm-text: 16px, semibold //h5
-$md-text: 20px, bold //h4
-$lg-text: 24px, bold //h3
-$xl-text: 28px, bold //h2
-$xxl-text: 32px, bold //h1
+$body-text: 14px, medium, 140%, 1rem
+$sm-text: 16px, semibold, 140%, 1rem //h5
+$md-text: 20px, bold, 140%, 1rem //h4
+$lg-text: 24px, bold,140%, 1rem  //h3
+$xl-text: 28px, bold, 140%, 1rem //h2
+$xxl-text: 32px, bold, 140%, 1rem  //h1
 $button: 16px, semibold //buttons
 $slim-weight: 500
 $regular:400
@@ -17,32 +17,44 @@ html, body
         font-family: "Montserrat", sans-serif
         font-size: nth($xxl-text,1)
         font-weight: nth($xxl-text,2)
+        line-height: nth($xxl-text,3)
+        margin-bottom: nth($xxl-text,4)
 
     h2
         font-family: "Montserrat", sans-serif
         font-size: nth($xl-text,1)
         font-weight: nth($xl-text,2)
+        line-height: nth($xl-text,3)
+        margin-bottom: nth($xl-text,4)
 
     h3
         font-family: "Montserrat", sans-serif
         font-size: nth($lg-text,1)
         font-weight: nth($lg-text,2)
+        line-height: nth($lg-text,3)
+        margin-bottom: nth($lg-text,4)
 
     h4
         font-family: "Montserrat", sans-serif
         font-size: nth($md-text,1)
         font-weight: nth($md-text,2)
+        line-height: nth($md-text,3)
+        margin-bottom: nth($md-text,4)
 
     h5
         font-family: "Montserrat", sans-serif
         font-size: nth($sm-text,1)
         font-weight: nth($sm-text,2)
+        line-height: nth($sm-text,3)
+        margin-bottom: nth($sm-text,4)
 
-    body
+    p
 
         font-family: "Montserrat", sans-serif
         font-size: nth($body-text,1)
         font-weight: nth($body-text,2)
+        line-height: nth($body-text,3)
+        margin-bottom: nth($body-text,4)
 
     button
         font-family: "Montserrat", sans-serif

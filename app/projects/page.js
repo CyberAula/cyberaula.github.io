@@ -20,12 +20,14 @@ export default function Projects (){
 			<Header route={"/projects"}/>
 			    <main>
 			        <section className="our_projects">
+						<div>
+							project filter
+						</div>
 			        	{projects.map(({logo, title, description, route, noBlank})=>{
 			        		return (<div key={title} className="project">
 			                <div className="project_logo">
 			                        <CreateLink route={route}><img alt={"Project Logo"} src={logo} /></CreateLink>
 			                </div>
-
 			                <div className="project_main">
 			                    <CreateLink route={route}>
 			                        <div className="project_content">
@@ -39,7 +41,6 @@ export default function Projects (){
 			                    </CreateLink>
 			                </div>
 			                </div>
-
 			                );
 			        	})}
 			        </section>

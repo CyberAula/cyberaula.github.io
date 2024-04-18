@@ -18,10 +18,39 @@
 /* ==========================================================================
     VARIABLES
    ========================================================================== */
-$black: #282828;
-$yellow: #FCCD05;
-$pink: #FFB38F;
-$blue: #17E9E0;
+//COLOR
+$blue_primary: #5441FF;
+$orange_accent: #5340FF;
+$burgundry_support: #9F226D;
+$cyan_support: #21E2ED;
+$lilac_support: #AE9FF2;
+$black: #333333;
+// blues
+$ca-blue-900: #3302BF;
+$ca-blue-800: #4507C9;
+$ca-blue-700: #4F1BE4;
+$ca-blue-600: #5441FF;
+$ca-blue-500: #6e76ff;
+$ca-blue-400: #97a7ff;
+$ca-blue-300: #becaff;
+$ca-blue-200: #dbe2ff;
+$ca-blue-100: #ebf0ff;
+$ca-blue-50: #F5F8FF;
+//oranges
+$ca-or-300: #FF9900;
+$ca-or-200: #FFBD1B;
+$ca-or-100: #FFE685;
+
+//SPACING
+$spacing_xsm:8px;
+$spacing_sm:16px;
+$spacing_md: 32px;
+$spacing_lg: 48px;
+$spacing_xl: 64px;
+
+/* =========================================================================
+TYPOGRAPHY
+ ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
@@ -66,6 +95,7 @@ $extra-bold: 900;
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
+      padding-left: 4rem;
 
     .isotype {
       display: flex;
@@ -127,7 +157,7 @@ $extra-bold: 900;
   box-sizing: border-box;
 
   &::selection {
-    background-color: lighten($color: $blue, $amount: 20);
+    background-color: lighten($color: $blue-primary, $amount: 20);
   }
 
 }
@@ -182,7 +212,7 @@ html {
 }
 
 .home_page {
-  @apply bg-white
+ // @apply bg-white
 }
 
 header {
@@ -193,10 +223,10 @@ header {
   li {
     &.li-selected {
       a {
-        border-bottom: $border1 $yellow;
+        border-bottom: $border1 $ca-or-100;
 
         &:hover {
-          border-bottom: $border1 $yellow;
+          border-bottom: $border1 $ca-or-100;
         }
       }
 
@@ -235,7 +265,7 @@ header {
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  background-color: $blue;
+  background-color: $blue-primary;
 }
 
 
@@ -298,7 +328,7 @@ header {
     display: flex;
 
     justify-content: left;
-    border-bottom: solid 1.5px lighten($color: $black, $amount: 7);
+   // border-bottom: solid 1.5px lighten($color: $black, $amount: 7);
     padding: 6rem 6rem 2rem 0rem;
 
     .group_logo {
@@ -334,7 +364,27 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-
+    .award_section {
+      h2 {
+        padding-bottom:1rem;
+      }
+      .award_card{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+        .award_icon {
+          background: $ca-or-100;
+          border-radius: 50px;
+          width: 6rem;
+          height: 6rem;
+          padding: 3rem;
+        }
+        .award_card_text {
+          padding: 0 0 0 1rem;
+        }
+      }
+    }
     .carousel {
       display: inline-block;
       width: 95%;
@@ -348,19 +398,22 @@ header {
     }
 
     .lines_of_act {
+      margin-bottom: $spacing_xl;
       p {
         font-size: nth($body-text, 1);
+        margin-bottom: $spacing-sm;
       }
 
     }
 
     .our_goals {
       padding-bottom: 2rem;
+      margin-bottom: $spacing_xl;
       .text_content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        margin-bottom: $spacing_sm;
         .title_text {
           width: 50%;
         }
@@ -373,6 +426,7 @@ header {
       display: flex;
       flex-direction: column;
       gap:2rem;
+      margin-bottom: $spacing_lg;
       .bullet_element{
         @apply bg-blue-300;
         @apply text-blue-400;
@@ -442,6 +496,7 @@ header {
       width: 30%;
       object-fit: cover;
       padding: 10px;
+      margin-bottom: $spacing_lg;
 
       h3 {
         padding-top: 4%;
@@ -464,7 +519,7 @@ header {
         font-size: 1.2rem;
         font-family: $serif_font;
         font-weight: bold;
-        color: $yellow;
+        color: $ca-or-100;
         text-align: left;
         padding: 2% 2% 2% 2%;
       }
@@ -547,10 +602,10 @@ header {
     li {
       &.li-selected {
         a {
-          border-bottom: $border1 $pink;
+          border-bottom: $border1 ;
 
           &:hover {
-            border-bottom: $border1 $pink;
+            border-bottom: $border1 ;
           }
         }
 
@@ -604,7 +659,7 @@ header {
 
               h2,
               h3 {
-                color: $pink;
+                color: pink;
                 transition: .5s;
               }
             }
@@ -634,7 +689,7 @@ header {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: $pink;
+    background: pink;
   }
 
   /* Handle on hover */
@@ -679,10 +734,10 @@ header {
     li {
       &.li-selected {
         a {
-          border-bottom: $border1 $pink;
+          border-bottom: $border1 pink;
 
           &:hover {
-            border-bottom: $border1 $pink;
+            border-bottom: $border1 pink;
           }
         }
 
@@ -785,7 +840,7 @@ header {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: $pink;
+    background: pink;
   }
 
   /* Handle on hover */
@@ -1139,7 +1194,7 @@ header {
         .location_map {
           height: 500px;
           width: 700px;
-          background-color: $yellow;
+          background-color: $ca-or-100;
 
         }
 
@@ -1214,7 +1269,7 @@ header {
 }
 
 /* =========================================================================
-TYPOGRAPHY
+LINKS
  ========================================================================== */
 
 a {
@@ -1226,19 +1281,10 @@ a {
   }
 }
 
-p {
-  font-size: 2rem;
-
-}
-
-
-
 
 /* &::selection {
       background-color: red;
   }*/
-
-
 
 
 ul {
@@ -1630,7 +1676,7 @@ RESPONSIVE
           .paper_date {
             width: 100%;
             margin: 0 0 .5rem 0;
-            color: lighten($color: $pink, $amount: 25);
+            color: lighten($color: pink, $amount: 25);
           }
 
           .paper_main {
@@ -1752,7 +1798,7 @@ RESPONSIVE
       width: 15rem;
       height: 15rem;
       border-radius: 50%;
-      background-color: $pink;
+      background-color: pink;
       position: absolute;
       top: 35%;
       left: 60%;
