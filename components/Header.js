@@ -4,11 +4,12 @@ import {useState, useEffect} from 'react';
 
 
 const routes = [
-  {route: "/", title: "Home"},
-  {route: "/projects", title: "Projects"},
-  {route: "/research", title: "Research"},
-  {route: "/team", title: "Team"},
+  //{route: "/", title: "Home"},
+  {route: "/research", title: "Publications"},
+  {route: "/courses", title: "Courses"},
   {route: "/tools", title: "Tools"},
+  {route: "/projects", title: "Projects"},
+  {route: "/team", title: "Team"},
   {route: "/about", title: "Contact"}
 ]
 export default function Header (props) {
