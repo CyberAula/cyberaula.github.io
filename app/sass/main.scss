@@ -86,16 +86,21 @@ $extra-bold: 900;
   .imagotype {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 4rem;
+    // padding-left: 4rem;
 
     .isotype {
       display: flex;
       width: 4rem;
       height: auto;
       margin: 0 0 0 2rem;
+
+      .logoheader {
+        width: 2.75rem;
+      }
     }
 
     .logotype {
@@ -104,8 +109,13 @@ $extra-bold: 900;
       font-size: 1.7rem;
       font-weight: $bold;
       font-family: $montserrat-alternates;
-      @apply text-primary;
+      // @apply text-primary;
+
       padding: 0 12rem 0 0.7rem;
+
+      span {
+        color: $ca-or-300;
+      }
     }
   }
 
@@ -343,12 +353,14 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+
     .award_section {
       .award_card {
         display: flex;
         flex-direction: row;
         align-self: center;
         align-items: center;
+
         .award_icon_container {
           .award_icon {
             background: $ca-or-100;
@@ -359,11 +371,13 @@ header {
             padding: 1.5rem;
           }
         }
+
         .award_card_text {
           padding: 0 0 0 1rem;
         }
       }
     }
+
     .carousel {
       display: inline-block;
       width: 95%;
@@ -377,6 +391,7 @@ header {
 
     .lines_of_act {
       margin-bottom: $spacing_xl;
+
       p {
         font-size: nth($body-text, 1);
         margin-bottom: $spacing-sm;
@@ -386,25 +401,28 @@ header {
     .our_goals {
       padding-bottom: 2rem;
       margin-bottom: $spacing_xl;
+
       .text_content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: $spacing_sm;
+
         .title_text {
           width: 50%;
         }
 
-        .body_text {
-        }
+        .body_text {}
       }
     }
+
     .bullet_elements {
       display: flex;
       flex-direction: column;
       gap: 2rem;
       margin-bottom: $spacing_lg;
       font-weight: 600;
+
       .bullet_element {
         align-items: center;
         @apply bg-blue-50;
@@ -414,9 +432,11 @@ header {
         display: flex;
         padding: 1.5rem 0.5rem 1.5rem 0.5rem;
         justify-content: space-between;
+
         h5 {
-         margin-top:1rem;
+          margin-top: 1rem;
         }
+
         .letter {
           font-family: $montserrat-alternates;
           font-weight: $bold;
@@ -424,6 +444,7 @@ header {
         }
       }
     }
+
     .grid_container {
       width: 100%;
       display: grid;
@@ -437,6 +458,7 @@ header {
       @apply bg-primary;
       padding: 0.5rem 1.5rem 0.5rem 1.5rem;
       border-radius: 8px;
+
       h5 {
         font-weight: $semibold;
       }
@@ -627,6 +649,7 @@ header {
             color: inherit;
 
             &:hover {
+
               h2,
               h3 {
                 color: pink;
@@ -763,8 +786,7 @@ header {
           }
 
           a {
-            &:hover {
-            }
+            &:hover {}
           }
 
           .button_container {
@@ -805,6 +827,77 @@ header {
 /* ==========================================================================
  RESEARCH
  ========================================================================== */
+.research {
+  padding-top: 20 rem;
+  
+  main {
+    padding-left: $spacing_xl;
+    padding-right: $spacing_xl;
+  }
+
+  section {
+    padding-top: $spacing_lg;
+    // gap: 2rem;
+    .filters {
+      text-align: right;
+      padding: 1rem 5rem 1rem 5rem;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      padding-bottom: $spacing_sm;
+      border-bottom: solid 1px $ca-blue-100;
+      label,
+      select,
+      input {
+        padding: 5px;
+        font-size: 1.3rem;
+        margin-right: 1rem;
+      }
+
+      select,
+      input {
+        border: 1px solid $ca-blue-800;
+        border-radius: 4px;
+        margin-right: 3rem;
+
+      }
+
+      label {
+        // font-weight: bolder;
+      }
+
+      option {
+        text-align: right;
+      }
+      
+    }
+
+    .paper {
+
+      display: flex;
+      .paper_date{
+        align-content: center;
+        border: 1 px solid $black;
+        border-radius: 16px;
+        h5{
+          .year{
+
+          }
+        }
+      }
+      .paper_main {
+        .paper_content {
+          gap: $spacing_md;
+          
+          .paper_subtitle{}
+          .paper_doi{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
 
 // .research {
 //   color: inherit;
@@ -1107,6 +1200,9 @@ header {
 //   }
 
 // }
+
+
+
 
 /* ==========================================================================
  ABOUT

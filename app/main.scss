@@ -8,6 +8,10 @@ $blue: #17E9E0;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 $serif_font: 'Lora',
     serif;
@@ -559,10 +563,12 @@ footer {
 /* ==========================================================================
    TOOLS
    ========================================================================== */
-
+.banner{
+    background-image: url ("/assets/img/tools/header_placeholder-02-01.png");
+    background-color: #282828;
+}
 .tools {
     color: white;
-    background-color: $black;
     padding: 5rem 0 0 0;
 
     .spinner {

@@ -20,11 +20,11 @@ export default function Tools(props) {
             <div className="tools">
                 <Header route="/tools"/>
                 <main>
-                <header className='header'><image src='/assets/img/tools/header_placeholder-02-01.png'></image></header>
+                <div className='banner'><h1>Tools</h1></div>
                     <section className="our_tools">
                         
                         
-                        <h1>Tools</h1>
+                        
                         {tools.map(({title, description, route, logo})=>{
                             return (<div className="tool">
                                     <div className="tool_logo">

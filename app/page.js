@@ -8,8 +8,8 @@ import Carousel from "react-bootstrap/Carousel";
 import RecentPublications from "@/components/RecentPublications";
 import { mycarousel } from "@/constants/carousel.js";
 import BulletElement from "@/components/BulletElement";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAward } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAward } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);

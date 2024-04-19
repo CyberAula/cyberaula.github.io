@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Filters from "@/components/Filters";
 import Link from 'next/link';
 import { mypublications } from '@/constants/publications';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Research() {
 	const [state, setState] = useState({papers: mypublications, search: "", year: undefined, type: undefined});
@@ -57,6 +57,7 @@ export default function Research() {
 			<div className="research">
         		<Header route={"/research"}/>
 			    <main>
+				<div className='banner'><h1>Publications</h1></div>
 			        <section className="research">
 					<Filters search = {search} year={year} type={type} papers={papers} changeSearch={search=>setState({...state, search: search})} changeYear={year=>setState({...state, year: year})} changeType={type=>setState({...state, type: type})} results={papersFiltered instanceof Array ? papersFiltered.length : 0}/>
 			        	{	
@@ -64,17 +65,17 @@ export default function Research() {
 			        			return (
 			        				<div key={ind} className="paper">
 			        				    <div className="paper_date">
-			        				        <h4>{date ? date[0] : ""}</h4>
+			        				        <h5 className="year">{date ? date[0] : ""}</h5>
 			        				    </div>
 
 			        				    <div className="paper_main">
 			        				        <a rel="noopener noreferrer"  target="_blank" href={doi}>
 			        				            <div className="paper_content">
 			        				                <div className="paper_title">
-			        				            	<h2 dangerouslySetInnerHTML={{__html: content}}></h2>
+			        				            	<h2 ></h2>
 			        				                </div>
-													<div className="paper_subtitle"></div>
-													<div className="paper_doi">{doi}</div>
+													<div dangerouslySetInnerHTML={{__html: content}} className="paper_subtitle"></div>
+													<div className="links"><a href={doi}><div className="read_pub" >Read publication</div><FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" /></a></div>
 			        				            </div>
 			        				        </a>
 			        				    </div>
