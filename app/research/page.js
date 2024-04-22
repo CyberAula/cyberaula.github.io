@@ -7,6 +7,8 @@ import Filters from "@/components/Filters";
 import Link from 'next/link';
 import { mypublications } from '@/constants/publications';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Research() {
 	const [state, setState] = useState({papers: mypublications, search: "", year: undefined, type: undefined});
@@ -69,15 +71,15 @@ export default function Research() {
 			        				    </div>
 
 			        				    <div className="paper_main">
-			        				        <a rel="noopener noreferrer"  target="_blank" href={doi}>
+			        				        
 			        				            <div className="paper_content">
 			        				                <div className="paper_title">
 			        				            	<h2 ></h2>
 			        				                </div>
 													<div dangerouslySetInnerHTML={{__html: content}} className="paper_subtitle"></div>
-													<div className="links"><a href={doi}><div className="read_pub" >Read publication</div><FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" /></a></div>
+													<div className="links"><a rel="noopener noreferrer"  target="_blank" href={doi}> <p>Read publication </p><FontAwesomeIcon icon={faArrowRight} /> </a></div>
 			        				            </div>
-			        				        </a>
+			        				       
 			        				    </div>
 			        				</div>
 			        			);
