@@ -21,34 +21,33 @@ export default function Courses() {
         <section className="m-40">
           <div>courses filter</div>
 
-
           <div className=" grid gap-4 grid-cols-2">
-            {courses.map(({ gradient, title, description, route }) => {
+            {courses.map(({ date, gradient, title, description, route }) => {
               return (
                 <div
                   key={title}
-                  className={`rounded-lg course  ${gradient}`}
-				
+                  className={`rounded-lg px-6 py-4 course  ${gradient}`}
                 >
-
                   <div className="course_img">
                     <CreateLink route={route}>
-                     {/*} <img
+                      {/*} <img
                         className="course_img"
                         alt={"Project Logo"}
                         src={logo}
 			  />*/}
                     </CreateLink>
-
-				  </div>
-                  <div className="course_main">
+                  </div>
+                  <div className="course_main transition">
                     <CreateLink route={route}>
                       <div className="course_content">
-                        <div className="project_title">
-                          <h2>{title}</h2>
-                        </div>
-                        <div className="project_description description">
-                          <h5>{description}</h5>
+                        <span>{date} </span>
+                        <div className="course_text_block">
+                          <div className="course_title">
+                            <h4>{title} ASDDDDDDDASDASD</h4>
+                          </div>
+                          <div className="course_description">
+                            {description}
+                          </div>
                         </div>
                       </div>
                     </CreateLink>

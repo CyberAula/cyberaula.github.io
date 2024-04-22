@@ -1,10 +1,34 @@
 $bg-img: "/assets/img/courses/fondo-cursos.png"
+$windowHeight: 100vh
 
-//.course
-  //  background: linear-gradient( to bottom, rgba(200,100,100, 0.8), rgba(0,0,0, 1) ),url($bg-img)
-   // background-size: contain
-   // background-position: center
-
+.course
+    display: flex
+    color: white
+    font-weight: 400
+    height: $windowHeight  /2
+    transition: ease-in-out 300ms
+    overflow: hidden    
+    .course_text_block
+        transition: ease-in-out 300ms
+        transform: translateY(64%)
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        display: flex
+        flex-direction: column
+        .course_description
+            transition: ease-in-out 300ms
+            opacity: 0
+    &:hover 
+        .course_text_block
+            transform: translateY(0%)
+            transition: ease-in-out 300ms
+            .course_description
+                transition: ease-in-out 300ms
+                opacity: 1
+        
+   
 .bg-blue-gradient
     background: linear-gradient(139deg, rgba(83,64,255,0.9) 0%, rgba(111,199,255,0.9) 100%),url($bg-img)
     background-size: contain
@@ -17,4 +41,12 @@ $bg-img: "/assets/img/courses/fondo-cursos.png"
    
 .course_main 
     position: relative
+    width: 100%
+
+.course_content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+
 
