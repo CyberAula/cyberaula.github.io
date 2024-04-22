@@ -7,7 +7,7 @@ import Filters from "@/components/Filters";
 import Link from 'next/link';
 import { mypublications } from '@/constants/publications';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Research() {
@@ -62,7 +62,8 @@ export default function Research() {
 				<div className='banner'><h1>Publications</h1></div>
 			        <section className="research">
 					<Filters search = {search} year={year} type={type} papers={papers} changeSearch={search=>setState({...state, search: search})} changeYear={year=>setState({...state, year: year})} changeType={type=>setState({...state, type: type})} results={papersFiltered instanceof Array ? papersFiltered.length : 0}/>
-			        	{	
+			        	<div className="papers">
+						{	
 			        		papersFiltered.map(({date,doi,content},ind)=>{
 			        			return (
 			        				<div key={ind} className="paper">
@@ -77,7 +78,7 @@ export default function Research() {
 			        				            	<h2 ></h2>
 			        				                </div>
 													<div dangerouslySetInnerHTML={{__html: content}} className="paper_subtitle"></div>
-													<div className="links"><a rel="noopener noreferrer"  target="_blank" href={doi}> <p>Read publication </p><FontAwesomeIcon icon={faArrowRight} /> </a></div>
+													<div className="links"><a rel="noopener noreferrer"  target="_blank" href={doi}> <p>Read publication </p><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> </a></div>
 			        				            </div>
 			        				       
 			        				    </div>
@@ -85,6 +86,7 @@ export default function Research() {
 			        			);
 			        		})
 			        	}
+						</div>
 			        </section>
 			    </main>
 				<Footer/>

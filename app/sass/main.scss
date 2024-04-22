@@ -161,9 +161,11 @@ $extra-bold: 900;
     background-color: lighten($color: $blue-primary, $amount: 20);
   }
 }
-.banner{
+
+.banner {
   padding-top: $spacing_lg;
 }
+
 body,
 html {
   h2 {
@@ -257,10 +259,12 @@ header {
   top: 0;
   left: 0;
 }
-main{
+
+main {
   padding: 2rem 0 0 0;
   margin: 8rem 4rem 0 4rem;
 }
+
 .box-shadow {
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
@@ -834,30 +838,40 @@ main{
  ========================================================================== */
 .research {
   padding-top: 20 rem;
-  
+
   main {
-    padding-left: $spacing_xl;
-    padding-right: $spacing_xl;
+    display: flex;
+    flex-direction: column;
+    padding-left: $spacing_sm;
+      padding-right: $spacing_sm;
   }
 
   section {
     gap: $spacing_md;
     padding-top: $spacing_lg;
+
     // gap: 2rem;
     .filters {
       text-align: right;
-      padding: 1rem 5rem 1rem 5rem;
+      // padding: 1rem 5rem 1rem 5rem;
       display: flex;
-      justify-content: flex-end;
+      // justify-content: flex-end;
       flex-wrap: wrap;
       padding-bottom: $spacing_sm;
       border-bottom: solid 1px $ca-blue-100;
+      gap: $spacing_xsm;
+      justify-content: space-between;
+
       label,
       select,
       input {
         padding: 5px;
         font-size: 1.3rem;
         margin-right: 1rem;
+        option{
+          background-color: white;
+          border: none;
+        }
       }
 
       select,
@@ -865,7 +879,9 @@ main{
         border: 1px solid $ca-blue-800;
         border-radius: 4px;
         margin-right: 3rem;
-
+        background-color: transparent;
+        font-family: $montserrat;
+        color:$blue_primary;
       }
 
       label {
@@ -875,28 +891,64 @@ main{
       option {
         text-align: right;
       }
-      
+
     }
 
-    .paper {
-      gap: $spacing_sm;
+    .papers {
       display: flex;
-      .paper_date{
-        align-content: center;
-        border-radius: 16px;
-        h5{
-          .year{
+      flex-direction: column;
+      gap: $spacing_md;
+      padding-left: $spacing_xl;
+      padding-right: $spacing_xl;
 
+      .paper {
+        margin-top: $spacing_lg;
+        display: flex;
+        padding-left: $spacing_xl;
+        padding-right: $spacing_xl;
+
+        .paper_date {
+          margin-top: $spacing_xsm;
+          margin-right: $spacing_sm;
+          border-radius: 16px;
+          stroke: 2px solid $ca-blue-900;
+
+          h5 {
+            .year {
+              align-content: center;
+              background-color: transparent;
+              stroke: 2px solid $ca-blue-900;
+            }
           }
         }
-      }
-      .paper_main {
-        .paper_content {
-          gap: $spacing_md;
-          
-          .paper_subtitle{}
-          .paper_doi{
-            font-weight: 600;
+
+        .paper_main {
+          .paper_content {
+            gap: $spacing_md;
+
+            .paper_subtitle {
+
+              padding-bottom: $spacing_md;
+            }
+
+            .paper_doi {
+              font-weight: 600;
+            }
+
+            .links {
+              a {
+                display: flex;
+                flex-direction: row;
+                gap: $spacing_xsm;
+                align-content: center;
+                justify-content: right;
+
+                p {
+                  font-weight: 600;
+                  text-decoration: underline;
+                }
+              }
+            }
           }
         }
       }
