@@ -101,11 +101,12 @@ export default function Research() {
                 .map(({ date, doi, content }, ind) => {
                   return (
                     <div key={ind} className="paper">
-                      <div className="paper_date">
-                        <h5 className="year">{date ? date[0] : ""}</h5>
-                      </div>
+
 
                       <div className="paper_main">
+					  <div className="paper_date">
+                        <h5 className="year">{date ? date[0] : ""}</h5>
+                      </div>
                         <div className="paper_content">
                           <div className="paper_title">
                             <h2></h2>
@@ -114,7 +115,10 @@ export default function Research() {
                             dangerouslySetInnerHTML={{ __html: content }}
                             className="paper_subtitle"
                           ></div>
-                          <div className="links">
+                          
+                        </div>
+                      </div>
+					  <div className="links">
                             <a
                               rel="noopener noreferrer"
                               target="_blank"
@@ -127,8 +131,6 @@ export default function Research() {
                               />{" "}
                             </a>
                           </div>
-                        </div>
-                      </div>
                     </div>
                   );
                 })}
@@ -140,9 +142,8 @@ export default function Research() {
             </div>
           </section>
         </main>
-        
       </div>
-	  <Footer />
+      <Footer />
     </div>
   );
 }

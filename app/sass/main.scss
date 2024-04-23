@@ -914,6 +914,7 @@ main {
       .paper {
         margin-top: $spacing_lg;
         display: flex;
+        flex-direction: column;
         padding-left: $spacing_xl;
         padding-right: $spacing_xl;
 
@@ -933,11 +934,14 @@ main {
         }
 
         .paper_main {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
           .paper_content {
             gap: $spacing_md;
-
+            flex-grow: 1;
             .paper_subtitle {
-
+           
               padding-bottom: $spacing_md;
             }
 
@@ -945,23 +949,23 @@ main {
               font-weight: 600;
             }
 
-            .links {
-              a {
-                display: flex;
-                flex-direction: row;
-                gap: $spacing_xsm;
-                align-content: center;
-                justify-content: right;
 
-                p {
-                  font-weight: 600;
-                  text-decoration: underline;
-                }
-              }
-            }
           }
         }
-      }
+        .links {
+          a {
+            display: flex;
+            flex-direction: row;
+            gap: $spacing_xsm;
+            align-content: center;
+            justify-content: right;
+
+            p {
+              font-weight: 600;
+              text-decoration: underline;
+            }
+          }
+        }}
     }
   }
 }
