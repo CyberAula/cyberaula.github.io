@@ -706,7 +706,8 @@ main {
 
   main {
     padding: 5rem 0 0 0;
-    margin: 8rem 4rem 0 4rem;
+    // margin: 8rem 4rem 0 4rem;
+    margin-bottom: $spacing_lg;
   }
 
   .nav_bar {
@@ -838,17 +839,25 @@ main {
  ========================================================================== */
 .research {
   padding-top: 20 rem;
+  padding-bottom: $spacing_lg;
 
   main {
     display: flex;
     flex-direction: column;
     padding-left: $spacing_sm;
-      padding-right: $spacing_sm;
+    padding-right: $spacing_sm;
   }
 
   section {
     gap: $spacing_md;
     padding-top: $spacing_lg;
+
+    .load_more {
+      padding-top: $spacing_lg;
+      padding-bottom: $spacing_xl;
+      display: flex;
+      justify-content: center;
+    }
 
     // gap: 2rem;
     .filters {
@@ -868,7 +877,8 @@ main {
         padding: 5px;
         font-size: 1.3rem;
         margin-right: 1rem;
-        option{
+
+        option {
           background-color: white;
           border: none;
         }
@@ -881,7 +891,7 @@ main {
         margin-right: 3rem;
         background-color: transparent;
         font-family: $montserrat;
-        color:$blue_primary;
+        color: $blue_primary;
       }
 
       label {

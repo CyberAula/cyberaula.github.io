@@ -102,18 +102,14 @@ export default function Home() {
                 </section>
               </div>
             </section>
-            <Footer />
+            
           </main>
+          <Footer />
 
-          <div className="parallax__layer parallax__layer--back">
-            <div className="background">
-              <div className="triangle"></div>
-              <div className="circle"></div>
-              <div className="rectangle"></div>
-            </div>
-          </div>
         </div>
       </div>
+      
     </div>
+    
   );
 }
