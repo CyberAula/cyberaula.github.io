@@ -28,25 +28,19 @@ export default function Courses() {
                   key={title}
                   className={`rounded-lg px-6 py-4 course  ${gradient}`}
                 >
-                  <div className="course_img">
-                    <CreateLink route={route}>
-                      {/*} <img
-                        className="course_img"
-                        alt={"Project Logo"}
-                        src={logo}
-			  />*/}
-                    </CreateLink>
-                  </div>
+                  
                   <div className="course_main transition">
                     <CreateLink route={route}>
                       <div className="course_content">
-                        <span>{date} </span>
+                        <div className="year_tag">
+                          <p>{date}</p>
+                        </div>
                         <div className="course_text_block">
                           <div className="course_title">
-                            <h4>{title} ASDDDDDDDASDASD</h4>
+                            <h4>{title}</h4>
                           </div>
                           <div className="course_description">
-                            {description}
+                           <p> {description}</p>
                           </div>
                         </div>
                       </div>

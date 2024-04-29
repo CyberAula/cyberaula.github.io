@@ -10,32 +10,48 @@ $windowHeight: 100vh
     overflow: hidden    
     .course_text_block
         transition: ease-in-out 300ms
-        transform: translateY(64%)
-        position: absolute
-        bottom: 0
-        left: 0
+        // transform: translateY(64%)
         width: 100%
         display: flex
         flex-direction: column
         .course_description
             transition: ease-in-out 300ms
             opacity: 0
+            display: none
+            transform: translateY(64%)
     &:hover 
         .course_text_block
             transform: translateY(0%)
             transition: ease-in-out 300ms
             .course_description
+                display: flex
                 transition: ease-in-out 300ms
                 opacity: 1
+                transform: translateY(0%)
+    .year_tag 
+        display: flex
+        p
+            background-color: rgb(0, 0, 0,0.4)
+            justify-contet: flex-end
+            border-radius:20px
+            padding: 4px 12px 
+            font-size: 1.2em
+            font-weight: 500
         
    
 .bg-blue-gradient
     background: linear-gradient(139deg, rgba(83,64,255,0.9) 0%, rgba(111,199,255,0.9) 100%),url($bg-img)
     background-size: contain
     background-position: center
+    transition: ease-in-out 300ms
+    &:hover
+       background: linear-gradient(25deg, rgba(83,64,255,0.9) 44%, rgba(111,199,255,0.9) 100%) ,url($bg-img)
+       background-size: contain
+       background-position: center
+       transition: ease-in-out 300ms
 
 .bg-purple-gradient
-    background: linear-gradient(to top, rgba(83,64,255,0.9) 0%, rgba(196,141,116,0.9) 100%, rgba(255,153,0,1) 100%), url($bg-img)
+    background: linear-gradient(to top, rgba(83,64,255,0.9) 0%, rgba(196,141,116,0.9) 100%), url($bg-img)
     background-size: contain
     background-position: center
    
