@@ -110,7 +110,7 @@ $extra-bold: 900;
       font-size: 1.7rem;
       font-weight: $bold;
       font-family: $montserrat-alternates;
-      // @apply text-primary;
+      color: $blue_primary;
 
       padding: 0 12rem 0 0.7rem;
 
@@ -165,14 +165,16 @@ $extra-bold: 900;
 
 .banner {
   margin-top: 60px;
-  height: 100%;
+  height: auto;
   background-image: url("/assets/img/headers/header-one.png");
-  background-color: #282828;
-  background-size: contain;
-  object-fit: cover;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // object-fit: cover;
   display: flex;
   align-items: flex-end;
-  height:160px;
+  height:14rem;
+  width: 100%;
   h1 {
     padding: 0 0 $spacing_sm $spacing_xl;
     color:white;
@@ -612,7 +614,7 @@ main {
       }
 
       .logotype {
-        color: white;
+        color: $blue_primary;
         font-weight: $bold;
         text-decoration: none;
       }
