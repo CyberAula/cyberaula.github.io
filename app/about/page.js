@@ -8,6 +8,9 @@ export default function About (props) {
 		return (
 			<div className="about">
 			<Header route={"/about"}/>
+            <div className="banner">
+        <h1>Contact</h1>
+      </div>
     <main>
         <section className="about_description">
 

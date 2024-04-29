@@ -16,7 +16,11 @@ export default function Team (props){
 	return (
 		<div className="team">
 			<Header route={"/team"}/>
+			<div className="banner">
+        <h1>Team</h1>
+      </div>
 		    <main>
+				
 		        <section className="teammates">
 		        	{
 		        		Object.values(team).map(({title,members})=>{

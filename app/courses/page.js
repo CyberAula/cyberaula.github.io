@@ -17,6 +17,9 @@ export default function Courses() {
   return (
     <div className="courses">
       <Header route={"/courses"} />
+      <div className="banner">
+        <h1>Courses</h1>
+      </div>
       <main>
         <section className="m-40">
           <div>courses filter</div>

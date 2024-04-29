@@ -19,8 +19,11 @@ export default function Tools(props) {
 	    return (
             <div className="tools">
                 <Header route="/tools"/>
+                <div className="banner">
+        <h1>Tools</h1>
+      </div>
                 <main>
-                <div className='banner'><h1>Tools</h1></div>
+    
                     <section className="our_tools">
                         
                         

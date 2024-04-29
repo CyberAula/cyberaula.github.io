@@ -73,6 +73,7 @@ $semi-bold: 600;
 $bold: 700;
 $extra-bold: 900;
 
+
 @mixin nav_bar {
   width: 100%;
   display: flex;
@@ -163,7 +164,21 @@ $extra-bold: 900;
 }
 
 .banner {
-  padding-top: $spacing_lg;
+  margin-top: 60px;
+  height: 100%;
+  background-image: url("/assets/img/headers/header-one.png");
+  background-color: #282828;
+  background-size: contain;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+  height:160px;
+  h1 {
+    padding: 0 0 $spacing_sm $spacing_xl;
+    color:white;
+    
+  }
+
 }
 
 body,
@@ -579,7 +594,7 @@ main {
 .projects {
   color: inherit;
   @apply bg-white;
-  padding: 5rem 0 0 0;
+  //padding: 5rem 0 0 0;
 
   .spinner {
     min-height: calc(100vh - 150px);

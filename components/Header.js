@@ -1,54 +1,85 @@
-import React from 'react';
-import Link from 'next/link';
-import {useState, useEffect} from 'react';
-
+import React from "react";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const routes = [
   //{route: "/", title: "Home"},
-  {route: "/research", title: "Publications"},
-  {route: "/courses", title: "Courses"},
-  {route: "/tools", title: "Tools"},
-  {route: "/projects", title: "Projects"},
-  {route: "/team", title: "Team"},
-  {route: "/about", title: "Contact"}
-]
-export default function Header (props) {
-  const [state, setState] = useState({open: false});
+  { route: "/research", title: "Publications" },
+  { route: "/courses", title: "Courses" },
+  { route: "/tools", title: "Tools" },
+  { route: "/projects", title: "Projects" },
+  { route: "/team", title: "Team" },
+  { route: "/about", title: "Contact" },
+];
+export default function Header(props) {
+  const [state, setState] = useState({ open: false });
 
   return (
     <header className="nav_bar" id="header_home">
-    <a href="/">
-      <div className="imagotype">
-        <div className="isotype"><img className="logoheader" src="/assets/img/iso_logo.png" alt="logo"/></div>
-        <div className="logotype"><span>Cyber</span>Aula</div>
+      <a href="/">
+        <div className="imagotype">
+          <div className="isotype">
+            <img
+              className="logoheader"
+              src="/assets/img/iso_logo.png"
+              alt="logo"
+            />
+          </div>
+          <div className="logotype">
+            <span>Cyber</span>Aula
+          </div>
+        </div>
+      </a>
+      <div className="menu_icon">
+        <i
+          className={
+            "material-icons show " +
+            (state.open ? "responsive-hidden" : "responsive-shown")
+          }
+          onClick={() => {
+            setState({ open: !state.open });
+          }}
+        >
+          menu
+        </i>
+        <i
+          className={
+            "material-icons close " +
+            (state.open ? "responsive-shown" : "responsive-hidden")
+          }
+          onClick={() => {
+            setState({ open: !state.open });
+          }}
+        >
+          close
+        </i>
       </div>
-    </a>
-    <div className="menu_icon" >
-    <i className={"material-icons show " + (state.open ? "responsive-hidden":"responsive-shown")}  
-    onClick={() => {setState({open: !state.open})}}>
-      menu
-      </i><i className={"material-icons close " + (state.open ? "responsive-shown":"responsive-hidden")} 
-      onClick={() => {setState({open: !state.open})}}>
-        close
-        </i></div>
 
-    <div className={"menu "+ (state.open ? "responsive-shown":"responsive-hidden")}>
-      <ul>
-        {routes.map((route,index) => <li key={index} className={route.route === props.route ? "li-selected":""}>
-        <Link href={route.route}>{route.title}</Link></li>)}
-      </ul>
-    </div>
-
-  </header>
+      <div
+        className={
+          "menu " + (state.open ? "responsive-shown" : "responsive-hidden")
+        }
+      >
+        <ul>
+          {routes.map((route, index) => (
+            <li
+              key={index}
+              className={route.route === props.route ? "li-selected" : ""}
+            >
+              <Link href={route.route}>{route.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+     
+    </header>
 
   );
-
 }
 
 // import React from 'react';
 // import Link from 'next/link';
 // import {useState, useEffect} from 'react';
-
 
 // const routes = [
 //   {route: "/", title: "Home"},
@@ -85,10 +116,10 @@ export default function Header (props) {
 //       </div>
 //     </a>
 //     <div className="menu_icon" >
-//     <i className={"material-icons show " + (state.open ? "responsive-hidden":"responsive-shown")}  
+//     <i className={"material-icons show " + (state.open ? "responsive-hidden":"responsive-shown")}
 //     onClick={() => {setState({open: !state.open})}}>
 //       menu
-//       </i><i className={"material-icons close " + (state.open ? "responsive-shown":"responsive-hidden")} 
+//       </i><i className={"material-icons close " + (state.open ? "responsive-shown":"responsive-hidden")}
 //       onClick={() => {setState({open: !state.open})}}>
 //         close
 //         </i></div>
