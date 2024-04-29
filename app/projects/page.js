@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from 'next/link';
-import {myprojects} from "@/constants/projects.js";
+import ProjectCard from "@/components/projectCard";
+import {myprojectCards} from "@/constants/projectsCards.js";
 
 
 export default function Projects (){
-	const [projects, setProjects] = useState(myprojects);
+	const [projects, setProjects] = useState(myprojectCards);
 	
 
 	useEffect(() => {
@@ -19,7 +20,7 @@ export default function Projects (){
 			<div className="projects">
 			<Header route={"/projects"}/>
 			    <main>
-			        <section className="our_projects">
+			        {/* <section className="our_projects">
 						<div>
 							project filter
 						</div>
@@ -43,7 +44,10 @@ export default function Projects (){
 			                </div>
 			                );
 			        	})}
-			        </section>
+			        </section> */}
+					<section>
+						<ProjectCard/>
+					</section>
 			    </main>
 		    <Footer/>
 			</div>
