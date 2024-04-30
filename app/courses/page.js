@@ -21,10 +21,10 @@ export default function Courses() {
         <h1>Courses</h1>
       </div>
       <main>
-        <section className="m-40">
+        <section className="lg:m-28 md:m-14 sm:m-0">
           <div>courses filter</div>
 
-          <div className=" grid gap-4 grid-cols-2">
+          <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">
             {courses.map(({ date, gradient, title, description, route }) => {
               return (
                 <div
@@ -43,7 +43,7 @@ export default function Courses() {
                             <h4>{title}</h4>
                           </div>
                           <div className="course_description">
-                           <p> {description}</p>
+                           <small> {description}</small>
                           </div>
                         </div>
                       </div>

@@ -11,58 +11,114 @@ $regular:400
 $semibold:600
 $bold:800
 
+//TIPOGRAFÍAS PARA MÓVIL
+ @media screen and (max-width: 640px)
+    html, body
+        h1
+            font-family: "Montserrat", sans-serif
+            font-size: nth($lg-text,1)
+            line-height: nth($lg-text,3)
+            margin-bottom: nth($lg-text,4)
 
-html, body
-    h1
-        font-family: "Montserrat", sans-serif
-        font-size: nth($xxl-text,1)
-        font-weight: nth($xxl-text,2)
-        line-height: nth($xxl-text,3)
-        margin-bottom: nth($xxl-text,4)
+        h2
+            font-family: "Montserrat", sans-serif
+            font-size: nth($md-text,1)
+            line-height: nth($md-text,3)
+            margin-bottom: nth($md-text,4)
 
-    h2
-        font-family: "Montserrat", sans-serif
-        font-size: nth($xl-text,1)
-        font-weight: nth($xl-text,2)
-        line-height: nth($xl-text,3)
-        margin-bottom: nth($xl-text,4)
+        h3
+            font-family: "Montserrat", sans-serif
+            font-size: nth($md-text,1)
+            line-height: nth($md-text,3)
+            margin-bottom: nth($md-text,4)
 
-    h3
-        font-family: "Montserrat", sans-serif
-        font-size: nth($lg-text,1)
-        font-weight: nth($lg-text,2)
-        line-height: nth($lg-text,3)
-        margin-bottom: nth($lg-text,4)
+        h4
+            font-family: "Montserrat", sans-serif
+            font-size: nth($sm-text,1)
+            line-height: nth($sm-text,3)
+            color: red
+            margin-bottom: nth($sm-text,4)
 
-    h4
-        font-family: "Montserrat", sans-serif
-        font-size: nth($md-text,1)
-        // font-weight: nth($md-text,2)
-        line-height: nth($md-text,3)
-        margin-bottom: nth($md-text,4)
+        h5
+            font-family: "Montserrat", sans-serif
+            font-size: nth($body-text,1)
+            line-height: nth($body-text,3)
+            margin-bottom: nth($body-text,4)
 
-    h5
-        font-family: "Montserrat", sans-serif
-        font-size: nth($sm-text,1)
-        // font-weight: nth($sm-text,2)
-        line-height: nth($sm-text,3)
-        margin-bottom: nth($sm-text,4)
+        p
 
-    p
+            font-family: "Montserrat", sans-serif
+            font-size: nth($body-text,1)
+            font-weight: nth($body-text,2)
+            line-height: nth($body-text,3)
+            margin-bottom: nth($body-text,4)
 
-        font-family: "Montserrat", sans-serif
-        font-size: nth($body-text,1)
-        font-weight: nth($body-text,2)
-        line-height: nth($body-text,3)
-        margin-bottom: nth($body-text,4)
+        button
+            font-family: "Montserrat", sans-serif
+            font-size: nth($button,1)
+            font-weight: nth($button,2)
 
-    button
-        font-family: "Montserrat", sans-serif
-        font-size: nth($button,1)
-        font-weight: nth($button,2)
+        .smallcaps
+            font-family: "Montserrat", sans-serif
+            font-size: nth($body-text,1)
+            font-weight: $semibold
+            font-variant: small-caps
 
-    .smallcaps
-        font-family: "Montserrat", sans-serif
-        font-size: nth($body-text,1)
-        font-weight: $semibold
-        font-variant: small-caps
+
+@media screen and (min-width: 641px)
+    html, body
+        h1
+            font-family: "Montserrat", sans-serif
+            font-size: nth($xxl-text,1)
+            font-weight: nth($xxl-text,2)
+            line-height: nth($xxl-text,3)
+            margin-bottom: nth($xxl-text,4)
+
+        h2
+            font-family: "Montserrat", sans-serif
+            font-size: nth($xl-text,1)
+            font-weight: nth($xl-text,2)
+            line-height: nth($xl-text,3)
+            margin-bottom: nth($xl-text,4)
+
+        h3
+            font-family: "Montserrat", sans-serif
+            font-size: nth($lg-text,1)
+            font-weight: nth($lg-text,2)
+            line-height: nth($lg-text,3)
+            margin-bottom: nth($lg-text,4)
+
+        h4
+            font-family: "Montserrat", sans-serif
+            font-size: nth($md-text,1)
+            // font-weight: nth($md-text,2)
+            line-height: nth($md-text,3)
+            margin-bottom: nth($md-text,4)
+
+        h5
+            font-family: "Montserrat", sans-serif
+            font-size: nth($sm-text,1)
+            // font-weight: nth($sm-text,2)
+            line-height: nth($sm-text,3)
+            margin-bottom: nth($sm-text,4)
+
+        p
+
+            font-family: "Montserrat", sans-serif
+            font-size: nth($body-text,1)
+            font-weight: nth($body-text,2)
+            line-height: nth($body-text,3)
+            margin-bottom: nth($body-text,4)
+
+        button
+            font-family: "Montserrat", sans-serif
+            font-size: nth($button,1)
+            font-weight: nth($button,2)
+
+        .smallcaps
+            font-family: "Montserrat", sans-serif
+            font-size: nth($body-text,1)
+            font-weight: $semibold
+            font-variant: small-caps
+
+

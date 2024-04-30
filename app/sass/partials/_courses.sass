@@ -5,7 +5,7 @@ $windowHeight: 100vh
     display: flex
     color: white
     font-weight: 400
-    height: $windowHeight  /2
+    height: $windowHeight  /2.25
     transition: ease-in-out 300ms
     overflow: hidden    
     .course_text_block
@@ -19,15 +19,34 @@ $windowHeight: 100vh
             opacity: 0
             display: none
             transform: translateY(64%)
+            margin-bottom: 0.6em
+            small
+                display: block
+                font-size: 0.85em
+                line-height: 1.4em
+                font-weight: 400
+                max-height:80px
+                
+                
+            
     &:hover 
         .course_text_block
             transform: translateY(0%)
             transition: ease-in-out 300ms
             .course_description
-                display: flex
+                position: relative
                 transition: ease-in-out 300ms
                 opacity: 1
                 transform: translateY(0%)
+                max-height: $windowHeight/5
+                display: -webkit-box
+                small 
+                    display: -webkit-box
+                    -webkit-line-clamp: 5
+                    -webkit-box-orient: vertical
+                    overflow: hidden
+                    text-overflow: ellipsis
+
     .year_tag 
         display: flex
         p
@@ -48,12 +67,15 @@ $windowHeight: 100vh
        background: linear-gradient(25deg, rgba(83,64,255,0.9) 44%, rgba(111,199,255,0.9) 100%) ,url($bg-img)
        background-size: contain
        background-position: center
-       transition: ease-in-out 300ms
 
 .bg-purple-gradient
-    background: linear-gradient(to top, rgba(83,64,255,0.9) 0%, rgba(196,141,116,0.9) 100%), url($bg-img)
+    background: linear-gradient(320deg, rgba(83,64,255,0.9) 0%, rgba(196,141,116,0.9) 100%), url($bg-img)
     background-size: contain
     background-position: center
+    &:hover 
+        background: linear-gradient(to top, rgba(83,64,255,0.9) 0%, rgba(83,64,255,0.9) 30%, rgba(196,141,116,0.9) 100%), url($bg-img)
+        background-size: contain
+        background-position: center
    
 .course_main 
     position: relative

@@ -2,6 +2,100 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.course {
+  display: flex;
+  color: white;
+  font-weight: 400;
+  height: 44.4444444444vh;
+  transition: ease-in-out 300ms;
+  overflow: hidden;
+}
+.course .course_text_block {
+  transition: ease-in-out 300ms;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.course .course_text_block .course_description {
+  transition: ease-in-out 300ms;
+  opacity: 0;
+  display: none;
+  transform: translateY(64%);
+  margin-bottom: 0.6em;
+}
+.course .course_text_block .course_description small {
+  display: block;
+  font-size: 0.85em;
+  line-height: 1.4em;
+  font-weight: 400;
+  max-height: 80px;
+}
+.course:hover .course_text_block {
+  transform: translateY(0%);
+  transition: ease-in-out 300ms;
+}
+.course:hover .course_text_block .course_description {
+  position: relative;
+  transition: ease-in-out 300ms;
+  opacity: 1;
+  transform: translateY(0%);
+  max-height: 20vh;
+  display: -webkit-box;
+}
+.course:hover .course_text_block .course_description small {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.course .year_tag {
+  display: flex;
+}
+.course .year_tag p {
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-contet: flex-end;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(139deg, rgba(83, 64, 255, 0.9) 0%, rgba(111, 199, 255, 0.9) 100%), url("/assets/img/courses/fondo-cursos.png");
+  background-size: contain;
+  background-position: center;
+  transition: ease-in-out 300ms;
+}
+.bg-blue-gradient:hover {
+  background: linear-gradient(25deg, rgba(83, 64, 255, 0.9) 44%, rgba(111, 199, 255, 0.9) 100%), url("/assets/img/courses/fondo-cursos.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-purple-gradient {
+  background: linear-gradient(320deg, rgba(83, 64, 255, 0.9) 0%, rgba(196, 141, 116, 0.9) 100%), url("/assets/img/courses/fondo-cursos.png");
+  background-size: contain;
+  background-position: center;
+}
+.bg-purple-gradient:hover {
+  background: linear-gradient(to top, rgba(83, 64, 255, 0.9) 0%, rgba(83, 64, 255, 0.9) 30%, rgba(196, 141, 116, 0.9) 100%), url("/assets/img/courses/fondo-cursos.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.course_main {
+  position: relative;
+  width: 100%;
+}
+
+.course_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .research .main {
   min-height: calc(100vh - 150px);
   padding: 5rem 0 0 0;
@@ -16,6 +110,13 @@
 .research .main .paper {
   display: flex;
 }
+.research .main .paper .paper_main .paper_subtitle {
+  @apply text-black;
+}
+.research .main .paper .paper_main .paper_doi {
+  @apply text-primary;
+}
+
 .team main .teammates .teamgrouptitle {
   display: flex;
   flex-flow: column wrap;
@@ -61,60 +162,59 @@ ul li {
   margin: 0 1.3rem 0 0;
 }
 
-html h1, body h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
+@media screen and (min-width: 641px) {
+  html h1, body h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  html h2, body h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  html h3, body h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  html h4, body h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  html h5, body h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  html p, body p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  html button, body button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: semibold;
+  }
+  html .smallcaps, body .smallcaps {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
 }
-html h2, body h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h3, body h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h4, body h4 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html h5, body h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html p, body p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: medium;
-  line-height: 140%;
-  margin-bottom: 1rem;
-}
-html button, body button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: semibold;
-}
-html .smallcaps, body .smallcaps {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  font-variant: small-caps;
-}
-
 * {
   @apply border-2 border-primary;
 }
@@ -140,6 +240,22 @@ TYPOGRAPHY
   background-color: #b0a7ff;
 }
 
+.banner {
+  margin-top: 60px;
+  height: 13.8vw;
+  background-image: url("/assets/img/headers/header-one.png");
+  background-color: #282828;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.banner h1 {
+  padding: 0 0 16px 64px;
+  color: white;
+}
+
 body,
 html {
   color: black;
@@ -156,7 +272,7 @@ html h2 {
 body a,
 html a {
   font-size: 14px;
-  font-weight: semibold;
+  font-weight: 600;
 }
 body a:hover,
 html a:hover {
@@ -198,10 +314,10 @@ header {
 header .imagotype {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-flow: wrap row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 4rem;
 }
 header .imagotype .isotype {
   display: flex;
@@ -209,14 +325,19 @@ header .imagotype .isotype {
   height: auto;
   margin: 0 0 0 2rem;
 }
+header .imagotype .isotype .logoheader {
+  width: 2.75rem;
+}
 header .imagotype .logotype {
   display: flex;
   width: auto;
   font-size: 1.7rem;
   font-weight: 700;
   font-family: "Montserrat Alternates", sans-serif;
-  @apply text-primary;
   padding: 0 12rem 0 0.7rem;
+}
+header .imagotype .logotype span {
+  color: #ff9900;
 }
 header .menu_icon .close {
   display: none;
@@ -266,6 +387,11 @@ header li a:active {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+main {
+  padding: 2rem 0 0 0;
+  margin: 8rem 4rem 0 4rem;
 }
 
 .box-shadow {
@@ -500,7 +626,6 @@ header li a:active {
 .projects {
   color: inherit;
   @apply bg-white;
-  padding: 5rem 0 0 0;
   /*---- Scroll Bar ----*/
   /* Track */
   /* Handle */
@@ -595,7 +720,7 @@ header li a:active {
 }
 .tools main {
   padding: 5rem 0 0 0;
-  margin: 8rem 4rem 0 4rem;
+  margin-bottom: 48px;
 }
 .tools .nav_bar {
   background-color: inherit;
@@ -685,6 +810,112 @@ header li a:active {
 /* ==========================================================================
  RESEARCH
  ========================================================================== */
+.research {
+  padding-top: 20 rem;
+  padding-bottom: 48px;
+}
+.research main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.research section {
+  gap: 32px;
+  padding-top: 48px;
+}
+.research section .load_more {
+  padding-top: 48px;
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: center;
+}
+.research section .filters {
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #ebf0ff;
+  gap: 8px;
+  justify-content: space-between;
+}
+.research section .filters label,
+.research section .filters select,
+.research section .filters input {
+  padding: 5px;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+.research section .filters label option,
+.research section .filters select option,
+.research section .filters input option {
+  background-color: white;
+  border: none;
+}
+.research section .filters select,
+.research section .filters input {
+  border: 1px solid #4507c9;
+  border-radius: 4px;
+  margin-right: 3rem;
+  background-color: transparent;
+  font-family: "montserrat", sans-serif;
+  color: #5441ff;
+}
+.research section .filters option {
+  text-align: right;
+}
+.research section .papers {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.research section .papers .paper {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.research section .papers .paper .paper_date {
+  margin-top: 8px;
+  margin-right: 16px;
+  border-radius: 16px;
+  stroke: 2px solid #3302bf;
+}
+.research section .papers .paper .paper_date h5 .year {
+  align-content: center;
+  background-color: transparent;
+  stroke: 2px solid #3302bf;
+}
+.research section .papers .paper .paper_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.research section .papers .paper .paper_main .paper_content {
+  gap: 32px;
+  flex-grow: 1;
+}
+.research section .papers .paper .paper_main .paper_content .paper_subtitle {
+  padding-bottom: 32px;
+}
+.research section .papers .paper .paper_main .paper_content .paper_doi {
+  font-weight: 600;
+}
+.research section .papers .paper .links a {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-content: center;
+  justify-content: right;
+}
+.research section .papers .paper .links a p {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* ==========================================================================
  TEAM
  ========================================================================== */
@@ -842,6 +1073,14 @@ RESPONSIVE
   }
   .home .body .latest_publications {
     width: 100%;
+  }
+  .banner {
+    background-image: url("/assets/img/headers/header-one.png");
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 8rem;
   }
   .projects main .our_projects {
     padding: 3.5rem 0 0 0;
