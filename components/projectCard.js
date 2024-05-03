@@ -21,8 +21,8 @@ export default function projectCards(props) {
     <div className="project_cards">
       <div className="filter_options">
         <button onClick={() => handleCategoryChange("all")}>All</button>
-        <button onClick={() => handleCategoryChange("ind")}>Ind</button>
-        <button onClick={() => handleCategoryChange("REG")}>REG</button>
+        <button onClick={() => handleCategoryChange("ind")}>Projects - individual</button>
+        <button onClick={() => handleCategoryChange("erg")}>Educational Research Group (GIE/ERG)</button>
         <button onClick={() => handleCategoryChange("other")}>Other</button>
       </div>
       {projectCards.map(
@@ -33,7 +33,7 @@ export default function projectCards(props) {
               <a href={route}>details</a>
             </div>
             <div className="project_info">
-              <div className="project_title">{title}</div>
+              <h4 className="project_title">{title}</h4>
               <div className="project_subtitle">{subtitle}</div>
             </div>
             <div className="project_tags">{tags}</div>

@@ -79,8 +79,8 @@ export default function Research() {
       <div className="research">
         <Header route={"/research"} />
         <div className="banner">
-        <h1>Publications</h1>
-      </div>
+          <h1>Publications</h1>
+        </div>
         <main>
           <section className="research">
             <Filters

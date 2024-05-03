@@ -109,7 +109,7 @@ $extra-bold: 900;
       font-size: 1.7rem;
       font-weight: $bold;
       font-family: $montserrat-alternates;
-      // @apply text-primary;
+      color: $blue_primary;
 
       padding: 0 12rem 0 0.7rem;
 
@@ -166,9 +166,10 @@ $extra-bold: 900;
   margin-top: 60px;
   height: 13.8vw;
   background-image: url("/assets/img/headers/header-one.png");
-  background-color: #282828;
-  background-size: contain;
-  object-fit: cover;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // object-fit: cover;
   display: flex;
   align-items: flex-end;
 
@@ -611,7 +612,7 @@ main {
       }
 
       .logotype {
-        color: white;
+        color: $blue_primary;
         font-weight: $bold;
         text-decoration: none;
       }
