@@ -4,10 +4,13 @@ export const myteam = {
        "members":[
           {
              "name":"Juan Quemada",
+             "role": "Member",
+             "position": "L.D. PROF. EMÉRITO",
              "description":"Juan Quemada leads the Next Generation Internet Group within the Telematics Engineering Department, Universidad Politécnica de Madrid (UPM), where he is Full Professor. He is also the Telefonica Chair of UPM, for the next-generation Internet, and the UPM Representative at the World Wide Web Consortium. His research interests include collaborative and social application architecture for the Internet and the Web, including cloud computing, where he has a strong involvement in European and Spanish research.",
              "photo":"/assets/img/team/juan-quemada.jpg",
              "github":"https://github.com/jquemada",
-             "email": "juan.quemada@upm.es"
+             "email": "juan.quemada@upm.es",
+             "center": "E.T.S. DE INGENIEROS DE TELECOMUNICACION"
           }
        ]
     },
@@ -16,17 +19,23 @@ export const myteam = {
        "members":[
           {
              "name":"Joaquín Salvachúa",
+             "role": "Member",
+             "position": "TITULAR UNIVERSIDAD",
              "description":"Joaquín Salvachúa is a professor at UPM, where he received the M.Sc., Ph.D. in Telecommunications Engineering. He is also FIWARE Technical Steering Committee member elected as Remarkable individuals. His research interests include advanced cloud and edge architectures, big data infrastructure, data privacy and usage control, NoSql databases, applications, and identity in blockchain.",
              "photo":"/assets/img/team/joaquin-salvachua.jpg",
              "github":"https://github.com/jsalvachua",
-             "email": "joaquin.salvachua@upm.es"
+             "email": "joaquin.salvachua@upm.es",
+             "center": "E.T.S. DE INGENIEROS DE TELECOMUNICACION"
           },
           {
              "name":"Santiago Pavón",
+             "role": "Member",
+             "position": "TITULAR UNIVERSIDAD",
              "description":"Santiago Pavón Gómez obtained the B.S. and Ph.D. in Telecommunication Engineer from the Universidad Politécnica de Madrid (UPM) in 1987 and 1990 respectively. Santiago obtained the position of Assistant Professor in 1991 and the position of Associate Professor in 1992. He has published several articles and participated in national and international research projects related to Formal Description Techniques, CSCW, Tele-Education, collaboration services, IPv6, virtualization, identity services, safely (Cyspa) and Blockchain (BAPI).",
              "photo":"/assets/img/team/santiago-pavon.jpg",
              "github":"https://github.com/sanpago",
-             "email": "santiago.pavon@upm.es"
+             "email": "santiago.pavon@upm.es",
+             "center": "E.T.S. DE INGENIEROS DE TELECOMUNICACION"
           },
           {
              "name":"Gabriel Huecas",

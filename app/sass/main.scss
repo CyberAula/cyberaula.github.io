@@ -18,6 +18,10 @@
 /* ==========================================================================
     VARIABLES
    ========================================================================== */
+
+   /* ==========================================================================
+    VARIABLES
+   ========================================================================== */
 //COLOR
 $blue_primary: #5441ff;
 $orange_accent: #5340ff;
@@ -47,7 +51,6 @@ $spacing_sm: 16px;
 $spacing_md: 32px;
 $spacing_lg: 48px;
 $spacing_xl: 64px;
-
 /* =========================================================================
 TYPOGRAPHY
  ========================================================================== */
@@ -1454,7 +1457,7 @@ RESPONSIVE
 @media (max-width: 800px) {
 
   .home {
-    margin: 0 4rem 0 5rem;
+    margin: 0 2rem 0 2rem;
 
     .group_logo {
       width: 20%;
@@ -1582,7 +1585,7 @@ RESPONSIVE
   }
 
   header {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
@@ -1661,7 +1664,7 @@ RESPONSIVE
   }
 
   .home {
-    margin: 0 1.6rem 0 2.5rem;
+    margin: 0.4rem;
     padding: 1rem 0 0 0;
 
     h2 {
@@ -1692,6 +1695,12 @@ RESPONSIVE
 
         p {
           font-size: 1rem;
+        }
+      }
+      .latest_publications {
+        padding: 0;
+        p{
+          padding:0
         }
       }
     }

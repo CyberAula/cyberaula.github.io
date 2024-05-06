@@ -2,65 +2,102 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.course {
-  display: flex;
-  color: white;
-  font-weight: 400;
-  height: 44.4444444444vh;
-  transition: ease-in-out 300ms;
-  overflow: hidden;
+@media (min-width: 50px) {
+  .course {
+    height: 100%;
+    color: white;
+  }
+  .course .course_title {
+    margin-top: 0.6rem;
+  }
+  .course .course_description {
+    transition: ease-in-out 300ms;
+    opacity: 1;
+    display: flex;
+    font-weight: 400;
+    display: -webkit-box;
+    max-height: 13.8888888889vh;
+  }
+  .course .course_description small {
+    margin-top: 0.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .year_tag {
+    display: flex;
+  }
+  .year_tag p {
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-contet: flex-end;
+    border-radius: 20px;
+    padding: 3px 8px;
+    font-size: 1em;
+    font-weight: 400;
+  }
 }
-.course .course_text_block {
-  transition: ease-in-out 300ms;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+@media (min-width: 770px) {
+  .course {
+    display: flex;
+    color: white;
+    font-weight: 400;
+    height: 44.4444444444vh;
+    overflow: hidden;
+  }
+  .course .course_text_block {
+    transition: ease-in-out 300ms;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .course .course_text_block .course_description {
+    transition: ease-in-out 300ms;
+    opacity: 0;
+    display: none;
+    transform: translateY(64%);
+    margin-bottom: 0.6em;
+  }
+  .course .course_text_block .course_description small {
+    margin-top: 0;
+    display: block;
+    font-size: 0.85em;
+    line-height: 1.4em;
+    font-weight: 400;
+    max-height: 80px;
+  }
+  .course:hover .course_text_block {
+    transform: translateY(0%);
+    transition: ease-in-out 300ms;
+  }
+  .course:hover .course_text_block .course_description {
+    position: relative;
+    transition: ease-in-out 300ms;
+    opacity: 1;
+    transform: translateY(0%);
+    max-height: 20vh;
+    display: -webkit-box;
+  }
+  .course:hover .course_text_block .course_description small {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .year_tag {
+    display: flex;
+  }
+  .year_tag p {
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-contet: flex-end;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
 }
-.course .course_text_block .course_description {
-  transition: ease-in-out 300ms;
-  opacity: 0;
-  display: none;
-  transform: translateY(64%);
-  margin-bottom: 0.6em;
-}
-.course .course_text_block .course_description small {
-  display: block;
-  font-size: 0.85em;
-  line-height: 1.4em;
-  font-weight: 400;
-  max-height: 80px;
-}
-.course:hover .course_text_block {
-  transform: translateY(0%);
-  transition: ease-in-out 300ms;
-}
-.course:hover .course_text_block .course_description {
-  position: relative;
-  transition: ease-in-out 300ms;
-  opacity: 1;
-  transform: translateY(0%);
-  max-height: 20vh;
-  display: -webkit-box;
-}
-.course:hover .course_text_block .course_description small {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.course .year_tag {
-  display: flex;
-}
-.course .year_tag p {
-  background-color: rgba(0, 0, 0, 0.4);
-  justify-contet: flex-end;
-  border-radius: 20px;
-  padding: 4px 12px;
-  font-size: 1.2em;
-  font-weight: 500;
-}
-
 .bg-blue-gradient {
   background: linear-gradient(139deg, rgba(83, 64, 255, 0.9) 0%, rgba(111, 199, 255, 0.9) 100%), url("/assets/img/courses/fondo-cursos.png");
   background-size: contain;
@@ -136,14 +173,37 @@
   @apply text-primary;
 }
 
-.team main .teammates .teamgrouptitle {
-  display: flex;
-  flex-flow: column wrap;
-}
 .team main .teammates .teamgrouptitle .teammate {
-  display: flex;
-  flex-flow: flow-wrap;
+  display: block;
   width: 100%;
+  margin-bottom: 4em;
+}
+.team main .teammates .teamgrouptitle .teammate .mate_img img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+.team main .teammates .teamgrouptitle .teammate .mate_info {
+  @apply text-black;
+}
+.team main .teammates .teamgrouptitle .teammate .mate_info .mate_role {
+  margin-bottom: 1em;
+  height: 100%;
+}
+.team main .teammates .teamgrouptitle .teammate .mate_info .mate_role span {
+  padding: 0.2em 0.65em 0.3em 0.65em;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.team main .teammates .teamgrouptitle .teammate .mate_info .mate_position span {
+  font-weight: 600;
+}
+.team main .teammates .teamgrouptitle .teammate .mate_info .mate_description span img {
+  height: 18px;
+  width: 18px;
 }
 
 footer {
@@ -241,6 +301,9 @@ ul li {
 /* ==========================================================================
     VARIABLES
    ========================================================================== */
+/* ==========================================================================
+ VARIABLES
+========================================================================== */
 /* =========================================================================
 TYPOGRAPHY
  ========================================================================== */
@@ -410,7 +473,7 @@ header li a:active {
 
 main {
   padding: 2rem 0 0 0;
-  margin: 8rem 4rem 0 4rem;
+  margin: 0.8rem;
 }
 
 .box-shadow {
@@ -1069,7 +1132,7 @@ RESPONSIVE
 }
 @media (max-width: 800px) {
   .home {
-    margin: 0 4rem 0 5rem;
+    margin: 0 2rem 0 2rem;
   }
   .home .group_logo {
     width: 20%;
@@ -1156,7 +1219,7 @@ RESPONSIVE
     display: block !important;
   }
   header {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
@@ -1224,7 +1287,7 @@ RESPONSIVE
     left: 0;
   }
   .home {
-    margin: 0 1.6rem 0 2.5rem;
+    margin: 0.4rem;
     padding: 1rem 0 0 0;
   }
   .home h2 {
@@ -1247,6 +1310,12 @@ RESPONSIVE
   }
   .home .body .carousel p {
     font-size: 1rem;
+  }
+  .home .body .latest_publications {
+    padding: 0;
+  }
+  .home .body .latest_publications p {
+    padding: 0;
   }
   .projects main .our_projects {
     padding: 3.5rem 0 0 0;
