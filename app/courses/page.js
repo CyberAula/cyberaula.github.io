@@ -21,7 +21,7 @@ export default function Courses() {
         <h1>Courses</h1>
       </div>
       <main>
-        <section className="lg:m-28 md:m-14 sm:m-0">
+        <section className="lg:m-28 md:m-14 sm:m-8">
           <div>courses filter</div>
 
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">

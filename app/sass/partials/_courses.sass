@@ -1,52 +1,83 @@
 $bg-img: "/assets/img/courses/fondo-cursos.png"
 $windowHeight: 100vh
+$windowWidth: 100vw
 
-.course
-    display: flex
-    color: white
-    font-weight: 400
-    height: $windowHeight  /2.25
-    transition: ease-in-out 300ms
-    overflow: hidden    
-    .course_text_block
-        transition: ease-in-out 300ms
-        // transform: translateY(64%)
-        width: 100%
-        display: flex
-        flex-direction: column
+@media (min-width: 50px)
+    .course
+        height: 100%
+        color: white
+        .course_title
+            margin-top:0.6rem
         .course_description
             transition: ease-in-out 300ms
-            opacity: 0
-            display: none
-            transform: translateY(64%)
-            margin-bottom: 0.6em
-            small
-                display: block
-                font-size: 0.85em
-                line-height: 1.4em
-                font-weight: 400
-                max-height:80px
-                
-                
-            
-    &:hover 
-        .course_text_block
-            transform: translateY(0%)
-            transition: ease-in-out 300ms
-            .course_description
-                position: relative
-                transition: ease-in-out 300ms
-                opacity: 1
-                transform: translateY(0%)
-                max-height: $windowHeight/5
+            opacity: 1
+            display: flex
+            font-weight:400
+            display: -webkit-box
+            max-height: $windowHeight/7.2
+            small 
+                margin-top:0.6rem
                 display: -webkit-box
-                small 
+                -webkit-line-clamp: 5
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+    .year_tag 
+        display: flex
+        p
+            background-color: rgb(0, 0, 0,0.4)
+            justify-contet: flex-end
+            border-radius:20px
+            padding: 3px 8px 
+            font-size: 1em
+            font-weight: 400
+    
+@media (min-width: 770px)
+    .course
+        display: flex
+        color: white
+        font-weight: 400
+        height: $windowHeight  /2.25
+        overflow: hidden    
+        .course_text_block
+            transition: ease-in-out 300ms
+            // transform: translateY(64%)
+            width: 100%
+            display: flex
+            flex-direction: column
+            .course_description
+                transition: ease-in-out 300ms
+                opacity: 0
+                display: none
+                transform: translateY(64%)
+                margin-bottom: 0.6em
+                small
+                    margin-top:0
+                    display: block
+                    font-size: 0.85em
+                    line-height: 1.4em
+                    font-weight: 400
+                    max-height:80px
+                    
+                    
+                
+        &:hover 
+            .course_text_block
+                transform: translateY(0%)
+                transition: ease-in-out 300ms
+                .course_description
+                    position: relative
+                    transition: ease-in-out 300ms
+                    opacity: 1
+                    transform: translateY(0%)
+                    max-height: $windowHeight/5
                     display: -webkit-box
-                    -webkit-line-clamp: 5
-                    -webkit-box-orient: vertical
-                    overflow: hidden
-                    text-overflow: ellipsis
-
+                    small 
+                        display: -webkit-box
+                        -webkit-line-clamp: 4
+                        -webkit-box-orient: vertical
+                        overflow: hidden
+                        text-overflow: ellipsis
     .year_tag 
         display: flex
         p
@@ -55,7 +86,8 @@ $windowHeight: 100vh
             border-radius:20px
             padding: 4px 12px 
             font-size: 1.2em
-            font-weight: 500
+            font-weight: 500    
+    
         
    
 .bg-blue-gradient

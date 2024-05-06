@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Filters from "@/components/Filters";
+import Filters from "@/components/ResearchFilter";
 import Link from "next/link";
 import { mypublications } from "@/constants/publications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -91,6 +91,8 @@ export default function Research() {
               changeSearch={(search) => setState({ ...state, search: search })}
               changeYear={(year) => setState({ ...state, year: year })}
               changeType={(type) => setState({ ...state, type: type })}
+
+              //número de resultados de búsqueda
               results={
                 papersFiltered instanceof Array ? papersFiltered.length : 0
               }

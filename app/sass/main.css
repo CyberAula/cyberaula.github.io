@@ -96,6 +96,25 @@
   height: 100%;
 }
 
+.project_cards .filter_options {
+  display: flex;
+}
+.project_cards .filter_options button {
+  border-radius: 4px;
+  border-color: none;
+}
+.project_cards .project_card .year_and_cta {
+  display: flex;
+}
+.project_cards .project_card .year_and_cta .date {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 0.5rem 5 0.2rem 0.5rem;
+}
+.project_cards .project_card .project_info .project_title {
+  @apply text-black;
+  font-size: 1.25rem;
+}
 .research .main {
   min-height: calc(100vh - 150px);
   padding: 5rem 0 0 0;
@@ -244,10 +263,9 @@ TYPOGRAPHY
   margin-top: 60px;
   height: 13.8vw;
   background-image: url("/assets/img/headers/header-one.png");
-  background-color: #282828;
-  background-size: contain;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
 }
@@ -334,6 +352,7 @@ header .imagotype .logotype {
   font-size: 1.7rem;
   font-weight: 700;
   font-family: "Montserrat Alternates", sans-serif;
+  color: #5441ff;
   padding: 0 12rem 0 0.7rem;
 }
 header .imagotype .logotype span {
@@ -644,7 +663,7 @@ main {
   background-color: white;
 }
 .projects .nav_bar .imagotype .logotype {
-  color: white;
+  color: #5441ff;
   font-weight: 700;
   text-decoration: none;
 }
