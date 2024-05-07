@@ -940,6 +940,7 @@ main {
           margin-right: $spacing_sm;
           border-radius: 16px;
           stroke: 2px solid $ca-blue-900;
+          @apply text-black;
 
           h5 {
             .year {
@@ -957,6 +958,9 @@ main {
           .paper_content {
             gap: $spacing_md;
             flex-grow: 1;
+            .paper_title{
+              @apply text-black;
+            }
             .paper_subtitle {
               padding-bottom: $spacing_md;
             }
