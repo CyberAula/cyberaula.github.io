@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 // aquí habría que importar los cursos
 import { mycourses } from "@/constants/courses.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Courses() {
   const [courses, setCourses] = useState(mycourses);
@@ -31,23 +33,33 @@ export default function Courses() {
                   key={title}
                   className={`rounded-lg px-6 py-4 course  ${gradient}`}
                 >
-                  
                   <div className="course_main transition">
-                    <CreateLink route={route}>
-                      <div className="course_content">
+                    <div className="course_content">
+                      <div className="card_container_top">
+                        <div className="flex gap-2">
                         <div className="year_tag">
-                          <p>{date}</p>
+                          <div>{date}</div>
                         </div>
-                        <div className="course_text_block">
-                          <div className="course_title">
-                            <h4>{title}</h4>
-                          </div>
-                          <div className="course_description">
-                           <small> {description}</small>
-                          </div>
+                        <div className="year_tag">
+                          <div> Primera edición</div>
+                        </div>
+                        </div>
+                        <div className="course_route">
+                        <CreateLink route={route}>
+                        <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
+                          <div>Ir al curso</div>
+                        </CreateLink>
                         </div>
                       </div>
-                    </CreateLink>
+                      <div className="course_text_block">
+                        <div className="course_title">
+                          <h4>{title}</h4>
+                        </div>
+                        <div className="course_description">
+                          <small> {description}</small>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               );

@@ -22,16 +22,33 @@ $windowWidth: 100vw
                 -webkit-box-orient: vertical
                 overflow: hidden
                 text-overflow: ellipsis
-    .year_tag 
+    .card_container_top 
         display: flex
-        p
-            background-color: rgb(0, 0, 0,0.4)
-            justify-contet: flex-end
-            border-radius:20px
-            padding: 3px 8px 
-            font-size: 1em
-            font-weight: 400
-    
+        justify-content: space-between 
+        height: 24px
+        font-size: 1rem
+        .year_tag 
+            display: flex
+            div
+                background-color: rgb(0, 0, 0,0.4)
+                display: flex
+                align-items: center
+                padding: 1px 8px 
+                font-weight: 500
+                border-radius: 24px
+        .course_route
+            border: 1px solid white
+            border-radius: 24px
+            padding: 0.2rem 0.8rem 0.6rem 0.8rem
+            a 
+                display: flex
+            svg
+                margin-top: 0.1rem
+            div
+                font-weight:400
+                font-size: 1rem
+                margin-left: 0.6rem
+
 @media (min-width: 770px)
     .course
         display: flex
@@ -39,6 +56,25 @@ $windowWidth: 100vw
         font-weight: 400
         height: $windowHeight  /2.25
         overflow: hidden    
+        .card_container_top
+            height: 32px
+            align-items: center
+            div
+                font-size: 1rem
+            .year_tag 
+                div
+                    margin: auto
+                    padding: 6px 12px 
+                    border-radius:4px
+            .course_route
+                margin-top:2px
+                display: flex
+                align-items: center
+                padding: auto
+                svg
+                    margin-top: 0.2rem
+                div
+                    margin-top: 0.14rem
         .course_text_block
             transition: ease-in-out 300ms
             // transform: translateY(64%)
