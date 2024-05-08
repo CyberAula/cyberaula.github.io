@@ -100,7 +100,7 @@ export default function Research() {
             <div className="papers">
               {papersFiltered
                 .slice(0, papersToShow)
-                .map(({ date, doi, content }, ind) => {
+                .map(({ date, doi, author, title, journal }, ind) => {
                   return (
                     <div key={ind} className="paper">
                       <div className="paper_main">
@@ -109,12 +109,12 @@ export default function Research() {
                         </div>
                         <div className="paper_content">
                           <div className="paper_title">
-                            <h2></h2>
+                            <h4>{title}</h4>
                           </div>
                           <div
-                            dangerouslySetInnerHTML={{ __html: content }}
+                            
                             className="paper_subtitle"
-                          ></div>
+                          >{author}. {journal}</div>
                         </div>
                       </div>
                       <div className="links">
