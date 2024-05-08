@@ -1,38 +1,54 @@
 .team
     main
         .teammates
-            .teamgrouptitle
-                //display: flex
-                // flex-flow: column wrap
-                .teammate
-                    display: block
-                    width:100%
-                    margin-bottom: 4em
-                    //color: $accent
-                    .mate_img 
-                        img
-                            height: 100px
-                            width:100px
-                            object-fit: cover
-                            border-radius: 50px
-                    .mate_info
-                        @apply text-black
-                        .mate_role
-                            margin-bottom: 1em
-                            height: 100%
-                            span
-                                padding:  0.2em 0.65em 0.3em 0.65em
-                                border: 1px solid #333333 // cómo meter variables en team
-                                border-radius: 4px
-                                font-weight: 600
-                        .mate_position
-                            span
-                                font-weight: 600
+            // margin: 0 1rem 
+            .teammate
+                display: block
+                width: 80%
+                margin-bottom: 1rem
+                margin-left: auto
+                margin-right: auto
+                // @apply bg-yellow-300
+                .mate_img 
+                    img
+                        height: 100px
+                        width:100px
+                        object-fit: cover
+                        border-radius: 50px
+                .mate_info
+                    .mate_name
+                        margin-bottom: 1rem
+                        font-size:1.5rem
 
+                    @apply text-black
+                    margin-top: 0.6rem
+                    .mate_role
+                        margin-bottom: 1em
+                        height: 100%
+                        margin-top: -0.3rem
+                        span
+                            padding:  0.12em 0.65em 0.25em 0.65em
+                            border: 1px solid #333333 // cómo meter variables en team
+                            border-radius: 4px
+                            font-weight: 600
+                    .mate_position
+                        p
+                            font-size: 1em
+                            margin: 1.6rem 0 0.6rem 0
+                        span
+                            font-weight: 600
+                            display: inline
+                            word-break: break-all
 
-                        .mate_description
-                            span
-                                img
-                                    height: 18px
-                                    width: 18px
-                                    
+                    .mate_coordination
+                        margin: 0.8rem 0 0 0
+                        .coordinator
+                            @apply bg-yellow-300
+                            padding:  0.12em 0.65em 0.25em 0.65em
+                            border-radius: 24px
+                    .mate_description
+                        span
+                            img
+                                height: 18px
+                                width: 18px
+                                
