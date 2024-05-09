@@ -18,16 +18,18 @@ export default function projectCards(props) {
     }
   };
   return (
-    <div className="project_cards">
-      <div className="filter_options">
+    <div>
+    <div className="filter_options flex">
         <button onClick={() => handleCategoryChange("all")}>All</button>
         <button onClick={() => handleCategoryChange("ind")}>Projects - individual</button>
         <button onClick={() => handleCategoryChange("erg")}>Educational Research Group (GIE/ERG)</button>
         <button onClick={() => handleCategoryChange("other")}>Other</button>
       </div>
+    <div className="project_cards md:grid md:grid-cols-2 md:gap-4">
+      
       {projectCards.map(
         ({ date, route, title, subtitle, tags, category }, index) => (
-          <div key={index} className="project_card">
+          <div key={index} className="project_card mb-4 p-4 md:p-6">
             <div className="year_and_cta">
               <div className="date">{date}</div>
               <a href={route}>details</a>
@@ -40,6 +42,7 @@ export default function projectCards(props) {
           </div>
         )
       )}
+    </div>
     </div>
   );
 }

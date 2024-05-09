@@ -23,11 +23,11 @@ export default function Courses() {
         <h1>Courses</h1>
       </div>
       <main>
-        <section className="lg:m-28 md:m-14 sm:m-8">
-          <div>courses filter</div>
+        <section className="lg:mx-28 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4">
+  
 
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">
-            {courses.map(({ date, gradient, title, description, route }) => {
+            {courses.map(({ date, gradient, edition, title, description, route }) => {
               return (
                 <div
                   key={title}
@@ -41,7 +41,7 @@ export default function Courses() {
                           <div>{date}</div>
                         </div>
                         <div className="year_tag">
-                          <div> Primera edición</div>
+                          <div> {edition}</div>
                         </div>
                         </div>
                         <div className="course_route">
