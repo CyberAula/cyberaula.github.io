@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@media (min-width: 50px) {
+@media (min-width: 150px) {
   .course {
     height: 100%;
     color: white;
@@ -26,16 +26,44 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .year_tag {
+  .card_container_top {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    font-size: 1rem;
+  }
+  .card_container_top .year_tag {
     display: flex;
   }
-  .year_tag p {
-    background-color: rgba(0, 0, 0, 0.4);
-    justify-contet: flex-end;
-    border-radius: 20px;
-    padding: 3px 8px;
-    font-size: 1em;
+  .card_container_top .year_tag div {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 1px 8px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .card_container_top .course_route {
+    border: 1px solid white;
+    border-radius: 24px;
+    padding: 0.2rem 0.8rem 0.6rem 0.8rem;
+    transition: 200ms ease-in-out;
+  }
+  .card_container_top .course_route:hover {
+    background: white;
+    transition: 200ms ease-in-out;
+    @apply text-blue-950;
+  }
+  .card_container_top .course_route a {
+    display: flex;
+  }
+  .card_container_top .course_route svg {
+    margin-top: 0.1rem;
+  }
+  .card_container_top .course_route div {
     font-weight: 400;
+    font-size: 1rem;
+    margin-left: 0.6rem;
   }
 }
 @media (min-width: 770px) {
@@ -43,8 +71,32 @@
     display: flex;
     color: white;
     font-weight: 400;
-    height: 44.4444444444vh;
+    height: 250px;
     overflow: hidden;
+  }
+  .course .card_container_top {
+    height: 32px;
+    align-items: center;
+  }
+  .course .card_container_top div {
+    font-size: 1rem;
+  }
+  .course .card_container_top .year_tag div {
+    margin: auto;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  .course .card_container_top .course_route {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    padding: auto;
+  }
+  .course .card_container_top .course_route svg {
+    margin-top: 0.2rem;
+  }
+  .course .card_container_top .course_route div {
+    margin-top: 0.14rem;
   }
   .course .course_text_block {
     transition: ease-in-out 300ms;
@@ -56,27 +108,24 @@
     transition: ease-in-out 300ms;
     opacity: 0;
     display: none;
-    transform: translateY(64%);
     margin-bottom: 0.6em;
   }
   .course .course_text_block .course_description small {
     margin-top: 0;
     display: block;
-    font-size: 0.85em;
+    font-size: 1.1rem;
     line-height: 1.4em;
     font-weight: 400;
-    max-height: 80px;
+    max-height: 160px;
   }
   .course:hover .course_text_block {
-    transform: translateY(0%);
     transition: ease-in-out 300ms;
   }
   .course:hover .course_text_block .course_description {
     position: relative;
     transition: ease-in-out 300ms;
     opacity: 1;
-    transform: translateY(0%);
-    max-height: 20vh;
+    max-height: 14.7058823529vh;
     display: -webkit-box;
   }
   .course:hover .course_text_block .course_description small {
@@ -121,6 +170,17 @@
   background-position: center;
 }
 
+.bg-yellow-gradient {
+  background: linear-gradient(225deg, rgba(255, 127, 0, 0.8748686975) 0%, rgba(192, 112, 168, 0.8860731793) 100%), url("/assets/img/courses/fondo-cursos.png");
+  background-size: contain;
+  background-position: center;
+}
+.bg-yellow-gradient:hover {
+  background: linear-gradient(180deg, rgba(255, 127, 0, 0.8748686975) 0%, rgba(133, 90, 186, 0.9308911064) 70%), url("/assets/img/courses/fondo-cursos.png");
+  background-size: contain;
+  background-position: center;
+}
+
 .course_main {
   position: relative;
   width: 100%;
@@ -133,24 +193,166 @@
   height: 100%;
 }
 
-.project_cards .filter_options {
-  display: flex;
+@media (min-width: 150px) {
+  .filter_options {
+    display: flex;
+  }
+  .filter_options .button_filter {
+    @apply bg-ca_blue-200;
+    font-weight: 400;
+    padding: 0.4rem 1.2rem;
+  }
+  .filter_options .button_filter:first-child {
+    border-radius: 24px 0 0 24px;
+  }
+  .filter_options .button_filter:last-child {
+    border-radius: 0 24px 24px 0;
+  }
+  .project_cards .project_card {
+    @apply bg-ca_blue-200;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .project_cards .project_card .year_and_cta {
+    @apply text-gray-400;
+    display: flex;
+    justify-content: space-between;
+  }
+  .project_cards .project_card .year_and_cta .date {
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1px 8px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+  .project_cards .project_card .year_and_cta a {
+    @apply text-ca_blue-700;
+  }
+  .project_cards .project_card .year_and_cta a p {
+    display: inline;
+    margin-right: 0.6em;
+  }
+  .project_cards .project_card .project_info {
+    @apply text-gray-400;
+  }
+  .project_cards .project_card .project_info .project_title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .project_cards .project_card .project_info .project_subtitle {
+    font-weight: 500;
+  }
+  .project_cards .project_card .project_tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project_cards .project_card .project_tags .project_tag {
+    @apply bg-ca_blue-300;
+    @apply text-blue-900;
+    border-radius: 4px;
+    margin: 0 0.6rem 0.6rem 0;
+    padding: 4px 7px;
+    font-weight: 600;
+  }
 }
-.project_cards .filter_options button {
-  border-radius: 4px;
-  border-color: none;
+@media (min-width: 640px) {
+  .filter_options {
+    display: flex;
+    justify-content: center;
+  }
+  .filter_options .button_filter {
+    @apply bg-ca_blue-100;
+    font-weight: 600;
+    padding: 1.2rem 2rem;
+    transition: 100ms ease-out;
+    cursor: pointer;
+    @apply text-ca_blue-500;
+    border-top: 4px solid #EBF0FF;
+    border-bottom: 4px solid #EBF0FF;
+  }
+  .filter_options .button_filter:hover {
+    @apply bg-ca_blue-200;
+    transition: 100ms ease-out;
+  }
+  .filter_options .button_filter:active {
+    @apply bg-ca_blue-300;
+    @apply text-blue-950;
+  }
+  .filter_options .button_filter:first-child {
+    border-radius: 24px 2px 2px 24px;
+    border-left: #EBF0FF 4px solid;
+  }
+  .filter_options .button_filter:last-child {
+    border-radius: 2px 24px 24px 2px;
+    border-right: #EBF0FF 4px solid;
+  }
+  .filter_options .selected {
+    @apply bg-ca_blue-300;
+    font-weight: 600;
+    padding: 1.2rem 1.96rem;
+    @apply text-blue-950;
+  }
+  .filter_options .selected:hover {
+    @apply bg-ca_blue-300;
+  }
+  .project_cards .project_card {
+    display: grid;
+    grid-template-rows: 5vw 1fr auto;
+    grid-gap: 16px;
+  }
+  .project_cards .project_card .year_and_cta .date {
+    height: 24px;
+  }
+  .project_cards .project_card .year_and_cta p {
+    font-weight: 600;
+  }
 }
-.project_cards .project_card .year_and_cta {
-  display: flex;
-}
-.project_cards .project_card .year_and_cta .date {
-  border: 1px solid black;
-  border-radius: 50px;
-  padding: 0.5rem 5 0.2rem 0.5rem;
-}
-.project_cards .project_card .project_info .project_title {
-  @apply text-black;
-  font-size: 1.25rem;
+@media (min-width: 770px) {
+  .project_cards .filter_options {
+    display: flex;
+  }
+  .project_cards .filter_options .button_filter {
+    @apply bg-ca_blue-200;
+    font-weight: 400;
+    padding: 0.4rem 1.2rem;
+  }
+  .project_cards .project_card {
+    @apply bg-ca_blue-200;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 40px 1fr auto;
+    align-items: left;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .project_cards .project_card .year_and_cta {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project_cards .project_card .year_and_cta .date {
+    border: 1px solid to-black;
+    height: 24px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .project_cards .project_card .project_info {
+    @apply text-gray-400;
+  }
+  .project_cards .project_card .project_info .project_title {
+    font-size: 1.25rem;
+  }
+  .project_cards .project_card .project_info .project_subtitle {
+    font-weight: 500;
+  }
 }
 .research .main {
   min-height: calc(100vh - 150px);
@@ -166,6 +368,9 @@
 .research .main .paper {
   display: flex;
 }
+.research .main .paper .paper_main .paper_title h4 {
+  @apply text-black;
+}
 .research .main .paper .paper_main .paper_subtitle {
   @apply text-black;
 }
@@ -176,7 +381,7 @@
 .team main .teammates .teammate {
   display: block;
   width: 80%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -213,6 +418,7 @@
 .team main .teammates .teammate .mate_info .mate_position span {
   font-weight: 600;
   display: inline;
+  word-break: break-all;
 }
 .team main .teammates .teammate .mate_info .mate_coordination {
   margin: 0.8rem 0 0 0;
@@ -727,8 +933,7 @@ main {
  PROJECTS
  ========================================================================== */
 .projects {
-  color: inherit;
-  @apply bg-white;
+  background-color: white;
   /*---- Scroll Bar ----*/
   /* Track */
   /* Handle */
@@ -738,13 +943,6 @@ main {
   min-height: calc(100vh - 150px);
   filter: brightness(0) invert(1);
   -webkit-filter: brightness(0) invert(1);
-}
-.projects .nav_bar {
-  background-color: inherit;
-  color: inherit;
-}
-.projects .nav_bar .imagotype .isotype {
-  background-color: white;
 }
 .projects .nav_bar .imagotype .logotype {
   color: #5441ff;
@@ -986,6 +1184,7 @@ main {
   margin-right: 16px;
   border-radius: 16px;
   stroke: 2px solid #3302bf;
+  @apply text-black;
 }
 .research section .papers .paper .paper_date h5 .year {
   align-content: center;
@@ -1000,6 +1199,9 @@ main {
 .research section .papers .paper .paper_main .paper_content {
   gap: 32px;
   flex-grow: 1;
+}
+.research section .papers .paper .paper_main .paper_content .paper_title {
+  @apply text-black;
 }
 .research section .papers .paper .paper_main .paper_content .paper_subtitle {
   padding-bottom: 32px;

@@ -21,7 +21,7 @@ export default function Team(props) {
         <h1>Team</h1>
       </div>
       <main>
-        <section className="teammates block place-content-center sm:grid sm:grid-cols-2 md:grid-cols-3 md:mx-14 lg:grid-cols-4 gap-10 sm:mx-2 lg:mx-28">
+        <section className="teammates block place-content-center sm:grid sm:grid-cols-2 md:grid-cols-3 md:mx-14 lg:grid-cols-4 gap-10 sm:mx-2 lg:mx-36">
           {Object.values(team).map(({ members }) => {
             return members.map(
                     ({

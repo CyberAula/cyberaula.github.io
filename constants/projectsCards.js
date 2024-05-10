@@ -6,17 +6,19 @@ export const myProjectCards = [
     title:
       "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
     subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
-    tags: "tag",
+    //max 6 tags
+    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
     category: "erg",
   },
   {
     date: "2023",
     route:
-      "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
+      "http://ging.github.io/ediphy/",
     title:
-      "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
+      "Ediphy",
     subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
-    tags: "tag",
+    //max 6 tags
+    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
     category: "ind",
   },
   {
@@ -26,7 +28,19 @@ export const myProjectCards = [
     title:
       "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
     subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
-    tags: "tag",
+    //max 6 tags
+    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
+    category: "other",
+  },
+  {
+    date: "2023",
+    route:
+      "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
+    title:
+      "Utilización de escape rooms",
+    subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
+    //max 6 tags
+    tags: "Aprendizaje Activo,Aprendizaje, Gamificación,Trabajo en Equipo",
     category: "other",
   },
   {
@@ -36,17 +50,8 @@ export const myProjectCards = [
     title:
       "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
     subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
-    tags: "tag",
-    category: "other",
-  },
-  {
-    date: "2023",
-    route:
-      "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
-    title:
-      "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
-    subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
-    tags: "tag",
+    //max 6 tags
+    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
     category: "ind",
   },
 ];

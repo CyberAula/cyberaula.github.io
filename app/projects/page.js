@@ -46,7 +46,7 @@ export default function Projects() {
 			                );
 			        	})}
 			        </section> */}
-        <section className="lg:mx-28 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4">
+        <section className="lg:mx-36 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4">
           <ProjectCard />
         </section>
       </main>

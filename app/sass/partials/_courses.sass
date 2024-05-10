@@ -2,7 +2,7 @@ $bg-img: "/assets/img/courses/fondo-cursos.png"
 $windowHeight: 100vh
 $windowWidth: 100vw
 
-@media (min-width: 50px)
+@media (min-width: 150px)
     .course
         height: 100%
         color: white
@@ -45,7 +45,6 @@ $windowWidth: 100vw
                 background: white
                 transition: 200ms ease-in-out
                 @apply text-blue-950
-
             a 
                 display: flex
             svg
@@ -61,7 +60,7 @@ $windowWidth: 100vw
         display: flex
         color: white
         font-weight: 400
-        height: $windowHeight  /2.5
+        height: 250px
         overflow: hidden    
         .card_container_top
             height: 32px
@@ -113,11 +112,11 @@ $windowWidth: 100vw
                     transition: ease-in-out 300ms
                     opacity: 1
                   
-                    max-height: $windowHeight/5
+                    max-height: $windowHeight/6.8
                     display: -webkit-box
                     small 
                         display: -webkit-box
-                        -webkit-line-clamp: 6
+                        -webkit-line-clamp: 4
                         -webkit-box-orient: vertical
                         overflow: hidden
                         text-overflow: ellipsis

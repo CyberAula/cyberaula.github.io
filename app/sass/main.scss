@@ -185,6 +185,7 @@ $extra-bold: 900;
 
 body,
 html {
+  
   h2 {
     font-weight: lighter;
   }
@@ -229,7 +230,10 @@ html {
     }
   }
 }
-
+// .button_filter {
+//   background-color: #3302bf;
+//   font-weight: 400;
+//   padding: 0.4rem 1.2rem }
 .home_page {
   // @apply bg-white
 }
@@ -595,8 +599,7 @@ main {
  ========================================================================== */
 
 .projects {
-  color: inherit;
-  @apply bg-white;
+  background-color: white;
   //padding: 5rem 0 0 0;
 
   .spinner {
@@ -606,14 +609,7 @@ main {
   }
 
   .nav_bar {
-    background-color: inherit;
-    color: inherit;
-
     .imagotype {
-      .isotype {
-        background-color: white;
-      }
-
       .logotype {
         color: $blue_primary;
         font-weight: $bold;
