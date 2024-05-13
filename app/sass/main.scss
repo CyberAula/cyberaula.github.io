@@ -10,6 +10,7 @@
 
 @import "lib/_type.sass";
 @import "lib/_variables.sass";
+@import "lib/_mixins.sass";
 
 * {
   @apply border-2 border-primary; // no funciona :( <-- funciona en el globals.scss though
@@ -19,38 +20,6 @@
     VARIABLES
    ========================================================================== */
 
-   /* ==========================================================================
-    VARIABLES
-   ========================================================================== */
-//COLOR
-$blue_primary: #5441ff;
-$orange_accent: #5340ff;
-$burgundry_support: #9f226d;
-$cyan_support: #21e2ed;
-$lilac_support: #ae9ff2;
-$black: #333333;
-// blues
-$ca-blue-900: #3302bf;
-$ca-blue-800: #4507c9;
-$ca-blue-700: #4f1be4;
-$ca-blue-600: #5441ff;
-$ca-blue-500: #6e76ff;
-$ca-blue-400: #97a7ff;
-$ca-blue-300: #becaff;
-$ca-blue-200: #dbe2ff;
-$ca-blue-100: #ebf0ff;
-$ca-blue-50: #f5f8ff;
-//oranges
-$ca-or-300: #ff9900;
-$ca-or-200: #ffbd1b;
-$ca-or-100: #ffe685;
-
-//SPACING
-$spacing_xsm: 8px;
-$spacing_sm: 16px;
-$spacing_md: 32px;
-$spacing_lg: 48px;
-$spacing_xl: 64px;
 /* =========================================================================
 TYPOGRAPHY
  ========================================================================== */
@@ -62,19 +31,6 @@ TYPOGRAPHY
 // import monserrat
 // import new sans serif;
 
-$serif_font: "Lora", serif;
-$sans_font: "Open Sans", sans-serif;
-$montserrat: "montserrat", sans-serif;
-$montserrat-alternates: "Montserrat Alternates", sans-serif;
-$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-$border1: 5px solid;
-$border2: 5px dashed;
-
-$regular: 400;
-$semi-bold: 600;
-$bold: 700;
-$extra-bold: 900;
 
 @mixin nav_bar {
   width: 100%;
@@ -852,137 +808,14 @@ main {
  RESEARCH
  ========================================================================== */
 .research {
-  padding-top: 20 rem;
   padding-bottom: $spacing_lg;
 
   main {
     display: flex;
     flex-direction: column;
-    padding-left: $spacing_sm;
-    padding-right: $spacing_sm;
+    //background-color: red;
   }
 
-  section {
-    gap: $spacing_md;
-    padding-top: $spacing_lg;
-
-    .load_more {
-      padding-top: $spacing_lg;
-      padding-bottom: $spacing_xl;
-      display: flex;
-      justify-content: center;
-    }
-
-    // gap: 2rem;
-    .filters {
-      text-align: right;
-      // padding: 1rem 5rem 1rem 5rem;
-      display: flex;
-      // justify-content: flex-end;
-      flex-wrap: wrap;
-      padding-bottom: $spacing_sm;
-      border-bottom: solid 1px $ca-blue-100;
-      gap: $spacing_xsm;
-      justify-content: space-between;
-
-      label,
-      select,
-      input {
-        padding: 5px;
-        font-size: 1.3rem;
-        margin-right: 1rem;
-
-        option {
-          background-color: white;
-          border: none;
-        }
-      }
-
-      select,
-      input {
-        border: 1px solid $ca-blue-800;
-        border-radius: 4px;
-        margin-right: 3rem;
-        background-color: transparent;
-        font-family: $montserrat;
-        color: $blue_primary;
-      }
-
-      label {
-        // font-weight: bolder;
-      }
-
-      option {
-        text-align: right;
-      }
-    }
-
-    .papers {
-      display: flex;
-      flex-direction: column;
-      gap: $spacing_md;
-      padding-left: $spacing_xl;
-      padding-right: $spacing_xl;
-
-      .paper {
-        margin-top: $spacing_lg;
-        display: flex;
-        flex-direction: column;
-        padding-left: $spacing_xl;
-        padding-right: $spacing_xl;
-
-        .paper_date {
-          margin-top: $spacing_xsm;
-          margin-right: $spacing_sm;
-          border-radius: 16px;
-          stroke: 2px solid $ca-blue-900;
-          @apply text-black;
-
-          h5 {
-            .year {
-              align-content: center;
-              background-color: transparent;
-              stroke: 2px solid $ca-blue-900;
-            }
-          }
-        }
-
-        .paper_main {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          .paper_content {
-            gap: $spacing_md;
-            flex-grow: 1;
-            .paper_title{
-              @apply text-black;
-            }
-            .paper_subtitle {
-              padding-bottom: $spacing_md;
-            }
-
-            .paper_doi {
-              font-weight: 600;
-            }
-          }
-        }
-        .links {
-          a {
-            display: flex;
-            flex-direction: row;
-            gap: $spacing_xsm;
-            align-content: center;
-            justify-content: right;
-
-            p {
-              font-weight: 600;
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 // .research {
@@ -1416,7 +1249,7 @@ RESPONSIVE
 @media (max-width: 940px) {
   header {
     padding: 1.5rem 0 1.6rem 0;
-
+   
     .menu {
       width: 100%;
       font-weight: $semi-bold;
@@ -1430,6 +1263,7 @@ RESPONSIVE
         font-size: 1.2rem;
       }
     }
+   
   }
 
 
@@ -1451,6 +1285,9 @@ RESPONSIVE
         align-self: center;
       }
     }
+  }
+  .banner {
+    margin-top: 104px
   }
 }
 
@@ -1592,7 +1429,6 @@ RESPONSIVE
     align-items: center;
     transition: 0.5s;
     padding: 1rem 0 0.7rem 0;
-
     .imagotype {
       width: 100%;
       display: flex;
@@ -1653,8 +1489,11 @@ RESPONSIVE
         }
       }
     }
+   
   }
-
+  .banner {
+    margin-top: 40px;
+  }
   .parallax__layer {
     position: absolute;
     top: 75px;

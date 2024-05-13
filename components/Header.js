@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const routes = [
   //{route: "/", title: "Home"},
   { route: "/research", title: "Publications" },
@@ -40,7 +42,7 @@ export default function Header(props) {
             setState({ open: !state.open });
           }}
         >
-          menu
+          <FontAwesomeIcon icon={faBars} size="lg"/>
         </i>
         <i
           className={
@@ -51,7 +53,7 @@ export default function Header(props) {
             setState({ open: !state.open });
           }}
         >
-          close
+          <FontAwesomeIcon icon={faXmark} size="xl" />
         </i>
       </div>
 

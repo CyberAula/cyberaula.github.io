@@ -1,24 +1,119 @@
-.research 
-    .main
-        min-height: calc(100vh - 150px)
-        padding: 5rem 0 0 0
+@import "../lib/_mixins.sass"
+@import "../lib/_variables"
+
+
+
+@media (min-width: 150px) 
+    .research 
+        .filter
+            display: flex
+            align-items: center
+            min-height:48px
+        // .main
+        //     min-height: calc(100vh - 150px)
+        //     padding: 5rem 0 0 0
+        //     background-color: red
         
-        .filters
-            text-align: right
-            padding: 1rem 5rem 1rem 5rem
+        .research_results
+            margin-left: 2rem
+            font-size: 1.1rem
             display: flex
-            justify-content: flex-end
             flex-wrap: wrap
+            min-height: 48px
+            align-content: center
+            b 
+                margin-left: 1rem
+    section 
+        gap: $spacing_md
 
-        .paper
+    .load_more 
+        padding-top: $spacing_lg
+        padding-bottom: $spacing_xl
+        display: flex
+        justify-content: center
+
+    .filters 
+        text-align: right
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: $spacing_sm
+        border-bottom: solid 1px $ca-blue-100
+        justify-content: space-between
+        .filter
+            font-size: 1.1rem
+            label
+                display: inline-block
+                width: 100px
+                padding-right: 12px
+
+            select,
+            input 
+                padding: 5px
+                margin-right: 0.3rem
+                width: 200px
+                option 
+                background-color: white
+                border: 1px solid $ca-blue-800
+                border-radius: 4px
+                background-color: transparent
+                font-family: $montserrat
+                color: $blue_primary
+            #year
+                width: 60px
+            option 
+            text-align: right
+
+    .papers 
+        display: flex
+        flex-direction: column
+        gap: $spacing_md
+        padding-left: $spacing_xl
+        padding-right: $spacing_xl
+
+        .paper 
+        margin-top: $spacing_lg
+        display: flex
+        flex-direction: column
+        padding-left: $spacing_xl
+        padding-right: $spacing_xl
+
+        .paper_main 
             display: flex
-
+            flex-direction: row
+            justify-content: space-between
             .paper_date
-            .paper_main
-                .paper_title
-                    h4
-                        @apply text-black
-                .paper_subtitle
-                    @apply text-black
-                .paper_doi
-                    @apply text-primary
+                h5
+                    @include border-tag
+                
+            .paper_content 
+            gap: $spacing_md
+            flex-grow: 1
+
+
+            .paper_title 
+                @apply text-black
+
+            .paper_subtitle 
+                //padding-bottom: $spacing_md
+
+            .paper_doi 
+                font-weight: 600
+
+        .links 
+            a 
+            display: flex
+            flex-direction: row
+            //gap: $spacing_xsm
+            align-content: center
+            justify-content: right
+
+            p 
+                font-weight: 600
+                text-decoration: underline
+
+@media (min-width: 600px) 
+    .research
+        .filter
+            font-size: 1.3rem
+        .research_results
+            font-size: 1.3rem

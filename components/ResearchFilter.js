@@ -38,7 +38,7 @@ export default function Filters (props) {
 					{years.map(y=><option key={y} value={y}>{y}</option>)}
 				</select>
 			</div>
-			{props.results === undefined ? null:<div><label>Results: {props.results} </label></div>}
+			{props.results === undefined ? null:<div className='research_results'><div>Results: <b> {props.results} </b> </div></div>}
 		</div>)
 	
 }
