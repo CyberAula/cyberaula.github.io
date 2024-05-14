@@ -10,17 +10,17 @@ export default function RecentPublications(props) {
   }, []);
 
   return (
-    <div className="_pubications _recent_publications">
+    <div className="_publications _recent_publications">
       {papers
         .filter((paper) => {
           return paper.type === "article-journal";
         })
         .filter((i, index) => index < 3)
-        .map(({ doi,title,author,date, content }) => {
+        .map(({ doi,title,author,date,stroke, content }) => {
           return (
             <a key={doi} href={doi} target="_blank" rel="noopener noreferrer">
               <div className="article">
-                <div className="article_border"></div>
+                <div className={`article_stroke ${stroke}`} ></div>
                 <div className="article_content">
                 <div className="article_top"><span>{date}</span></div>
                 <h5 className="article_title">{title}</h5>

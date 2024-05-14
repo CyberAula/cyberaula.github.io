@@ -1,11 +1,31 @@
 @import '../lib/_variables.sass'
-    
+
 .article
     display: flex
-    .article_border
+    margin: $spacing_md
+    @apply bg-gray-50
+
+    .article_stroke.color-orange
+        border: 4px solid $ca-or-300
+
+    .article_stroke.color-yellow
+        border: 4px solid $ca-or-100
+
+    .article_stroke.color-purple
+        border: 4px solid $ca-blue-400
+
     .article_content
         display: flex
         flex-direction: column
+        padding-left: $spacing_sm
+        padding-bottom: $spacing_sm
+        padding-right: $spacing_md
+        padding-top: $spacing_sm
+
         .article_title
             font-weight: $bold
-        
+            @apply text-black
+
+        .article_author
+            font-weight: $regular
+            font-size: 12px

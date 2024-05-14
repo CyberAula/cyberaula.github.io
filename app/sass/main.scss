@@ -482,10 +482,11 @@ main {
     }
 
     .latest_publications {
-      width: 30%;
+      // width: 30%;
       object-fit: cover;
       padding: 10px;
       margin-bottom: $spacing_lg;
+      display: flex;
 
       h3 {
         padding-top: 4%;
