@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import ProjectCard from "@/components/projectCard";
 import { myprojectCards } from "@/constants/projectsCards.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Projects() {
   const [projects, setProjects] = useState(myprojectCards);

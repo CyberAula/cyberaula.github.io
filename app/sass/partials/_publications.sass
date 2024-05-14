@@ -1,5 +1,5 @@
 @import "../lib/_mixins.sass"
-@import "../lib/_variables"
+@import "../lib/_variables.sass"
 
 
 
@@ -79,28 +79,29 @@
         flex-direction: column
         padding-left: 0px
         .paper 
-            margin-top: $spacing_md
+            margin: $spacing_sm 0 
             display: flex
             flex-direction: column
-
+            border-bottom: $ca-blue-600
         .paper_main 
             display: flex
             flex-direction: column
             justify-content: space-between
-            gap: 48px
+            gap: $spacing_sm
             .paper_date
                 display: flex
                 h5
                     @include border-tag
                     display: block
                 
-            .paper_content 
-            gap: $spacing_md
-            flex-grow: 1
+            .paper_content
 
 
             .paper_title 
                 @apply text-black
+                h4 
+                    font-size: 1.2rem
+                    margin-bottom:0.6rem
 
             .paper_subtitle 
                 //padding-bottom: $spacing_md
@@ -109,17 +110,22 @@
                 font-weight: 600
 
         .links 
-            a 
             display: flex
             flex-direction: row
             //gap: $spacing_xsm
             align-content: center
-            justify-content: right
-
+            justify-content: left
+            
+            a 
+                @include big-border-button-blue
+                display: flex
+                align-content: center
+                margin-top: $spacing_sm
             p 
                 font-weight: 600
-                text-decoration: underline
-
+            svg
+                align-self: center
+                margin-left: 0.6rem
 @media (min-width: 600px) 
     .research
         .filters
@@ -165,8 +171,8 @@
                     @include border-tag
                 
             .paper_content 
-                gap: $spacing_md
-                flex-grow: 1
+                //gap: $spacing_md
+                //flex-grow: 1
 
 
             .paper_title 
