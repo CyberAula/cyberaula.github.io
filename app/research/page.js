@@ -7,7 +7,7 @@ import Filters from "@/components/ResearchFilter";
 import Link from "next/link";
 import { mypublications } from "@/constants/publications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Research() {
   const [state, setState] = useState({
@@ -121,9 +121,7 @@ export default function Research() {
                         <a rel="noopener noreferrer" target="_blank" href={doi}>
                           {" "}
                           <p>Read publication </p>
-                          <FontAwesomeIcon
-                            icon={faArrowUpRightFromSquare}
-                          />{" "}
+                          <FontAwesomeIcon icon={faArrowRight} />
                         </a>
                       </div>
                     </div>

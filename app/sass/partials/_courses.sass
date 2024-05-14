@@ -1,3 +1,5 @@
+@import "../lib/_mixins.sass"
+    
 $bg-img: "/assets/img/courses/fondo-cursos.png"
 $windowHeight: 100vh
 $windowWidth: 100vw
@@ -37,9 +39,7 @@ $windowWidth: 100vw
                 font-weight: 500
                 border-radius: 4px
         .course_route
-            border: 1px solid white
-            border-radius: 24px
-            padding: 0.2rem 0.8rem 0.6rem 0.8rem
+            @include border-button-white
             transition: 200ms ease-in-out
             &:hover
                 background: white
