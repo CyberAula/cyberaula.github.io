@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @media (min-width: 150px) {
   .course {
     height: 100%;
@@ -196,20 +208,28 @@
 @media (min-width: 150px) {
   .filter_options {
     display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
   }
   .filter_options .button_filter {
-    @apply bg-ca_blue-200;
-    font-weight: 400;
-    padding: 0.4rem 1.2rem;
+    @apply bg-ca_blue-100;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    transition: 100ms ease-out;
+    cursor: pointer;
+    @apply text-ca_blue-500;
+    border-radius: 24px;
   }
-  .filter_options .button_filter:first-child {
-    border-radius: 24px 0 0 24px;
+  .filter_options .button_filter:active {
+    @apply bg-ca_blue-300;
+    @apply text-blue-950;
   }
-  .filter_options .button_filter:last-child {
-    border-radius: 0 24px 24px 0;
+  .filter_options .selected {
+    @apply bg-ca_blue-300;
+    @apply text-blue-950;
   }
   .project_cards .project_card {
-    @apply bg-ca_blue-200;
+    @apply bg-ca_blue-100;
     border-radius: 8px;
     display: flex;
     gap: 16px;
@@ -223,6 +243,8 @@
     display: flex;
     justify-content: space-between;
   }
+}
+@media (min-width: 150px) and (min-width: 150px) {
   .project_cards .project_card .year_and_cta .date {
     color: black;
     border: 1px solid black;
@@ -232,6 +254,18 @@
     font-weight: 600;
     border-radius: 4px;
   }
+}
+@media (min-width: 150px) and (min-width: 640px) {
+  .project_cards .project_card .year_and_cta .date {
+    border: 1px solid to-black;
+    height: 24px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 150px) {
   .project_cards .project_card .year_and_cta a {
     @apply text-ca_blue-700;
   }
@@ -254,7 +288,7 @@
     flex-wrap: wrap;
   }
   .project_cards .project_card .project_tags .project_tag {
-    @apply bg-ca_blue-300;
+    @apply bg-ca_blue-200;
     @apply text-blue-900;
     border-radius: 4px;
     margin: 0 0.6rem 0.6rem 0;
@@ -263,9 +297,23 @@
   }
 }
 @media (min-width: 640px) {
+  .project_cards .project_card {
+    display: grid;
+    grid-template-rows: 5vw 1fr auto;
+    grid-gap: 16px;
+  }
+  .project_cards .project_card .year_and_cta .date {
+    height: 24px;
+  }
+  .project_cards .project_card .year_and_cta p {
+    font-weight: 600;
+  }
+}
+@media (min-width: 770px) {
   .filter_options {
     display: flex;
     justify-content: center;
+    gap: 0;
   }
   .filter_options .button_filter {
     @apply bg-ca_blue-100;
@@ -276,6 +324,7 @@
     @apply text-ca_blue-500;
     border-top: 4px solid #EBF0FF;
     border-bottom: 4px solid #EBF0FF;
+    border-radius: 0px;
   }
   .filter_options .button_filter:hover {
     @apply bg-ca_blue-200;
@@ -302,28 +351,7 @@
   .filter_options .selected:hover {
     @apply bg-ca_blue-300;
   }
-  .project_cards .project_card {
-    display: grid;
-    grid-template-rows: 5vw 1fr auto;
-    grid-gap: 16px;
-  }
-  .project_cards .project_card .year_and_cta .date {
-    height: 24px;
-  }
-  .project_cards .project_card .year_and_cta p {
-    font-weight: 600;
-  }
-}
-@media (min-width: 770px) {
-  .project_cards .filter_options {
-    display: flex;
-  }
-  .project_cards .filter_options .button_filter {
-    @apply bg-ca_blue-200;
-    font-weight: 400;
-    padding: 0.4rem 1.2rem;
-  }
-  .project_cards .project_card {
+  .filter_options .project_card {
     @apply bg-ca_blue-200;
     border-radius: 8px;
     display: grid;
@@ -332,11 +360,24 @@
     justify-content: space-between;
     height: 100%;
   }
-  .project_cards .project_card .year_and_cta {
+  .filter_options .project_card .year_and_cta {
     display: flex;
     justify-content: space-between;
   }
-  .project_cards .project_card .year_and_cta .date {
+}
+@media (min-width: 770px) and (min-width: 150px) {
+  .filter_options .project_card .year_and_cta .date {
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1px 8px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+}
+@media (min-width: 770px) and (min-width: 640px) {
+  .filter_options .project_card .year_and_cta .date {
     border: 1px solid to-black;
     height: 24px;
     padding: 4px 10px;
@@ -344,40 +385,238 @@
     font-size: 1rem;
     font-weight: 600;
   }
-  .project_cards .project_card .project_info {
+}
+@media (min-width: 770px) {
+  .filter_options .project_card .project_info {
     @apply text-gray-400;
   }
-  .project_cards .project_card .project_info .project_title {
+  .filter_options .project_card .project_info .project_title {
     font-size: 1.25rem;
   }
-  .project_cards .project_card .project_info .project_subtitle {
+  .filter_options .project_card .project_info .project_subtitle {
     font-weight: 500;
   }
 }
-.research .main {
-  min-height: calc(100vh - 150px);
-  padding: 5rem 0 0 0;
+@media (min-width: 150px) {
+  .research .filters {
+    justify-content: space-between;
+  }
+  .research .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .research .research_results {
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 48px;
+    align-content: center;
+    margin-right: 1rem;
+  }
+  .research .research_results b {
+    margin-left: 0.4rem;
+  }
+  section {
+    gap: 32px;
+  }
+  .load_more {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  .filters {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    border-bottom: solid 1px #ebf0ff;
+    justify-content: left;
+  }
+  .filters .filter {
+    font-size: 1.1rem;
+    margin: 0 0.8rem 0.8rem 0;
+    text-align: right;
+  }
+  .filters .filter label {
+    display: flex;
+    width: 100%;
+    padding-right: 12px;
+    margin-bottom: 0.4rem;
+  }
+  .filters .filter select,
+  .filters .filter input {
+    padding: 5px;
+    margin-right: 0.3rem;
+    width: 200px;
+    height: 32px;
+    background-color: white;
+    border: 1px solid #4507c9;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "montserrat", sans-serif;
+    color: #5441ff;
+  }
+  .filters .filter #year {
+    width: 60px;
+  }
+  .filters .filter:last-child {
+    background-color: red;
+  }
+  .filters .filter:last-child label {
+    width: 100px;
+  }
+  .papers {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .papers .paper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  .papers .paper_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+    gap: 32px;
+    flex-grow: 1;
+  }
+  .papers .paper_main .paper_date {
+    display: flex;
+  }
+  .papers .paper_main .paper_date h5 {
+    display: block;
+  }
 }
-.research .main .filters {
-  text-align: right;
-  padding: 1rem 5rem 1rem 5rem;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+@media (min-width: 150px) and (min-width: 150px) {
+  .papers .paper_main .paper_date h5 {
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1px 8px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
 }
-.research .main .paper {
-  display: flex;
+@media (min-width: 150px) and (min-width: 640px) {
+  .papers .paper_main .paper_date h5 {
+    border: 1px solid to-black;
+    height: 24px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
-.research .main .paper .paper_main .paper_title h4 {
-  @apply text-black;
+@media (min-width: 150px) {
+  .papers .paper_main .paper_title {
+    @apply text-black;
+  }
+  .papers .paper_main .paper_doi {
+    font-weight: 600;
+  }
+  .papers .links {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: right;
+  }
+  .papers .links p {
+    font-weight: 600;
+    text-decoration: underline;
+  }
 }
-.research .main .paper .paper_main .paper_subtitle {
-  @apply text-black;
+@media (min-width: 600px) {
+  .research .filters {
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    border-bottom: solid 1px #ebf0ff;
+    justify-content: space-between;
+  }
+  .research .filters .filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 0;
+    height: 42px;
+  }
+  .research .filters .filter label {
+    display: inline-block;
+    width: 100px;
+    padding-right: 12px;
+  }
+  .research .filters .research_results {
+    font-size: 1.3rem;
+  }
+  .papers {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .papers .paper_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-.research .main .paper .paper_main .paper_doi {
-  @apply text-primary;
+@media (min-width: 600px) and (min-width: 150px) {
+  .papers .paper_main .paper_date h5 {
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1px 8px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
 }
-
+@media (min-width: 600px) and (min-width: 640px) {
+  .papers .paper_main .paper_date h5 {
+    border: 1px solid to-black;
+    height: 24px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 600px) {
+  .papers .paper_main .paper_content {
+    gap: 32px;
+    flex-grow: 1;
+  }
+  .papers .paper_main .paper_title {
+    @apply text-black;
+  }
+  .papers .paper_main .paper_doi {
+    font-weight: 600;
+  }
+  .papers .links {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: right;
+  }
+  .papers .links p {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
 .team main .teammates .teammate {
   display: block;
   width: 80%;
@@ -528,9 +767,6 @@ ul li {
 /* ==========================================================================
     VARIABLES
    ========================================================================== */
-/* ==========================================================================
- VARIABLES
-========================================================================== */
 /* =========================================================================
 TYPOGRAPHY
  ========================================================================== */
@@ -1112,113 +1348,11 @@ main {
  RESEARCH
  ========================================================================== */
 .research {
-  padding-top: 20 rem;
   padding-bottom: 48px;
 }
 .research main {
   display: flex;
   flex-direction: column;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.research section {
-  gap: 32px;
-  padding-top: 48px;
-}
-.research section .load_more {
-  padding-top: 48px;
-  padding-bottom: 64px;
-  display: flex;
-  justify-content: center;
-}
-.research section .filters {
-  text-align: right;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 16px;
-  border-bottom: solid 1px #ebf0ff;
-  gap: 8px;
-  justify-content: space-between;
-}
-.research section .filters label,
-.research section .filters select,
-.research section .filters input {
-  padding: 5px;
-  font-size: 1.3rem;
-  margin-right: 1rem;
-}
-.research section .filters label option,
-.research section .filters select option,
-.research section .filters input option {
-  background-color: white;
-  border: none;
-}
-.research section .filters select,
-.research section .filters input {
-  border: 1px solid #4507c9;
-  border-radius: 4px;
-  margin-right: 3rem;
-  background-color: transparent;
-  font-family: "montserrat", sans-serif;
-  color: #5441ff;
-}
-.research section .filters option {
-  text-align: right;
-}
-.research section .papers {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-.research section .papers .paper {
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-.research section .papers .paper .paper_date {
-  margin-top: 8px;
-  margin-right: 16px;
-  border-radius: 16px;
-  stroke: 2px solid #3302bf;
-  @apply text-black;
-}
-.research section .papers .paper .paper_date h5 .year {
-  align-content: center;
-  background-color: transparent;
-  stroke: 2px solid #3302bf;
-}
-.research section .papers .paper .paper_main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.research section .papers .paper .paper_main .paper_content {
-  gap: 32px;
-  flex-grow: 1;
-}
-.research section .papers .paper .paper_main .paper_content .paper_title {
-  @apply text-black;
-}
-.research section .papers .paper .paper_main .paper_content .paper_subtitle {
-  padding-bottom: 32px;
-}
-.research section .papers .paper .paper_main .paper_content .paper_doi {
-  font-weight: 600;
-}
-.research section .papers .paper .links a {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-content: center;
-  justify-content: right;
-}
-.research section .papers .paper .links a p {
-  font-weight: 600;
-  text-decoration: underline;
 }
 
 /* ==========================================================================
@@ -1351,6 +1485,9 @@ RESPONSIVE
   .home .body .latest_publications {
     width: 90.2%;
     align-self: center;
+  }
+  .banner {
+    margin-top: 104px;
   }
 }
 @media (max-width: 800px) {
@@ -1502,6 +1639,9 @@ RESPONSIVE
   header .menu ul li {
     padding: 0.8rem 0 0 0;
   }
+  .banner {
+    margin-top: 40px;
+  }
   .parallax__layer {
     position: absolute;
     top: 75px;
@@ -1586,37 +1726,6 @@ RESPONSIVE
   }
   .tools main .our_tools .tool .tool_description h3 {
     font-size: 1rem;
-  }
-  .research h4 {
-    font-size: 1.5rem;
-  }
-  .research h2 {
-    font-size: 1.2rem;
-  }
-  .research i {
-    font-size: 1.2rem;
-  }
-  .research main .research .filters {
-    padding-right: 0rem;
-  }
-  .research main .research .paper {
-    flex-flow: column wrap;
-    padding: 2rem 2rem 2rem 2rem;
-    width: 100%;
-  }
-  .research main .research .paper .paper_date {
-    width: 100%;
-    margin: 0 0 0.5rem 0;
-    color: white;
-  }
-  .research main .research .paper .paper_main {
-    width: 100%;
-  }
-  .research main .research .paper .paper_main .paper_title {
-    width: 100%;
-  }
-  .research main .research .paper .paper_main .paper_title h2 {
-    font-size: 1.2rem;
   }
   .team main .teammates {
     padding-top: 2rem;

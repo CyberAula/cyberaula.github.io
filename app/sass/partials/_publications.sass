@@ -4,25 +4,30 @@
 
 
 @media (min-width: 150px) 
+    
     .research 
+        .filters
+            justify-content: space-between
         .filter
             display: flex
-            align-items: center
-            min-height:48px
+            flex-direction: column
+            align-items: start
+           
         // .main
         //     min-height: calc(100vh - 150px)
         //     padding: 5rem 0 0 0
         //     background-color: red
         
         .research_results
-            margin-left: 2rem
+            //margin-left: 2rem
             font-size: 1.1rem
             display: flex
             flex-wrap: wrap
             min-height: 48px
             align-content: center
+            margin-right: 1rem
             b 
-                margin-left: 1rem
+                margin-left: 0.4rem
     section 
         gap: $spacing_md
 
@@ -33,24 +38,27 @@
         justify-content: center
 
     .filters 
-        text-align: right
+        text-align: left
         display: flex
         flex-wrap: wrap
         padding-bottom: $spacing_sm
         border-bottom: solid 1px $ca-blue-100
-        justify-content: space-between
+        justify-content: left
         .filter
             font-size: 1.1rem
+            margin: 0 0.8rem 0.8rem 0
             label
-                display: inline-block
-                width: 100px
+                display: flex
+                width: 100%
                 padding-right: 12px
-
+                margin-bottom: 0.4rem
+            
             select,
             input 
                 padding: 5px
                 margin-right: 0.3rem
                 width: 200px
+                height: 32px
                 option 
                 background-color: white
                 border: 1px solid $ca-blue-800
@@ -62,28 +70,29 @@
                 width: 60px
             option 
             text-align: right
-
+        .filter:last-child
+            background-color: red
+            label
+                width: 100px
     .papers 
         display: flex
         flex-direction: column
-        gap: $spacing_md
-        padding-left: $spacing_xl
-        padding-right: $spacing_xl
-
+        padding-left: 0px
         .paper 
-        margin-top: $spacing_lg
-        display: flex
-        flex-direction: column
-        padding-left: $spacing_xl
-        padding-right: $spacing_xl
+            margin-top: $spacing_md
+            display: flex
+            flex-direction: column
 
         .paper_main 
             display: flex
-            flex-direction: row
+            flex-direction: column
             justify-content: space-between
+            gap: 48px
             .paper_date
+                display: flex
                 h5
                     @include border-tag
+                    display: block
                 
             .paper_content 
             gap: $spacing_md
@@ -113,7 +122,70 @@
 
 @media (min-width: 600px) 
     .research
-        .filter
-            font-size: 1.3rem
-        .research_results
-            font-size: 1.3rem
+        .filters
+            text-align: right
+            display: flex
+            flex-wrap: wrap
+            padding-bottom: $spacing_sm
+            border-bottom: solid 1px $ca-blue-100
+            justify-content: space-between
+            .filter
+                display: flex
+                flex-direction: row
+                align-items: center
+                font-size: 1.3rem
+                margin: 0
+                height: 42px
+                label
+                    display: inline-block
+                    width: 100px
+                    padding-right: 12px
+            .research_results
+                font-size: 1.3rem
+    .papers 
+        display: flex
+        flex-direction: column
+        gap: $spacing_md
+        padding-left: $spacing_xl
+        padding-right: $spacing_xl
+
+        .paper 
+        margin-top: $spacing_lg
+        display: flex
+        flex-direction: column
+        padding-left: $spacing_xl
+        padding-right: $spacing_xl
+
+        .paper_main 
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            .paper_date
+                h5
+                    @include border-tag
+                
+            .paper_content 
+                gap: $spacing_md
+                flex-grow: 1
+
+
+            .paper_title 
+                @apply text-black
+
+            .paper_subtitle 
+                //padding-bottom: $spacing_md
+
+            .paper_doi 
+                font-weight: 600
+
+        .links 
+            a 
+            display: flex
+            flex-direction: row
+            //gap: $spacing_xsm
+            align-content: center
+            justify-content: right
+
+            p 
+                font-weight: 600
+                text-decoration: underline

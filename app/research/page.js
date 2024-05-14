@@ -82,7 +82,7 @@ export default function Research() {
           <h1>Publications</h1>
         </div>
         <main>
-          <section className="research lg:mx-36 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4">
+          <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4">
             <Filters
               search={search}
               year={year}

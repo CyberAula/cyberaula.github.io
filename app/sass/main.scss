@@ -1615,51 +1615,51 @@ RESPONSIVE
     }
   }
 
-  .research {
-    h4 {
-      font-size: 1.5rem;
-    }
+  // .research {
+  //   h4 {
+  //     font-size: 1.5rem;
+  //   }
 
-    h2 {
-      font-size: 1.2rem;
-    }
+  //   h2 {
+  //     font-size: 1.2rem;
+  //   }
 
-    i {
-      font-size: 1.2rem;
-    }
+  //   i {
+  //     font-size: 1.2rem;
+  //   }
 
-    main {
-      .research {
-        .filters {
-          padding-right: 0rem;
-        }
+  //   main {
+  //     .research {
+  //       .filters {
+  //         padding-right: 0rem;
+  //       }
 
-        .paper {
-          flex-flow: column wrap;
-          padding: 2rem 2rem 2rem 2rem;
-          width: 100%;
+  //       .paper {
+  //         flex-flow: column wrap;
+  //         padding: 2rem 2rem 2rem 2rem;
+  //         width: 100%;
 
-          .paper_date {
-            width: 100%;
-            margin: 0 0 0.5rem 0;
-            color: lighten($color: pink, $amount: 25);
-          }
+  //         .paper_date {
+  //           width: 100%;
+  //           margin: 0 0 0.5rem 0;
+  //           color: lighten($color: pink, $amount: 25);
+  //         }
 
-          .paper_main {
-            width: 100%;
+  //         .paper_main {
+  //           width: 100%;
 
-            .paper_title {
-              width: 100%;
+  //           .paper_title {
+  //             width: 100%;
 
-              h2 {
-                font-size: 1.2rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  //             h2 {
+  //               font-size: 1.2rem;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   .team {
     main {

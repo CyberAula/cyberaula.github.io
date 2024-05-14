@@ -24,7 +24,7 @@ export default function Filters (props) {
 				/>
 			</div>
 			<div className="filter">
-				<label htmlFor="publication">Publication type</label>
+				<label className="publicationType" htmlFor="publication">Publication type</label>
 				<select id="publication" name="publication" onChange={(e)=>props.changeType(e.target.value === "all" ? undefined: e.target.value)}>
 					<option key={"all"} value={"all"}>All</option>
 					<option key={"journal"} value={"article-journal"}>Journal article</option>
