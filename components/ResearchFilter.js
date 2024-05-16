@@ -31,7 +31,7 @@ export default function Filters (props) {
 					<option key={"conference"} value={"paper-conference"}>Conference proceedings</option>
 				</select>
 			</div>
-			<div className="filter">
+			<div className="filter" id="filter_year">
 				<label htmlFor="year">Year</label>
 				<select id="year" name="year" onChange={(e)=>props.changeYear(e.target.value === "all" ? undefined: e.target.value)}>
 					<option key={"all"} value={"all"}>All</option>

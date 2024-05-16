@@ -91,7 +91,6 @@ export default function Research() {
               changeSearch={(search) => setState({ ...state, search: search })}
               changeYear={(year) => setState({ ...state, year: year })}
               changeType={(type) => setState({ ...state, type: type })}
-
               //número de resultados de búsqueda
               results={
                 papersFiltered instanceof Array ? papersFiltered.length : 0
@@ -111,13 +110,13 @@ export default function Research() {
                           <div className="paper_title">
                             <h4>{title}</h4>
                           </div>
-                          <div
-                            
-                            className="paper_subtitle"
-                          >{author}. {journal}</div>
+                          <div className="paper_subtitle">
+                            {author}. {journal}
+                          </div>
                         </div>
                       </div>
-                      <div className="links">
+                      <div className="links text-nowrap">
+                        
                         <a rel="noopener noreferrer" target="_blank" href={doi}>
                           {" "}
                           <p>Read publication </p>

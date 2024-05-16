@@ -2,7 +2,6 @@
 @import "../lib/_variables.sass"
 
 
-
 @media (min-width: 150px) 
     
     .research 
@@ -42,22 +41,23 @@
         display: flex
         flex-wrap: wrap
         padding-bottom: $spacing_sm
-        border-bottom: solid 1px $ca-blue-100
+        border-bottom: solid 1px $ca-blue-200
         justify-content: left
         .filter
             font-size: 1.1rem
             margin: 0 0.8rem 0.8rem 0
+            width: 100%
             label
                 display: flex
                 width: 100%
                 padding-right: 12px
                 margin-bottom: 0.4rem
-            
+                width: 100%
             select,
             input 
                 padding: 5px
                 margin-right: 0.3rem
-                width: 200px
+                width: 100%
                 height: 32px
                 option 
                 background-color: white
@@ -73,21 +73,24 @@
         .filter:last-child
             background-color: red
             label
-                width: 100px
+                width: 100px       
+    #filter_year
+        width: auto
     .papers 
         display: flex
         flex-direction: column
         padding-left: 0px
         .paper 
-            margin: $spacing_sm 0 
+            padding: $spacing_sm 0 
             display: flex
             flex-direction: column
-            border-bottom: $ca-blue-600
+            border-bottom: $ca-blue-200 1px solid
+            
         .paper_main 
             display: flex
             flex-direction: column
             justify-content: space-between
-            gap: $spacing_sm
+            gap: $spacing_xsm
             .paper_date
                 display: flex
                 h5
@@ -105,7 +108,8 @@
 
             .paper_subtitle 
                 //padding-bottom: $spacing_md
-
+                @apply text-gray-900
+                margin-bottom: $spacing_xsm
             .paper_doi 
                 font-weight: 600
 
@@ -115,23 +119,26 @@
             //gap: $spacing_xsm
             align-content: center
             justify-content: left
+            margin-top: 0.6rem
             
             a 
                 @include big-border-button-blue
                 display: flex
                 align-content: center
-                margin-top: $spacing_sm
+                //margin-top: $spacing_sm
+            
             p 
                 font-weight: 600
             svg
                 align-self: center
                 margin-left: 0.6rem
-@media (min-width: 600px) 
+@media (min-width: 640px) 
     .research
         .filters
             text-align: right
             display: flex
             flex-wrap: wrap
+            gap: 4px
             padding-bottom: $spacing_sm
             border-bottom: solid 1px $ca-blue-100
             justify-content: space-between
@@ -142,37 +149,38 @@
                 font-size: 1.3rem
                 margin: 0
                 height: 42px
+                width: auto
                 label
                     display: inline-block
                     width: 100px
                     padding-right: 12px
+                input
+                    width: 200px
             .research_results
                 font-size: 1.3rem
     .papers 
         display: flex
         flex-direction: column
-        gap: $spacing_md
-        padding-left: $spacing_xl
-        padding-right: $spacing_xl
-
-        .paper 
-        margin-top: $spacing_lg
+        gap: $spacing_xsm
         display: flex
         flex-direction: column
-        padding-left: $spacing_xl
-        padding-right: $spacing_xl
+        padding: $spacing_xsm 0 $spacing_sm 0
+        .paper 
+            padding: 6px 0 $spacing_sm 0
+       
+
 
         .paper_main 
             display: flex
             flex-direction: row
-            justify-content: space-between
+            justify-content: left
+            gap: $spacing_md
             .paper_date
                 h5
                     @include border-tag
                 
             .paper_content 
-                //gap: $spacing_md
-                //flex-grow: 1
+                width:100%
 
 
             .paper_title 
@@ -185,13 +193,27 @@
                 font-weight: 600
 
         .links 
-            a 
+            
             display: flex
             flex-direction: row
             //gap: $spacing_xsm
-            align-content: center
-            justify-content: right
-
+            align-content: flex-end
+            justify-content: flex-end
+            flex-wrap: wrap
+            margin: 0
             p 
                 font-weight: 600
-                text-decoration: underline
+                margin: 0
+            a
+                display: flex
+
+@media (min-width: 900px)
+    .filters       
+        .filter      
+            label
+                width: auto !important
+    .papers
+        .paper
+            .paper_main
+                .paper_content 
+                    width:70%
