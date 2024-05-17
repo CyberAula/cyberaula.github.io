@@ -129,7 +129,7 @@ export default function Research() {
             </div>
             <div className="load_more">
               {papersFiltered.length > papersToShow && (
-                <button onClick={handleLoadMore}>Load More</button>
+                <button onClick={handleLoadMore}>Load more</button>
               )}
             </div>
           </section>

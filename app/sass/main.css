@@ -321,6 +321,7 @@
     display: grid;
     grid-template-rows: 5vw 1fr auto;
     grid-gap: 16px;
+    grid-template-columns: 1fr;
   }
   .project_cards .project_card .year_and_cta .date {
     height: 24px;
@@ -441,22 +442,38 @@
     gap: 32px;
   }
   .load_more {
-    padding-top: 48px;
-    padding-bottom: 64px;
+    padding-top: 16px;
+    padding-bottom: 0;
     display: flex;
     justify-content: center;
+  }
+  .load_more button {
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem;
+    color: #5441ff;
+    background: #dbe2ff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .load_more button:hover {
+    background: #becaff;
+    color: #4f1be4;
+    transition: 200ms ease-in-out;
   }
   .filters {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 16px;
-    border-bottom: solid 1px #ebf0ff;
+    border-bottom: solid 1px #dbe2ff;
     justify-content: left;
   }
   .filters .filter {
     font-size: 1.1rem;
     margin: 0 0.8rem 0.8rem 0;
+    width: 100%;
     text-align: right;
   }
   .filters .filter label {
@@ -464,12 +481,13 @@
     width: 100%;
     padding-right: 12px;
     margin-bottom: 0.4rem;
+    width: 100%;
   }
   .filters .filter select,
   .filters .filter input {
     padding: 5px;
     margin-right: 0.3rem;
-    width: 200px;
+    width: 100%;
     height: 32px;
     background-color: white;
     border: 1px solid #4507c9;
@@ -487,22 +505,25 @@
   .filters .filter:last-child label {
     width: 100px;
   }
+  #filter_year {
+    width: auto;
+  }
   .papers {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
   }
   .papers .paper {
-    margin: 16px 0;
+    padding: 16px 0;
     display: flex;
     flex-direction: column;
-    border-bottom: #5441ff;
+    border-bottom: #dbe2ff 1px solid;
   }
   .papers .paper_main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 16px;
+    gap: 8px;
   }
   .papers .paper_main .paper_date {
     display: flex;
@@ -540,6 +561,10 @@
     font-size: 1.2rem;
     margin-bottom: 0.6rem;
   }
+  .papers .paper_main .paper_subtitle {
+    @apply text-gray-900;
+    margin-bottom: 8px;
+  }
   .papers .paper_main .paper_doi {
     font-weight: 600;
   }
@@ -548,14 +573,25 @@
     flex-direction: row;
     align-content: center;
     justify-content: left;
+    margin-top: 0.6rem;
   }
   .papers .links a {
     border: 1px solid #4f1be4;
     border-radius: 24px;
     padding: 0.5rem 1.2rem 0.7rem 1.4rem;
+    transition: 200ms ease-in-out;
     display: flex;
     align-content: center;
-    margin-top: 16px;
+  }
+  .papers .links a:hover {
+    color: white;
+    transition: 200ms ease-in-out;
+    background-color: #5441ff;
+  }
+  .papers .links a:active {
+    color: white;
+    transition: 200ms ease-in-out;
+    background-color: #5441ff;
   }
   .papers .links p {
     font-weight: 600;
@@ -565,11 +601,12 @@
     margin-left: 0.6rem;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 640px) {
   .research .filters {
     text-align: right;
     display: flex;
     flex-wrap: wrap;
+    gap: 4px;
     padding-bottom: 16px;
     border-bottom: solid 1px #ebf0ff;
     justify-content: space-between;
@@ -581,11 +618,15 @@
     font-size: 1.3rem;
     margin: 0;
     height: 42px;
+    width: auto;
   }
   .research .filters .filter label {
     display: inline-block;
     width: 100px;
     padding-right: 12px;
+  }
+  .research .filters .filter input {
+    width: 200px;
   }
   .research .filters .research_results {
     font-size: 1.3rem;
@@ -593,22 +634,22 @@
   .papers {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    padding-left: 64px;
-    padding-right: 64px;
-    margin-top: 48px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding: 8px 0 16px 0;
+  }
+  .papers .paper {
+    padding: 6px 0 16px 0;
   }
   .papers .paper_main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 32px;
   }
 }
-@media (min-width: 600px) and (min-width: 150px) {
+@media (min-width: 640px) and (min-width: 150px) {
   .papers .paper_main .paper_date h5 {
     color: black;
     border: 1px solid black;
@@ -619,7 +660,7 @@
     border-radius: 4px;
   }
 }
-@media (min-width: 600px) and (min-width: 640px) {
+@media (min-width: 640px) and (min-width: 640px) {
   .papers .paper_main .paper_date h5 {
     border: 1px solid to-black;
     height: 24px;
@@ -629,7 +670,10 @@
     font-weight: 600;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 640px) {
+  .papers .paper_main .paper_content {
+    width: 100%;
+  }
   .papers .paper_main .paper_title {
     @apply text-black;
   }
@@ -639,12 +683,25 @@
   .papers .links {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: right;
+    align-content: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
   }
   .papers .links p {
     font-weight: 600;
-    text-decoration: underline;
+    margin: 0;
+  }
+  .papers .links a {
+    display: flex;
+  }
+}
+@media (min-width: 900px) {
+  .filters .filter label {
+    width: auto !important;
+  }
+  .papers .paper .paper_main .paper_content {
+    width: 70%;
   }
 }
 .team main .teammates .teammate {
@@ -702,99 +759,148 @@
   width: 18px;
 }
 
-footer {
-  width: 100%;
-  padding: 2.5rem;
-  font-size: 1.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @apply bg-primary;
-  @apply text-white;
+@media (min-width: 150px) {
+  footer {
+    width: 100%;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @apply bg-primary;
+    @apply text-white;
+  }
+  footer .footer_left {
+    grid-column: span 2;
+    text-align: left;
+  }
+  footer .footer_left h1 {
+    margin-bottom: 1rem;
+  }
+  footer .footer_left .footer_subtitle {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  footer .footer_left .footer_subtitle h5 {
+    line-height: 1.6rem;
+  }
+  footer .footer_mid_1 {
+    display: flex;
+    text-align: center;
+  }
+  footer .footer_mid_1 .footer_sections {
+    display: flex;
+  }
+  footer .footer_mid_1 .footer_sections nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_mid_2 {
+    display: flex;
+    text-align: center;
+  }
+  footer .footer_right {
+    text-align: left;
+    align-items: left;
+    grid-column: span 2;
+  }
+  ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  ul li {
+    margin: 0 1.3rem 0 0;
+  }
 }
-footer .footer_mid {
-  display: flex;
-  text-align: center;
+@media (min-width: 800px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .footer-right {
+    text-align: right;
+    align-items: right;
+  }
 }
-footer .footer_mid .footer_sections {
-  display: flex;
-}
-footer .footer_mid .footer_sections nav ul {
-  display: flex;
-  flex-direction: column;
-}
-footer .footer_right {
-  text-align: right;
-  align-items: right;
-}
-
-ul {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-ul li {
-  margin: 0 1.3rem 0 0;
-}
-
 .article {
   display: flex;
+  margin: 32px;
+  @apply bg-gray-50;
+}
+.article .article_stroke.color-orange {
+  border: 4px solid #ff9900;
+}
+.article .article_stroke.color-yellow {
+  border: 4px solid #ffe685;
+}
+.article .article_stroke.color-purple {
+  border: 4px solid #97a7ff;
 }
 .article .article_content {
   display: flex;
   flex-direction: column;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  padding-top: 16px;
 }
 .article .article_content .article_title {
   font-weight: 700;
+  @apply text-black;
+}
+.article .article_content .article_author {
+  font-weight: 400;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 641px) {
-  html h1, body h1 {
+  html h1, body h1, footer h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
     font-weight: bold;
     line-height: 140%;
     margin-bottom: 1rem;
   }
-  html h2, body h2 {
+  html h2, body h2, footer h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 28px;
     font-weight: bold;
     line-height: 140%;
     margin-bottom: 1rem;
   }
-  html h3, body h3 {
+  html h3, body h3, footer h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: bold;
     line-height: 140%;
     margin-bottom: 1rem;
   }
-  html h4, body h4 {
+  html h4, body h4, footer h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
-  html h5, body h5 {
+  html h5, body h5, footer h5 {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
-  html p, body p {
+  html p, body p, footer p {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
     margin-bottom: 1rem;
   }
-  html button, body button {
+  html button, body button, footer button {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: semibold;
   }
-  html .smallcaps, body .smallcaps {
+  html .smallcaps, body .smallcaps, footer .smallcaps {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -1176,11 +1282,11 @@ main {
   grid-row: 2/3;
 }
 .home .body .latest_publications {
-  width: 30%;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 10px;
   margin-bottom: 48px;
+  display: flex;
 }
 .home .body .latest_publications h3 {
   padding-top: 4%;
@@ -1818,20 +1924,6 @@ RESPONSIVE
   }
   .about main .location {
     padding: 4rem 1rem 3rem 3rem;
-  }
-  footer {
-    padding: 2.5rem 0 2.5rem 0;
-    font-size: 0.9rem;
-    width: 100%;
-    text-align: center;
-  }
-  footer ul {
-    justify-content: center;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  footer ul li {
-    margin: 0 1.3rem 0 0;
   }
   .background .circle {
     width: 15rem;

@@ -1,4 +1,5 @@
 @import "./_variables.sass"
+//tags
 @mixin border-tag
     @media (min-width: 150px)
         color: black
@@ -32,6 +33,20 @@
         border-radius:4px
         font-size: 1rem
         font-weight: 600
+
+//buttons
+@mixin button-load-more
+    border-radius: 24px
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem
+    color: $ca-blue-600
+    background: $ca-blue-200
+    cursor: pointer
+    font-size: 14px
+    &:hover
+        background: $ca-blue-300
+        color: $ca-blue-700
+        transition: 200ms ease-in-out
+
 @mixin border-button-white
     border: 1px solid white
     border-radius: 24px

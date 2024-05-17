@@ -31,10 +31,16 @@
         gap: $spacing_md
 
     .load_more 
-        padding-top: $spacing_lg
-        padding-bottom: $spacing_xl
+        padding-top: $spacing_sm
+        padding-bottom: 0
         display: flex
         justify-content: center
+        button 
+            outline: none
+            border: none
+            @include button-load-more
+        
+
 
     .filters 
         text-align: left

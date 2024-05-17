@@ -1,5 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faGithub } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGit,
+  faGithubAlt,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 const routes = [
   { route: "/", title: "Home" },
   { route: "/projects", title: "Projects" },
@@ -11,48 +22,81 @@ const routes = [
 export default function Footer(props) {
   return (
     <footer>
-      <div className="footer_left">
+      <div className="footer_left md:mb-0 mb-8">
         <div className="footer_title">
           <h1>CyberAula</h1>
         </div>
         <div className="footer_subtitle">
-          <h5>Innovative educational Group </h5>
-          <h5>Universidad Politécnica de Madrid</h5>
+          <h5 className="font-medium">
+            Innovative educational Group <br></br>
+            Universidad Politécnica de Madrid
+          </h5>
         </div>
-        <div className="footer_email">innovacion.educativa@upm.es</div>
+        <div className="flex">
+          <FontAwesomeIcon className="mr-3" icon={faEnvelope} size="lg" />{" "}
+          <div className="footer_email">innovacion.educativa@upm.es</div>
+        </div>
       </div>
-      <div className="footer_mid">
-        <div className="footer_sections">
+     
+        <div className="footer_mid_1 md:mb-0 mb-8">
           {" "}
-         
           <nav>
             <ul>
-				<li className="sections_title smallcaps">sections</li>
+              <li className="sections_title smallcaps text-left mb-4">
+                sections
+              </li>
               {routes.map((route, index) => (
                 <li
                   key={index}
-                  className={route.route === props.route ? "li-selected" : ""}
+                  className={
+                    route.route === props.route
+                      ? "li-selected text-left mb-2 font-medium md:text-"
+                      : "text-left mb-2 font-medium"
+                  }
                 >
-                  <Link href={route.route}>{route.title}</Link>
+                  <Link className="font-medium" href={route.route}>
+                    {route.title}
+                  </Link>
                 </li>
               ))}
             </ul>
           </nav>
         </div>
-        <div className="socials">
-          <div className="socials_title smallcaps">social media</div>
-          <ul>
-            <li></li>
-          </ul>
+        <div className="footer_mid_2">
+          <div className="socials">
+            <div className="socials_title smallcaps mb-4 text-left">
+              social media
+            </div>
+            <ul>
+              <li className="mb-2 text-left ">
+                <a className="font-medium">
+                  <FontAwesomeIcon className="mr-2 " icon={faGithubAlt} />
+                  Github
+                </a>
+              </li>
+              <li className="mb-2 text-left">
+                <a className="font-medium">
+                  <FontAwesomeIcon className="mr-2 " icon={faYoutube} />
+                  Youtube
+                </a>
+              </li>
+              <li className="mb-2 text-left">
+                <a className="font-medium">
+                  <FontAwesomeIcon className="mr-2 " icon={faTwitter} />
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div className="footer_right">
+      
+      <div className="footer_right md:max-w-64 size-full">
         <div className="copyright">
           {" "}
           <ul>
-            <li>2024 &copy;</li>
-            <li>
-              <a
+            <li className="md:mb-4 mb-2">2024 &copy;</li>
+            <li className="md:mb-4 mb-2">
+              <a className="font-normal text-base"
                 rel="noopener noreferrer"
                 href="http://www.dit.upm.es/"
                 target="_blank"
@@ -60,8 +104,9 @@ export default function Footer(props) {
                 Department of Telematic Systems Engineering
               </a>
             </li>
-            <li>
+            <li className="md:mb-4 mb-2">
               <a
+                className="font-normal text-base"
                 rel="noopener noreferrer"
                 href="http://www.etsit.upm.es/de.html"
                 target="_blank"
@@ -71,6 +116,7 @@ export default function Footer(props) {
             </li>
             <li>
               <a
+                className="font-normal text-base"
                 rel="noopener noreferrer"
                 href="http://www.upm.es/internacional"
                 target="_blank"

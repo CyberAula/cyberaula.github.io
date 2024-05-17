@@ -13,7 +13,7 @@ $bold:800
 
 //TIPOGRAFÍAS PARA MÓVIL
  @media screen and (max-width: 640px)
-    html, body
+    html, body, footer
         h1
             font-family: "Montserrat", sans-serif
             font-size: nth($lg-text,1)
@@ -22,7 +22,7 @@ $bold:800
 
         h2
             font-family: "Montserrat", sans-serif
-            font-size: nth($md-text,1)
+            font-size: nth($lg-text,1)
             line-height: nth($md-text,3)
             margin-bottom: nth($md-text,4)
 
@@ -34,16 +34,15 @@ $bold:800
 
         h4
             font-family: "Montserrat", sans-serif
-            font-size: nth($sm-text,1)
+            font-size: nth($md-text,1)
             line-height: nth($sm-text,3)
-            color: red
             margin-bottom: nth($sm-text,4)
 
         h5
             font-family: "Montserrat", sans-serif
-            font-size: nth($body-text,1)
-            line-height: nth($body-text,3)
-            margin-bottom: nth($body-text,4)
+            font-size: nth($sm-text,1)
+            line-height: nth($sm-text,3)
+            margin-bottom: nth($sm-text,4)
 
         p
 
@@ -65,7 +64,7 @@ $bold:800
 
 
 @media screen and (min-width: 641px)
-    html, body
+    html, body, footer
         h1
             font-family: "Montserrat", sans-serif
             font-size: nth($xxl-text,1)
