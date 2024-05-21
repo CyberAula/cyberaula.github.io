@@ -16,6 +16,22 @@
   @apply border-2 border-primary; // no funciona :( <-- funciona en el globals.scss though
 }
 
+// PRUEBA GRID, BORRAR
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: 20px;
+  grid-row-gap: 10px;
+  grid-column-gap: 16px;
+}
+
+.card {
+  grid-row-end: span 10;
+  margin-bottom: 10px;
+}
+
+
 /* ==========================================================================
     VARIABLES
    ========================================================================== */
@@ -672,14 +688,6 @@ main {
  ========================================================================== */
 
 .tools {
-  @apply bg-white;
-
-  main {
-    padding: 5rem 0 0 0;
-    // margin: 8rem 4rem 0 4rem;
-    margin-bottom: $spacing_lg;
-  }
-
   .nav_bar {
     background-color: inherit;
     color: inherit;
@@ -742,8 +750,8 @@ main {
         .tool_logo {
           width: 10%;
           margin: 0.8rem 0 0 0;
-          filter: brightness(0) invert(1);
-          -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0);
+          -webkit-filter: brightness(0) ;
 
           img {
             object-fit: contain;
@@ -1598,12 +1606,7 @@ RESPONSIVE
             }
           }
 
-          .tool_logo {
-            width: 40%;
-            padding-bottom: 2rem;
-            align-self: center;
-          }
-
+          
           .tool_description {
             width: 140%;
 
