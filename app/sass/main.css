@@ -34,6 +34,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @media (min-width: 150px) {
   .course {
     height: 100%;
@@ -759,6 +767,96 @@
   width: 18px;
 }
 
+.tool {
+  box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  border: solid 1px #dbe2ff;
+  transition: 200ms ease-in-out;
+}
+.tool:hover {
+  box-shadow: 0px 20px 23px 0px rgba(0, 0, 0, 0.18);
+  transform: translateY(-3%);
+  transition: 200ms ease-in-out;
+}
+.tool .tool_logo {
+  background-color: #5441ff;
+  width: 100%;
+  border-radius: 11px 11px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tool .tool_logo img {
+  border-radius: 11px 11px 0 0;
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: center;
+  min-height: 135px;
+  max-height: 160px;
+  max-width: 100%;
+  padding: 3rem;
+}
+.tool .tool_content {
+  @apply text-gray-800;
+  padding: 1rem 1.8rem 1.8rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.tool .tool_content .tool_title h2 {
+  line-height: 115%;
+}
+.tool .tool_content .tool_button_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.tool .tool_content .tool_button_container .tool_button {
+  @apply text-ca_blue-700 /*apply siempre al inicio del sass, sino da error (lo hemos vivido)*/;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #4f1be4;
+  border-radius: 24px;
+  padding: 0.5rem 1.2rem 0.7rem 1.4rem;
+  transition: 200ms ease-in-out;
+}
+.tool .tool_content .tool_button_container .tool_button:hover {
+  color: white;
+  transition: 200ms ease-in-out;
+  background-color: #5441ff;
+}
+.tool .tool_content .tool_button_container .tool_button:active {
+  color: white;
+  transition: 200ms ease-in-out;
+  background-color: #5441ff;
+}
+.tool .tool_content .tool_button_container .tool_button a {
+  display: flex;
+}
+.tool .tool_content .tool_button_container .tool_button svg {
+  margin-right: 0.6rem;
+}
+.tool .tool_content .tool_button_container .tool_github {
+  @apply text-gray-600;
+  border-radius: 24px;
+  @apply text-gray-800;
+  padding: 0.5rem 1.2rem 0.7rem 1.4rem;
+  transition: 200ms ease-in-out;
+  text-decoration: underline;
+}
+.tool .tool_content .tool_button_container .tool_github:hover {
+  @apply text-gray-900;
+  transition: 200ms ease-in-out;
+  background-color: #ebf0ff;
+}
+.tool .tool_content .tool_button_container .tool_github:active {
+  @apply text-ca_blue-800;
+  transition: 200ms ease-in-out;
+  background-color: #becaff;
+}
+
 @media (min-width: 150px) {
   footer {
     width: 100%;
@@ -909,6 +1007,19 @@
 }
 * {
   @apply border-2 border-primary;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: 20px;
+  grid-row-gap: 10px;
+  grid-column-gap: 16px;
+}
+
+.card {
+  grid-row-end: span 10;
+  margin-bottom: 10px;
 }
 
 /* ==========================================================================
@@ -1396,15 +1507,11 @@ main {
  TOOLS
  ========================================================================== */
 .tools {
-  @apply bg-white;
+  background-color: white;
   /*---- Scroll Bar ----*/
   /* Track */
   /* Handle */
   /* Handle on hover */
-}
-.tools main {
-  padding: 5rem 0 0 0;
-  margin-bottom: 48px;
 }
 .tools .nav_bar {
   background-color: inherit;
@@ -1441,39 +1548,17 @@ main {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.tools main .our_tools .tool {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  border-radius: 4px;
-  @apply border-gray-200 border-2;
-  padding: 2rem 2rem 2rem 2rem;
-}
-.tools main .our_tools .tool .tool_logo {
-  width: 10%;
-  margin: 0.8rem 0 0 0;
-  filter: brightness(0) invert(1);
-  -webkit-filter: brightness(0) invert(1);
-}
-.tools main .our_tools .tool .tool_logo img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: top;
-     object-position: top;
-  width: 100%;
-  height: 100%;
-}
-.tools main .our_tools .tool .tool_main {
+.tools main .our_tools .tool_main {
   width: 70%;
 }
-.tools main .our_tools .tool .tool_main h2 {
+.tools main .our_tools .tool_main h2 {
   @apply text-ca_blue-900;
 }
-.tools main .our_tools .tool .tool_main h3 {
+.tools main .our_tools .tool_main h3 {
   font-size: 14px;
   font-weight: 500;
 }
-.tools main .our_tools .tool .tool_main .button_container {
+.tools main .our_tools .tool_main .button_container {
   display: flex;
   justify-content: flex-end;
 }
@@ -1686,13 +1771,10 @@ RESPONSIVE
   .tools main .our_tools {
     padding: 3.5rem 0 0 0;
   }
-  .tools main .our_tools .tool {
-    padding: 3rem 1rem 3rem 3rem;
-  }
-  .tools main .our_tools .tool .tool_title h2 {
+  .tools main .our_tools .tool_title h2 {
     font-size: 2rem;
   }
-  .tools main .our_tools .tool .tool_content h3 {
+  .tools main .our_tools .tool_content h3 {
     font-size: 1.5rem;
   }
   .team .teammates {
@@ -1856,22 +1938,13 @@ RESPONSIVE
   .tools main .our_tools {
     padding: 3.5rem 0 0 0;
   }
-  .tools main .our_tools .tool {
-    flex-flow: column;
-    padding: 2rem 1rem 2rem 2rem;
-  }
-  .tools main .our_tools .tool .tool_title h2 {
+  .tools main .our_tools .tool_title h2 {
     font-size: 1.2rem;
   }
-  .tools main .our_tools .tool .tool_logo {
-    width: 40%;
-    padding-bottom: 2rem;
-    align-self: center;
-  }
-  .tools main .our_tools .tool .tool_description {
+  .tools main .our_tools .tool_description {
     width: 140%;
   }
-  .tools main .our_tools .tool .tool_description h3 {
+  .tools main .our_tools .tool_description h3 {
     font-size: 1rem;
   }
   .team main .teammates {
