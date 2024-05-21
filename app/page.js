@@ -96,8 +96,10 @@ export default function Home() {
                       technology) in education, encouraging e-learning.
                     </div>
                   </div>
-
+                  <div className="grid_container">
                   <GridElement />
+                  </div>
+                  
                 </section>
               </div>
             </section>
