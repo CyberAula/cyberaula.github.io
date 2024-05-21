@@ -11,8 +11,13 @@ import BulletElement from "@/components/BulletElement";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward } from '@fortawesome/free-solid-svg-icons';
 
+import { useTranslation } from 'react-i18next';
+
+
 export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);
+  const { t } = useTranslation();
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,8 +33,7 @@ export default function Home() {
               <div className="head">
                 <div className="group_description">
                   <h1>
-                    <b>Bienvenido a cyberaula, </b>la iniciativa de innovación
-                    educativa de la UPM.
+                    <b>{t('front.title')}, </b>{t('front.title2')}
                   </h1>
                 </div>
               </div>

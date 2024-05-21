@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import LangSwitcher  from "./LangSwitcher";
 
 const routes = [
   //{route: "/", title: "Home"},
@@ -33,6 +34,9 @@ export default function Header(props) {
           </div>
         </div>
       </a>
+
+      <LangSwitcher />
+
       <div className="menu_icon">
         <i
           className={
