@@ -8,17 +8,59 @@
     box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
     border-radius: 12px
     border: solid 1px $ca-blue-200
+    transition: 200ms ease-in-out
+    &:hover
+        -webkit-box-shadow: 0px 20px 23px 0px rgba(0,0,0,0.18)
+        -moz-box-shadow: 0px 20px 23px 0px rgba(0,0,0,0.18)
+        box-shadow: 0px 20px 23px 0px rgba(0,0,0,0.18)
+        transform: translateY(-3%)
+        transition: 200ms ease-in-out
+        
+    // background: $ca-blue-100
     .tool_logo
         background-color: $blue_primary
         width: 100%
         //margin: 0.8rem 0 0 0
         border-radius: 11px 11px 0 0
         display: flex
+        justify-content: center
+        align-items: center
         img
             border-radius: 11px 11px 0 0
             filter: brightness(0) invert(1)
             -webkit-filter: brightness(0) invert(1)
-            padding-bottom: 2rem
+            object-fit: contain
             align-self: center
-            height: 100px
-            object-fit: cover
+            min-height: 135px
+            max-height: 160px
+            max-width: 100%
+            padding: 3rem
+    .tool_content
+        @apply text-gray-800
+        padding: 1rem 1.8rem 1.8rem 1.8rem
+        display: flex
+        flex-direction: column
+
+        .tool_title
+            h2
+                line-height: 115%
+        .tool_button_container
+            display: flex
+            justify-content: space-between
+            margin-top: 1rem
+            .tool_button
+                @apply text-ca_blue-700 /*apply siempre al inicio del sass, sino da error (lo hemos vivido)*/
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                @include big-border-button-blue
+                
+                a
+                    display: flex
+                svg
+                    margin-right: 0.6rem
+            .tool_github
+                @apply text-gray-600
+                @include invisible-button
+                text-decoration: underline
+                

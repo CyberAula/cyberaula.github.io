@@ -8,6 +8,14 @@ import Link from 'next/link';
 import image from 'next/image';
 import { useState, useEffect } from 'react';
 import { mytools } from "@/constants/tools";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGit,
+  faGithub,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Tools(props) {
 
@@ -30,28 +38,41 @@ export default function Tools(props) {
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
-            <Masonry gutter="24px">
+            <Masonry gutter="12px">
 
-              {tools.map(({ title, description, route, logo }) => {
+              {tools.map(({ title, description, route, logo, github }) => {
                 return (
-                <div className="tool">
-              
+                  <div className="tool">
+
                     <div className="tool_logo">
                       <img alt={"Project Logo"} src={logo} />
                     </div>
-                
-                  <div class="block justify-between">
-                    <div className="tool_title">
-                      <h2>{title}</h2>
+
+                    <div class="tool_content">
+                      <div className="tool_title">
+                        <h2>{title}</h2>
+                      </div>
+                      <div className="tool_description">
+                        <p>{description}</p>
+                      </div>
+                      <div className="tool_button_container">
+                        <div className="tool_button" >
+                          <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
+
+                          <CreateLink route={route}>
+                            Ir a herramienta </CreateLink>
+                        </div>
+                        <div className="tool_github" >
+                        <FontAwesomeIcon className="mr-2 " icon={faGithub} size="lg" />
+      
+                          <CreateLink route={github}>
+                            Github </CreateLink>
+                        </div>
+
+                      </div>
                     </div>
-                    <div className="tool_description">
-                      <p>{description}</p>
-                    </div>
+
                   </div>
-                  <CreateLink route={route}>BOTON LINK</CreateLink>
-
-
-                </div>
 
                 );
               })}
