@@ -125,7 +125,7 @@ TYPOGRAPHY
   margin-top: 60px;
   height: 13.8vw;
   background-image: url("/assets/img/headers/header-one.png");
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   // object-fit: cover;
@@ -141,7 +141,7 @@ TYPOGRAPHY
 
 body,
 html {
-  
+
   h2 {
     font-weight: lighter;
   }
@@ -186,6 +186,7 @@ html {
     }
   }
 }
+
 // .button_filter {
 //   background-color: #3302bf;
 //   font-weight: 400;
@@ -239,7 +240,7 @@ header {
 
 main {
   padding: 2rem 0 0 0;
-  margin:0.8rem
+  margin: 0.8rem
 }
 
 .box-shadow {
@@ -398,8 +399,7 @@ main {
           width: 50%;
         }
 
-        .body_text {
-        }
+        .body_text {}
       }
     }
 
@@ -487,15 +487,16 @@ main {
       padding: 10px;
       margin-bottom: $spacing_lg;
       display: flex;
+      flex-direction: column;
 
       h3 {
         padding-top: 4%;
         padding-bottom: 4%;
-        font-family: $montserrat;
+        // font-family: $montserrat;
         font-weight: bold;
         font-size: 2.1rem;
-        text-align: center;
-        color: black;
+        text-align: left;
+        @apply text-ca_blue-600;
       }
 
       p {
@@ -505,13 +506,23 @@ main {
         padding: 2% 2% 2% 2%;
       }
 
+  
       .more {
-        font-size: 1.2rem;
-        font-family: $serif_font;
-        font-weight: bold;
-        color: $ca-or-100;
-        text-align: left;
-        padding: 2% 2% 2% 2%;
+        // font-size: 1.2rem;
+        // font-weight: bold;
+        // color: $ca-or-100;
+        // text-align: left;
+        // padding: 2% 2% 2% 2%;
+        @apply text-ca_blue-600;
+        @include big-border-button-blue;
+        // display: flex;
+        align-content: center;
+
+        svg {
+          align-self: center;
+          margin-left: 0.6rem;
+        }
+
       }
     }
   }
@@ -629,6 +640,7 @@ main {
             color: inherit;
 
             &:hover {
+
               h2,
               h3 {
                 color: pink;
@@ -766,8 +778,7 @@ main {
           }
 
           a {
-            &:hover {
-            }
+            &:hover {}
           }
 
           .button_container {
@@ -1250,7 +1261,7 @@ RESPONSIVE
 @media (max-width: 940px) {
   header {
     padding: 1.5rem 0 1.6rem 0;
-   
+
     .menu {
       width: 100%;
       font-weight: $semi-bold;
@@ -1264,7 +1275,7 @@ RESPONSIVE
         font-size: 1.2rem;
       }
     }
-   
+
   }
 
 
@@ -1287,6 +1298,7 @@ RESPONSIVE
       }
     }
   }
+
   .banner {
     margin-top: 104px
   }
@@ -1310,7 +1322,7 @@ RESPONSIVE
     h2 {
       font-size: 1.5rem;
     }
-    
+
     .body {
 
       display: block;
@@ -1326,6 +1338,7 @@ RESPONSIVE
       }
     }
   }
+
   .banner {
     background-image: url("/assets/img/headers/header-one.png");
     background-size: cover;
@@ -1334,6 +1347,7 @@ RESPONSIVE
     background-repeat: no-repeat;
     height: 8rem;
   }
+
   .projects {
     main {
       .our_projects {
@@ -1430,6 +1444,7 @@ RESPONSIVE
     align-items: center;
     transition: 0.5s;
     padding: 1rem 0 0.7rem 0;
+
     .imagotype {
       width: 100%;
       display: flex;
@@ -1490,11 +1505,13 @@ RESPONSIVE
         }
       }
     }
-   
+
   }
+
   .banner {
     margin-top: 40px;
   }
+
   .parallax__layer {
     position: absolute;
     top: 75px;
@@ -1527,7 +1544,7 @@ RESPONSIVE
     }
 
     .body {
-      
+
       .carousel {
         h3 {
           font-size: 1.5rem;
@@ -1537,10 +1554,12 @@ RESPONSIVE
           font-size: 1rem;
         }
       }
+
       .latest_publications {
         padding: 0;
-        p{
-          padding:0
+
+        p {
+          padding: 0
         }
       }
     }
@@ -1677,7 +1696,7 @@ RESPONSIVE
         }
 
         .teammate {
-         // padding: 3rem 2rem 3rem 2rem;
+          // padding: 3rem 2rem 3rem 2rem;
 
           .mate_info {
             width: 95%;

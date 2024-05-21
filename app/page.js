@@ -10,6 +10,7 @@ import { mycarousel } from "@/constants/carousel.js";
 import BulletElement from "@/components/BulletElement";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);
@@ -72,9 +73,7 @@ export default function Home() {
                 <div className="latest_publications">
                   <h3>Latest publications</h3>
                   <div className='recent_pubs_container'><RecentPublications /></div>
-                  <a href="/#/research" rel="noopener noreferrer">
-                    <div className="more">more...</div>
-                  </a>
+
                 </div>
                 <section className="lines_of_act">
                   <h4>Lines of action</h4>
