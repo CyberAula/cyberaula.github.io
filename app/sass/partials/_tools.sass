@@ -2,8 +2,23 @@
 @import "../lib/_mixins.sass"
 
 //media queries
-    .tool_logo {
-            width: 40%;
-            padding-bottom: 2rem;
-            align-self: center;
-          }
+.tool
+    -webkit-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
+    -moz-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
+    box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
+    border-radius: 12px
+    border: solid 1px $ca-blue-200
+    .tool_logo
+        background-color: $blue_primary
+        width: 100%
+        //margin: 0.8rem 0 0 0
+        border-radius: 11px 11px 0 0
+        display: flex
+        img
+            border-radius: 11px 11px 0 0
+            filter: brightness(0) invert(1)
+            -webkit-filter: brightness(0) invert(1)
+            padding-bottom: 2rem
+            align-self: center
+            height: 100px
+            object-fit: cover

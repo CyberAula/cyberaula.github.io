@@ -30,31 +30,32 @@ export default function Tools(props) {
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
-          <Masonry gutter="24px">
+            <Masonry gutter="24px">
 
-            {tools.map(({ title, description, route, logo }) => {
-              return (<div>
-                <div class="w-full">
-                  <div className="tool_logo">
-                    <img alt={"Project Logo"} src={logo} style={{ height: '50px' }} />
+              {tools.map(({ title, description, route, logo }) => {
+                return (
+                <div className="tool">
+              
+                    <div className="tool_logo">
+                      <img alt={"Project Logo"} src={logo} />
+                    </div>
+                
+                  <div class="block justify-between">
+                    <div className="tool_title">
+                      <h2>{title}</h2>
+                    </div>
+                    <div className="tool_description">
+                      <p>{description}</p>
+                    </div>
                   </div>
+                  <CreateLink route={route}>BOTON LINK</CreateLink>
+
+
                 </div>
-                <div class="block justify-between">
-                  <div className="tool_title">
-                    <h2>{title}</h2>
-                  </div>
-                  <div className="tool_description">
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <CreateLink route={route}>BOTON LINK</CreateLink>
 
-
-              </div>
-
-              );
-            })}
-          </Masonry>
+                );
+              })}
+            </Masonry>
           </ResponsiveMasonry>
         </section>
       </main>
