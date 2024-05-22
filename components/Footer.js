@@ -11,15 +11,20 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-const routes = [
-  { route: "/", title: "Home" },
-  { route: "/projects", title: "Projects" },
-  { route: "/research", title: "Research" },
-  { route: "/team", title: "Team" },
-  { route: "/tools", title: "Tools" },
-  { route: "/about", title: "Contact" },
-];
+import { useTranslation } from 'react-i18next';
+
+
 export default function Footer(props) {
+  const { t } = useTranslation();
+  const routes = [
+    //{route: "/", title: "Home"},
+    { route: "/research", title: t('nav.item') },
+    { route: "/courses", title: t('nav.item2') },
+    { route: "/tools", title: t('nav.item3') },
+    { route: "/projects", title: t('nav.item4') },
+    { route: "/team", title: t('nav.item5') },
+    { route: "/about", title: t('nav.item6') },
+  ];
   return (
     <footer>
       <div className="footer_left md:mb-0 mb-8">
@@ -43,7 +48,7 @@ export default function Footer(props) {
           <nav>
             <ul>
               <li className="sections_title smallcaps text-left mb-4">
-                sections
+              {t('footer.title1')}
               </li>
               {routes.map((route, index) => (
                 <li
@@ -65,7 +70,7 @@ export default function Footer(props) {
         <div className="footer_mid_2">
           <div className="socials">
             <div className="socials_title smallcaps mb-4 text-left">
-              social media
+            {t('footer.title2')}
             </div>
             <ul>
               <li className="mb-2 text-left ">

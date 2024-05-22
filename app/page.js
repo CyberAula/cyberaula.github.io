@@ -41,17 +41,16 @@ export default function Home() {
 
               <div className="body">
                 <section className="award_section">
-                  <h2> GIE PREMIADO EN 2017 </h2>
+                  <h2> {t('front.awardH2')} </h2>
                   <div className="award_card">
                     <div className="award_icon_container">
                   <FontAwesomeIcon className="award_icon" icon={faAward} />
                   </div>
                     <div className="award_card_text">
-                      <h4>PREMIO A LOS GRUPOS DE INNOVACIÓN EDUCATIVA</h4>
+                      <h4>{t('front.awardTitle')}</h4>
                       <p>
-                        Premio otorgado al GIE CyberAula, coordinado por el
-                        profesor Juan Quemada Vives (E.T.S. DE INGENIEROS DE
-                        TELECOMUNICACIÓN)
+                      {t('front.awardBody')}
+                        
                       </p>
                     </div>
                   </div>
@@ -75,29 +74,23 @@ export default function Home() {
 									</Carousel>								
 							</div> */}
                 <div className="latest_publications">
-                  <h3>Latest publications</h3>
+                  <h3>{t('front.latestPublicationsTitle')}</h3>
                   <div className='recent_pubs_container'><RecentPublications /></div>
 
                 </div>
                 <section className="lines_of_act">
-                  <h4>Lines of action</h4>
+                  <h4>{t('front.linesOfActTitle')}</h4>
                   <p>
-                    Cyberaula group initiatives approach towards the educational
-                    environment and its relationship with the use of new
-                    technologies, aiming to develop new ways of learning and the
-                    creation and delivery of new MOOCs, amongst other services
-                    of collaborative resources for teaching.
+                  {t('front.linesOfActBody')}
                   </p>
 
                   <BulletElement></BulletElement>
                 </section>
                 <section className="our_goals">
                   <div className="text_content">
-                    <h4 className="title_text">Our goals</h4>
+                    <h4 className="title_text">{t('front.goalsTitle')}</h4>
                     <div className="body_text">
-                      The CyberAula group focuses its activities in the
-                      application of ICTs(information and communication
-                      technology) in education, encouraging e-learning.
+                    {t('front.goalsBody')}
                     </div>
                   </div>
                   <div className="grid_container">

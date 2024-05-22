@@ -1,15 +1,19 @@
+import i18next from 'i18next';
 export const myBulletElements = [
   {
-    title: "Active learning methodologies",
+    title: i18next.t('front.bulletElements.bulletA'),
     letter: "A",
+    key: "1",
   },
 
   {
-    title: "addition of technologies in on-site training",
+    title: i18next.t('front.bulletElements.bulletD'),
     letter: "D",
+    key: "2",
   },
   {
-    title: "Educational development in research, development and innovation projects",
+    title: i18next.t('front.bulletElements.bulletF'),
     letter: "F",
+    key: "3",
   },
 ];
