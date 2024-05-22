@@ -6,18 +6,22 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import LangSwitcher  from "./LangSwitcher";
 
-const routes = [
-  //{route: "/", title: "Home"},
-  { route: "/research", title: "Publications" },
-  { route: "/courses", title: "Courses" },
-  { route: "/tools", title: "Tools" },
-  { route: "/projects", title: "Projects" },
-  { route: "/team", title: "Team" },
-  { route: "/about", title: "Contact" },
-];
+import { useTranslation } from 'react-i18next';
+
+
 export default function Header(props) {
   const [state, setState] = useState({ open: false });
-
+  const { t } = useTranslation();
+  const routes = [
+    //{route: "/", title: "Home"},
+    { route: "/research", title: t('nav.item') },
+    { route: "/courses", title: t('nav.item2') },
+    { route: "/tools", title: t('nav.item3') },
+    { route: "/projects", title: t('nav.item4') },
+    { route: "/team", title: t('nav.item5') },
+    { route: "/about", title: t('nav.item6') },
+  ];
+  
   return (
     <header className="nav_bar" id="header_home">
       <a href="/">

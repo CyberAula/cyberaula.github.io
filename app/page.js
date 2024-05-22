@@ -10,6 +10,7 @@ import { mycarousel } from "@/constants/carousel.js";
 import BulletElement from "@/components/BulletElement";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 import { useTranslation } from 'react-i18next';
 
@@ -76,9 +77,7 @@ export default function Home() {
                 <div className="latest_publications">
                   <h3>Latest publications</h3>
                   <div className='recent_pubs_container'><RecentPublications /></div>
-                  <a href="/#/research" rel="noopener noreferrer">
-                    <div className="more">more...</div>
-                  </a>
+
                 </div>
                 <section className="lines_of_act">
                   <h4>Lines of action</h4>
@@ -101,8 +100,10 @@ export default function Home() {
                       technology) in education, encouraging e-learning.
                     </div>
                   </div>
-
+                  <div className="grid_container">
                   <GridElement />
+                  </div>
+                  
                 </section>
               </div>
             </section>

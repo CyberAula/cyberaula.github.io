@@ -1,4 +1,12 @@
 export const en = {
+    "nav":{
+        "item":"Publications",
+        "item2":"Courses",
+        "item3":"Tools",
+        "item4":"Projects",
+        "item5":"Team",
+        "item6":"Contact",
+    },
     "header": {
         "publicationstab": "Publications"
     },
