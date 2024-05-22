@@ -35,7 +35,7 @@ export default function Header(props) {
         </div>
       </a>
 
-      <LangSwitcher />
+      
 
       <div className="menu_icon">
         <i
@@ -68,6 +68,7 @@ export default function Header(props) {
         }
       >
         <ul>
+      
           {routes.map((route, index) => (
             <li
               key={index}
@@ -76,7 +77,9 @@ export default function Header(props) {
               <Link href={route.route}>{route.title}</Link>
             </li>
           ))}
+       
         </ul>
+        <LangSwitcher />
       </div>
      
     </header>

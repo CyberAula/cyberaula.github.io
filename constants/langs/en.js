@@ -9,7 +9,7 @@ export const en = {
     "publications": {
         "title": "Publications"
     },
-    "cursos": {
+    "courses": {
         "title": "Courses"
     }
 }

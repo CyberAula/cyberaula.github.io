@@ -1,27 +1,38 @@
 import { useTranslation } from 'react-i18next';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const lngs = {
-    en: { nativeName: 'English' },
-    es: { nativeName: 'Spanish' }
+    en: { 
+        nativeName: 'English' ,
+        abbreviation: 'EN'
+    },
+    es: { 
+        nativeName: 'Spanish',
+        abbreviation: 'ES' }
   };
 
 
 export default function LangSwitcher() {
     const { i18n } = useTranslation();
     return (
-        <div>
+        
+        <div className='lang_switcher'>
+            <FontAwesomeIcon icon={faGlobe} />
         {Object.keys(lngs).map((lng) => (
-            <button
+            <a
             key={lng}
             style={{
-                fontWeight: i18n.language === lng ? 'bold' : 'normal',
+                fontWeight: i18n.language === lng ? 'bold' : 'normal', 
             }}
             type="submit"
             onClick={() => i18n.changeLanguage(lng)}
+
             >
-            {lngs[lng].nativeName}
-            </button>
+            
+            {lngs[lng].abbreviation}   <span style={{display: lng === "en" ? 'inline' : 'none', fontWeight: 'normal' }}> / </span> 
+            
+            </a>
         ))}
         </div>
     );
