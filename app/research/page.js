@@ -8,8 +8,10 @@ import Link from "next/link";
 import { mypublications } from "@/constants/publications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from 'react-i18next';
 
 export default function Research() {
+  const { t } = useTranslation();
   const [state, setState] = useState({
     papers: mypublications,
     search: "",
@@ -79,7 +81,7 @@ export default function Research() {
       <div className="research">
         <Header route={"/research"} />
         <div className="banner">
-          <h1>Publications</h1>
+          <h1>{t('publications.title')}</h1>
         </div>
         <main>
           <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4">
@@ -119,7 +121,7 @@ export default function Research() {
                         
                         <a rel="noopener noreferrer" target="_blank" href={doi}>
                           {" "}
-                          <p>Read publication </p>
+                          <p>{t('publications.button')} </p>
                           <FontAwesomeIcon icon={faArrowRight} />
                         </a>
                       </div>
@@ -129,7 +131,7 @@ export default function Research() {
             </div>
             <div className="load_more">
               {papersFiltered.length > papersToShow && (
-                <button onClick={handleLoadMore}>Load more</button>
+                <button onClick={handleLoadMore}>{t('publications.button2')}</button>
               )}
             </div>
           </section>

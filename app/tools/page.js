@@ -16,9 +16,10 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from 'react-i18next';
 
 export default function Tools(props) {
-
+  const { t } = useTranslation();
   const [tools, setTools] = useState(mytools);
 
   useEffect(() => {
