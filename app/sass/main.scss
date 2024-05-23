@@ -1303,8 +1303,7 @@ RESPONSIVE
 
   .tools {
     main {
-      .our_tools {
-        padding: 3.5rem 0 0 0;
+     
 
         .tool_title {
           h2 {
@@ -1318,7 +1317,7 @@ RESPONSIVE
           }
         }
       }
-    }
+    
   }
 
   .team {
@@ -1420,7 +1419,7 @@ RESPONSIVE
       width: 100%;
       font-weight: $semi-bold;
       margin: 0;
-      padding: 2rem 3rem 0 3rem;
+      padding: 1rem 1.6rem 0 1.6rem;
       display: none;
 
       ul {
@@ -1433,7 +1432,10 @@ RESPONSIVE
           padding: 0.66rem 0;
           width: 100%;
           text-align: center;
-          border-bottom: 1px solid black
+          border-bottom: 1px solid $ca-blue-300
+        }
+        li:last-child {
+          border-bottom: 0px 
         }
       }
     }
@@ -1533,8 +1535,7 @@ RESPONSIVE
 
   .tools {
     main {
-      .our_tools {
-        padding: 3.5rem 0 0 0;
+      
 
       
 
@@ -1544,15 +1545,12 @@ RESPONSIVE
             }
           }
 
-          .tool_description {
-            width: 140%;
-
             h3 {
               font-size: 1rem;
             }
-          }
+          
         
-      }
+      
     }
   }
 

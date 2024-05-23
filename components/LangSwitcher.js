@@ -18,6 +18,7 @@ export default function LangSwitcher() {
     return (
         
         <div className='lang_switcher'>
+            <div>
             <FontAwesomeIcon icon={faGlobe} />
         {Object.keys(lngs).map((lng) => (
             <a
@@ -33,7 +34,7 @@ export default function LangSwitcher() {
             {lngs[lng].abbreviation}   <span style={{display: lng === "en" ? 'inline' : 'none', fontWeight: 'normal' }}> / </span> 
             
             </a>
-        ))}
+        ))}</div>
         </div>
     );
 }

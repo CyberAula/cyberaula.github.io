@@ -36,15 +36,15 @@ export default function Tools(props) {
         <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4">
 
           <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+            columnsCountBreakPoints={{ 150: 1, 600: 2, 900: 3 }}
           >
             <Masonry gutter="12px">
 
-              {tools.map(({ title, description, route, logo, github }) => {
+              {tools.map(({ title, description, route, logo, github, gradient }) => {
                 return (
                   <div className="tool">
 
-                    <div className="tool_logo">
+                    <div className={`tool_logo ${gradient}`}>
                       <img alt={"Project Logo"} src={logo} />
                     </div>
 

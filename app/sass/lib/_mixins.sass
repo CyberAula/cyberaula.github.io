@@ -65,6 +65,19 @@
         transition: 200ms ease-in-out
         background-color: $ca-blue-600
 
+@mixin button-load-more
+    border-radius: 24px
+    padding: 0.5rem 1.2rem 0.7rem 1.4rem
+    color: $ca-blue-900
+    background: $ca-blue-200
+    cursor: pointer
+    font-size: 14px
+    &:hover
+        background: $ca-blue-300
+        color: #0e1131
+        background: $ca-blue-300
+        transition: 200ms ease-in-out
+
 @mixin invisible-button
     border-radius: 24px
     @apply text-gray-800
@@ -147,7 +160,13 @@
       justify-content: space-between
       font-size: 1.2rem
       li
-        margin-left: 0.6rem
-    
+        //margin-left: 0.6rem
+@media (min-width: 600px)
+    .menu
+        ul
+            gap: 2rem
   
-
+@media (min-width: 700px)
+    .menu
+        ul
+            gap: 1rem
