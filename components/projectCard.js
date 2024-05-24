@@ -24,21 +24,21 @@ export default function projectCards(props) {
   return (
     <div>
       <div className="filter_options flex">
-        <div className={`button_filter  ${selectedCategory === "all" ? "selected" : ""}`} onClick={() => handleCategoryChange("all")}>All</div>
-        <div className={`button_filter  ${selectedCategory === "ind" ? "selected" : ""} `} onClick={() => handleCategoryChange("ind")}>
+        <button className={`button_filter  ${selectedCategory === "all" ? "selected" : ""}`} onClick={() => handleCategoryChange("all")}>All</button>
+        <button className={`button_filter  ${selectedCategory === "ind" ? "selected" : ""} `} onClick={() => handleCategoryChange("ind")}>
           Projects - individual
-        </div>
-        <div className={`button_filter ${selectedCategory === "erg" ? "selected" : ""}`} onClick={() => handleCategoryChange("erg")}>
+        </button>
+        <button className={`button_filter ${selectedCategory === "erg" ? "selected" : ""}`} onClick={() => handleCategoryChange("erg")}>
           Educational Research Group (GIE/ERG)
-        </div>
-        <div className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("other")}>Other</div>
+        </button>
+        <button className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("other")}>Other</button>
       </div>
       <div className="project_cards my-4 sm:my-6 lg:my-10 sm:grid sm:grid-cols-2 sm:gap-4">
         {projectCards.map(
           ({ date, route, title, subtitle, tags, category }, index) => (
             <div key={index} className="project_card mb-4 sm:mb-0 p-4 md:p-6">
               <div className="year_and_cta">
-                <div className="date">{date}</div>
+                <p className="date">{date}</p>
                 <a href={route}>
                   {" "}
                   <p>details</p>
@@ -47,12 +47,12 @@ export default function projectCards(props) {
               </div>
               <div className="project_info">
                 <h4 className="project_title">{title}</h4>
-                <div className="project_subtitle">{subtitle}</div>
+                <h5 className="project_subtitle">{subtitle}</h5>
               </div>
               <div className="project_tags ">
                 {tags.split(',').map((tag, tagIndex) => (
                   <span key={tagIndex} className="project_tag text-xs md:text-[0.85rem]">
-                    {tag.trim()}
+                    <small> {tag.trim()}</small> 
                   </span>
                 ))}
               </div>

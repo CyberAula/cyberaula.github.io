@@ -23,7 +23,7 @@ export default function Courses() {
         <h1>Courses</h1>
       </div>
       <main>
-        <section className="lg:mx-36 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4">
+        <section className="lg:mx-36 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4 xl:mx-44 2xl:mx-60">
   
 
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">

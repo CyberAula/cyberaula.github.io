@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="body">
+              <div className="body  sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60">
                 <section className="award_section">
                   <h2> {t('front.awardH2')} </h2>
                   <div className="award_card">

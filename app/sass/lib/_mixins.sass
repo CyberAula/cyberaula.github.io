@@ -1,4 +1,11 @@
 @import "./_variables.sass"
+//Correcciones: añadir media queries a mixins para ajustar tamaños
+// quizá no sea necesario si los paddings etc están en ems (con rems se quedan igual)
+
+//eliminar estilo por defecto de botón
+@mixin button
+    outline: none
+    border: none
 //tags
 @mixin border-tag
     @media (min-width: 150px)
@@ -11,11 +18,12 @@
         border-radius: 4px
     @media (min-width: 640px)
         border: 1px solid to-black
-        height: 24px
-        padding: 4px 10px 
+        // height: 24px
+        padding: 0.4em 0.66em 
         border-radius:4px
-        font-size: 1rem
         font-weight: 600
+
+//añadir mas media queries a mixins
 
 @mixin border-tag-white
     @media (min-width: 150px)
@@ -36,6 +44,7 @@
 
 //buttons
 @mixin button-load-more
+    @include button
     border-radius: 24px
     padding: 0.5rem 1.2rem 0.7rem 1.4rem
     color: $ca-blue-600
@@ -48,6 +57,7 @@
         transition: 200ms ease-in-out
 
 @mixin border-button-white
+    @include button
     border: 1px solid white
     border-radius: 24px
     padding: 0.2rem 1rem 0.6rem 0.8rem
@@ -79,6 +89,7 @@
         transition: 200ms ease-in-out
 
 @mixin invisible-button
+    @include button
     border-radius: 24px
     @apply text-gray-800
     padding: 0.5rem 1.2rem 0.7rem 1.4rem
@@ -86,7 +97,7 @@
     &:hover
         @apply text-gray-900
         transition: 200ms ease-in-out
-        background-color: $ca-blue-100
+        background-color: $ca-blue-300
     &:active
         @apply text-ca_blue-800
         transition: 200ms ease-in-out

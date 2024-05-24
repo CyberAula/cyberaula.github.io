@@ -34,7 +34,7 @@ export default function Tools(props) {
       </div>
       <main>
 
-        <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4">
+        <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 xl:mx-44 2xl:mx-60">
 
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 150: 1, 600: 2, 900: 3 }}
@@ -57,18 +57,18 @@ export default function Tools(props) {
                         <p>{description}</p>
                       </div>
                       <div className="tool_button_container">
-                        <div className="tool_button" >
+                        <button className="tool_button" >
                           <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
 
                           <CreateLink route={route}>
                             Ir a herramienta </CreateLink>
-                        </div>
-                        <div className="tool_github" >
+                        </button>
+                        <button className="tool_github" >
                         <FontAwesomeIcon className="mr-2 " icon={faGithub} size="lg" />
       
                           <CreateLink route={github}>
                             Github </CreateLink>
-                        </div>
+                        </button>
 
                       </div>
                     </div>

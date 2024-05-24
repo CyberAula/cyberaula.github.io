@@ -11,7 +11,7 @@ export default function About (props) {
             <div className="banner">
         <h1>Contact</h1>
       </div>
-    <main>
+    <main className=" sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60">
         <section className="about_description">
 
             <p>We have gathered a long teaching experience at the University. Our main research interests are focused
