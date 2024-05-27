@@ -93,9 +93,9 @@ export default function Home() {
                     {t('front.goalsBody')}
                     </div>
                   </div>
-                  <div className="grid_container">
+                  
                   <GridElement />
-                  </div>
+                  
                   
                 </section>
               </div>
