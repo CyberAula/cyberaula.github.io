@@ -29,15 +29,13 @@ $windowWidth: 100vw
         justify-content: space-between 
         height: 24px
         font-size: 1rem
-        .year_tag 
+        .course_tag 
             display: flex
-            div
-                background-color: rgb(0, 0, 0,0.3)
-                display: flex
-                align-items: center
-                padding: 1px 8px 
-                font-weight: 500
-                border-radius: 4px
+            small
+                margin-bottom: 0.1rem
+                @include tag-black-transparent
+               
+                
         .course_route
             @include border-button-white
             transition: 200ms ease-in-out
@@ -48,11 +46,8 @@ $windowWidth: 100vw
             a 
                 display: flex
             svg
-                margin-top: 0.1rem
-            div
-                font-weight:400
-                font-size: 1rem
-                margin-left: 0.6rem
+                margin: 0.3rem 0.5rem 0 0
+         
 
 
 @media (min-width: 770px)
@@ -67,18 +62,12 @@ $windowWidth: 100vw
             align-items: center
             div
                 font-size: 1rem
-            .year_tag 
-                div
-                    margin: auto
-                    padding: 6px 12px 
-                    border-radius:4px
+          
             .course_route
                 margin-top:2px
                 display: flex
                 align-items: center
                 padding: auto
-                svg
-                    margin-top: 0.2rem
                 div
                     margin-top: 0.14rem
         .course_text_block
@@ -120,15 +109,6 @@ $windowWidth: 100vw
                         -webkit-box-orient: vertical
                         overflow: hidden
                         text-overflow: ellipsis
-    .year_tag 
-        display: flex
-        p
-            background-color: rgb(0, 0, 0,0.4)
-            justify-contet: flex-end
-            border-radius:20px
-            padding: 4px 12px 
-            font-size: 1.2em
-            font-weight: 500    
     
         
    

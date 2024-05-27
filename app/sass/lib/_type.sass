@@ -14,7 +14,7 @@
 
 $xs-text: 13px, 14px, 16px, 400, 140%, 1rem, 0.6rem //small
 $body-text: 14px, 16px, 19px, 400, 140%, 1rem, 0.6rem
-$button: 16px, 14px, 20px, semibold //buttons
+$button: 16px, 14px, 18px, semibold //buttons
 $sm-text: 14px, 16px, 19px, 600, 140%, 1rem, 0.6rem //h5
 $md-text: 18px, 20px, 24px, bold, 140%, 1rem //h4
 $lg-text: 22px, 24px, 28px, bold,140%, 1rem  //h3
@@ -113,23 +113,23 @@ h5
 
 
 
-// parrafos
-p
+// parrafos, etiquetas e inputs
+p, label, input, select
     @media screen and (min-width: 150px)
         font-family: "Montserrat", sans-serif
         font-size: nth($body-text,1)
         line-height: nth($body-text,5)
-        margin-bottom: nth($body-text,6)
+        //margin-bottom: nth($body-text,6)
     @media screen and (min-width: 640px)
         font-family: "Montserrat", sans-serif
         font-size: nth($body-text,2)
         line-height: nth($body-text,5)
-        margin-bottom: nth($body-text,6)
+        //margin-bottom: nth($body-text,6)
     @media screen and (min-width: 1400px)
         font-family: "Montserrat", sans-serif
         font-size: nth($body-text,3)
         line-height: nth($body-text,5)
-        margin-bottom: nth($body-text,6)
+        //margin-bottom: nth($body-text,6)
 
 // parrafos
 small
@@ -137,17 +137,17 @@ small
         font-family: "Montserrat", sans-serif
         font-size: nth($xs-text,1)
         line-height: nth($xs-text,5)
-        margin-bottom: nth($xs-text,6)
+        //margin-bottom: nth($xs-text,6)
     @media screen and (min-width: 640px)
         font-family: "Montserrat", sans-serif
         font-size: nth($xs-text,2)
         line-height: nth($xs-text,5)
-        margin-bottom: nth($xs-text,6)
+        //margin-bottom: nth($xs-text,6)
     @media screen and (min-width: 1400px)
         font-family: "Montserrat", sans-serif
         font-size: nth($xs-text,3)
         line-height: nth($xs-text,5)
-        margin-bottom: nth($xs-text,6)
+        //margin-bottom: nth($xs-text,6)
 
 
 // botones + botones con links

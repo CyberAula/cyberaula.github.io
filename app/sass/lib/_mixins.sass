@@ -2,26 +2,26 @@
 //Correcciones: añadir media queries a mixins para ajustar tamaños
 // quizá no sea necesario si los paddings etc están en ems (con rems se quedan igual)
 
-//eliminar estilo por defecto de botón
-@mixin button
-    outline: none
-    border: none
-//tags
+//--------------------
+//TAGS
+//-------------------
+
 @mixin border-tag
     @media (min-width: 150px)
         color: black
         border: 1px solid black
         display: flex
         align-items: center
-        padding: 1px 8px 
+        padding: 0.16em 0.33em 
         font-weight: 600
         border-radius: 4px
     @media (min-width: 640px)
         border: 1px solid to-black
         // height: 24px
-        padding: 0.4em 0.66em 
+        padding: 0.34em 0.66em 
         border-radius:4px
         font-weight: 600
+        height: 1.8em
 
 //añadir mas media queries a mixins
 
@@ -42,7 +42,30 @@
         font-size: 1rem
         font-weight: 600
 
-//buttons
+@mixin tag-black-transparent
+    @media (min-width: 150px)
+        background-color: rgb(0, 0, 0,0.3)
+        display: flex
+        align-items: center
+        padding: 0.9rem 1rem
+        font-weight: 500
+        border-radius: 4px
+    @media (min-width: 770px)   
+        margin: 0px
+        padding: 0.3rem 0.7rem 
+        border-radius:4px
+ 
+
+//--------------------
+//BUTTONS
+//-------------------
+
+//eliminar estilo por defecto de botón
+@mixin button
+    outline: none
+    border: none
+    background: none
+
 @mixin button-load-more
     @include button
     border-radius: 24px
@@ -50,7 +73,6 @@
     color: $ca-blue-600
     background: $ca-blue-200
     cursor: pointer
-    font-size: 14px
     &:hover
         background: $ca-blue-300
         color: $ca-blue-700
@@ -60,7 +82,10 @@
     @include button
     border: 1px solid white
     border-radius: 24px
-    padding: 0.2rem 1rem 0.6rem 0.8rem
+    padding: 0.3rem 1rem 0.4rem 0.8rem
+    color: white
+    p 
+        margin-bottom: 0
 @mixin big-border-button-blue
     border: 1px solid $ca-blue-700
     border-radius: 24px
@@ -81,7 +106,6 @@
     color: $ca-blue-900
     background: $ca-blue-200
     cursor: pointer
-    font-size: 14px
     &:hover
         background: $ca-blue-300
         color: #0e1131

@@ -113,7 +113,7 @@ export default function Research() {
                             <h4>{title}</h4>
                           </div>
                           <div className="paper_subtitle">
-                            {author}. {journal}
+                           <p> {author}. {journal}</p>
                           </div>
                         </div>
                       </div>
