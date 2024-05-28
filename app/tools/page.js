@@ -61,7 +61,7 @@ export default function Tools(props) {
                                 icon={faArrowRight}
                               />
 
-                              Ir a herramienta 
+                               <span> Ir a herramienta </span>
                             </CreateLink>
                           </button>
                           <button className="tool_github">
@@ -71,7 +71,7 @@ export default function Tools(props) {
                                 icon={faGithub}
                                 size="lg"
                               />
-                              <small> Github </small>{" "}
+                              <span> Github </span>{" "}
                             </CreateLink>
                           </button>
                         </div>
