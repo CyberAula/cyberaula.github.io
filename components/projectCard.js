@@ -3,10 +3,12 @@ import Link from "next/link";
 import { myProjectCards } from "@/constants/projectsCards";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from 'react-i18next';
 
 export default function projectCards(props) {
   const [projectCards, setProjectCards] = useState(myProjectCards);
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const { t } = useTranslation();
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
@@ -24,14 +26,14 @@ export default function projectCards(props) {
   return (
     <div>
       <div className="filter_options flex">
-        <button className={`button_filter  ${selectedCategory === "all" ? "selected" : ""}`} onClick={() => handleCategoryChange("all")}>All</button>
+        <button className={`button_filter  ${selectedCategory === "all" ? "selected" : ""}`} onClick={() => handleCategoryChange("all")}>{t('projects.filterTitle1')}</button>
         <button className={`button_filter  ${selectedCategory === "ind" ? "selected" : ""} `} onClick={() => handleCategoryChange("ind")}>
-          Projects - individual
+          {t('projects.filterTitle2')}
         </button>
         <button className={`button_filter ${selectedCategory === "erg" ? "selected" : ""}`} onClick={() => handleCategoryChange("erg")}>
-          Educational Research Group (GIE/ERG)
+        {t('projects.filterTitle3')}
         </button>
-        <button className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("other")}>Other</button>
+        <button className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("other")}>{t('projects.filterTitle4')}</button>
       </div>
       <div className="project_cards my-4 sm:my-6 lg:my-10 sm:grid sm:grid-cols-2 sm:gap-4">
         {projectCards.map(

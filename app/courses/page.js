@@ -8,10 +8,11 @@ import Link from "next/link";
 import { mycourses } from "@/constants/courses.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 export default function Courses() {
   const [courses, setCourses] = useState(mycourses);
-
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,7 +48,7 @@ export default function Courses() {
                         <div className="course_route">
                         <CreateLink route={route}>
                         <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
-                          <div>Ir al curso</div>
+                          <div>{t('courses.button')}</div>
                         </CreateLink>
                         </div>
                       </div>
