@@ -114,25 +114,23 @@
             .paper_doi 
                 font-weight: 600
 
-        .links 
+        .paper_link      
+            @include icon-button-left 
+            @include button    
             display: flex
             flex-direction: row
             //gap: $spacing_xsm
             align-content: center
             justify-content: left
-            margin-top: 0.6rem
-            
+            margin-top: 0.6rem        
             a 
                 @include big-border-button-blue
                 display: flex
                 align-content: center
-                //margin-top: $spacing_sm
+                //margin-top: $spacing_sm          
+           
             
-            p 
-                font-weight: 600
-            svg
-                align-self: center
-                margin-left: 0.6rem
+            
 @media (min-width: 640px) 
     .research
         .filters
@@ -191,8 +189,8 @@
             .paper_doi 
                 font-weight: 600
 
-        .links 
-            
+        .paper_link
+            @include button
             display: flex
             flex-direction: row
             //gap: $spacing_xsm

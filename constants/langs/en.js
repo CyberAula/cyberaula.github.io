@@ -52,7 +52,7 @@ export const en = {
             "text":"Results"
         },
         "button": "Read publication",
-        "button2": "load more",
+        "button2": "Load more",
     },
     "courses": {
         "title": "Courses"

@@ -81,9 +81,7 @@ TYPOGRAPHY
 
 body,
 html {
-  h2 {
-    font-weight: lighter;
-  }
+
 
   color: black;
   @apply text-primary;
@@ -126,6 +124,9 @@ html {
   // }
 }
 
+button {
+  @include button 
+}
 // .button_filter {
 //   background-color: #3302bf;
 //   font-weight: 400;

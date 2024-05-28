@@ -117,14 +117,14 @@ export default function Research() {
                           </div>
                         </div>
                       </div>
-                      <div className="links text-nowrap">
+                      <button className="paper_link text-nowrap">
                         
                         <a rel="noopener noreferrer" target="_blank" href={doi}>
                           {" "}
-                          <p>{t('publications.button')} </p>
+                          {t('publications.button')} 
                           <FontAwesomeIcon icon={faArrowRight} />
                         </a>
-                      </div>
+                      </button>
                     </div>
                   );
                 })}
