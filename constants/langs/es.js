@@ -51,7 +51,7 @@ export const es = {
             "text":"Resultados"
         },
         "button": "Leer publicación",
-        "button2": "ver más",
+        "button2": "Ver más",
     },
     "courses": {
         "title": "Cursos",

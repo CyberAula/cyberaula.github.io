@@ -24,9 +24,7 @@ export default function Courses() {
         <h1>Courses</h1>
       </div>
       <main>
-        <section className="lg:mx-36 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4 xl:mx-44 2xl:mx-60">
-  
-
+        <section className="lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">
             {courses.map(({ date, gradient, edition, title, description, route }) => {
               return (
@@ -37,20 +35,20 @@ export default function Courses() {
                   <div className="course_main transition">
                     <div className="course_content">
                       <div className="card_container_top">
-                        <div className="flex gap-2">
-                        <div className="year_tag">
-                          <div>{date}</div>
+                        <div className="flex gap-3">
+                        <div className="course_tag">
+                          <small>{date}</small>
                         </div>
-                        <div className="year_tag">
-                          <div> {edition}</div>
+                        <div className="course_tag">
+                          <small> {edition}</small>
                         </div>
                         </div>
-                        <div className="course_route">
+                        <button className="course_route">
                         <CreateLink route={route}>
                         <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
                           <div>{t('courses.button')}</div>
                         </CreateLink>
-                        </div>
+                        </button>
                       </div>
                       <div className="course_text_block">
                         <div className="course_title">

@@ -18,8 +18,6 @@
         //     background-color: red
         
         .research_results
-            //margin-left: 2rem
-            font-size: 1.1rem
             display: flex
             flex-wrap: wrap
             min-height: 48px
@@ -108,9 +106,6 @@
 
             .paper_title 
                 @apply text-black
-                h4 
-                    font-size: 1.2rem
-                    margin-bottom:0.6rem
 
             .paper_subtitle 
                 //padding-bottom: $spacing_md
@@ -119,25 +114,23 @@
             .paper_doi 
                 font-weight: 600
 
-        .links 
+        .paper_link      
+            @include icon-button-left 
+            @include button    
             display: flex
             flex-direction: row
             //gap: $spacing_xsm
             align-content: center
             justify-content: left
-            margin-top: 0.6rem
-            
+            margin-top: 0.6rem        
             a 
                 @include big-border-button-blue
                 display: flex
                 align-content: center
-                //margin-top: $spacing_sm
+                //margin-top: $spacing_sm          
+           
             
-            p 
-                font-weight: 600
-            svg
-                align-self: center
-                margin-left: 0.6rem
+            
 @media (min-width: 640px) 
     .research
         .filters
@@ -162,8 +155,6 @@
                     padding-right: 12px
                 input
                     width: 200px
-            .research_results
-                font-size: 1.3rem
     .papers 
         display: flex
         flex-direction: column
@@ -198,8 +189,8 @@
             .paper_doi 
                 font-weight: 600
 
-        .links 
-            
+        .paper_link
+            @include button
             display: flex
             flex-direction: row
             //gap: $spacing_xsm

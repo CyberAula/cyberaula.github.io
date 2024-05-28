@@ -17,12 +17,14 @@
         .tool_github
             justify-content: left
             padding-left:0rem
-            margin-bottom: 1rem
+            margin: 0.6rem 0
+            a
+                padding-left: 0
             &:hover
                 @apply text-ca_blue-600
                 background-color: white
 //corrección aquí (1/3)
-    
+
 @mixin container-button-inline
     .tool_button_container
         margin-top: 1rem
@@ -30,16 +32,23 @@
         flex-direction: row
         gap: 0.3rem
         .tool_button
+            justify-content: left
+            a
+                @include big-border-button-blue
+                align-items: center
             svg
                 display: flex
         .tool_github
-            justify-content: left
-            padding-left: 1rem
-            margin-bottom: 0rem
-            align-items: center
-            &:hover
-                @apply text-gray-800
-                background-color: $ca-blue-300
+            margin: 0rem
+            a
+                
+                display: flex
+                justify-content: left
+                padding-left: 1rem
+                align-items: center
+                &:hover
+                    @apply text-gray-800
+                    background-color: $ca-blue-300
 
 @mixin container-button-inline-no-icon
     .tool_button_container
@@ -48,15 +57,20 @@
         flex-direction: row
         gap: 0.3rem
         .tool_button
+            a
+                @include big-border-button-blue
             svg
                 display: none
         .tool_github
-            justify-content: left
-            padding-left: 1rem
-            margin-bottom: 0rem
-            &:hover
-                @apply text-gray-800
-                background-color: $ca-blue-300
+            margin: 0rem
+            a
+                display: flex
+                justify-content: left
+                padding-left: 1rem
+                margin-bottom: 0rem
+                &:hover
+                    @apply text-gray-800
+                    background-color: $ca-blue-300
 
 @mixin img-tool
     .tool_logo
@@ -86,15 +100,6 @@
             border: solid 1px $ca-blue-200
             transition: 200ms ease-in-out
             @apply bg-slate-100
-            //este hover no tiene sentido, es demasiado distinto que el resto de hovers de otras partes de la web
-            // &:hover
-            //     -webkit-box-shadow: 0px 20px 23px 0px rgba(0,0,0,0.18)
-            //     -moz-box-shadow: 0px 20px 23px 0px rgba(0,0,0,0.18)
-            //     box-shadow: 0px 20px 23px 0px rgba(0,0,0,0.18)
-            //     transform: translateY(-3%)
-            //     transition: 200ms ease-in-out
-                
-            // background: $ca-blue-100
             @include img-tool
             .tool_logo
                 //background-color: $blue_primary                
@@ -117,17 +122,18 @@
                     justify-content: space-between
                     margin-top: 1rem
                     .tool_button
+                        @include button
                         @apply text-ca_blue-700 /*apply siempre al inicio del sass, sino da error (lo hemos vivido)*/
                         display: flex
                         flex-wrap: wrap
                         align-items: center
-                        @include big-border-button-blue
-                        
-                        
-                        
+                        background: none                                                                  
                         a
+                            @include big-border-button-blue
                             display: flex
+                            
                         svg
+                            display: none
                             margin-right: 0.6rem
                     .tool_github
                         @include invisible-button
@@ -135,26 +141,17 @@
                         text-decoration: underline
                         display: flex
                         
-@media (max-width: 370px )
+@media (min-width: 370px )
     .tools
         .tool
             .tool_content
-                @include container-button-inline-no-icon
+                @include container-button-inline
                 
 @media (min-width: 500px)
     .tools
         .tool
             .tool_content
-                .tool_button_container
-                    display: flex
-                    flex-direction: row
-                    .tool_button
-                        justify-content: center
-                        margin: 0
-                    .tool_github
-                        justify-content: center
-                        svg
-                            display: flex
+                @include container-button-inline
 @media (min-width: 600px)
     .tools
         .tool

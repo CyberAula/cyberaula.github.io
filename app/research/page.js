@@ -113,18 +113,18 @@ export default function Research() {
                             <h4>{title}</h4>
                           </div>
                           <div className="paper_subtitle">
-                            {author}. {journal}
+                           <p> {author}. {journal}</p>
                           </div>
                         </div>
                       </div>
-                      <div className="links text-nowrap">
+                      <button className="paper_link text-nowrap">
                         
                         <a rel="noopener noreferrer" target="_blank" href={doi}>
                           {" "}
-                          <p>{t('publications.button')} </p>
+                          {t('publications.button')} 
                           <FontAwesomeIcon icon={faArrowRight} />
                         </a>
-                      </div>
+                      </button>
                     </div>
                   );
                 })}
