@@ -8,10 +8,11 @@ import ProjectCard from "@/components/projectCard";
 import { myprojectCards } from "@/constants/projectsCards.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from 'react-i18next';
 
 export default function Projects() {
   const [projects, setProjects] = useState(myprojectCards);
-
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,7 +21,7 @@ export default function Projects() {
     <div className="projects">
       <Header route={"/projects"} />
       <div className="banner">
-        <h1> Projects</h1>
+        <h1> {t('projects.title')}</h1>
       </div>
       <main>
         

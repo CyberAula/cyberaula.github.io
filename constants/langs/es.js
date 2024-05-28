@@ -32,7 +32,7 @@ export const es = {
             "topR":"Realización de experimentos avanzados de teleeducación",
             "bottomL":"Creación de plataformas avanzadas para introducción de las TIC en la enseñanza. ",
             "bottomM":"Investigación sobre estándares en educación",
-            "bottomMsub":"SCROM | LORM",
+            "bottomMsub":"SCROM | LOM",
             "bottomR":"Creación de objetos de aprendizaje mediante herramientas de autor ",
             
         },
@@ -54,10 +54,63 @@ export const es = {
         "button2": "Ver más",
     },
     "courses": {
-        "title": "Cursos"
+        "title": "Cursos",
+        "button": "ir al curso",
+    },
+    "projects": {
+        "title": "Proyectos",
+        "filterTitle1":"Todos",
+        "filterTitle2":"Proyectos - individual",
+        "filterTitle3":"Grupo de investigación educativa (GIE)",
+        "filterTitle4":"Otros",
+
+    },
+    "team": {
+        "title": "Equipo",
+        "professorCards":{
+            "roles":{
+                "1":"Profesor",
+                "2":"Profesor asociado",
+                "3":"Profesor auxiliar",
+                "4":"Investigador/a",
+                "5":"Becario/a",
+            },
+            "positions":{
+                "1":"Coordinador",
+            },
+        },
+    },
+    "contact": {
+        "title": "Contacto",
+        "title2": "¿Dónde estamos?",
+        "listTitle":"E-mail",
+        "listTitle2":"Teléfono",
+        
+        "body": "",
     },
     "footer": {
         "title1":"secciones",
         "title2": "redes sociales"
-    }
+    },
+    "tools":{
+    "title":"herramientas",
+    "toolCards":{
+        
+            "description":{
+                "1":"SGAME es una plataforma gratuita diseñada para toda la comunidad educativa, que permite a los usuarios crear con facilidad juegos web educativos integrando recursos educativos a juegos ya existentes. ",
+                "2":"El propósito de este proyecto es fomentar y facilitar la realización de escape rooms educacionales en asignaturas de UPM. Para lograr esto, se ha desarrollado una plataforma que facilita la administración de la actividad desarrollada. En esta plataforma, el profesor puede crear una instancia de escape room la cual los estudiantes pueden acceder y que recolecta automáticamente el progreso y los datos de logros de los estudiantes una vez ha sido completada. Además de esto, se ha desarrollado una guía metodológica para importar el concepto de la escape room en la formación universitaria. ",
+                "3":"Este convertidor de quiz facilita la conversión entre los diferentes formatos: Moodle XML, Aiken y JSON",
+                "4": "Esta web permite a los usuarios personalizar sus propias aplicaciones de quiz y generar un paquete SCORM listo para subir a su LMS de preferencia. Este proyecto se desarrolló usando RESCORM.",
+                "5": "Editor web-based para crear ejercicios auto calificados de HTML y Javascript ",
+                "6": "LOEP (Learning Object Evaluation Platform) es una plataforma web-based de código abierto desarrollada usando Ruby on Rails que pretende facilitar la evaluación de pequeños recursos web educacionales autocontenidos, conocidos como Learning Objects, en diferentes escenarios y contextos educacionales. Se ha diseñado para proporcionar evaluación sistemática de los Learning Objects y generar calificaciones de calidad para sistemas de e-Learning de acuerdi con múltiples modelos de evaluación y métricas de calidad. LOEP proporciona gran cantidad de características incluyendo la administración de usuario y Learning Object, herramientas de evaluación de Learning Objects, revisión de tareas, interoperabilidad con sistemas de e-Learning, y estadísticas. ",
+                "7":"Un sistema recomendador híbrido de Learning Objects basado en Europeana ",
+                "8": "RESCORM es un boilerplate para crear aplicaciones de React que cumplan con SCORM cuya finalidad es facilitar a los desarrolladores la creación de recursos de aprendizaje SCORM.",
+
+            },
+            "button":"Ir a herramienta",
+        
+        
+        
+    },
+}
 }

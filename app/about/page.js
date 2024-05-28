@@ -2,14 +2,15 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useTranslation } from 'react-i18next';
 
 export default function About (props) {
-
+    const { t } = useTranslation();
 		return (
 			<div className="about">
 			<Header route={"/about"}/>
             <div className="banner">
-        <h1>Contact</h1>
+        <h1>{t('contact.title')}</h1>
       </div>
     <main className=" sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60">
         <section className="about_description">
@@ -21,7 +22,7 @@ export default function About (props) {
 
         </section>
 
-            <h2>Where are we?</h2>
+            <h2>{t('contact.title2')}</h2>
         <section className="location">
 
             <div className="col1">
@@ -38,13 +39,13 @@ export default function About (props) {
                         Edificio B</h3>
                 </div>
                 <div className="contact">
-                    <h2>Contact</h2>
+                    {/* <h2>Contact</h2> */}
                     <ul>
                         <li>
                             <h3>E-mail</h3><p>gi.internetng@upm.es</p>
                         </li>
                         <li>
-                            <h3>Phone</h3><p>91 336 73 31</p>
+                            <h3>{t('contact.listTitle2')}</h3><p>91 336 73 31</p>
                         </li>
                         <li>
                             <h3>Fax</h3><p>91 336 73 33</p>

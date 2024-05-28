@@ -19,18 +19,32 @@ import {
 import { useTranslation } from "react-i18next";
 
 export default function Tools(props) {
-  const { t } = useTranslation();
-  const [tools, setTools] = useState(mytools);
+  const { t, i18n } = useTranslation();
+  const [tools, setTools] = useState([]);
+
+  // Update tools when language changes
+  useEffect(() => {
+    const translatedTools = mytools.map(({ logo, route, title, translationKey, github, gradient, key, description }) => ({
+      title,
+      logo,
+      route,
+      github,
+      gradient,
+      key,
+      description:t(translationKey)
+    }));
+    setTools(translatedTools);
+  }, [i18n.language, t]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return (
     <div className="tools">
       <Header route="/tools" />
       <div className="banner">
-        <h1>Tools</h1>
+        <h1>{t('tools.title')}</h1>
       </div>
       <main>
         <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 xl:mx-44 2xl:mx-60">
@@ -88,8 +102,9 @@ export default function Tools(props) {
     </div>
   );
 }
+
 const CreateLink = (props) => {
-  return props.route.match("http") ? (
+  return props.route.match(/^http/) ? (
     <a target="_blank" href={props.route} rel="noopener noreferrer">
       {props.children}
     </a>

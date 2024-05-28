@@ -8,10 +8,11 @@ import Link from "next/link";
 import { mycourses } from "@/constants/courses.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 export default function Courses() {
   const [courses, setCourses] = useState(mycourses);
-
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
