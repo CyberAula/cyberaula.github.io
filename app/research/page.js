@@ -121,7 +121,7 @@ export default function Research() {
                         
                         <a rel="noopener noreferrer" target="_blank" href={doi}>
                           {" "}
-                          {t('publications.button')} 
+                          <span>{t('publications.button')} </span>
                           <FontAwesomeIcon icon={faArrowRight} />
                         </a>
                       </button>

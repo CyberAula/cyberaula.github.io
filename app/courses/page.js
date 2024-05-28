@@ -46,7 +46,7 @@ export default function Courses() {
                         <button className="course_route">
                         <CreateLink route={route}>
                         <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
-                          <div>{t('courses.button')}</div>
+                          <span>Ir al curso</span>
                         </CreateLink>
                         </button>
                       </div>
@@ -55,7 +55,7 @@ export default function Courses() {
                           <h4>{title}</h4>
                         </div>
                         <div className="course_description">
-                          <small> {description}</small>
+                          <span> {description}</span>
                         </div>
                       </div>
                     </div>
