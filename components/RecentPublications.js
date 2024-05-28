@@ -1,11 +1,14 @@
 import React from "react";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { mypublications } from "../constants/publications";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { useTranslation } from "react-i18next";
 
 export default function RecentPublications(props) {
   const [papers, setPapers] = useState(mypublications);
-
+  const { t } = useTranslation();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,9 +46,9 @@ export default function RecentPublications(props) {
             })}
 
 
-          <a href="/#/research" rel="noopener noreferrer">
+          <a href="/research" rel="noopener noreferrer">
             <div className="more">
-              ver todas las publicaciones{" "}
+              {t('front.latestPublicationsButton')}
               <svg
                 aria-hidden="true"
                 focusable="false"

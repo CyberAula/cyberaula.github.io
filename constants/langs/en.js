@@ -83,12 +83,16 @@ export const en = {
     "contact": {
         "title": "Contact",
         "title2": "Where are we?",
-        "listTitle2":"Teléfono",
+        "listTitle2":"Phone",
         "body": "",
     },
     "footer": {
         "title1":"sections",
-        "title2": "social media"
+        "title2": "social media",
+        "logoSub": "Innovative educational Group ",
+        "logoSub2": "Politechnic University of Madrid",
+        "titleRight": "Department of Telematic Systems Engineering",
+        "titleRight2": "H.T.S telecommunication engineering",
     },
     "tools":{
         "title":"herramientas",

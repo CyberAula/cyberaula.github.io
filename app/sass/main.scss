@@ -1100,10 +1100,11 @@ main {
  ========================================================================== */
 
 .about {
+  
   main {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 100px;
+    // max-width: 1000px;
+    // margin: auto;
+    // margin-top: 100px;
 
     .about_description {
       border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
@@ -1170,8 +1171,8 @@ main {
   }
 
   h1 {
-    font-size: 4rem;
-    font-weight: $regular;
+    // font-size: 4rem;
+    // font-weight: $regular;
   }
 
   h2 {
@@ -1669,42 +1670,42 @@ RESPONSIVE
   }
 
   .about {
-    main {
-      margin-top: 20px;
+    // main {
+    //   margin-top: 20px;
 
-      .about_description {
-        padding: 9rem 2rem 3rem 2rem;
+    //   .about_description {
+    //     padding: 9rem 2rem 3rem 2rem;
 
-        h1 {
-          font-size: 1.2rem;
-        }
+    //     h1 {
+    //       font-size: 1.2rem;
+    //     }
 
-        p {
-          font-size: 1.2rem;
-        }
-      }
+    //     p {
+    //       font-size: 1.2rem;
+    //     }
+    //   }
 
-      h2 {
-        padding: 1rem 1rem 1rem 2rem;
-      }
+    //   h2 {
+    //     padding: 1rem 1rem 1rem 2rem;
+    //   }
 
-      .location {
-        flex-flow: column;
+    //   .location {
+    //     flex-flow: column;
 
-        h2 {
-          font-size: 1.6rem;
-          padding: 1rem 1rem 1rem 0rem;
-        }
+    //     h2 {
+    //       font-size: 1.6rem;
+    //       padding: 1rem 1rem 1rem 0rem;
+    //     }
 
-        h3 {
-          font-size: 1.2rem;
-        }
-      }
+    //     h3 {
+    //       font-size: 1.2rem;
+    //     }
+    //   }
 
-      .location {
-        padding: 4rem 1rem 3rem 3rem;
-      }
-    }
+    //   .location {
+    //     padding: 4rem 1rem 3rem 3rem;
+    //   }
+    // }
   }
 
   // footer {
