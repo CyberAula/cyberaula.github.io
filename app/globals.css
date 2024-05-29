@@ -2208,7 +2208,7 @@ header li a:active {
   margin-top: 100px;
 }
 .about main .about_description {
-  border-bottom: solid 1.5px #cccccc;
+  /* border-bottom: solid 1.5px #cccccc; */
   padding: 9rem 3rem 6rem 7rem;
 }
 .about main .location {
@@ -2250,7 +2250,7 @@ header li a:active {
   padding: 1rem 0 0.5rem 0;
 }
 .about main section:last-child {
-  border-bottom: solid 1.5px #cccccc;
+  /* border-bottom: solid 1.5px #cccccc; */
 }
 .about h1 {
   font-size: 4rem;
@@ -2270,7 +2270,7 @@ header li a:active {
   font-size: 1.5rem;
 }
 .about .border_nav_bar {
-  border-bottom: solid 1.5px #cccccc;
+  /* border-bottom: solid 1.5px #cccccc; */
   transition: none;
 }
 

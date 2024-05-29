@@ -90,7 +90,11 @@ export const es = {
     },
     "footer": {
         "title1":"secciones",
-        "title2": "redes sociales"
+        "title2": "redes sociales",
+        "logoSub": "Grupo de innovación educativa",
+        "logoSub2": "Universidad Politécnica de Madrid",
+        "titleRight": "Departamento de Ingeniería de sistemas telemáticos",
+        "titleRight2": "ETSI telecomunicación",
     },
     "tools":{
     "title":"herramientas",

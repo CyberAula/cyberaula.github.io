@@ -32,8 +32,8 @@ export default function Footer(props) {
         </div>
         <div className="footer_subtitle">
           <h5 className="font-medium">
-            Innovative educational Group <br></br>
-            Universidad Politécnica de Madrid
+          {t('footer.logoSub')}<br></br>
+          {t('footer.logoSub2')}
           </h5>
         </div>
         <div className="flex">
@@ -118,7 +118,7 @@ export default function Footer(props) {
                 href="http://www.dit.upm.es/"
                 target="_blank"
               >
-                Department of Telematic Systems Engineering
+                {t('footer.titleRight')}
               </a>
             </li>
             <li className="md:mb-4 mb-2">
@@ -128,7 +128,7 @@ export default function Footer(props) {
                 href="http://www.etsit.upm.es/de.html"
                 target="_blank"
               >
-                ETSI Telecomunicación
+                {t('footer.titleRight2')}
               </a>
             </li>
             <li>
