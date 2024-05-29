@@ -5,53 +5,43 @@
 //--------------------
 //TAGS
 //-------------------
+// quizá no sea necesario poner media queries 
+// si todo se adapta con rems
+
+//ESTRUCTURA BASE DE TAG
+@mixin lg-tag
+    display: flex
+    align-items: center
+    padding: 0.3em 0.74em 
+    font-weight: 600
+    border-radius: 4px
+
+@mixin md-tag
+    display: flex
+    align-items: center
+    padding: 0.1em 0.5em 
+    font-weight: 600
+    border-radius: 4px
+
+//ESTILOS DE TAG   
 
 @mixin border-tag
-    @media (min-width: 150px)
-        color: black
-        border: 1px solid black
-        display: flex
-        align-items: center
-        padding: 0.16em 0.33em 
-        font-weight: 600
-        border-radius: 4px
-    @media (min-width: 640px)
-        border: 1px solid to-black
-        // height: 24px
-        padding: 0.34em 0.66em 
-        border-radius:4px
-        font-weight: 600
-        height: 1.8em
-
-//añadir mas media queries a mixins
+    @include md-tag
+    color: black
+    border: 1px solid black
 
 @mixin border-tag-white
-    @media (min-width: 150px)
-        color: white
-        border: 1px solid black
-        display: flex
-        align-items: center
-        padding: 1px 8px 
-        font-weight: 600
-        border-radius: 4px
-    @media (min-width: 640px)
-        border: 1px solid white
-        height: 24px
-        padding: 4px 10px 
-        border-radius:4px
-        font-weight: 600
+    @include md-tag
+    color: white
+    border: 1px solid black
 
 @mixin tag-black-transparent
-    @media (min-width: 150px)
-        background-color: rgb(0, 0, 0,0.3)
-        display: flex
-        align-items: center
-        padding: 0.3rem 0.7rem 
-        font-weight: 500
-        border-radius: 4px
-    @media (min-width: 770px)   
-    // responsive hecho
- 
+    @include lg-tag
+    background-color: rgb(0, 0, 0,0.3)    
+    font-weight: 500
+    color: white
+   
+  
 
 //--------------------
 //BUTTONS
@@ -160,7 +150,7 @@
 
     .isotype 
       display: flex
-      width: 4rem
+      //width: 4rem
       height: auto
       margin: 0 0 0 2rem
 
@@ -188,9 +178,7 @@
     .show 
       padding: 2% 0 0 0
       display: none
-      position: absolute
-      top: 26.5%
-      right: 6.5%
+
 
   .menu 
     //width: 55%
@@ -199,6 +187,7 @@
     display: flex
     justify-content: space-between
     flex-wrap: nowrap
+    align-items: center
 
     ul 
       display: flex

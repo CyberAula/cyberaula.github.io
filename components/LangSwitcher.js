@@ -15,11 +15,10 @@ const lngs = {
 
 export default function LangSwitcher() {
     const { i18n } = useTranslation();
-    return (
-        
+    return ( 
         <div className='lang_switcher'>
             <div>
-            <FontAwesomeIcon icon={faGlobe} />
+            <FontAwesomeIcon className="icon"  icon={faGlobe} />
         {Object.keys(lngs).map((lng) => (
             <a
             key={lng}
@@ -28,7 +27,6 @@ export default function LangSwitcher() {
             }}
             type="submit"
             onClick={() => i18n.changeLanguage(lng)}
-
             >
             
             {lngs[lng].abbreviation}   <span style={{display: lng === "en" ? 'inline' : 'none', fontWeight: 'normal' }}> / </span> 

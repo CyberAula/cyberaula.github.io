@@ -22,7 +22,7 @@
                 padding-left: 0
             &:hover
                 @apply text-ca_blue-600
-                background-color: white
+                
 //corrección aquí (1/3)
 
 @mixin container-button-inline
@@ -46,9 +46,7 @@
                 justify-content: left
                 padding-left: 1rem
                 align-items: center
-                &:hover
-                    @apply text-gray-800
-                    background-color: $ca-blue-300
+            
 
 @mixin container-button-inline-no-icon
     .tool_button_container
@@ -63,14 +61,14 @@
                 display: none
         .tool_github
             margin: 0rem
-            a
+            button
                 display: flex
                 justify-content: left
                 padding-left: 1rem
                 margin-bottom: 0rem
-                &:hover
-                    @apply text-gray-800
-                    background-color: $ca-blue-300
+            &:hover
+                @apply text-ca_blue-800
+                background-color: $ca-blue-200
 
 @mixin img-tool
     .tool_logo

@@ -1346,33 +1346,7 @@ RESPONSIVE
 
   }
 
-  .team {
-    .teammates {
-      padding-top: 5rem;
-
-      .teamgrouptitle {
-        padding: 2rem 2rem 2rem 2rem !important;
-
-        h2 {
-          font-size: 3rem;
-        }
-
-        .teammate {
-          display: flex;
-          flex-flow: column;
-
-          .mate_img {
-            align-self: center;
-          }
-
-          .mate_info {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-
+  
   .about {
     .about_description {
       padding: 6rem 3rem 6rem 3rem !important;
@@ -1395,7 +1369,7 @@ RESPONSIVE
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     transition: 0.5s;
     padding: 1rem 0 0.7rem 0;
 
@@ -1410,7 +1384,7 @@ RESPONSIVE
         display: flex;
         width: 4rem;
         height: auto;
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 1.4rem;
       }
 
       .logotype {
@@ -1425,19 +1399,25 @@ RESPONSIVE
 
     .menu_icon {
       padding: 0;
+      display: flex;
+      align-items: center;
+      min-height: 2rem;
 
       .close {
         position: absolute;
         display: none;
-        top: 5%;
+        top: 3%;
         right: 6.5%;
         cursor: pointer;
       }
 
       .show {
+        position: absolute;
         padding: 0;
         display: unset;
         cursor: pointer;
+        top: 28%; // por qué son distintos los porcentajes de los iconos close y show?
+        right: 6.5%;
       }
     }
 
@@ -1447,6 +1427,7 @@ RESPONSIVE
       margin: 0;
       padding: 1rem 1.6rem 0 1.6rem;
       display: none;
+     
 
       ul {
         display: flex;

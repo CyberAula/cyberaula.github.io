@@ -40,8 +40,8 @@ export default function projectCards(props) {
           ({ date, route, title, subtitle, tags, category }, index) => (
             <div key={index} className="project_card mb-4 sm:mb-0 p-4 md:p-6">
               <div className="year_and_cta">
-                <p className="date">{date}</p>
-                <a href={route}>
+                <span><p className="date">{date}</p> </span>
+                <a href={route} target="_blank">
                   {" "}
                   <p>details</p>
                   <FontAwesomeIcon icon={faUpRightFromSquare} />
@@ -53,9 +53,9 @@ export default function projectCards(props) {
               </div>
               <div className="project_tags ">
                 {tags.split(',').map((tag, tagIndex) => (
-                  <span key={tagIndex} className="project_tag text-xs md:text-[0.85rem]">
-                    <small> {tag.trim()}</small> 
-                  </span>
+                  <small key={tagIndex} className="project_tag">  {/*text-xs md:text-[0.85rem]*/}
+                   {tag.trim()}
+                  </small>
                 ))}
               </div>
             </div>

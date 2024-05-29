@@ -12,7 +12,8 @@
 // 5to atributo: alto de linea
 // 6to atributo: margen bajo
 
-$xs-text: 16px, 14px, 18px, 400, 140%, 1rem, 0.6rem //small
+$icon: 14px,14px, 16px,400
+$xs-text: 14px, 13px, 16px, 400, 140%, 1rem, 0.6rem //small
 $body-text: 14px, 16px, 19px, 400, 140%, 1rem, 0.6rem
 $button: 16px, 14px, 18px, semibold //buttons
 $sm-text: 14px, 16px, 19px, 600, 140%, 1rem, 0.6rem //h5
@@ -131,7 +132,7 @@ p, label, input, select
         line-height: nth($body-text,5)
         //margin-bottom: nth($body-text,6)
 
-// parrafos
+// texto pequeño 
 small
     @media screen and (min-width: 150px)
         font-family: "Montserrat", sans-serif
@@ -149,6 +150,24 @@ small
         line-height: nth($xs-text,5)
         //margin-bottom: nth($xs-text,6)
 
+// texto extra pequeño
+    // parrafos
+.xs-text
+    @media screen and (min-width: 150px)
+        font-family: "Montserrat", sans-serif
+        font-size: nth($xs-text,1)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+    @media screen and (min-width: 640px)
+        font-family: "Montserrat", sans-serif
+        font-size: nth($xs-text,2)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
+    @media screen and (min-width: 1400px)
+        font-family: "Montserrat", sans-serif
+        font-size: nth($xs-text,3)
+        line-height: nth($xs-text,5)
+        //margin-bottom: nth($xs-text,6)
 
 // botones + botones con links
 button, a
@@ -171,4 +190,11 @@ button, a
         @media screen and (min-width: 1400px)
             font-family: "Montserrat", sans-serif
             font-size: nth($button,3)
-//weight estaría bien ?
+
+.icon
+    @media screen and (min-width: 150px)
+        font-size: nth($icon,1)
+    @media screen and (min-width: 640px)
+        font-size: nth($icon, 2)
+    @media screen and (min-width: 1400px)
+        font-size: nth($icon,3)

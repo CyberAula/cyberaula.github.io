@@ -84,7 +84,7 @@ export default function Research() {
           <h1>{t('publications.title')}</h1>
         </div>
         <main>
-          <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 xl:mx-44 2xl:mx-60">
+          <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
             <Filters
               search={search}
               year={year}
@@ -106,7 +106,9 @@ export default function Research() {
                     <div key={ind} className="paper">
                       <div className="paper_main">
                         <div className="paper_date">
-                          <h5 className="year">{date ? date[0] : ""}</h5>
+                          <span>
+                            <p className="year">{date ? date[0] : ""}</p>
+                          </span>
                         </div>
                         <div className="paper_content">
                           <div className="paper_title">
@@ -119,11 +121,11 @@ export default function Research() {
                       </div>
                       <button className="paper_link text-nowrap">
                         
-                        <a rel="noopener noreferrer" target="_blank" href={doi}>
+                        <Link rel="noopener noreferrer" target="_blank" href={doi}>
                           {" "}
                           <span>{t('publications.button')} </span>
                           <FontAwesomeIcon icon={faArrowRight} />
-                        </a>
+                        </Link>
                       </button>
                     </div>
                   );

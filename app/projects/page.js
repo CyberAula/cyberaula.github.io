@@ -25,7 +25,7 @@ export default function Projects() {
       </div>
       <main>
         
-        <section className="lg:mx-36 md:mx-14 sm:mx-8 lg:my-12 md:my-8 sm:my-4 xl:mx-44 2xl:mx-60">
+        <section className="lg:mx-36 md:mx-14 sm:mx-8 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20  xl:mx-44 2xl:mx-60">
           <ProjectCard />
         </section>
       </main>

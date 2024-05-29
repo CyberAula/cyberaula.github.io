@@ -47,7 +47,7 @@ export default function Tools(props) {
         <h1>{t('tools.title')}</h1>
       </div>
       <main>
-        <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 xl:mx-44 2xl:mx-60">
+        <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20  xl:mx-44 2xl:mx-60">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 150: 1, 600: 2, 900: 3 }}
           >

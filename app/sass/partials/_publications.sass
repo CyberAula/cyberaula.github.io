@@ -1,6 +1,7 @@
 @import "../lib/_mixins.sass"
 @import "../lib/_variables.sass"
-
+// Correcciones: código duplicado para select e input. 
+// Recomendado hacer mixins
 
 @media (min-width: 150px) 
     
@@ -20,11 +21,15 @@
         .research_results
             display: flex
             flex-wrap: wrap
-            min-height: 48px
+            min-height: 3rem
             align-content: center
             margin-right: 1rem
+            width: 13rem
+            justify-content: flex-end
             b 
                 margin-left: 0.4rem
+                width: 2rem
+                
     section 
         gap: $spacing_md
 
@@ -48,36 +53,61 @@
         border-bottom: solid 1px $ca-blue-200
         justify-content: left
         .filter
-            font-size: 1.1rem
             margin: 0 0.8rem 0.8rem 0
             width: 100%
+              text-align: right
             label
                 display: flex
+                //min-width: 5.1rem
                 width: 100%
-                padding-right: 12px
+                padding-right: 1.6rem
                 margin-bottom: 0.4rem
-                width: 100%
+                line-height:120%
+                color: $blue_primary
             select,
             input 
-                padding: 5px
+                padding: 0.5rem 1rem 0.5rem 0.5rem 
                 margin-right: 0.3rem
                 width: 100%
-                height: 32px
-                option 
+                height: 3.2rem
                 background-color: white
-                border: 1px solid $ca-blue-800
+                border: 1px solid $ca-blue-600
                 border-radius: 4px
-                background-color: transparent
+                background-color: white
                 font-family: $montserrat
                 color: $blue_primary
+                &:focus
+                    @apply text-gray-700
+                    border: $ca-blue-500 solid 1px
+                    filter: drop-shadow(0 0 0.5rem $ca-blue-300)               
+                &:focus-within
+                    @apply text-gray-700
+                    border: $ca-blue-500  solid 1px
+                    filter: drop-shadow(0 0 0.5rem $ca-blue-300)
+                    outline: none
+                &:focus-visible
+                    outline: none
+            select
+                
+                @apply text-gray-200
+                background: white
+                &:focus
+                    border: $ca-blue-500 solid 1px
+                    filter: drop-shadow(0 0 0.5rem $ca-blue-300)
+                &:focus-within
+                    border: $ca-blue-500  solid 1px
+                    filter: drop-shadow(0 0 0.5rem $ca-blue-300)
+                    outline: none
+                &:focus-visible
+                    outline: none
+                option
+                    color: $ca-blue-700
+                    padding: 0 0.3rem 3rem 0.3rem
+                    // border: 0px
+                    // border-radius: 4px
             #year
-                width: 60px
-            option 
-            text-align: right
-        .filter:last-child
-            background-color: red
-            label
-                width: 100px       
+                width: 8rem
+           
     #filter_year
         width: auto
     .papers 
@@ -97,7 +127,7 @@
             gap: $spacing_xsm
             .paper_date
                 display: flex
-                h5
+                p
                     @include border-tag
                     display: block
                 
@@ -151,8 +181,7 @@
                 width: auto
                 label
                     display: inline-block
-                    width: 100px
-                    padding-right: 12px
+                    margin-bottom: 0rem
                 input
                     width: 200px
     .papers 

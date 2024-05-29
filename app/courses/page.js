@@ -24,7 +24,7 @@ export default function Courses() {
         <h1>Courses</h1>
       </div>
       <main>
-        <section className="lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
+        <section className="lg:mx-36 md:mx-14 sm:mx-8 mx-4 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20 xl:mx-44 2xl:mx-60">
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">
             {courses.map(({ date, gradient, edition, title, description, route }) => {
               return (
@@ -36,12 +36,12 @@ export default function Courses() {
                     <div className="course_content">
                       <div className="card_container_top">
                         <div className="flex gap-3">
-                        <div className="course_tag">
+                        <span className="course_tag">
                           <small>{date}</small>
-                        </div>
-                        <div className="course_tag">
+                        </span>
+                        <span className="course_tag">
                           <small> {edition}</small>
-                        </div>
+                        </span>
                         </div>
                         <button className="course_route">
                         <CreateLink route={route}>
@@ -55,7 +55,7 @@ export default function Courses() {
                           <h4>{title}</h4>
                         </div>
                         <div className="course_description">
-                          <span> {description}</span>
+                          <small> {description}</small>
                         </div>
                       </div>
                     </div>

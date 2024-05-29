@@ -23,7 +23,7 @@ export default function Team(props) {
         <h1>{t('team.title')}</h1>
       </div>
       <main>
-        <section className="teammates block place-content-center sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60">
+        <section className="teammates block place-content-center sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 sm:mx-2 md:mx-14 lg:mx-36 xl:mx-44 2xl:mx-60 my-2 sm:my-8 md:my-8 lg:my-12 xl:my-16 2xl:my-20">
           {Object.values(team).map(({ members }) => {
             return members.map(
               ({
