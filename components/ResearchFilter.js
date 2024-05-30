@@ -20,7 +20,7 @@ export default function Filters (props) {
 		return (<div className="filters">
 			<div className="filter">
 				<label htmlFor="search">{t('publications.filter.fieldTitle')}</label>
-				<input key={" "} type={"text"} value ={props.search}
+				<input key={" "} type={"text"} value ={props.search || ""}
 					   onChange={e => props.changeSearch(e.target.value === "" ? undefined: e.target.value)}
 				/>
 			</div>

@@ -26,9 +26,7 @@ export default function Research() {
 
   const { papers, search, year, type, papersToShow } = state;
 
-  let papersFiltered = null;
-
-  papersFiltered = papers.filter((paper) => {
+  let papersFiltered = papers.filter((paper) => {
     return (
       (!search ||
         search
@@ -76,7 +74,6 @@ export default function Research() {
     }));
   };
 
-  console.log()
   return (
     <div className="research_container">
       <div className="research">
@@ -94,7 +91,6 @@ export default function Research() {
               changeSearch={(search) => setState({ ...state, search: search })}
               changeYear={(year) => setState({ ...state, year: year })}
               changeType={(type) => setState({ ...state, type: type })}
-              //número de resultados de búsqueda
               results={
                 papersFiltered instanceof Array ? papersFiltered.length : 0
               }
@@ -116,18 +112,18 @@ export default function Research() {
                             <h4>{title}</h4>
                           </div>
                           <div className="paper_subtitle">
-                           <p> {author}. {journal}</p>
+                            <p>{author}. {journal}</p>
                           </div>
                         </div>
                       </div>
-                      <button className="paper_link text-nowrap">
-                        
-                        <Link rel="noopener noreferrer" target="_blank" href={doi}>
-                          {" "}
-                          <span>{t('publications.button')} </span>
-                          <FontAwesomeIcon icon={faArrowRight} />
-                        </Link>
-                      </button>
+                      {doi ? (
+                        <button className="paper_link text-nowrap">
+                          <Link rel="noopener noreferrer" target="_blank" href={doi}>
+                            <span>{t('publications.button')}</span>
+                            <FontAwesomeIcon icon={faArrowRight} />
+                          </Link>
+                        </button>
+                      ) : null}
                     </div>
                   );
                 })}
