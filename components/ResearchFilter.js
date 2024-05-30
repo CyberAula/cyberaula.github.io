@@ -33,7 +33,7 @@ export default function Filters (props) {
 				</select>
 			</div>
 			<div className="filter" id="filter_year">
-				<label htmlFor="year">Year</label>
+				<label htmlFor="year">{t('publications.filter.fieldTitle3')}</label>
 				<select id="year" name="year" onChange={(e)=>props.changeYear(e.target.value === "all" ? undefined: e.target.value)}>
 					<option key={"all"} value={"all"}>{t('publications.filter.fieldOpt')}</option>
 					{years.map(y=><option key={y} value={y}>{y}</option>)}

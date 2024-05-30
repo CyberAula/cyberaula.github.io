@@ -11,7 +11,7 @@ export default function About(props) {
   return (
     <div className="about">
       <Header route={"/about"} />
-      <div className="banner">
+      <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t("contact.title")}</h1>
       </div>
       <main className=" sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60">

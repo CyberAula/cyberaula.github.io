@@ -6,8 +6,9 @@
 @import "partials/_team.sass";
 @import "partials/_tools.sass";
 @import "partials/_footer.sass";
-@import "lib/_responsive.sass";
+@import "partials/_banner.sass";
 @import "partials/_recentPublications.sass";
+@import "lib/_responsive.sass";
 @import "lib/_type.sass";
 @import "lib/_variables.sass";
 @import "lib/_mixins.sass";
@@ -62,22 +63,6 @@ TYPOGRAPHY
   }
 }
 
-.banner {
-  margin-top: 60px;
-  height: 13.8vw;
-  background-image: url("/assets/img/headers/header-one.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  // object-fit: cover;
-  display: flex;
-  align-items: flex-end;
-
-  h1 {
-    padding: 0 0 $spacing_sm $spacing_xl;
-    color: white;
-  }
-}
 
 body,
 html {
@@ -1261,9 +1246,7 @@ RESPONSIVE
     }
   }
 
-  .banner {
-    margin-top: 104px;
-  }
+  
 }
 
 @media (max-width: 800px) {
@@ -1299,14 +1282,6 @@ RESPONSIVE
     }
   }
 
-  .banner {
-    background-image: url("/assets/img/headers/header-one.png");
-    background-size: cover;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 8rem;
-  }
 
   .projects {
     main {
@@ -1452,9 +1427,6 @@ RESPONSIVE
 
 
 
-  .banner {
-    margin-top: 40px;
-  }
 
   .parallax__layer {
     position: absolute;

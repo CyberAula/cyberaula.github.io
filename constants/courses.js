@@ -1,7 +1,7 @@
 export const mycourses = [	
 	{	"date": "2023",
 		"logo": "/assets/img/courses/fondo-cursos.png",
-		"edition": "2º edición",
+		"edition": "2",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
 		"title": "Bases de Datos Relacionales y No Relacionales: conceptos, diseño y aplicación a entornos web",
 		"description": "Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas.",
@@ -10,7 +10,7 @@ export const mycourses = [
     {
 		"date": "2023",
 		"logo": "/assets/img/courses/fondo-cursos.png",
-		"edition": "2º edición",
+		"edition": "2",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=378",
 		"title": "Desarrollo de aplicaciones con React y React Native",
 		"description": "En este curso, exploraremos los fundamentos esenciales de las bases de datos, centrándonos tanto en los modelos relacionales como en los no relacionales. Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas.",
@@ -19,7 +19,7 @@ export const mycourses = [
     {
 		"date": "2023",
 		"logo": "/assets/img/courses/fondo-cursos.png",
-		"edition": "3º edición",
+		"edition": "3",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=361",
 		"title": "Desarrollo de un Proyecto Fullstack con JavaScript",
 		"description": "En este curso, exploraremos los fundamentos esenciales de las bases de datos, centrándonos tanto en los modelos relacionales como en los no relacionales. Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas. ",
@@ -28,7 +28,7 @@ export const mycourses = [
     {
 		"date": "2021",
 		"logo": "/assets/img/courses/fondo-cursos.png",
-		"edition": "3º edición",
+		"edition": "3",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=194",
 		"title": "Desarrollo Backend con Node.js, Express y BBDDs",
 		"description": "En este curso, exploraremos los fundamentos esenciales de las bases de datos, centrándonos tanto en los modelos relacionales como en los no relacionales. Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas. ",
@@ -37,7 +37,7 @@ export const mycourses = [
 	{
 		"date": "2021",
 		"logo": "/assets/img/courses/fondo-cursos.png",
-		"edition": "11º edición",
+		"edition": "11",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=256",
 		"title": "Desarrollo Frontend con HTML, CSS y JavaScript",
 		"description": "En este curso, exploraremos los fundamentos esenciales de las bases de datos, centrándonos tanto en los modelos relacionales como en los no relacionales. Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas. ",
@@ -46,7 +46,7 @@ export const mycourses = [
 	{
 		"date": "2021",
 		"logo": "/assets/img/courses/fondo-cursos-png",
-		"edition": "4º edición",
+		"edition": "4",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=267",
 		"title": "Gestión de proyectos software con Git y GitHub",
 		"description": "En este curso, exploraremos los fundamentos esenciales de las bases de datos, centrándonos tanto en los modelos relacionales como en los no relacionales. Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas. ",
@@ -55,7 +55,7 @@ export const mycourses = [
     {
 		"date": "2021",
 		"logo": "/assets/img/courses/fondo-cursos.png",
-		"edition": "5º edición",
+		"edition": "5",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=264",
 		"title": "Siete habilidades clave en la era digital",
 		"description": "En este curso, exploraremos los fundamentos esenciales de las bases de datos, centrándonos tanto en los modelos relacionales como en los no relacionales. Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas. ",
@@ -64,7 +64,7 @@ export const mycourses = [
     {
 		"date": "2018",
 		"logo": "/assets/img/courses/fondo-cursos-png",
-		"edition": "2º edición",
+		"edition": "2",
 		"route": "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=51",
 		"title": "Introducción a LINUX como entorno de desarrollo de sistemas software",
 		"description": "En este curso, exploraremos los fundamentos esenciales de las bases de datos, centrándonos tanto en los modelos relacionales como en los no relacionales. Desde la teoría básica hasta la aplicación práctica en entornos web, los participantes adquirirán una comprensión profunda de cómo diseñar, implementar y gestionar bases de datos eficientes para satisfacer las necesidades cambiantes de las aplicaciones modernas. ",

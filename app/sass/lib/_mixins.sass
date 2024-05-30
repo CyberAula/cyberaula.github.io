@@ -130,6 +130,7 @@
 
 //NAVEGACIÓN
 @mixin nav_bar 
+    
   width: 100%
   display: flex
   flex-flow: wrap row
@@ -196,12 +197,12 @@
       font-size: 1.2rem
       li
         //margin-left: 0.6rem
-@media (min-width: 600px)
-    .menu
-        ul
-            gap: 2rem
-  
-@media (min-width: 700px)
-    .menu
-        ul
-            gap: 1rem
+  @media (min-width: 1400px)
+    .imagotype
+        .logotype 
+            font-size: 2.4rem
+        .isotype
+            margin: 0 0 0 3.5rem
+            .logoheader
+                width: 3.25rem
+

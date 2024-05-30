@@ -16,13 +16,12 @@ import { useTranslation } from "react-i18next";
 export default function Footer(props) {
   const { t } = useTranslation();
   const routes = [
-    //{route: "/", title: "Home"},
-    { route: "/research", title: t("nav.item") },
-    { route: "/courses", title: t("nav.item2") },
-    { route: "/tools", title: t("nav.item3") },
-    { route: "/projects", title: t("nav.item4") },
-    { route: "/team", title: t("nav.item5") },
-    { route: "/about", title: t("nav.item6") },
+    { route: "/research", key: 'nav.item' },
+    { route: "/courses", key: 'nav.item2' },
+    { route: "/tools", key: 'nav.item3' },
+    { route: "/projects", key: 'nav.item4' },
+    { route: "/team", key: 'nav.item5' },
+    { route: "/about", key: 'nav.item6' },
   ];
   return (
     <footer>
@@ -59,7 +58,7 @@ export default function Footer(props) {
                 }
               >
                 <Link className="font-medium" href={route.route}>
-                  {route.title}
+                {t(route.key)}
                 </Link>
               </li>
             ))}

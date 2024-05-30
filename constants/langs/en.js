@@ -39,7 +39,6 @@ export const en = {
         "goalsTitle": "Our goals",
         "goalsBody": "The CyberAula group focuses its activities in the application of ICTs(information and communication technology) in education, encouraging e-learning."
     },
-
     "publications": {
         "title": "Publications",
         "filter":{
@@ -56,7 +55,8 @@ export const en = {
     },
     "courses": {
         "title": "Courses",
-        "button": "go to course",
+        "tag": ". edition",
+        "button": "Go to course",
     },
     "projects": {
         "title": "Projects",
@@ -64,6 +64,8 @@ export const en = {
         "filterTitle2":"Projects - individual",
         "filterTitle3":"Educational Research Group (GIE/ERG)",
         "filterTitle4":"Other",
+        "button":"Details",
+        //traducir tags?  cuando estén
     },
     "team": {
         "title": "Team",
@@ -95,9 +97,8 @@ export const en = {
         "titleRight2": "H.T.S telecommunication engineering",
     },
     "tools":{
-        "title":"herramientas",
+        "title":"Tools",
         "toolCards":{
-            
                 "description":{
                     "1":"SGAME is a free web platform meant for the entire educational community that allows users to easily create educational web games by integrating educational resources into existing games.",
                     "2":"The purpose of this project is to encourage and facilitate the completion of educational escape rooms in UPM subjects. To accomplish this, a platform that facilitates the management of the activity has been developed. In this platform, the teacher can create an escape room instance where the students can access and that once the activity has been completed, it automatically collects the progress and achievement data of the students. In addition, a methodological guide has been developed to import the concept of escape room into university education using the platform developed. ",

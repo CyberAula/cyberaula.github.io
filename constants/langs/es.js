@@ -55,7 +55,8 @@ export const es = {
     },
     "courses": {
         "title": "Cursos",
-        "button": "ir al curso",
+        "tag": "º edición",
+        "button": "Ir al curso",
     },
     "projects": {
         "title": "Proyectos",
@@ -63,6 +64,7 @@ export const es = {
         "filterTitle2":"Proyectos - individual",
         "filterTitle3":"Grupo de investigación educativa (GIE)",
         "filterTitle4":"Otros",
+        "button":"Detalles",
 
     },
     "team": {
@@ -97,7 +99,7 @@ export const es = {
         "titleRight2": "ETSI telecomunicación",
     },
     "tools":{
-    "title":"herramientas",
+    "title":"Herramientas",
     "toolCards":{
         
             "description":{

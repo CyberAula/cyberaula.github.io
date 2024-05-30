@@ -43,7 +43,7 @@ export default function projectCards(props) {
                 <span><p className="date">{date}</p> </span>
                 <a href={route} target="_blank">
                   {" "}
-                  <p>details</p>
+                  <p> {t('projects.button')}</p>
                   <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>
               </div>
