@@ -16,6 +16,7 @@
 
 * {
   @apply border-2 border-primary; // no funciona :( <-- funciona en el globals.scss though
+  border: 1px solid pink
 }
 
 // PRUEBA GRID, BORRAR
@@ -1077,103 +1078,103 @@ main {
  ABOUT
  ========================================================================== */
 
-.about {
+// .about {
   
-  main {
-    // max-width: 1000px;
-    // margin: auto;
-    // margin-top: 100px;
+//   main {
+//     // max-width: 1000px;
+//     // margin: auto;
+//     // margin-top: 100px;
 
-    .about_description {
-      border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
-      padding: 9rem 3rem 6rem 7rem;
-    }
+//     .about_description {
+//       border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
+//       padding: 9rem 3rem 6rem 7rem;
+//     }
 
-    .location {
-      // padding: 4rem 3rem 6rem 7rem;
-      //background-color: lighten($color: $yellow, $amount: 25);
-      display: flex;
-      flex-flow: row no-wrap;
-      justify-content: space-evenly;
-      padding-bottom: 2rem;
+//     .location {
+//       // padding: 4rem 3rem 6rem 7rem;
+//       //background-color: lighten($color: $yellow, $amount: 25);
+//       display: flex;
+//       flex-flow: row no-wrap;
+//       justify-content: space-evenly;
+//       padding-bottom: 2rem;
 
-      .col1 {
-        flex: 1;
-        padding: 1rem 4rem;
+//       .col1 {
+//         flex: 1;
+//         padding: 1rem 4rem;
 
-        .location_map {
-          height: 500px;
-          width: 700px;
-          background-color: $ca-or-100;
-        }
+//         .location_map {
+//           height: 500px;
+//           width: 700px;
+//           background-color: $ca-or-100;
+//         }
 
-        .map-responsive {
-          overflow: hidden;
-          padding: 36.25%;
-          position: relative;
-          height: 100%;
-          width: 100%;
-        }
+//         .map-responsive {
+//           overflow: hidden;
+//           padding: 36.25%;
+//           position: relative;
+//           height: 100%;
+//           width: 100%;
+//         }
 
-        .map-responsive iframe {
-          left: 0;
-          top: 0;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-        }
-      }
+//         .map-responsive iframe {
+//           left: 0;
+//           top: 0;
+//           height: 100%;
+//           width: 100%;
+//           position: absolute;
+//         }
+//       }
 
-      .col2 {
-        flex: 1;
+//       .col2 {
+//         flex: 1;
 
-        .location_info {
-          h2 {
-            padding: 1rem 0 0.5rem 0;
-          }
-        }
+//         .location_info {
+//           h2 {
+//             padding: 1rem 0 0.5rem 0;
+//           }
+//         }
 
-        .contact {
-          h2 {
-            padding: 1rem 0 0.5rem 0;
-          }
-        }
-      }
-    }
+//         .contact {
+//           h2 {
+//             padding: 1rem 0 0.5rem 0;
+//           }
+//         }
+//       }
+//     }
 
-    section {
-      &:last-child {
-        border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
-      }
-    }
-  }
+//     section {
+//       &:last-child {
+//         border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
+//       }
+//     }
+//   }
 
-  h1 {
-    // font-size: 4rem;
-    // font-weight: $regular;
-  }
+//   h1 {
+//     // font-size: 4rem;
+//     // font-weight: $regular;
+//   }
 
-  h2 {
-    color: $black;
-    font-size: 2rem;
-    width: 100%;
-    padding: 1rem 0 0.5rem 2rem;
-  }
+//   h2 {
+//     color: $black;
+//     font-size: 2rem;
+//     width: 100%;
+//     padding: 1rem 0 0.5rem 2rem;
+//   }
 
-  h3 {
-    color: $black;
-    font-size: 2rem;
-  }
+//   h3 {
+//     color: $black;
+//     font-size: 2rem;
+//   }
 
-  p {
-    font-size: 1.5rem;
-  }
+//   p {
+//     font-size: 1.5rem;
+//   }
 
-  .border_nav_bar {
-    border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
-    transition: none;
-  }
-}
+//   .border_nav_bar {
+//     border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
+//     transition: none;
+//   }
+// }
 
 /* =========================================================================
 LINKS

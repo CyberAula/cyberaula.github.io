@@ -11,7 +11,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 
 export default function Projects() {
-  const [projects, setProjects] = useState(myprojectCards);
+  // const [projects, setProjects] = useState(myprojectCards);
   const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -14,8 +14,8 @@ export default function About(props) {
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t("contact.title")}</h1>
       </div>
-      <main className=" sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60">
-        <section className="about_description">
+      <main className=" sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 xl:my-28">
+        {/* <section className="about_description">
           <p>
             We have gathered a long teaching experience at the University. Our
             main research interests are focused on the last technologies in
@@ -24,25 +24,30 @@ export default function About(props) {
             Our latest participation in research projects include ongoing
             EU-founded projects such as Global Excursions and FI-WARE
           </p>
-        </section>
+        </section> */}
         <section className="contact_info">
           <div className="contact col1">
-            <h2>¿Alguna duda? Escríbenos.</h2>
+          <h4>¿Alguna duda? Escríbenos.</h4>
+            <div className="contact_content my-8 ">
+            
             <ul>
               <li>
-                <h3>E-mail</h3>
+                <h5>E-mail</h5>
                 <p>enrique.barra@upm.es</p>
               </li>
               <li>
-                <h3>{t("contact.listTitle2")}</h3>
+                <h5>{t("contact.listTitle2")}</h5>
                 <p>91 336 73 31</p>
               </li>
             </ul>
+            </div>
           </div>
           <div className="location col2">
             <div className="location_title">
-              <FontAwesomeIcon className="location_icon" icon={faLocationDot} />{" "}
-              <h2>{t("contact.title2")}</h2>
+              <h4>              <FontAwesomeIcon className="location_icon" icon={faLocationDot} />{" "}
+{t("contact.title2")}</h4>
+            </div>
+            <div className="location_info my-8">
               <div className="location_map map-responsive">
                 <iframe
                   title="maps"
@@ -54,17 +59,9 @@ export default function About(props) {
                   allowfullscreen
                 ></iframe>
               </div>
-              <div className="location_info">
-                <h2>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN</h2>
-                <h3>Av. Complutense, 30, 28040 Madrid Edificio B</h3>
-              </div>
+             <div className="map_info my-8"> <p>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN</p>
+              <p>Av. Complutense, 30, 28040 Madrid Edificio B</p></div>
             </div>
-           
-             
-         
-            
-             
-            
           </div>
         </section>
       </main>

@@ -4,20 +4,48 @@
 
 .about
     .banner
-        main
-            .about_description
-            .contact_info
+    main
+        .about_description
+        .contact_info
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+            .contact
                 display: flex
-                flex-direction: row
-                flex-wrap: wrap
-                .contact
-                    width: 50%
+                flex-direction: column
+                h2
+                    text-align: left
+                    font
                     ul
                         display: flex
+                        flex-direction: column
+
                         li
-                .location
-                    
-                    width: 50%
+                            margin-bottom: 10px // Add some spacing between list items if needed
+
+            .location
+                display: flex
+                flex-direction: column
+
+                .location_title
                     display: flex
-                    .location_title
-                        .location_icon #faLocationDot
+                    align-items: center
+
+                    .location_icon
+                        width: 20px
+                        height: auto
+                    .location_info
+                        .location_map
+                            .map-responsive
+                                overflow: hidden
+                                padding: 36.25%
+                                position: relative
+                                height: 100%
+                                width: 100%
+                            .map_responsive iframe
+                                left: 0
+                                top: 0
+                                height: 100%
+                                width: 100%
+                                position: absolute
