@@ -11,7 +11,10 @@ import { useTranslation } from 'react-i18next';
 
 export default function Header(props) {
   const [state, setState] = useState({ open: false });
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  //get current language (currentLang will be: "en" or "es")
+  const currentLang = i18n.language;
+
   const routes = [
     { route: "/research", key: 'nav.item' },
     { route: "/courses", key: 'nav.item2' },
@@ -20,9 +23,9 @@ export default function Header(props) {
     { route: "/team", key: 'nav.item5' },
     { route: "/about", key: 'nav.item6' },
   ];
-  
+
   return (
-    <header className="nav_bar" id="header_home">
+    <header className={"nav_bar enriqueheader_"+currentLang} id="header_home">
       <a href="/">
         <div className="imagotype">
           <div className="isotype">
@@ -33,7 +36,7 @@ export default function Header(props) {
             />
           </div>
           <div className="logotype">
-           <span>Cyber</span>Aula
+           <span className={"spanheader_"+currentLang}>Cyber</span>Aula
           </div>
         </div>
       </a>
