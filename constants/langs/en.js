@@ -8,7 +8,7 @@ export const en = {
         "item6":"Contact",
     },
     "header": {
-        "publicationstab": "Publications"
+        "publicationstab": "Publications",
     },
     "front": {
         "title": "Welcome to CyberAula",

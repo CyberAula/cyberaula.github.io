@@ -6,9 +6,10 @@ export const es = {
         "item4":"Proyectos",
         "item5":"Equipo",
         "item6":"Contacto",
+        
     },
     "header": {
-        "publicationstab": "Publicaciones"
+        "publicationstab": "Publicaciones",
     },
     "front": {
         "title": "Bienvenido a CyberAula",

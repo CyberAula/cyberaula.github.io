@@ -784,7 +784,7 @@
   }
   .filters .filter select:focus {
     border: #6e76ff solid 1px;
-    filter: drop-shadow(0 0 0.5rem #becaff);
+    filter: drop-shadow(0 0 0.2rem #becaff);
   }
   .filters .filter select:focus-within {
     border: #6e76ff solid 1px;
