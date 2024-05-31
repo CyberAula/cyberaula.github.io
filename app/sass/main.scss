@@ -8,6 +8,7 @@
 @import "partials/_footer.sass";
 @import "partials/_banner.sass";
 @import "partials/_recentPublications.sass";
+@import "partials/_home.sass";
 @import "lib/_responsive.sass";
 @import "lib/_type.sass";
 @import "lib/_variables.sass";
@@ -213,13 +214,7 @@ main {
 }
 
 .home {
-  margin: 8rem 4rem 0 4rem;
-
-  a {
-    &:hover {
-      color: inherit;
-    }
-  }
+  //margin: 8rem 4rem 0 4rem;
 
   h1 {
     font-weight: 500;
@@ -230,7 +225,7 @@ main {
 
     justify-content: left;
     // border-bottom: solid 1.5px lighten($color: $black, $amount: 7);
-    padding: 6rem 6rem 2rem 0rem;
+    //padding: 6rem 6rem 2rem 0rem;
 
     .group_logo {
       display: inline-block;
@@ -255,9 +250,7 @@ main {
       }
     }
 
-    .group_description {
-      // width: 60%;
-    }
+    
   }
 
   .body {
@@ -1190,9 +1183,9 @@ a {
   text-decoration: none;
   color: inherit;
 
-  &:visited {
-    color: inherit;
-  }
+  // &:visited {
+  //   color: inherit;
+  // }
 }
 
 /* &::selection {
@@ -1227,7 +1220,7 @@ RESPONSIVE
   }
 
   .home {
-    margin: 0 4rem 0 4rem;
+    //margin: 0 4rem 0 4rem;
 
     .body {
       display: flex;
@@ -1251,7 +1244,7 @@ RESPONSIVE
 
 @media (max-width: 800px) {
   .home {
-    margin: 0 2rem 0 2rem;
+    //margin: 0 2rem 0 2rem;
 
     .group_logo {
       width: 20%;
@@ -1259,13 +1252,13 @@ RESPONSIVE
       border-radius: 50%;
     }
 
-    h1 {
-      font-size: 3rem;
-    }
+    // h1 {
+    //   font-size: 3rem;
+    // }
 
-    h2 {
-      font-size: 1.5rem;
-    }
+    // h2 {
+    //   font-size: 1.5rem;
+    // }
 
     .body {
       display: block;
@@ -1437,7 +1430,7 @@ RESPONSIVE
   }
 
   .home {
-    margin: 0.4rem;
+    //margin: 0.4rem;
     padding: 1rem 0 0 0;
 
     h2 {

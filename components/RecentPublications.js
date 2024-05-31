@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { mypublications } from "../constants/publications";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function RecentPublications(props) {
   const [papers, setPapers] = useState(mypublications);
@@ -38,7 +40,14 @@ export default function RecentPublications(props) {
                       </div>
                       <h5 className="article_title">{title}</h5>
                       <div className="article_author">{author}</div>
-                      <div className="article_doi">{doi}</div>
+                      {doi ? (
+                        <button className="paper_link text-nowrap">
+                          <Link rel="noopener noreferrer" target="_blank" href={doi}>
+                            <span>{t('publications.button')}</span>
+                            <FontAwesomeIcon icon={faArrowRight} />
+                          </Link>
+                        </button>
+                      ) : null}
                     </div>
                   </div>
                 </a>

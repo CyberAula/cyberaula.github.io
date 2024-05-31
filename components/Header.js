@@ -4,10 +4,9 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import LangSwitcher  from "./LangSwitcher";
+import LangSwitcher from "./LangSwitcher";
 
-import { useTranslation } from 'react-i18next';
-
+import { useTranslation } from "react-i18next";
 
 export default function Header(props) {
   const [state, setState] = useState({ open: false });
@@ -16,16 +15,16 @@ export default function Header(props) {
   const currentLang = i18n.language;
 
   const routes = [
-    { route: "/research", key: 'nav.item' },
-    { route: "/courses", key: 'nav.item2' },
-    { route: "/tools", key: 'nav.item3' },
-    { route: "/projects", key: 'nav.item4' },
-    { route: "/team", key: 'nav.item5' },
-    { route: "/about", key: 'nav.item6' },
+    { route: "/research", key: "nav.item" },
+    { route: "/courses", key: "nav.item2" },
+    { route: "/tools", key: "nav.item3" },
+    { route: "/projects", key: "nav.item4" },
+    { route: "/team", key: "nav.item5" },
+    { route: "/about", key: "nav.item6" },
   ];
 
   return (
-    <header className={"nav_bar enriqueheader_"+currentLang} id="header_home">
+    <header className={"nav_bar header_" + currentLang} id="header_home">
       <a href="/">
         <div className="imagotype">
           <div className="isotype">
@@ -36,12 +35,10 @@ export default function Header(props) {
             />
           </div>
           <div className="logotype">
-           <span className={"spanheader_"+currentLang}>Cyber</span>Aula
+            <span>Cyber</span>Aula
           </div>
         </div>
       </a>
-
-      
 
       <div className="menu_icon">
         <i
@@ -53,7 +50,7 @@ export default function Header(props) {
             setState({ open: !state.open });
           }}
         >
-          <FontAwesomeIcon icon={faBars} size="lg"/>
+          <FontAwesomeIcon icon={faBars} size="lg" />
         </i>
         <i
           className={
@@ -74,7 +71,6 @@ export default function Header(props) {
         }
       >
         <ul>
-      
           {routes.map((route, index) => (
             <li
               key={index}
@@ -83,13 +79,9 @@ export default function Header(props) {
               <Link href={route.route}>{t(route.key)}</Link>
             </li>
           ))}
-       
         </ul>
         <LangSwitcher />
       </div>
-     
     </header>
-
   );
 }
-

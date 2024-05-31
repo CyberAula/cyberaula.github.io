@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
+
 import { useTranslation } from 'react-i18next';
 
 
@@ -31,15 +32,18 @@ export default function Home() {
         <div className="parallax__layer parallax__layer--base">
           <main>
             <section className="home">
-              <div className="head">
-                <div className="group_description">
-                  <h1>
+              <div className="head ">
+                <div className="group_description block sm:flex sm:flew-row sm:justify-between sm:gap-8 sm:items-center ">
+                  <h1 className="ml-4 sm:ml-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24">
                     <b>{t('front.title')}, </b>{t('front.title2')}
                   </h1>
+                  <img className="mt-4 sm:mt-0"
+                    src="/assets/img/banner_prov.svg"
+                  />
                 </div>
               </div>
 
-              <div className="body  sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60">
+              <div className="body lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
                 <section className="award_section">
                   <h2> {t('front.awardH2')} </h2>
                   <div className="award_card">
