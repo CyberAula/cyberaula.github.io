@@ -55,6 +55,7 @@ export const en = {
     },
     "courses": {
         "title": "Courses",
+        "desc":"In this page you will find some of the courses we have given recently.",
         "tag": ". edition",
         "button": "Go to course",
     },
@@ -84,10 +85,10 @@ export const en = {
     },
     "contact": {
         "title": "Contact",
-        "title2": "Any questions? Ask us. ",
+        "title2": "Any questions? Contact us. ",
         "title3": "Where are we?",
         "listTitle2":"Phone",
-        "body": "",
+        "body": "Any questions? Do you want to get in touch with us for any consultation or colaborations ( course, project or publication) ? In the CyberAula group we are open to work together with other groups or educational institutions, as well as the participation in european or national projects as long as they are related to our main lines of action. Ask and we'll be glad to establish contact for possible colaborations.",
     },
     "footer": {
         "title1":"sections",
@@ -99,6 +100,9 @@ export const en = {
     },
     "tools":{
         "title":"Tools",
+        "desc":"These are some of the tools we have developed.",
+        "desc2":"If you are interested in any of our tools, whether it's to use or customize it, you can get in touch with us. "
+      ,
         "toolCards":{
                 "description":{
                     "1":"SGAME is a free web platform meant for the entire educational community that allows users to easily create educational web games by integrating educational resources into existing games.",

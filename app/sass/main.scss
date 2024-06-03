@@ -114,11 +114,12 @@ header {
       transition: 15ms;
 
       &:hover {
-        border-bottom: $border2 $black;
+       
+        
       }
 
       &:active {
-        border-bottom: $border1 $black;
+        // border-bottom: $border1 $black;
       }
     }
   }
