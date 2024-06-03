@@ -1,51 +1,104 @@
-@import "../lib/_type.sass"
-@import "../lib/_variables.sass"
-@import "../lib/_responsive.sass"
-
 .about
-    .banner
+.banner
+main
+    padding-bottom: $spacing-lg
+    .about_description
+    .contact_info
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        .contact,
+        .location
+            flex-grow: 1
+            flex-basis: 0
+
+    .contact
+        display: flex
+        flex-direction: column
+        .contact_content
+            display: flex
+
+            h4
+
+                text-align: left
+                padding-bottom: $spacing-md
+            ul
+                display: flex
+                flex-direction: column
+                flex-grow: 1
+                // gap: $spacing-sm
+                li
+                    gap: $spacing-sm
+                    // margin-bottom: 10px 
+
+    .location
+        display: flex
+        flex-direction: column
+
+        .location_title
+            display: flex
+            align-items: center
+
+        .location_icon
+            width: 2rem
+            height: auto
+            padding-right: $spacing-xsm
+
+        .location_info
+        .location_map
+            &.map-responsive
+                position: relative
+                padding-bottom: 85%
+                height: 0
+                overflow: hidden
+
+            iframe
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+.icon
+    width: 2rem
+    height: auto
+    padding-right: $spacing-xsm
+
+
+h4, h5
+    display: flex
+    align-items: center
+
+@media (max-width: 640px)
     main
+        padding-top: $spacing-lg
+        padding-left: $spacing-md
+        padding-right: $spacing-md
         .about_description
         .contact_info
             display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-
             .contact
                 display: flex
                 flex-direction: column
-                h2
-                    text-align: left
-                    font
-                    ul
-                        display: flex
-                        flex-direction: column
+                .contact_title
+                   
+                    
+        .contact_content
+            display: flex
 
-                        li
-                            margin-bottom: 10px // Add some spacing between list items if needed
+            h4
 
-            .location
+                text-align: center
+                padding-bottom: $spacing-md
+            ul
                 display: flex
                 flex-direction: column
+                flex-grow: 1
+                // gap: $spacing-sm
+                li
+                    gap: $spacing-sm
+                    // margin-bottom: 10px 
 
-                .location_title
-                    display: flex
-                    align-items: center
-
-                    .location_icon
-                        width: 20px
-                        height: auto
-                    .location_info
-                        .location_map
-                            .map-responsive
-                                overflow: hidden
-                                padding: 36.25%
-                                position: relative
-                                height: 100%
-                                width: 100%
-                            .map_responsive iframe
-                                left: 0
-                                top: 0
-                                height: 100%
-                                width: 100%
-                                position: absolute
+        .location_title
+            display: flex
+            // justify-content: center
+            h4

@@ -84,7 +84,8 @@ export const en = {
     },
     "contact": {
         "title": "Contact",
-        "title2": "Where are we?",
+        "title2": "Any questions? Ask us. ",
+        "title3": "Where are we?",
         "listTitle2":"Phone",
         "body": "",
     },
