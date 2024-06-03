@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 export default function About(props) {
   const { t } = useTranslation();
@@ -14,7 +16,7 @@ export default function About(props) {
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t("contact.title")}</h1>
       </div>
-      <main className=" sm:mx-2 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 xl:my-28">
+      <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
         {/* <section className="about_description">
           <p>
             We have gathered a long teaching experience at the University. Our
@@ -25,18 +27,18 @@ export default function About(props) {
             EU-founded projects such as Global Excursions and FI-WARE
           </p>
         </section> */}
-        <section className="contact_info">
+        <section className="contact_info ">
           <div className="contact col1">
-          <h4>¿Alguna duda? Escríbenos.</h4>
-            <div className="contact_content my-8 ">
+          <div className="contact_title"><h4>{t("contact.title2")}</h4></div>
+            <div className="contact_content ">
             
             <ul>
               <li>
-                <h5>E-mail</h5>
+                <h5><FontAwesomeIcon className="icon" icon={faAt} />E-mail</h5>
                 <p>enrique.barra@upm.es</p>
               </li>
               <li>
-                <h5>{t("contact.listTitle2")}</h5>
+                <h5> <FontAwesomeIcon className="icon" icon={faPhone} />{t("contact.listTitle2")}</h5>
                 <p>91 336 73 31</p>
               </li>
             </ul>
@@ -44,10 +46,10 @@ export default function About(props) {
           </div>
           <div className="location col2">
             <div className="location_title">
-              <h4>              <FontAwesomeIcon className="location_icon" icon={faLocationDot} />{" "}
-{t("contact.title2")}</h4>
+              <h4>              <FontAwesomeIcon className="icon" icon={faLocationDot} />{" "}
+{t("contact.title3")}</h4>
             </div>
-            <div className="location_info my-8">
+            <div className="location_info ">
               <div className="location_map map-responsive">
                 <iframe
                   title="maps"
@@ -59,7 +61,7 @@ export default function About(props) {
                   allowfullscreen
                 ></iframe>
               </div>
-             <div className="map_info my-8"> <p>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN</p>
+             <div className="map_info 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2"> <p>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN</p>
               <p>Av. Complutense, 30, 28040 Madrid Edificio B</p></div>
             </div>
           </div>

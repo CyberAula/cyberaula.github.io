@@ -85,7 +85,9 @@ export const es = {
     },
     "contact": {
         "title": "Contacto",
-        "title2": "¿Dónde estamos?",
+        "title2": "¿Alguna duda? Pregúntanos.",
+        "title3": "¿Dónde estamos?",
+
         "listTitle":"E-mail",
         "listTitle2":"Teléfono",
         

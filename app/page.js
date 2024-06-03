@@ -44,6 +44,7 @@ export default function Home() {
 
               <div className="body lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
                 <section className="award_section">
+                
                     <FontAwesomeIcon className="award_icon" icon={faAward} />
                   <div className="award_card">
                     <div className="award_card_text">
