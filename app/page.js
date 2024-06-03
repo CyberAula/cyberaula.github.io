@@ -48,9 +48,9 @@ export default function Home() {
                     <FontAwesomeIcon className="award_icon" icon={faAward} />
                   <div className="award_card">
                     <div className="award_card_text">
-                      <h2> {t("front.awardH2")} </h2>
+                      <h3> {t("front.awardH2")} </h3>
                       <h4>{t("front.awardTitle")}</h4>
-                      <p>{t("front.awardBody")}</p>
+                      <small>{t("front.awardBody")}</small>
                     </div>
                   </div>
                 </section>
