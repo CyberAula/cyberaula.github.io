@@ -91,14 +91,13 @@
 @media (min-width:150px)
     .tools
         .tool
-            -webkit-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
-            -moz-box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
-            box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.18)
+            @include img-tool
+            @include drop-shadow
             border-radius: 12px
             border: solid 1px $ca-blue-200
             transition: 200ms ease-in-out
             @apply bg-slate-100
-            @include img-tool
+            
             .tool_logo
                 //background-color: $blue_primary                
                 img

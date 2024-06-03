@@ -124,12 +124,6 @@ header {
   }
 }
 
-.spinner {
-  display: flex;
-  min-height: calc(100vh - 275px);
-  justify-content: center;
-  align-items: center;
-}
 
 .nav_bar {
   position: fixed;
@@ -196,7 +190,7 @@ main {
   .head {
     display: flex;
 
-    justify-content: left;
+    justify-content: space-between;
     // border-bottom: solid 1.5px lighten($color: $black, $amount: 7);
     //padding: 6rem 6rem 2rem 0rem;
 
@@ -1279,6 +1273,7 @@ RESPONSIVE
     right: 0;
     bottom: 0;
     left: 0;
+    width:100%
   }
 
   .home {
