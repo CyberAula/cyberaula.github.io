@@ -17,12 +17,12 @@ export const en = {
         "awardTitle": "Award to the educational innovation groups",
         "awardBody": "Award granted to the CyberAula group, coordinated by professor Juan Quemada Vives (H.T.S. of Telecommunication engineering) ",
         "latestPublicationsTitle": "Latest publications",
-        "latestPublicationsButton": "see all publications",
+        "latestPublicationsButton": "See all publications",
         "linesOfActTitle": "Lines of action",
         "linesOfActBody": "Cyberaula group initiatives approach towards the educational environment and its relationship with the use of new technologies, aiming to develop new ways of learning and the creation and delivery of new MOOCs, amongst other services of collaborative resources for teaching.",
         "bulletElements": {
             "bulletA": "Active learning methodologies",
-            "bulletD": "addition of technologies in on-site training",
+            "bulletD": "Addition of technologies in on-site training",
             "bulletF": "Educational development in research, development and innovation projects",
         },
         "gridElements":{

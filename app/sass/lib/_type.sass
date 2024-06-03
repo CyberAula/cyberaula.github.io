@@ -15,12 +15,12 @@
 $icon: 14px,14px, 16px,400
 $xs-text: 14px, 13px, 16px, 400, 140%, 1rem, 0.6rem //small
 $body-text: 14px, 16px, 19px, 400, 140%, 1rem, 0.6rem
-$button: 16px, 14px, 18px, semibold //buttons
-$sm-text: 14px, 16px, 19px, 600, 140%, 1rem, 0.6rem //h5
-$md-text: 18px, 20px, 24px, bold, 140%, 1rem //h4
-$lg-text: 22px, 24px, 28px, bold,140%, 1rem  //h3
-$xl-text: 25px, 28px, 32px, bold, 140%, 1rem //h2
-$xxl-text: 28px, 32px, 38px, bold, 140%, 1rem  //h1
+$button: 14px, 16px, 19px, semibold //buttons
+$sm-text: 16px, 18px, 22px, 600, 140%, 1rem, 0.6rem //h5
+$md-text: 18px, 20px, 24px, 600, 140%, 1rem //h4
+$lg-text: 22px, 26px, 30px, 600,140%, 1rem  //h3
+$xl-text: 25px, 30px, 36px, bold, 140%, 1rem //h2
+$xxl-text: 28px, 36px, 42px, bold, 140%, 1rem  //h1
 
 $slim-weight: 500
 $regular:400
@@ -69,32 +69,38 @@ h3
         font-size: nth($lg-text,1)
         line-height: nth($lg-text,5)
         margin-bottom: nth($lg-text,6)
+        font-weight: nth($lg-text,4)
     @media screen and (min-width: 640px)
         font-family: "Montserrat", sans-serif
         font-size: nth($lg-text,2)
         line-height: nth($lg-text,5)
         margin-bottom: nth($lg-text,6)
+        font-weight: nth($lg-text,4)
     @media screen and (min-width: 1400px)
         font-family: "Montserrat", sans-serif
         font-size: nth($lg-text,3)
         line-height: nth($lg-text,5)
         margin-bottom: nth($lg-text,6)
+        font-weight: nth($lg-text,4)
 h4
     @media screen and (min-width: 150px)
         font-family: "Montserrat", sans-serif
         font-size: nth($md-text,1)
         line-height: nth($md-text,5)
         margin-bottom: nth($md-text,6)
+        font-weight: nth($lg-text,4)
     @media screen and (min-width: 640px)
         font-family: "Montserrat", sans-serif
         font-size: nth($md-text,2)
         line-height: nth($md-text,5)
         margin-bottom: nth($md-text,6)
+        font-weight: nth($lg-text,4)
     @media screen and (min-width: 1400px)
         font-family: "Montserrat", sans-serif
         font-size: nth($md-text,3)
         line-height: nth($md-text,5)
         margin-bottom: nth($md-text,6)
+        font-weight: nth($lg-text,4)
 h5
     @media screen and (min-width: 150px)
         font-family: "Montserrat", sans-serif

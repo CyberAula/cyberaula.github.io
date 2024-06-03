@@ -18,7 +18,7 @@ export const es = {
         "awardTitle": "Premio a los grupos de innovación educativa",
         "awardBody": "Premio otorgado al GIE CyberAula, coordinado por el profesor Juan Quemada Vives (E.T.S. DE INGENIEROS DETELECOMUNICACIÓN) ",
         "latestPublicationsTitle": "Últimas publicaciones",
-        "latestPublicationsButton": "ver todas las publicaciones",
+        "latestPublicationsButton": "Ver todas las publicaciones",
         "linesOfActTitle": "Líneas de actuación",
         "linesOfActBody": "Las iniciativas del grupo cyberaula comprenden al entorno educativo en su relación con el uso de las nuevas tecnologías, con el objetivo de desarrollar nuevas formas de apredizaje. la creación e impartición de MOOCs, y otros servicios de creación colaborativa de recursos para la enseñanza.",
         "bulletElements": {

@@ -6,27 +6,27 @@ export default function GridElement(props) {
   return (
 <div className="grid_container">      <div className="grid_item top_left width-1 ">
         <h5>{t('front.gridElements.topL')}</h5>
-        <div className="small_sub"></div>
+        <small className="small_sub"></small>
       </div>
       <div className="grid_item top_mid width-3">
         <h5>{t('front.gridElements.topM')}</h5>
-        <div className="small_sub">{t('front.gridElements.topMsub')}</div>
+        <small className="small_sub">{t('front.gridElements.topMsub')}</small>
       </div>
       <div className="grid_item top_right width-2">
         <h5>{t('front.gridElements.topR')}</h5>
-        <div className="small_sub"></div>
+        <small className="small_sub"></small>
       </div>
       <div className="grid_item bottom_left width-2">
         <h5>{t('front.gridElements.bottomL')}</h5>
-        <div className="small_sub"></div>
+        <small className="small_sub"></small>
       </div>
       <div className="grid_item bottom_mid width-1">
         <h5>{t('front.gridElements.bottomM')}</h5>
-        <div className="small_sub">{t('front.gridElements.bottomMsub')}</div>
+        <small className="small_sub">{t('front.gridElements.bottomMsub')}</small>
       </div>
       <div className="grid_item bottom_right width-3">
         <h5>{t('front.gridElements.bottomR')} </h5>
-        <div className="small_sub"></div>
+        <small className="small_sub"></small>
       </div></div>
 
   

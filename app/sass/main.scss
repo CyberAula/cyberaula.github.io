@@ -15,8 +15,8 @@
 @import "lib/_mixins.sass";
 
 * {
-  @apply border-2 border-primary; // no funciona :( <-- funciona en el globals.scss though
-  border: 1px solid pink
+ // @apply border-2 border-primary; // no funciona :( <-- funciona en el globals.scss though
+ // border: 1px solid pink
 }
 
 // PRUEBA GRID, BORRAR
@@ -68,56 +68,28 @@ TYPOGRAPHY
 
 body,
 html {
-
-
   color: black;
   @apply text-primary;
   font-size: 12px;
   font-family: $montserrat;
   // margin: 0 auto;
   scroll-behavior: smooth;
-
-  // a {
-  //   font-size: nth($body-text, 1);
-  //   font-weight: nth($sm-text, 2);
-
-  //   &:hover {
-  //     text-decoration: none;
-  //   }
-  // }
-
-  // button {
-  //   @apply bg-primary text-white;
-  //   font-size: nth($button, 1);
-  //   font-weight: $semibold;
-  //   padding: 0.5rem 2rem;
-  //   border-radius: 2rem;
-  //   display: flex;
-  //   justify-content: center;
-  //   border-radius: 50px;
-  //   moz-transition: all 0.4s ease-in-out;
-  //   -o-transition: all 0.4s ease-in-out;
-  //   -webkit-transition: all 0.4s ease-in-out;
-  //   transition: all 0.4s ease-in-out;
-
-  //   &:hover {
-  //     background-position: 100% 0;
-  //     moz-transition: all 0.4s ease-in-out;
-  //     -o-transition: all 0.4s ease-in-out;
-  //     -webkit-transition: all 0.4s ease-in-out;
-  //     transition: all 0.4s ease-in-out;
-  //     background-image: linear-gradient(to right, #5340ff, #9f226d);
-  //   }
-  // }
 }
-
+section {
+    @media (min-width:150px) {
+      margin-bottom: 3.2rem
+    }
+    @media (min-width:640px) {
+      margin-bottom: 4rem
+    }
+    @media (min-width:1200px) {
+      margin-bottom: 5rem
+    }
+}
 button {
   @include button 
 }
-// .button_filter {
-//   background-color: #3302bf;
-//   font-weight: 400;
-//   padding: 0.4rem 1.2rem }
+
 .home_page {
   // @apply bg-white
 }
@@ -260,30 +232,7 @@ main {
     flex-direction: column;
     // width: 100%;
 
-    .award_section {
-      .award_card {
-        display: flex;
-        flex-direction: row;
-        align-self: center;
-        align-items: center;
-
-        .award_icon_container {
-          .award_icon {
-            background: $ca-or-100;
-            @apply text-orange-500;
-            border-radius: 70px;
-            width: 6rem;
-            height: 6rem;
-            padding: 1.5rem;
-          }
-        }
-
-        .award_card_text {
-          padding: 0 0 0 1rem;
-        }
-      }
-    }
-
+  
     .carousel {
       display: inline-block;
       width: 95%;
@@ -295,18 +244,9 @@ main {
       }
     }
 
-    .lines_of_act {
-      margin-bottom: $spacing_xl;
-
-      p {
-        font-size: nth($body-text, 1);
-        margin-bottom: $spacing-xl;
-      }
-    }
+    
 
     .our_goals {
-      padding-bottom: 2rem;
-      margin-bottom: $spacing_xl;
 
       .text_content {
         display: flex;
@@ -318,7 +258,6 @@ main {
           width: 50%;
         }
 
-        .body_text {}
       }
     }
 
@@ -326,7 +265,6 @@ main {
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      margin-bottom: $spacing_lg;
       font-weight: 600;
 
       .bullet_element {
@@ -405,45 +343,12 @@ main {
       }
     }
 
-   
-
- 
-
     /* Media query for small screens */
     @media (max-width: 600px) {
       .grid_container {
         display: flex;
         flex-direction: column;
       }
-
-      // .grid_item {
-      //   grid-column: span 1;
-      //   /* Make each item span one column */
-      // }
-      // .top_left {
-      //   background: linear-gradient(139deg, rgba(83,64,255,0.9) 0%, rgba(111,199,255,0.9) 100%);
-      //   grid-column: span 1;
-      // }
-      
-      // .top_mid {
-      //   background: linear-gradient(25deg, rgba(83,64,255,0.9) 44%, rgba(111,199,255,0.9) 100%);
-      //   grid-column: span 1;
-      // }
-      
-      // .top_right {
-      //   background: linear-gradient(320deg, rgba(83,64,255,0.9) 0%, rgba(196,141,116,0.9) 100%);
-      //   grid-column: span 1;
-      // }
-      
-      // .bottom_left {
-      //   background: linear-gradient(to top, rgba(83,64,255,0.9) 0%, rgba(83,64,255,0.9) 30%, rgba(196,141,116,0.9) 100%);
-      //   grid-column: span 1;
-      // }
-      
-      // .bottom_mid {
-      //   background: linear-gradient(225deg, rgba(255,127,0,0.87) 0%, rgba(192,112,168,0.89) 100%);
-      //   grid-column: span 1;
-      // }
       
       .bottom_right {
         background: linear-gradient(180deg, rgba(255,127,0,0.87) 0%, rgba(133,90,186,0.93) 70%);
@@ -452,30 +357,6 @@ main {
     }
 
     .latest_publications {
-      // width: 30%;
-      object-fit: cover;
-      padding: 10px;
-      margin-bottom: $spacing_lg;
-      display: flex;
-      flex-direction: column;
-
-      h3 {
-        padding-top: 4%;
-        padding-bottom: 4%;
-        // font-family: $montserrat;
-        font-weight: bold;
-        font-size: 2.1rem;
-        text-align: left;
-        @apply text-ca_blue-600;
-      }
-
-      p {
-        font-size: 1.2rem;
-        text-align: left;
-        color: white;
-        padding: 2% 2% 2% 2%;
-      }
-
 
       .more {
         // font-size: 1.2rem;
@@ -484,7 +365,7 @@ main {
         // text-align: left;
         // padding: 2% 2% 2% 2%;
         @apply text-ca_blue-600;
-        @include big-border-button-blue;
+        @include button-load-more;
         // display: flex;
         align-content: center;
 
@@ -558,7 +439,7 @@ main {
     li {
       &.li-selected {
         a {
-          border-bottom: $border1;
+           border-bottom: $border1;
 
           &:hover {
             border-bottom: $border1;
@@ -674,10 +555,10 @@ main {
     li {
       &.li-selected {
         a {
-          border-bottom: $border1 pink;
+          border-bottom: $border1 $ca-or-300 ;
 
           &:hover {
-            border-bottom: $border1 pink;
+            border-bottom: $border1 $ca-or-300;
           }
         }
       }
@@ -1224,19 +1105,17 @@ RESPONSIVE
     //margin: 0 4rem 0 4rem;
 
     .body {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
+
 
       .carousel {
         align-self: center;
         margin-left: 13px;
       }
 
-      .latest_publications {
-        width: 90.2%;
-        align-self: center;
-      }
+      // .latest_publications {
+      //   width: 90.2%;
+      //   align-self: center;
+      // }
     }
   }
 
@@ -1262,14 +1141,6 @@ RESPONSIVE
     // }
 
     .body {
-      display: block;
-      width: 100%;
-
-      .carousel {
-        width: 100%;
-        margin-left: 0px;
-      }
-
       .latest_publications {
         width: 100%;
       }
@@ -1297,26 +1168,6 @@ RESPONSIVE
     }
   }
 
-  .tools {
-    main {
-
-
-      .tool_title {
-        h2 {
-          font-size: 2rem;
-        }
-      }
-
-      .tool_content {
-        h3 {
-          font-size: 1.5rem;
-        }
-      }
-    }
-
-  }
-
-  
   .about {
     .about_description {
       padding: 6rem 3rem 6rem 3rem !important;
@@ -1434,13 +1285,6 @@ RESPONSIVE
     //margin: 0.4rem;
     padding: 1rem 0 0 0;
 
-    h2 {
-      font-size: 1.25rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-    }
 
     .head {
       padding: 0rem 0rem 2rem 0rem;
@@ -1511,26 +1355,6 @@ RESPONSIVE
     }
   }
 
-  .tools {
-    main {
-
-
-
-
-      .tool_title {
-        h2 {
-          font-size: 1.2rem;
-        }
-      }
-
-      h3 {
-        font-size: 1rem;
-      }
-
-
-
-    }
-  }
 
   // .research {
   //   h4 {
