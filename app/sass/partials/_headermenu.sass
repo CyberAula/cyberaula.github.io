@@ -1,7 +1,26 @@
 @import "../lib/_variables.sass"
 @import "../lib/_mixins.sass"
 
-@media (min-width: 150px) 
+@media (min-width: 150px)         
+    // header 
+    //     background-color: white
+    //     @include nav_bar
+    //     z-index: 200
+
+    //     li 
+    //         &.li-selected 
+    //         a 
+    //             border-bottom: $border1 $ca-or-100
+
+    //             &:hover 
+    //             border-bottom: $border1 $ca-or-100
+            
+    //     .nav_bar 
+    //         position: fixed
+    //         top: 0
+    //         left: 0
+
+
     .lang_switcher 
         @apply text-gray-600
         margin-left: 1.6rem
@@ -24,8 +43,14 @@
         left: 0
         
 
-    
-@media (min-width: 600px) 
+@media (max-width: 600px)
+    //responsive
+    .responsive-hidden 
+        display: none !important
+        
+    .responsive-shown 
+        display: block !important
+@media (min-width: 601px) 
     .lang_switcher
         position: absolute
         right: 2rem
@@ -38,14 +63,27 @@
 
     
 @media (min-width: 700px)
-    .menu
-        ul
-            gap: 1rem
+    // .menu
+    //     gap: 1rem
+    //     width: 100%
+    //     font-weight: $semi-bold
+    //     margin: 0
+    //     padding: 2rem 3rem 0 3rem
+        
+           
 
 @media (min-width: 900px)
     .lang_switcher
         position: relative
         right: 0rem
         top: 0rem
+    header 
+        //padding: 1.5rem 0 1.6rem 0;
 
+        // ul 
+        //     display: flex
+        //     flex-flow: wrap row
+        //     justify-content: space-between
+        //     font-size: 1.2rem
+ 
 

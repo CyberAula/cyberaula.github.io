@@ -15,7 +15,7 @@ export const es = {
         "title": "Bienvenido a CyberAula",
         "title2": "grupo de innovación educativa de la UPM",
         "awardH2":"GIE PREMIADO EN 2017",
-        "awardTitle": "Premio a los grupos de innovación educativa",
+        "awardTitle": "Premio a los grupos de innovación educativa ",
         "awardBody": "Premio otorgado al GIE CyberAula, coordinado por el profesor Juan Quemada Vives (E.T.S. DE INGENIEROS DETELECOMUNICACIÓN) ",
         "latestPublicationsTitle": "Últimas publicaciones",
         "latestPublicationsButton": "Ver todas las publicaciones",
