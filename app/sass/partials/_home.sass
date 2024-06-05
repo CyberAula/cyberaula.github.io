@@ -12,6 +12,8 @@
             width:80%
             @apply text-gray-800
     .group_description 
+        //width: 100vw
+
         img
             width:100%
             height:25.6vw
@@ -65,9 +67,12 @@
 
 @media (min-width: 600px)
     .group_description 
+        width: 100vw
         img
             width: auto
             height: 25rem
+            object-fit: cover
+            object-position: 50% 0
 @media (min-width: 900px)
     .group_description 
         

@@ -141,174 +141,167 @@
         background-color: $ca-blue-300
 
 //NAVEGACIÓN
-@mixin nav_bar 
-    //MÓVIL MEDIA QUERY
-    @media (max-width: 600px) 
-        @include drop-shadow-intermediate
-        width: 100vw
-        display: flex
-        flex-flow: wrap row
-        justify-content: space-between
-        align-items: flex-start
-        transition: 0.5s
-        padding: 1rem 1.4rem 0.7rem 1.4rem
 
-        .imagotype 
-            width: 100%
-            display: flex
-            flex-flow: wrap row
-            justify-content: space-between
-            align-items: center
+//LANGUAGE SWICHER: Su posición en el header, 
+// añadir a breakpoints distintos según lo
+// que ocupe la lista de items (ul)
 
-            .isotype 
-                display: flex
-                width: auto
-                height: 2rem
-                //margin: 0 0 0 1.4rem
-            
-            .logotype 
-                display: none
-                font-size: 1.7rem
-                font-weight: $extra-bold
-                font-family: $helvetica
-                color: $black
-                padding: 0 0 0 0.7rem
-            
-        
+@mixin lang_switcher_top_absolute
+    .lang_switcher
+        position: absolute
+        right: 2rem
+        top: 1.9rem
+        div
+            margin: 0rem 
+    
+@mixin lang_switcher_menu_relative
+    .lang_switcher
+        position: relative
+        right: 0rem
+        top: 0rem
 
-        .menu_icon 
-            padding: 0
-            display: flex
-            align-items: center
-            min-height: 2rem
-
-        .close 
-            position: absolute
-            display: none
-            top: 4%
-            right: 5%
-            cursor: pointer
-        
-
-        .show 
-            position: absolute
-            padding: 0
-            display: unset
-            cursor: pointer
-            top: 30% 
-            right: 5%
-        
-        .menu 
-            width: 100%
-            font-weight: $semi-bold
-            margin: 0
-            padding: 1rem 1.6rem 0 1.6rem
-            display: none
-        
-
-            li 
-                padding: 0.66rem 0
-                width: 100%
-                text-align: center
-                border-bottom: 1px solid $ca-blue-300
-                
-
-            li:last-child 
-                border-bottom: 0px
-            
-
-    @media (min-width: 601px) 
-        @include drop-shadow-intermediate
+// BARRA DE NAVEGACIÓN DE TELEFONO
+@mixin nav_bar_phone
+    @include drop-shadow-intermediate
+    width: 100vw
+    display: flex
+    flex-flow: wrap row
+    justify-content: space-between
+    align-items: flex-start
+    transition: 0.5s
+    padding: 1rem 1.4rem 0.7rem 1.4rem
+    .imagotype 
         width: 100%
         display: flex
         flex-flow: wrap row
         justify-content: space-between
         align-items: center
-        transition: 0.5s
-        padding: 1.5rem 2rem 1.5rem 2rem
-
-
-        .imagotype 
-            width: 100%
+        .isotype 
             display: flex
-            justify-content: center
-            flex-flow: wrap row
-            justify-content: space-between
-            align-items: center
-            // padding-left: 4rem;
-
-            .isotype 
-                display: flex
-                //width: 4rem
-                height: auto
-                margin: 0 0 0 0rem
-
-            .logoheader 
-                width: 2.75rem
-
-            .logotype 
-                display: flex
-                width: auto
-                font-size: 1.7rem
-                font-weight: $bold
-                font-family: $montserrat-alternates
-                color: $blue_primary
-                padding: 0 6rem 0 0.7rem
-
-            span 
-                color: $ca-or-300
-
-        .menu_icon 
-            .close 
-                display: none
-                
-
-            .show 
-                padding: 2% 0 0 0
-                display: none
-
-
-        .menu 
-            //width: 55%
-            font-weight: $semi-bold
-            margin: 0 3rem 0 0
-            display: flex
-            justify-content: space-between
-            flex-wrap: nowrap
-            align-items: center
-            padding: 2rem 3rem 0 3rem
-
-            ul 
-                display: flex
-                flex-flow: row nowrap
-                justify-content: space-between
-                font-size: 1.2rem
-            li
-                //margin-left: 0.6rem
-    @media (min-width: 940px) 
-
-        //padding: 1.5rem 0 1.6rem 0;
-
-        .menu 
             width: auto
-            font-weight: $semi-bold
-            margin: 0
-            padding: 0rem
-            justify-content: right
+            height: 2rem
+            //margin: 0 0 0 1.4rem    
+        .logotype 
+            display: none
+            font-size: 1.7rem
+            font-weight: $extra-bold
+            font-family: $helvetica
+            color: $black
+            padding: 0 0 0 0.7rem
+    .menu_icon 
+        padding: 0
+        display: flex
+        align-items: center
+        min-height: 2rem
+    .close 
+        position: absolute
+        display: none
+        top: 4%
+        right: 5%
+        cursor: pointer
+    .show 
+        position: absolute
+        padding: 0
+        display: unset
+        cursor: pointer
+        top: 30% 
+        right: 5% 
+    .menu 
+        width: 100%
+        font-weight: $semi-bold
+        margin: 0
+        padding: 1rem 1.6rem 0 1.6rem
+        display: none   
+        li 
+            padding: 0.66rem 0
+            width: 100%
+            text-align: center
+            border-bottom: 1px solid $ca-blue-300
+        li:last-child 
+            border-bottom: 0px
 
+//BARRA NAVEGACIÓN DOS LINEAS (TABLET)
+// ajustar los breakpoints según lo
+// que ocupe la lista de items (ul)
+@mixin nav_bar_two_lines
+    @include drop-shadow-intermediate
+    width: 100vw
+    display: flex
+    flex-flow: wrap row
+    justify-content: space-between
+    align-items: center
+    transition: 0.5s
+    padding: 1.5rem 2.5rem 1.5rem 2.25rem
+    .imagotype 
+        width: 100%
+        display: flex
+        justify-content: center
+        flex-flow: wrap row
+        justify-content: space-between
+        align-items: center
+        // padding-left: 4rem;
+        .isotype 
+            display: flex
+            //width: 4rem
+            height: auto
+            margin: 0 0 0 0rem
+        .logoheader 
+            width: 3.5rem
+        .logotype 
+            display: flex
+            width: auto
+            font-size: 2.7rem
+            font-weight: $bold
+            font-family: $montserrat-alternates
+            color: $blue_primary
+            padding: 0 6rem 0 0.7rem
+        span 
+            color: $ca-or-300
+    .menu_icon 
+        .close 
+            display: none        
+        .show 
+            padding: 2% 0 0 0
+            display: none
+    .menu 
+        width: 100%
+        font-weight: $semi-bold
+        margin: 0 0rem 0 0
+        display: flex
+        justify-content: space-between
+        flex-wrap: nowrap
+        align-items: center
+        padding: 1.6rem 0rem 0 0rem
         ul 
             display: flex
-            flex-flow: wrap row
+            flex-flow: row nowrap
             justify-content: space-between
             font-size: 1.2rem
-        
-        
-    
-    @media (min-width: 1400px)
-        .imagotype
-            .logotype 
-                font-size: 2.4rem
-            .isotype
-                .logoheader
-                    width: 3.25rem
+            gap: 1.2rem
 
+@mixin nav_bar_one_line
+    .imagotype
+        .logoheader
+            width: 2.75rem
+        .logotype
+            font-size: 1.7rem
+    .menu 
+        width: auto
+        font-weight: $semi-bold
+        margin: 0
+        padding: 0rem
+        justify-content: right
+    ul 
+        display: flex
+        flex-flow: wrap row
+        justify-content: space-between
+        font-size: 1.2rem
+
+@mixin nav_bar_one_line_xl
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem
+    .imagotype
+        .logotype 
+            font-size: 2.4rem
+        .isotype
+            .logoheader
+                width: 3.25rem

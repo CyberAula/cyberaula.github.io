@@ -30,7 +30,7 @@ export default function Home() {
           <main>
             <section className="home">
               <div className="head ">
-                <div className="group_description block sm:flex sm:flew-row sm:justify-between sm:gap-8 sm:items-center ">
+                <div className="group_description block sm:flex sm:flew-row sm:justify-between md:gap-8 sm:items-center ">
                   <h1 className="mx-4 sm:mx-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24">
                     <b>{t("front.title")}, </b>
                     {t("front.title2")}
@@ -41,7 +41,6 @@ export default function Home() {
                   />
                 </div>
               </div>
-
               <div className="body lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
                 <section className="award_section">
                 
