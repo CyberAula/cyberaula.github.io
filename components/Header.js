@@ -22,6 +22,7 @@ export default function Header(props) {
     { route: "/team", key: "nav.item5" },
     { route: "/about", key: "nav.item6" },
   ];
+  console.log(props.route);
 
   return (
     <header className={"nav_bar header_" + currentLang} id="header_home">
