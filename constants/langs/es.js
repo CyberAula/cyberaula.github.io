@@ -56,6 +56,7 @@ export const es = {
     },
     "courses": {
         "title": "Cursos",
+        "desc":"En esta página encontrarás los últimos cursos que hemos impartido.",
         "tag": "º edición",
         "button": "Ir al curso",
     },
@@ -85,13 +86,14 @@ export const es = {
     },
     "contact": {
         "title": "Contacto",
-        "title2": "¿Alguna duda? Pregúntanos.",
+        "title2": "¿Alguna duda? Contáctanos.",
         "title3": "¿Dónde estamos?",
 
         "listTitle":"E-mail",
         "listTitle2":"Teléfono",
         
-        "body": "",
+        "body": "¿Alguna pregunta? ¿Deseas ponerte en contacto con nosotros para cualquier colaboración o consulta (curso, proyecto o publicación)?. En el grupo CyberAula estamos abiertos a colaborar con grupos e instituciones educativas, y a la participación en proyectos europeos y nacionales, siempre y cuando estén relacionados con nuestras principales líneas de actuación. Pregúntanos y estaremos encantados de contactar para posibles colaboraciones. ", 
+        
     },
     "footer": {
         "title1":"secciones",
@@ -103,6 +105,9 @@ export const es = {
     },
     "tools":{
     "title":"Herramientas",
+    "desc":"Estas son algunas de las herramientas que hemos desarrollado.",
+    "desc2":"Si estás interesado en alguna herramienta, ya sea para utilizarla o personalizarla puedes ponerte en contacto con nosotros.",
+      
     "toolCards":{
         
             "description":{

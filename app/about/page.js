@@ -17,37 +17,43 @@ export default function About(props) {
         <h1>{t("contact.title")}</h1>
       </div>
       <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
-        {/* <section className="about_description">
+        <section className="about_description">
           <p>
-            We have gathered a long teaching experience at the University. Our
-            main research interests are focused on the last technologies in
-            Internet and the WWW, such as HTML5. We have extensive experience in
-            video-conferencing systems, social networks websites and e-Learning.
-            Our latest participation in research projects include ongoing
-            EU-founded projects such as Global Excursions and FI-WARE
+          {t("contact.body")}
           </p>
-        </section> */}
+        </section>
         <section className="contact_info ">
           <div className="contact col1">
-          <div className="contact_title"><h4>{t("contact.title2")}</h4></div>
+            <div className="contact_title">
+              <h4>{t("contact.title2")}</h4>
+            </div>
             <div className="contact_content ">
-            
-            <ul>
-              <li>
-                <h5><FontAwesomeIcon className="icon" icon={faAt} />E-mail</h5>
-                <p>enrique.barra@upm.es</p>
-              </li>
-              <li>
-                <h5> <FontAwesomeIcon className="icon" icon={faPhone} />{t("contact.listTitle2")}</h5>
-                <p>91 336 73 31</p>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <h5>
+                    <FontAwesomeIcon className="icon" icon={faAt} />
+                    E-mail
+                  </h5>
+                  <p>enrique.barra@upm.es</p>
+                </li>
+                <li>
+                  <h5>
+                    {" "}
+                    <FontAwesomeIcon className="icon" icon={faPhone} />
+                    {t("contact.listTitle2")}
+                  </h5>
+                  <p>91 336 73 31</p>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="location col2">
             <div className="location_title">
-              <h4>              <FontAwesomeIcon className="icon" icon={faLocationDot} />{" "}
-{t("contact.title3")}</h4>
+              <h4>
+                {" "}
+                <FontAwesomeIcon className="icon" icon={faLocationDot} />{" "}
+                {t("contact.title3")}
+              </h4>
             </div>
             <div className="location_info ">
               <div className="location_map map-responsive">
@@ -61,8 +67,11 @@ export default function About(props) {
                   allowfullscreen
                 ></iframe>
               </div>
-             <div className="map_info 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2"> <p>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN</p>
-              <p>Av. Complutense, 30, 28040 Madrid Edificio B</p></div>
+              <div className="map_info 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
+                {" "}
+                <p>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN</p>
+                <p>Av. Complutense, 30, 28040 Madrid Edificio B</p>
+              </div>
             </div>
           </div>
         </section>
