@@ -18,37 +18,45 @@
             object-fit: cover
             object-position: 50% 0
     .award_section 
-        @include drop-shadow-lighter
+        
         display: flex
         flex-direction: row
-        @apply bg-ca_blue-50
+        
+        background: #fff9e6
         gap: 1rem
         border-radius:24px
-        padding: 1rem 1rem 2rem 1rem
-        //border: 8px $ca-or-100 solid
-        @apply text-orange-400
+        padding: 1rem 2rem 1rem 2rem
+        border: 2px $ca-or-100 solid
+        @apply text-orange-500
+        width:55%
         
         .award_icon 
+            font-size: 7rem
             border-radius: 70px
-            width: 6rem
+            min-width: 6rem
             height: 6rem
-            padding: 1rem 0 0 1.5rem
-            
+            padding:  1.5rem
+            background: #ffe489
+            border-radius:80px
+            @apply text-orange-400
+            @include drop-shadow-lighter
         .award_card 
             display: flex
             flex-direction: row
             align-self: center
             align-items: center
             h3
-                @apply text-ca_blue-600
-                margin-bottom: 0.1rem   
-            h4
-                @apply text-ca_blue-400
+                @apply text-slate-600
+                margin-bottom: 0.6rem   
+            h5
+                @apply text-gray-600
+                font-weight: 500
+                margin-bottom: 0.5rem   
             small
-                @apply  text-gray-600
+                @apply  text-slate-400
                 padding-bottom: 1rem
                 display: block
-                width:70%
+               
 
         .award_card_text 
           padding: 0 0 0 1rem

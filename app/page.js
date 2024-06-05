@@ -49,7 +49,7 @@ export default function Home() {
                   <div className="award_card">
                     <div className="award_card_text">
                       <h3> {t("front.awardH2")} </h3>
-                      <h4>{t("front.awardTitle")}</h4>
+                      <h5>{t("front.awardTitle")}</h5>
                       <small>{t("front.awardBody")}</small>
                     </div>
                   </div>
