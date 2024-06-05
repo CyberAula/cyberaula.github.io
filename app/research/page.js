@@ -76,7 +76,7 @@ export default function Research() {
 
   return (
     <div className="research_container">
-      <div className="research">
+      <div className="page research">
         <Header route={"/research"} />
         <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6" id="banner-publications">
           <h1>{t('publications.title')}</h1>

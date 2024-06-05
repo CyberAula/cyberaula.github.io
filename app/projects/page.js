@@ -18,7 +18,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="projects">
+    <div className="page projects">
       <Header route={"/projects"} />
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1> {t('projects.title')}</h1>

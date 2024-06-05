@@ -19,7 +19,7 @@ export default function Courses() {
   }, []);
 
   return (
-    <div className="courses">
+    <div className="page courses">
       <Header route={"/courses"} />
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t('courses.title')}</h1>

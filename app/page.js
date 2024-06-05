@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="App">
-      <div className="home_page">
+      <div className="page home_page">
         <Header route={"/"} />
         <div className="parallax__layer parallax__layer--base">
           <main>

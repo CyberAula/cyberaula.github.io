@@ -46,8 +46,13 @@ TYPOGRAPHY
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-// import monserrat
+// import montserrat
 // import new sans serif;
+
+
+/* ==========================================================================
+    ESTRUCTURA
+   ========================================================================== */
 
 
 /* ==========================================================================
@@ -90,20 +95,6 @@ button {
   @include button 
 }
 
-// .home_page {
-//   // @apply bg-white
-// }
-
-// .box-shadow {
-//   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-//   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-//   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-//   background-color: $blue-primary;
-// }
-
-// .lang_en {
-//   font-weight: $extra-bold;
-// }
 
 /*---- Scroll Bar ----*/
 
@@ -534,16 +525,7 @@ button {
       flex-direction: column;
       gap: 2rem;
 
-      // .header {
-      //   @apply w-auto;
-      //   display: block;
-
-      //   image {
-      //     object-fit: contain;
-      //   }
-      // }
-
-
+     
 
 
       .tool_main {
@@ -646,370 +628,6 @@ button {
     }
   }
 
-//   main {
-//     min-height: calc(100vh - 150px);
-
-//     .research {
-
-//       .filters {
-//         text-align: right;
-//         padding: 1rem 5rem 1rem 5rem;
-//         display: flex;
-//         justify-content: flex-end;
-//         flex-wrap: wrap;
-
-//         label,
-//         select,
-//         input {
-//           padding: 5px;
-//           font-family: "Open Sans", sans-serif;
-//           font-size: 1.3rem;
-//           margin-right: 1rem;
-//         }
-
-//         select,
-//         input {
-//           border: 1px solid black;
-//           margin-right: 3rem;
-
-//         }
-
-//         label {
-//           font-weight: bolder;
-//         }
-
-//         option {
-//           text-align: right;
-//         }
-
-//         .filter {
-//           display: flex;
-//           flex-wrap: nowrap;
-//           justify-content: center;
-//           align-items: flex-start;
-//           margin-bottom: 10px;
-
-//           input,
-//           select {
-//             background-color: $pink;
-//             outline: none;
-//             height: 40px;
-//             line-height: 40px;
-
-//           }
-
-//         }
-//       }
-
-//       // component
-//       .paper {
-//         display: flex;
-//         flex-flow: row wrap;
-//         justify-content: space-evenly;
-//         border-bottom: solid 1.5px lighten($color: $pink, $amount: 7);
-//         padding: 6rem 2rem 6rem 5rem;
-
-//         .paper_date {
-//           width: 10%;
-//           margin: .8rem 0 0 0;
-
-//           img {
-//             object-fit: contain;
-//             object-position: top;
-//             width: 100%;
-//             height: 100%;
-//           }
-//         }
-
-//         .paper_main {
-//           width: 70%;
-
-//           .paper_title {
-//             h2 {
-//               text-overflow: ellipsis;
-//               overflow: hidden;
-//               font-size: 2.2rem;
-//               font-weight: normal;
-//             }
-//           }
-
-//           .paper_authors {
-//             margin: 1.5rem 0 0 0;
-//           }
-
-//           a {
-//             color: inherit;
-
-//             &:hover {}
-//           }
-//         }
-
-//         &:last-child {
-//           // border: none;
-//         }
-//       }
-
-//     }
-
-//   }
-
-//   .border_nav_bar {
-//     border-bottom: solid 1.5px lighten($color: $pink, $amount: 7);
-//     transition: none;
-//   }
-
-// }
-
-/* ==========================================================================
- TEAM
- ========================================================================== */
-
-// @mixin grayscale_element($value) {
-//   -webkit-filter: #{"grayscale(#{$value})"};
-//  -moz-filter: #{"grayscale(#{$value})"};
-//  filter:#{"grayscale(#{$value})"};
-
-// }
-
-// .grayscale {
-//   @include grayscale_element(100%);
-//   transition: all 300ms ease-in-out;
-//   //mix-blend-mode: hard-light;
-
-//   /*&:hover {
-//       @include grayscale_element(0);
-//       mix-blend-mode: normal;
-//       transition: all 300ms ease-in-out;
-//   }*/
-// }
-
-// .team {
-//   color: $black;
-//   background-color: lighten($color: $blue, $amount: 30);
-//   padding: 5rem 0 0 0;
-
-//   .spinner {
-//     min-height: calc(100vh - 150px);
-//   }
-
-//   .nav_bar {
-//     background-color: inherit;
-//     color: $black;
-
-//     .imagotype {
-
-//       .isotype {
-//         background-color: $black;
-//       }
-
-//       .logotype {
-//         color: $black;
-//         font-weight: $black;
-//       }
-//     }
-
-//     li {
-//       &.li-selected {
-
-//         a {
-//           border-bottom: $border1 white;
-
-//           &:hover {
-//             border-bottom: $border1 white;
-//           }
-//         }
-//       }
-
-//       a {
-//         &:hover {
-//           color: inherit;
-//         }
-//       }
-//     }
-//   }
-
-//   main {
-//     .teammates {
-//       padding-top: 4rem;
-
-//       .teamgrouptitle {
-//         display: flex;
-//         flex-flow: row wrap;
-//         justify-content: left;
-//         padding: 3rem 5rem 1rem 5rem;
-
-//         h2 {
-//           margin-left: 80px;
-//         }
-//       }
-
-//       .teammate {
-//         display: flex;
-//         flex-flow: row wrap;
-//         justify-content: space-evenly;
-//         border-bottom: solid 1.5px lighten($color: $blue, $amount: 40);
-//         padding: 5rem 1rem 5rem 1rem;
-//         width: 100%;
-
-//         h3 {
-//           font-size: 3rem;
-//           font-weight: 800;
-//         }
-
-//         .mate_img {
-//           width: 160px;
-//           height: 160px;
-//           border-radius: 50%;
-
-//           img {
-//             border-radius: 50%;
-//             width: 100%;
-//             height: 100%;
-//             object-fit: cover;
-//             object-position: center;
-//           }
-
-//           /* &:hover {
-//                       border: $black solid 5px;
-//                   }*/
-//         }
-
-//         .mate_info {
-//           width: 70%;
-
-//           a:hover {
-
-//             h2,
-//             h3 {
-//               transition: 1s ease-in-out;
-//             }
-//           }
-//         }
-
-//         &:last-child {
-//           // border: none;
-//         }
-
-//         .at {
-//           width: 1em;
-//           padding: 1px;
-//           margin-right: 3px;
-//         }
-//       }
-
-//     }
-
-//   }
-
-//   .border_nav_bar {
-//     border-bottom: solid 1.5px lighten($color: $blue, $amount: 40);
-//     transition: none;
-//   }
-
-// }
-
-/* ==========================================================================
- ABOUT
- ========================================================================== */
-
-// .about {
-  
-//   main {
-//     // max-width: 1000px;
-//     // margin: auto;
-//     // margin-top: 100px;
-
-//     .about_description {
-//       border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
-//       padding: 9rem 3rem 6rem 7rem;
-//     }
-
-//     .location {
-//       // padding: 4rem 3rem 6rem 7rem;
-//       //background-color: lighten($color: $yellow, $amount: 25);
-//       display: flex;
-//       flex-flow: row no-wrap;
-//       justify-content: space-evenly;
-//       padding-bottom: 2rem;
-
-//       .col1 {
-//         flex: 1;
-//         padding: 1rem 4rem;
-
-//         .location_map {
-//           height: 500px;
-//           width: 700px;
-//           background-color: $ca-or-100;
-//         }
-
-//         .map-responsive {
-//           overflow: hidden;
-//           padding: 36.25%;
-//           position: relative;
-//           height: 100%;
-//           width: 100%;
-//         }
-
-//         .map-responsive iframe {
-//           left: 0;
-//           top: 0;
-//           height: 100%;
-//           width: 100%;
-//           position: absolute;
-//         }
-//       }
-
-//       .col2 {
-//         flex: 1;
-
-//         .location_info {
-//           h2 {
-//             padding: 1rem 0 0.5rem 0;
-//           }
-//         }
-
-//         .contact {
-//           h2 {
-//             padding: 1rem 0 0.5rem 0;
-//           }
-//         }
-//       }
-//     }
-
-//     section {
-//       &:last-child {
-//         border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
-//       }
-//     }
-//   }
-
-//   h1 {
-//     // font-size: 4rem;
-//     // font-weight: $regular;
-//   }
-
-//   h2 {
-//     color: $black;
-//     font-size: 2rem;
-//     width: 100%;
-//     padding: 1rem 0 0.5rem 2rem;
-//   }
-
-//   h3 {
-//     color: $black;
-//     font-size: 2rem;
-//   }
-
-//   p {
-//     font-size: 1.5rem;
-//   }
-
-//   .border_nav_bar {
-//     border-bottom: solid 1.5px lighten($color: $black, $amount: 60);
-//     transition: none;
-//   }
-// }
-
 /* =========================================================================
 LINKS
  ========================================================================== */
@@ -1035,45 +653,7 @@ ul {
 RESPONSIVE
  ========================================================================== */
 
-@media (max-width: 940px) {
-  // header {
-  //   //padding: 1.5rem 0 1.6rem 0;
 
-  //   .menu {
-  //     width: 100%;
-  //     font-weight: $semi-bold;
-  //     margin: 0;
-  //     padding: 2rem 3rem 0 3rem;
-
-  //     ul {
-  //       display: flex;
-  //       flex-flow: wrap row;
-  //       justify-content: space-between;
-  //       font-size: 1.2rem;
-  //     }
-  //   }
-  // }
-
-  .home {
-    //margin: 0 4rem 0 4rem;
-
-    .body {
-
-
-      // .carousel {
-      //   align-self: center;
-      //   margin-left: 13px;
-      // }
-
-      // .latest_publications {
-      //   width: 90.2%;
-      //   align-self: center;
-      // }
-    }
-  }
-
-  
-}
 
 @media (max-width: 800px) {
   .home {
@@ -1085,13 +665,7 @@ RESPONSIVE
       border-radius: 50%;
     }
 
-    // h1 {
-    //   font-size: 3rem;
-    // }
-
-    // h2 {
-    //   font-size: 1.5rem;
-    // }
+   
 
     .body {
       .latest_publications {
@@ -1130,94 +704,6 @@ RESPONSIVE
 
 //MÓVIL MEDIA QUERY
 @media (max-width: 600px) {
-  // .responsive-hidden {
-  //   display: none !important;
-  // }
-
-  // .responsive-shown {
-  //   display: block !important;
-  // }
-
-  // header {
-  //   width: 100vw;
-  //   display: flex;
-  //   flex-flow: wrap row;
-  //   justify-content: space-between;
-  //   align-items: flex-start;
-  //   transition: 0.5s;
-  //   padding: 1rem 0 0.7rem 0;
-
-  //   .imagotype {
-  //     width: 100%;
-  //     display: flex;
-  //     flex-flow: wrap row;
-  //     justify-content: space-between;
-  //     align-items: center;
-
-  //     .isotype {
-  //       display: flex;
-  //       width: 4rem;
-  //       height: auto;
-  //       margin: 0 0 0 1.4rem;
-  //     }
-
-  //     .logotype {
-  //       display: none;
-  //       font-size: 1.7rem;
-  //       font-weight: $extra-bold;
-  //       font-family: $helvetica;
-  //       color: $black;
-  //       padding: 0 0 0 0.7rem;
-  //     }
-  //   }
-
-  //   .menu_icon {
-  //     padding: 0;
-  //     display: flex;
-  //     align-items: center;
-  //     min-height: 2rem;
-
-  //     .close {
-  //       position: absolute;
-  //       display: none;
-  //       top: 3%;
-  //       right: 6.5%;
-  //       cursor: pointer;
-  //     }
-
-  //     .show {
-  //       position: absolute;
-  //       padding: 0;
-  //       display: unset;
-  //       cursor: pointer;
-  //       top: 28%; // por qué son distintos los porcentajes de los iconos close y show?
-  //       right: 6.5%;
-  //     }
-  //   }
-
-  //   .menu {
-  //     width: 100%;
-  //     font-weight: $semi-bold;
-  //     margin: 0;
-  //     padding: 1rem 1.6rem 0 1.6rem;
-  //     display: none;
-     
-
-  //       li {
-  //         padding: 0.66rem 0;
-  //         width: 100%;
-  //         text-align: center;
-  //         border-bottom: 1px solid $ca-blue-300
-  //       }
-
-  //       li:last-child {
-  //         border-bottom: 0px
-  //       }
-      
-  //   }
-  // }
-
-
 
 
   .parallax__layer {
@@ -1304,52 +790,6 @@ RESPONSIVE
   }
 
 
-  // .research {
-  //   h4 {
-  //     font-size: 1.5rem;
-  //   }
-
-  //   h2 {
-  //     font-size: 1.2rem;
-  //   }
-
-  //   i {
-  //     font-size: 1.2rem;
-  //   }
-
-  //   main {
-  //     .research {
-  //       .filters {
-  //         padding-right: 0rem;
-  //       }
-
-  //       .paper {
-  //         flex-flow: column wrap;
-  //         padding: 2rem 2rem 2rem 2rem;
-  //         width: 100%;
-
-  //         .paper_date {
-  //           width: 100%;
-  //           margin: 0 0 0.5rem 0;
-  //           color: lighten($color: pink, $amount: 25);
-  //         }
-
-  //         .paper_main {
-  //           width: 100%;
-
-  //           .paper_title {
-  //             width: 100%;
-
-  //             h2 {
-  //               font-size: 1.2rem;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
   .team {
     main {
       .teammates {
@@ -1388,61 +828,6 @@ RESPONSIVE
     }
   }
 
-  .about {
-    // main {
-    //   margin-top: 20px;
-
-    //   .about_description {
-    //     padding: 9rem 2rem 3rem 2rem;
-
-    //     h1 {
-    //       font-size: 1.2rem;
-    //     }
-
-    //     p {
-    //       font-size: 1.2rem;
-    //     }
-    //   }
-
-    //   h2 {
-    //     padding: 1rem 1rem 1rem 2rem;
-    //   }
-
-    //   .location {
-    //     flex-flow: column;
-
-    //     h2 {
-    //       font-size: 1.6rem;
-    //       padding: 1rem 1rem 1rem 0rem;
-    //     }
-
-    //     h3 {
-    //       font-size: 1.2rem;
-    //     }
-    //   }
-
-    //   .location {
-    //     padding: 4rem 1rem 3rem 3rem;
-    //   }
-    // }
-  }
-
-  // footer {
-  //   padding: 2.5rem 0 2.5rem 0;
-  //   font-size: 0.9rem;
-  //   width: 100%;
-  //   text-align: center;
-
-  //   ul {
-  //     justify-content: center;
-  //     display: flex;
-  //     flex-flow: row wrap;
-
-  //     li {
-  //       margin: 0 1.3rem 0 0;
-  //     }
-  //   }
-  // }
 
   .background {
     .circle {
