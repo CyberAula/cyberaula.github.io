@@ -18,7 +18,7 @@ export default function About(props) {
         <h1>{t("contact.title")}</h1>
       </div>
       <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
-        <section className="about_description">
+        <section className="md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg about_description text-slate-700">
           <p>
           {t("contact.body")}
           </p>
@@ -29,7 +29,7 @@ export default function About(props) {
               <h4>{t("contact.title2")}</h4>
             </div>
             <div className="contact_content ">
-              <ul>
+              <ul  className="text-slate-700">
                 <li>
                   <h5>
                     <FontAwesomeIcon className="icon" icon={faAt} />

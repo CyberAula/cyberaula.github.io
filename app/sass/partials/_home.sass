@@ -15,54 +15,74 @@
         //width: 100vw
         img
             width:100%
-            height:26.3vw
+            height:26.2vw
             object-fit: cover
             object-position: 50% 0
     .award_section 
         display: flex
-        flex-direction: row
         background: #fff9e6
-        gap: 1rem
+        gap: 0.2rem
         border-radius:24px
-        padding: 1rem 2rem 1rem 2rem
+        padding: 0.8rem
         border: 2px $ca-or-100 solid
         @apply text-orange-500
-        width:55%
+        width:100%
+        flex-direction: column
+        align-self: center
+        align-items: center
+        text-align: center
+        .award_title
+            display: flex
+            flex-direction: column
+            align-self: center
+            align-items: center
+            gap: 1rem
+            
+            div
+                display: flex
+                flex-direction: column
+                align-items: center
+        h3
+            @apply text-slate-600
+            margin-bottom: 0.3rem   
+        h5
+            @apply text-gray-600
+            font-weight: 500
+            margin-bottom: 0rem 
         
+        small
+            @apply  text-slate-500
+            padding-bottom: 1rem
+            display: block
+       
+               
         .award_icon 
-            font-size: 7rem
+            // display: none
+
             border-radius: 70px
-            min-width: 6rem
-            height: 6rem
-            padding:  1.5rem
+            max-width: 2.4rem
+            height: 2.4rem
+            padding: 0.75rem
+            margin-bottom: 0.8rem
             background: #ffe489
             border-radius:80px
             @apply text-orange-400
             @include drop-shadow-lighter
-        .award_card 
-            display: flex
-            flex-direction: row
-            align-self: center
-            align-items: center
-            h3
-                @apply text-slate-600
-                margin-bottom: 0.6rem   
-            h5
-                @apply text-gray-600
-                font-weight: 500
-                margin-bottom: 0.5rem   
-            small
-                @apply  text-slate-400
-                padding-bottom: 1rem
-                display: block
-               
+      
 
-        .award_card_text 
-          padding: 0 0 0 1rem
         
 
 
 @media (min-width: 600px)
+    .award_section
+        width:85%
+        padding: 1rem 2rem 1rem 2rem
+        flex-direction: column
+       
+        .award_icon
+            min-width: 4rem
+            height: 4rem
+            padding:  1.5rem
     .group_description 
         width: 100vw
         img
@@ -71,12 +91,40 @@
             object-fit: cover
             object-position: 50% 0
 @media (min-width: 900px)
+    .award_section
+        flex-direction: row
+        width:70%
+        text-align: left
+        gap: 1.2rem
+        align-self: flex-start
+        .award_title
+            display: flex
+            flex-direction: column
+            align-self: flex-start
+            justify-content: flex-start
+            div
+                flex-direction: column
+                //margin-left: 0.8rem
+                align-items: flex-start
+                align-self: flex-start
+        .award_icon
+            display: flex
+            border-radius: 70px
+            min-width: 6rem
+            height: 6rem
+            padding:  1.5rem
+            align-self: flex-start
+        small
+            
     .group_description 
         
         img
             height: 35rem
 
 @media (min-width: 1400px)
+    .award_section
+        flex-direction: row
+        width:60%
     .group_description 
         img
             height: 50rem

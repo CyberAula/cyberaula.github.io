@@ -9,7 +9,7 @@ import RecentPublications from "@/components/RecentPublications";
 import { mycarousel } from "@/constants/carousel.js";
 import BulletElement from "@/components/BulletElement";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAward } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 import { useTranslation } from "react-i18next";
@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="App">
-      <div className={"home_page page_"+ currentLang}>
+      <div className={"home_page page_" + currentLang}>
         <Header route={"/"} />
         <div className="parallax__layer parallax__layer--base">
           <main>
@@ -44,15 +44,20 @@ export default function Home() {
               </div>
               <div className="body lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
                 <section className="award_section">
-                
-                    <FontAwesomeIcon className="award_icon" icon={faAward} />
-                  <div className="award_card">
-                    <div className="award_card_text">
+                <FontAwesomeIcon className="award_icon" icon={faTrophy} />
+                    <div className="award_title">
+                   
+                      <div>
                       <h3> {t("front.awardH2")} </h3>
                       <h5>{t("front.awardTitle")}</h5>
-                      <small>{t("front.awardBody")}</small>
+                      </div>
+                      <div className="award_card_text">
+                  
+                    <small>{t("front.awardBody")}</small>
+                </div>
                     </div>
-                  </div>
+               
+                  
                 </section>
 
                 <section className="latest_publications">

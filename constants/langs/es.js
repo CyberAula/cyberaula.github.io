@@ -92,7 +92,7 @@ export const es = {
         "listTitle":"E-mail",
         "listTitle2":"Teléfono",
         
-        "body": "¿Alguna pregunta? ¿Deseas ponerte en contacto con nosotros para cualquier colaboración o consulta (curso, proyecto o publicación)?. En el grupo CyberAula estamos abiertos a colaborar con grupos e instituciones educativas, y a la participación en proyectos europeos y nacionales, siempre y cuando estén relacionados con nuestras principales líneas de actuación. Pregúntanos y estaremos encantados de contactar para posibles colaboraciones. ", 
+        "body": "¿Deseas ponerte en contacto con nosotros para cualquier colaboración o consulta (curso, proyecto o publicación)?. En el grupo CyberAula estamos abiertos a colaborar con grupos e instituciones educativas, y a la participación en proyectos europeos y nacionales, siempre y cuando estén relacionados con nuestras principales líneas de actuación. Pregúntanos y estaremos encantados de contactar para posibles colaboraciones. ", 
         
     },
     "footer": {

@@ -23,7 +23,8 @@
             min-height: 3rem
             align-content: center
             margin-right: 1rem
-            width: 13rem
+           
+            //width: 13rem
             justify-content: flex-end
             b 
                 margin-left: 0.4rem
@@ -58,7 +59,7 @@
             label
                 display: flex
                 //min-width: 5.1rem
-                width: 100%
+                //width: 100%
                 padding-right: 1.6rem
                 margin-bottom: 0.4rem
                 line-height:120%
@@ -87,7 +88,7 @@
                 &:focus-visible
                     outline: none
             select
-                
+                //width: 20.5rem
                 @apply text-gray-200
                 background: white
             
@@ -182,8 +183,9 @@
                 label
                     display: inline-block
                     margin-bottom: 0rem
+                    min-width: 10.2rem
                 input
-                    width: 200px
+                    width: 20.6rem
     .papers 
         display: flex
         flex-direction: column
@@ -232,14 +234,25 @@
                 margin: 0
             a
                 display: flex
-
-@media (min-width: 900px)
-    .filters       
+@media (min-width: 750px)
+    .research
+      .filters       
         .filter      
             label
                 width: auto !important
-    .papers
-        .paper
-            .paper_main
-                .paper_content 
-                    width:70%
+                min-width: 6.5rem
+        .research-results
+            margin-top: 0
+
+@media (min-width: 900px)
+    .research
+        .filters       
+            .filter      
+                label
+                    width: auto !important
+                    min-width: 6rem
+        .papers
+            .paper
+                .paper_main
+                    .paper_content 
+                        width:70%

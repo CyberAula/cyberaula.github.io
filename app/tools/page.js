@@ -51,7 +51,7 @@ export default function Tools(props) {
       <main>
        
         <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20  xl:mx-44 2xl:mx-60">
-        <div className="tools_description pb-8">
+        <div className="tools_description text-slate-700 pb-8">
         
         <p>{t('tools.desc')}</p><br />
         <p>{t('tools.desc2')} </p>

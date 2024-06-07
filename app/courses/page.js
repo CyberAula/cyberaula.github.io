@@ -26,7 +26,7 @@ export default function Courses() {
       </div>
       <main>
         <section className="lg:mx-36 md:mx-14 sm:mx-8 mx-4 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20 xl:mx-44 2xl:mx-60">
-          <div className="courses_description pb-8">
+          <div className="courses_description text-slate-700 pb-8">
             <p>{t('courses.desc')}</p>
           </div>
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">
