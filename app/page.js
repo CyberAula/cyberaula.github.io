@@ -16,7 +16,8 @@ import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="App">
-      <div className="page home_page">
+      <div className={"home_page page_"+ currentLang}>
         <Header route={"/"} />
         <div className="parallax__layer parallax__layer--base">
           <main>

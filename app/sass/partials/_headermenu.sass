@@ -2,35 +2,12 @@
 @import "../lib/_mixins.sass"
 
 
-@mixin nav_bar 
-    @media (max-width: 600px) 
-        @include nav_bar_phone
-        
-    @media (min-width: 601px) 
-        @include nav_bar_two_lines
-        @include lang_switcher_top_absolute
-    
-    @media (min-width: 750px)
-        @include lang_switcher_menu_relative 
-
-    @media (min-width: 970px) 
-        @include nav_bar_one_line
-
-    @media (min-width: 1400px)
-        @include nav_bar_one_line_xl
-
     
 header 
+  //@include nav_bar_es
   background-color: white
-  @include nav_bar
   z-index: 200
-
-  li 
-    &.li-selected 
-      a 
-        border-bottom: $border1 $ca-or-100
-        &:hover 
-          border-bottom: $border1 $ca-or-100
+  @include li_nav_bar
         
 .nav_bar 
   position: fixed

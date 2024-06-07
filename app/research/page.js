@@ -11,7 +11,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 
 export default function Research() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
   const [state, setState] = useState({
     papers: mypublications,
     search: "",
@@ -75,8 +76,8 @@ export default function Research() {
   };
 
   return (
-    <div className="research_container">
-      <div className="page research">
+
+      <div className={"research page_"+ currentLang}>
         <Header route={"/research"} />
         <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6" id="banner-publications">
           <h1>{t('publications.title')}</h1>
@@ -135,8 +136,9 @@ export default function Research() {
             </div>
           </section>
         </main>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+  
+
   );
 }

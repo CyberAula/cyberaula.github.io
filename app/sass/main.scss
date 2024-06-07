@@ -51,8 +51,21 @@ TYPOGRAPHY
 
 
 /* ==========================================================================
-    ESTRUCTURA
+    ESTRUCTURA SEGÚN IDIOMA
    ========================================================================== */
+.page_es {
+  header {
+    @include nav_bar_es;
+  }
+    @include content_page_es;
+}
+
+.page_en {
+  header {
+    @include nav_bar_en;
+  }
+    @include content_page_en;
+}
 
 
 /* ==========================================================================
@@ -706,14 +719,14 @@ RESPONSIVE
 @media (max-width: 600px) {
 
 
-  .parallax__layer {
-    position: absolute;
-    top: 75px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width:100%
-  }
+  // .parallax__layer {
+  //   position: absolute;
+  //   top: 75px;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   width:100%
+  // }
 
   .home {
     //margin: 0.4rem;

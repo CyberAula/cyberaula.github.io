@@ -9,9 +9,10 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 export default function About(props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
   return (
-    <div className="page about">
+    <div className={"about page_"+ currentLang}>
       <Header route={"/about"} />
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t("contact.title")}</h1>
