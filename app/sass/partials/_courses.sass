@@ -11,6 +11,7 @@ $windowWidth: 100vw
         .course_title
             margin-top:0.6rem
         .course_description
+            
             transition: ease-in-out 300ms
             opacity: 1
             display: flex
@@ -18,15 +19,9 @@ $windowWidth: 100vw
             display: -webkit-box
             //max-height: $windowHeight/7.2
             small 
-                max-width: 10rem
-                // margin-top:0.6rem
-                // display: -webkit-box
-                // // -webkit-line-clamp: 5
-                // -webkit-box-orient: vertical
-                // overflow: hidden
-                // text-overflow: ellipsis
-        .course_text-block
-            max-width: 46rem
+        
+    .course_text_block
+        max-width: 40rem
     .card_container_top 
         display: flex
         justify-content: space-between 
@@ -68,6 +63,7 @@ $windowWidth: 100vw
                 div
                     margin-top: 0.14rem
         .course_text_block
+            max-width: 55rem
             transition: ease-in-out 300ms
             // transform: translateY(64%)
             width: 100%
@@ -84,7 +80,7 @@ $windowWidth: 100vw
                     margin-top:0
                     display: block
                     //font-size: 1.1rem
-                    
+
                     font-weight: 400
                     max-height:160px
                     
@@ -107,8 +103,12 @@ $windowWidth: 100vw
                         -webkit-box-orient: vertical
                         overflow: hidden
                         text-overflow: ellipsis
-    
-        
+
+@media (min-width: 1400px) 
+    .course
+        .course_text_block
+            max-width: 100rem
+            
    
 .bg-blue-gradient
     background: linear-gradient(139deg, rgba(83,64,255,0.9) 0%, rgba(111,199,255,0.9) 100%),url($bg-img)
