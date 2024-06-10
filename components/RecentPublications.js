@@ -26,13 +26,13 @@ export default function RecentPublications(props) {
             .filter((i, index) => index < 4)
             .map(({ doi, title, author, date, stroke, content }, index) => {
               return (
-                <a
-                  key={doi}
-                  href={doi}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className={`article`}>
+                // <a
+                //   key={doi}
+                //   href={doi}
+                //   target="_blank"
+                //   rel="noopener noreferrer"
+                // >
+                  <div key={doi} className={`article`}>
                     <div className={`article_stroke ${stroke}`}></div>
                     <div className="article_content">
                       <div className="article_date">
@@ -54,7 +54,7 @@ export default function RecentPublications(props) {
                       ) : null}
                     </div>
                   </div>
-                </a>
+                // </a>
               );
             })}
         </Masonry>

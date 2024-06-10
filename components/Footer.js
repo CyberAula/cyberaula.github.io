@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -57,7 +59,7 @@ export default function Footer(props) {
                     : "text-left mb-2 font-medium"
                 }
               >
-                <Link className="font-medium" href={route.route}>
+                <Link suppressHydrationWarning  className="font-medium" href={route.route}>
                 {t(route.key)}
                 </Link>
               </li>

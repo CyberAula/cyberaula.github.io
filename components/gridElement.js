@@ -1,3 +1,5 @@
+"use client";
+
 import react from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useTranslation } from 'react-i18next';
