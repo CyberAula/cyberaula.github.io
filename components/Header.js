@@ -79,7 +79,7 @@ export default function Header(props) {
               key={index}
               className={route.route === props.route ? "li-selected" : ""}
             >
-              <Link href={route.route} suppressHydrationWarning >{t(route.key)}</Link>
+              <Link href={route.route} >{t(route.key)}</Link>
             </li>
           ))}
         </ul>

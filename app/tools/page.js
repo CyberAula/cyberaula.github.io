@@ -64,12 +64,12 @@ export default function Tools(props) {
               {tools.map(
                 ({ title, description, route, logo, github, gradient }) => {
                   return (
-                    <div className="tool">
+                    <div className="tool" key={title}>
                       <div className={`tool_logo ${gradient}`}>
                         <img alt={"Project Logo"} src={logo} />
                       </div>
 
-                      <div class="tool_content">
+                      <div className="tool_content">
                         <div className="tool_title">
                           <h3>{title}</h3>
                         </div>

@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
 
+
 export default function Footer(props) {
   const { t } = useTranslation();
   const routes = [
@@ -59,7 +60,7 @@ export default function Footer(props) {
                     : "text-left mb-2 font-medium"
                 }
               >
-                <Link suppressHydrationWarning  className="font-medium" href={route.route}>
+                <Link className="font-medium" href={route.route}>
                 {t(route.key)}
                 </Link>
               </li>
