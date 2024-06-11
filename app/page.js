@@ -42,22 +42,20 @@ export default function Home() {
                   />
                 </div>
               </div>
+
+              
               <div className="body lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
                 <section className="award_section">
-                <FontAwesomeIcon className="award_icon" icon={faTrophy} />
-                    <div className="award_title">
-                   
-                      <div>
+                  <FontAwesomeIcon className="award_icon" icon={faTrophy} />
+                  <div className="award_title">
+                    <div>
                       <h3> {t("front.awardH2")} </h3>
                       <h5>{t("front.awardTitle")}</h5>
-                      </div>
-                      <div className="award_card_text">
-                  
-                    <small>{t("front.awardBody")}</small>
-                </div>
                     </div>
-               
-                  
+                    <div className="award_card_text">
+                      <small>{t("front.awardBody")}</small>
+                    </div>
+                  </div>
                 </section>
 
                 <section className="latest_publications">
@@ -80,7 +78,8 @@ export default function Home() {
 
                   <GridElement />
                 </section>
-              </div>
+              </div> 
+
             </section>
           </main>
           <Footer />
