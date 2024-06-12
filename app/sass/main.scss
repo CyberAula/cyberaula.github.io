@@ -77,7 +77,7 @@ TYPOGRAPHY
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  text-wrap: balance; // equilibra los párrafos evitando viudas
   &::selection {
     background-color: lighten($color: $blue-primary, $amount: 20);
   }
