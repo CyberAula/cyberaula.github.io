@@ -74,7 +74,7 @@ export default function Tools(props) {
                           <h3>{title}</h3>
                         </div>
                         <div className="tool_description">
-                          <p>{description}</p>
+                          <small>{description}</small>
                         </div>
                         <div className="tool_button_container">
                           <button className="tool_button">
