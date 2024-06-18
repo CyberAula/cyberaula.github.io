@@ -112,19 +112,16 @@
     #filter_year
         width: auto
     .papers 
-        display: flex
-        flex-direction: column
-        padding-left: 0px
+        @apply max-w-7xl mx-auto
         .paper 
             padding: $spacing_sm 0 
             display: flex
             flex-direction: column
             border-bottom: $ca-blue-200 1px solid
+            @apply text-pretty
             
         .paper_main 
-            display: flex
-            flex-direction: column
-            justify-content: space-between
+            @apply flex flex-col justify-between
             gap: $spacing_xsm
             .paper_date
                 display: flex
@@ -136,7 +133,7 @@
 
 
             .paper_title 
-                @apply text-black
+                @apply text-black 
 
             .paper_subtitle 
                 //padding-bottom: $spacing_md

@@ -73,11 +73,10 @@ TYPOGRAPHY
    ========================================================================== */
 
 * {
-  //border: .2px solid pink;
+  // border: .2px solid pink;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-wrap: balance; // equilibra los párrafos evitando viudas
   &::selection {
     background-color: lighten($color: $blue-primary, $amount: 20);
   }
@@ -92,6 +91,9 @@ html {
   font-family: $montserrat;
   // margin: 0 auto;
   scroll-behavior: smooth;
+  & > * {
+    text-wrap: balance; // equilibra los párrafos evitando viudas
+  }
 }
 section {
     @media (min-width:150px) {
