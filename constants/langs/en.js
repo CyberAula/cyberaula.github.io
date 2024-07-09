@@ -32,7 +32,7 @@ export const en = {
             "topR":"Performing of advanced tele-education experiments",
             "bottomL":"Creation of advanced platforms for the introduction of ICTs in education",
             "bottomM":"Research on educational standards",
-            "bottomMsub":"SCROM | LOM",
+            "bottomMsub":"SCORM | LOM",
             "bottomR":"Creation of learning objects through authoring tools ",
             
         },
@@ -74,9 +74,10 @@ export const en = {
                 "roles":{
                     "1":"Professor",
                     "2":"Associate professor",
-                    "3":"Assistant professor",
-                    "4":"Researcher",
-                    "5":"Intern",
+                    "3":"Associate professor",
+                    "4":"Assistant professor",
+                    "5":"Researcher",
+                    "6":"Intern",
                 },
                 "positions":{
                     "1":"Coordinator",

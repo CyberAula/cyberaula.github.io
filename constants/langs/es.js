@@ -33,7 +33,7 @@ export const es = {
             "topR":"Realización de experimentos avanzados de teleeducación",
             "bottomL":"Creación de plataformas avanzadas para introducción de las TIC en la enseñanza. ",
             "bottomM":"Investigación sobre estándares en educación",
-            "bottomMsub":"SCROM | LOM",
+            "bottomMsub":"SCORM | LOM",
             "bottomR":"Creación de objetos de aprendizaje mediante herramientas de autor ",
             
         },
@@ -73,11 +73,12 @@ export const es = {
         "title": "Equipo",
         "professorCards":{
             "roles":{
-                "1":"Profesor",
-                "2":"Profesor asociado",
-                "3":"Profesor auxiliar",
-                "4":"Investigador/a",
-                "5":"Becario/a",
+                "1":"Catedrático",
+                "2":"Profesor titular de universidad",
+                "3":"Profesor contratado doctor",
+                "4":"Profesor ayudante doctor",
+                "5":"Investigador/a",
+                "6":"Becario/a",
             },
             "positions":{
                 "1":"Coordinador",
