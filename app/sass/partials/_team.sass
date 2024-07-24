@@ -4,6 +4,7 @@
 .team
     main
         .teammates
+            @apply md:place-content-center
             .teammate
                 @apply mx-auto max-w-fit
                 @apply flex flex-col items-center text-center
@@ -14,26 +15,28 @@
                         @apply object-cover
                         border-radius: 50px
                 .mate_info
-                    @apply text-black
+                    @apply text-black h-fit
+                    @apply flex flex-col items-center text-center gap-2
                     margin-top: 0.6rem
                     .mate_name
-                        @apply  mb-4
+                        // @apply  mb-4
                         @apply flex justify-center
                         @apply text-center
                         h4
                             @apply h-fit min-h-16
                     .mate_role
-                        @apply mb-4 h-fit
+                        // @apply mb-4 h-fit
                         span
                             padding:  0.2em 0.65em 0.25em 0.65em
                             @apply border border-black border-solid
                             border-radius: 4px
                             font-weight: 600
                     .mate_position
-                        @apply mt-5 mb-2
-                        @apply max-w-[25ch]
+                        @apply max-w-[25ch] text-center mt-2
+                        p
+                            @apply text-center
                     .mate_email
-                        @apply mt-5 mb-2
+                        @apply mt-2 mb-1
                         font-weight: 600
                         display: inline
                         word-break: break-all
@@ -46,7 +49,7 @@
                             border-radius: 24px
                     .mate_description
                         span
-                            img
-                                height: 18px
-                                width: 18px
+                            // img
+                            //     height: 18px
+                            //     width: 18px
                                 
