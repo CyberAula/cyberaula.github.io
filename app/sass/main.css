@@ -2050,7 +2050,6 @@ TYPOGRAPHY
 }
 @media (min-width: 150px) {
   .page_es .banner {
-    margin-top: 46px;
     height: 7.4em;
     background-image: url("/assets/img/headers/projects-banner-phone.svg");
     background-size: cover;
