@@ -9,7 +9,7 @@ export const mytools = [
     "key":"1",
   },
   {
-    "logo": "/assets/img/logos/educainternet.png",
+    "logo": "/assets/img/logos/educaInternet.png",
     "route": "https://educainternet.es/",
     "title": "EducaInternet",
     "translationKey": "tools.toolCards.description.9",
