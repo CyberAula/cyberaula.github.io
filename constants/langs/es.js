@@ -14,9 +14,9 @@ export const es = {
     "front": {
         "title": "Bienvenido a CyberAula",
         "title2": "grupo de innovación educativa de la UPM",
-        "awardH2":"GIE PREMIADO EN 2017",
-        "awardTitle": "Premio a los grupos de innovación educativa ",
-        "awardBody": "Premio otorgado al GIE CyberAula, coordinado por el profesor Juan Quemada Vives (E.T.S. DE INGENIEROS DETELECOMUNICACIÓN) ",
+        "awardH2":"GIE PREMIADO EN 2017 y 2024",
+        "awardTitle": "Premio a los Grupos de Innovación Educativa ",
+        "awardBody": "Premio otorgado al GIE CyberAula, coordinado por el profesor Enrique Barra Arias (E.T.S. DE INGENIEROS DETELECOMUNICACIÓN) ",
         "latestPublicationsTitle": "Últimas publicaciones",
         "latestPublicationsButton": "Ver todas las publicaciones",
         "linesOfActTitle": "Líneas de actuación",
@@ -63,8 +63,8 @@ export const es = {
     "projects": {
         "title": "Proyectos",
         "filterTitle1":"Todos",
-        "filterTitle2":"Proyectos - individual",
-        "filterTitle3":"Grupo de investigación educativa (GIE)",
+        "filterTitle2":"Proyectos Innovación Educativa (PIE)",
+        "filterTitle3":"Proyectos Europeos",
         "filterTitle4":"Otros",
         "button":"Detalles",
 
@@ -120,6 +120,9 @@ export const es = {
                 "6": "LOEP (Learning Object Evaluation Platform) es una plataforma web-based de código abierto desarrollada usando Ruby on Rails que pretende facilitar la evaluación de pequeños recursos web educacionales autocontenidos, conocidos como Learning Objects, en diferentes escenarios y contextos educacionales. Se ha diseñado para proporcionar evaluación sistemática de los Learning Objects y generar calificaciones de calidad para sistemas de e-Learning de acuerdi con múltiples modelos de evaluación y métricas de calidad. LOEP proporciona gran cantidad de características incluyendo la administración de usuario y Learning Object, herramientas de evaluación de Learning Objects, revisión de tareas, interoperabilidad con sistemas de e-Learning, y estadísticas. ",
                 "7":"Un sistema recomendador híbrido de Learning Objects basado en Europeana ",
                 "8": "RESCORM es un boilerplate para crear aplicaciones de React que cumplan con SCORM cuya finalidad es facilitar a los desarrolladores la creación de recursos de aprendizaje SCORM.",
+                "9": "EducaInternet es una plataforma para fomentar el uso seguro y responsable de las TIC. Contiene presentaciones, recursos, cursos, y materiales variados sobre el tema.",
+                "10": "ViSH (Virtual Science Hub) es una plataforma de código abierto que permite a los usuarios crear y compartir recursos educativos en formato de presentaciones interactivas. ",
+                "11": "El plató SAGA (Sistema automatizado de grabación avanzada) permite al profesor la producción ágil de vídeos de alta calidad para MOOCs, videotutoriales, flipped classroom, etc. Una vez que los responsables de audiovisuales configuran el plato con los perfiles personalizados para un profesor, éste puede grabar sus videos autónomamente sin necesidad de operadores de soporte, tal y como muestra el video que viene al final. Los videos grabados no necesitan postproducción y pueden subirse directamente a YouTube, Moodle, etc."
 
             },
             "button":"Ir a herramienta",

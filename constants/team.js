@@ -125,16 +125,6 @@ export const myteam = {
              "email": "javier.conde.diaz@upm.es",
              "center": "E.T.S. de ingenieros de telecomunicacion",
              "key": "11",
-          },
-          {
-             "name":"Sonsoles López-Pernas",
-             "translationKey": "team.professorCards.roles.3",
-             "description":"Sonsoles has a PhD in Telematics Engineering from Universidad Politécnica de Madrid (UPM). Since 2015, she has conducted her research at the GING research group. She is currently an Assistant Professor at the Department of Computer Science at UPM. Her research interests include technology-enhanced learning, educational escape rooms, learning analytics, and data usage control.",
-             "photo":"/assets/img/team/sonsoles-lopez.jpg",
-             "github":"https://github.com/sonsoleslp",
-             "email": "sonsoles.lopez.pernas@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
-             "key": "12",
           }
        ]
     },

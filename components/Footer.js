@@ -87,7 +87,7 @@ export default function Footer(props) {
             <li className="mb-2 text-left">
               <Link
                 className="font-medium"
-                href="https://www.youtube.com/@ging-upm"
+                href="https://www.youtube.com/@CyberAula"
                 target="_blank"
              >
                 <FontAwesomeIcon className="mr-2 " icon={faYoutube} />

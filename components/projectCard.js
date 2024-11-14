@@ -29,13 +29,15 @@ export default function projectCards(props) {
     <div>
       <div className="filter_options flex">
         <button className={`button_filter  ${selectedCategory === "all" ? "selected" : ""}`} onClick={() => handleCategoryChange("all")}>{t('projects.filterTitle1')}</button>
-        <button className={`button_filter  ${selectedCategory === "ind" ? "selected" : ""} `} onClick={() => handleCategoryChange("ind")}>
+        <button className={`button_filter  ${selectedCategory === "european" ? "selected" : ""} `} onClick={() => handleCategoryChange("european")}>
+          {t('projects.filterTitle3')}
+        </button>
+        <button className={`button_filter ${selectedCategory === "PIE" ? "selected" : ""}`} onClick={() => handleCategoryChange("PIE")}>
           {t('projects.filterTitle2')}
         </button>
-        <button className={`button_filter ${selectedCategory === "erg" ? "selected" : ""}`} onClick={() => handleCategoryChange("erg")}>
-        {t('projects.filterTitle3')}
+        <button className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("Other")}>
+          {t('projects.filterTitle4')}
         </button>
-        <button className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("other")}>{t('projects.filterTitle4')}</button>
       </div>
       <div className="project_cards my-4 sm:my-6 lg:my-10 sm:grid sm:grid-cols-2 sm:gap-4">
         {projectCards.map(
