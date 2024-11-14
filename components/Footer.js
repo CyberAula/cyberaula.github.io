@@ -127,7 +127,7 @@ export default function Footer(props) {
               <a
                 className="font-normal text-base"
                 rel="noopener noreferrer"
-                href="http://www.etsit.upm.es/de.html"
+                href="http://www.etsit.upm.es/"
                 target="_blank"
               >
                 {t('footer.titleRight2')}
@@ -137,7 +137,7 @@ export default function Footer(props) {
               <a
                 className="font-normal text-base"
                 rel="noopener noreferrer"
-                href="http://www.upm.es/internacional"
+                href="http://www.upm.es/"
                 target="_blank"
               >
                 UPM

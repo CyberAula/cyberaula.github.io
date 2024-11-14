@@ -23,12 +23,12 @@ export const es = {
         "linesOfActBody": "Las iniciativas del grupo cyberaula comprenden al entorno educativo en su relación con el uso de las nuevas tecnologías, con el objetivo de desarrollar nuevas formas de apredizaje. la creación e impartición de MOOCs, y otros servicios de creación colaborativa de recursos para la enseñanza.",
         "bulletElements": {
             "bulletA": "Metodologías activas de aprendizaje",
-            "bulletD": "Incorporación de tecnologías a la formación presencial",
-            "bulletF": "Desarrollo de la dimensión docente en los Proyectos de I+D+i",
+            "bulletD": "Incorporación de tecnologías a la formación presencial y a distancia",
+            "bulletF": "Desarrollo de la dimensión docente en los proyectos de I+D+i",
         },
         "gridElements":{
             "topL":"Introducción de las TIC en la educación presencial, online o híbrida",
-            "topM":"Gamificación con fines docentes",
+            "topM":"Gamificación y juegos serios",
             "topMsub":"Uso de juegos serios en la educación",
             "topR":"Realización de experimentos avanzados de teleeducación",
             "bottomL":"Creación de plataformas avanzadas para introducción de las TIC en la enseñanza. ",
@@ -38,7 +38,7 @@ export const es = {
             
         },
         "goalsTitle": "Objetivos",
-        "goalsBody": "El grupo CyberAula centra su actividad en la aplicación de las TIC (Tecnologías de la Información y de las comunicaciones) en la educación, fomentando el aprendizaje potenciado por la tecnología."
+        "goalsBody": "El grupo CyberAula centra su actividad en la aplicación de las TIC (Tecnologías de la Información y de las Comunicaciones) en la educación, fomentando el aprendizaje potenciado por la tecnología."
     },
     "publications": {
         "title": "Publicaciones",
@@ -99,10 +99,10 @@ export const es = {
     "footer": {
         "title1":"secciones",
         "title2": "redes sociales",
-        "logoSub": "Grupo de innovación educativa",
+        "logoSub": "Grupo de Innovación Educativa",
         "logoSub2": "Universidad Politécnica de Madrid",
-        "titleRight": "Departamento de Ingeniería de sistemas telemáticos",
-        "titleRight2": "ETSI telecomunicación",
+        "titleRight": "Departamento de Ingeniería de sistemas Telemáticos (DIT)",
+        "titleRight2": "ETSI Telecomunicación",
     },
     "tools":{
     "title":"Herramientas",

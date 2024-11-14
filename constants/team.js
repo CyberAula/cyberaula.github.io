@@ -162,31 +162,6 @@ export const myteam = {
              "key": "15",
           }
        ]
-    },
-    "interns":{
-       "title":"Interns (Becarios)",
-       "members":[                 
-          {
-             "name":"Pablo Uxó",
-             "translationKey": "team.professorCards.roles.6",
-             "description":"",
-             "photo":"/assets/img/team/pablo-uxo.jpeg",
-             "github":"https://github.com/",
-             "email": "p.uxo@alumnos.upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
-             "key": "16",
-          },
-          {
-             "name":"Samuel García",
-             "translationKey": "team.professorCards.roles.6",
-             "description":"Samuel is a M.S. student in Telecommunication Engineering at Universidad Politécnica de Madrid (UPM). He collaborates with the GING research group as a Software Developer.",
-             "photo":"/assets/img/team/samuel-garcia.jpg",
-             "github":"https://github.com/samugs13",
-             "email": "samuel.garcia.sanchez@alumnos.upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
-             "key": "17",
-          }          
-       ]
     }
  }
  
