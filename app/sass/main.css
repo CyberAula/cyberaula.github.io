@@ -126,10 +126,10 @@
 }
 @media (min-width: 770px) {
   .course {
+    min-height: 300px;
     display: flex;
     color: white;
     font-weight: 400;
-    height: 250px;
     overflow: hidden;
   }
   .course .card_container_top {
@@ -598,7 +598,7 @@ h4, h5 {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 16px;
+    padding-bottom: 48px;
     border-bottom: solid 1px #dbe2ff;
     justify-content: left;
   }
@@ -753,7 +753,7 @@ h4, h5 {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    padding-bottom: 16px;
+    padding-bottom: 48px;
     border-bottom: solid 1px #ebf0ff;
     justify-content: space-between;
   }
@@ -780,10 +780,10 @@ h4, h5 {
     gap: 8px;
     display: flex;
     flex-direction: column;
-    padding: 8px 0 16px 0;
+    padding: 16px 0 32px 0;
   }
   .papers .paper {
-    padding: 6px 0 16px 0;
+    padding: 16px 0 32px 0;
   }
   .papers .paper_main {
     display: flex;
@@ -1393,13 +1393,10 @@ h4, h5 {
   border: 4px solid #97a7ff;
 }
 .article .article_content {
+  @apply min-h-[350px];
+  @apply flex flex-col justify-between;
   gap: 8px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 16px;
-  padding-bottom: 16px;
-  padding-right: 32px;
-  padding-top: 16px;
+  padding: 32px 16px;
 }
 .article .article_content .article_date span {
   display: flex;
@@ -1417,8 +1414,7 @@ h4, h5 {
 .article .article_content .article_title {
   font-weight: 700;
   @apply text-gray-800;
-  margin-top: 0.6rem;
-  margin-bottom: 0;
+  margin: 0.6rem 0 0 0;
 }
 .article .article_content .article_author {
   font-weight: 400;
@@ -1483,10 +1479,10 @@ h4, h5 {
   }
   .award_section {
     display: flex;
+    margin: 64px auto;
     background: #fff9e6;
-    gap: 0.2rem;
+    gap: 32px;
     border-radius: 24px;
-    padding: 0.8rem;
     border: 2px #ffe685 solid;
     @apply text-orange-500;
     width: 100%;
@@ -1536,7 +1532,7 @@ h4, h5 {
 @media (min-width: 600px) {
   .award_section {
     width: 85%;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1.5rem 2rem 1rem 2rem;
     flex-direction: column;
   }
   .award_section .award_icon {
@@ -1561,7 +1557,6 @@ h4, h5 {
     flex-direction: row;
     width: 70%;
     text-align: left;
-    gap: 1.2rem;
     align-self: flex-start;
   }
   .award_section .award_title {
@@ -1599,92 +1594,55 @@ h4, h5 {
 @media screen and (min-width: 150px) {
   h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 28px;
-    line-height: 140%;
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (min-width: 640px) {
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    line-height: 140%;
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 42px;
-    line-height: 140%;
-    margin-bottom: 1rem;
-  }
-}
-
-@media screen and (min-width: 150px) {
-  h2 {
-    font-family: "Montserrat", sans-serif;
     font-size: 25px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 640px) {
-  h2 {
+  h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 33px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 1400px) {
-  h2 {
+  h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
 }
 
 @media screen and (min-width: 150px) {
-  h3 {
+  h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 22px;
     line-height: 140%;
     margin-bottom: 1rem;
-    font-weight: 600;
   }
 }
 @media screen and (min-width: 640px) {
-  h3 {
+  h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 26px;
+    font-size: 28px;
     line-height: 140%;
     margin-bottom: 1rem;
-    font-weight: 600;
   }
 }
 @media screen and (min-width: 1400px) {
-  h3 {
+  h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 33px;
     line-height: 140%;
     margin-bottom: 1rem;
-    font-weight: 600;
   }
 }
 
 @media screen and (min-width: 150px) {
-  h4 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    line-height: 140%;
-    margin-bottom: 1rem;
-    font-weight: 600;
-  }
-}
-@media screen and (min-width: 640px) {
-  h4 {
+  h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 140%;
@@ -1692,10 +1650,47 @@ h4, h5 {
     font-weight: 600;
   }
 }
+@media screen and (min-width: 640px) {
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1400px) {
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 640px) {
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+}
 @media screen and (min-width: 1400px) {
   h4 {
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 140%;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -1705,7 +1700,7 @@ h4, h5 {
 @media screen and (min-width: 150px) {
   h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
@@ -1713,7 +1708,7 @@ h4, h5 {
 @media screen and (min-width: 640px) {
   h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
@@ -1721,7 +1716,7 @@ h4, h5 {
 @media screen and (min-width: 1400px) {
   h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 140%;
     margin-bottom: 1rem;
   }
@@ -1730,21 +1725,21 @@ h4, h5 {
 @media screen and (min-width: 150px) {
   p, label, input, select {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 140%;
   }
 }
 @media screen and (min-width: 640px) {
   p, label, input, select {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
   }
 }
 @media screen and (min-width: 1400px) {
   p, label, input, select {
     font-family: "Montserrat", sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 140%;
   }
 }
@@ -1752,7 +1747,7 @@ h4, h5 {
 @media screen and (min-width: 150px) {
   small {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 140%;
   }
 }
@@ -1766,7 +1761,7 @@ h4, h5 {
 @media screen and (min-width: 1400px) {
   small {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
   }
 }
@@ -1774,7 +1769,7 @@ h4, h5 {
 @media screen and (min-width: 150px) {
   .xs-text {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 140%;
   }
 }
@@ -1788,7 +1783,7 @@ h4, h5 {
 @media screen and (min-width: 1400px) {
   .xs-text {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
   }
 }
@@ -1796,37 +1791,37 @@ h4, h5 {
 @media screen and (min-width: 150px) {
   button, a {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 640px) {
   button, a {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1400px) {
   button, a {
     font-family: "Montserrat", sans-serif;
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 150px) {
   button a, a a {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 640px) {
   button a, a a {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1400px) {
   button a, a a {
     font-family: "Montserrat", sans-serif;
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
@@ -1842,7 +1837,7 @@ h4, h5 {
 }
 @media screen and (min-width: 1400px) {
   .icon {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1869,7 +1864,7 @@ TYPOGRAPHY
     ESTRUCTURA SEGÚN IDIOMA
    ========================================================================== */
 @media (max-width: 600px) {
-  .page_es header {
+  .page_es header, .page_es-ES header {
     box-shadow: 0px 4px 4px 0px rgba(29, 29, 27, 0.15);
     width: 100vw;
     display: flex;
@@ -1879,19 +1874,19 @@ TYPOGRAPHY
     transition: 0.5s;
     padding: 1rem 1.4rem 0.7rem 1.4rem;
   }
-  .page_es header .imagotype {
+  .page_es header .imagotype, .page_es-ES header .imagotype {
     width: 100%;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
   }
-  .page_es header .imagotype .isotype {
+  .page_es header .imagotype .isotype, .page_es-ES header .imagotype .isotype {
     display: flex;
     width: auto;
     height: 2rem;
   }
-  .page_es header .imagotype .logotype {
+  .page_es header .imagotype .logotype, .page_es-ES header .imagotype .logotype {
     display: none;
     font-size: 1.7rem;
     font-weight: 900;
@@ -1899,20 +1894,20 @@ TYPOGRAPHY
     color: #333333;
     padding: 0 0 0 0.7rem;
   }
-  .page_es header .menu_icon {
+  .page_es header .menu_icon, .page_es-ES header .menu_icon {
     padding: 0;
     display: flex;
     align-items: center;
     min-height: 2rem;
   }
-  .page_es header .close {
+  .page_es header .close, .page_es-ES header .close {
     position: absolute;
     display: none;
     top: 4%;
     right: 5%;
     cursor: pointer;
   }
-  .page_es header .show {
+  .page_es header .show, .page_es-ES header .show {
     position: absolute;
     padding: 0;
     display: unset;
@@ -1920,35 +1915,36 @@ TYPOGRAPHY
     top: 30%;
     right: 5%;
   }
-  .page_es header .menu {
+  .page_es header .menu, .page_es-ES header .menu {
     width: 100%;
     font-weight: 600;
     margin: 0;
     padding: 1rem 1.6rem 0 1.6rem;
     display: none;
   }
-  .page_es header .menu li {
+  .page_es header .menu li, .page_es-ES header .menu li {
     padding: 0.66rem 0;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #becaff;
   }
-  .page_es header .menu li:last-child {
+  .page_es header .menu li:last-child, .page_es-ES header .menu li:last-child {
     border-bottom: 0px;
   }
 }
 @media (min-width: 601px) {
-  .page_es header {
+  .page_es header, .page_es-ES header {
     box-shadow: 0px 4px 4px 0px rgba(29, 29, 27, 0.15);
     width: 100vw;
     display: flex;
     flex-flow: wrap row;
+    gap: 1.5rem;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    padding: 1.5rem 2.5rem 1.5rem 2.25rem;
+    padding: 1.5rem 2.25rem 1.5rem 2.25rem;
   }
-  .page_es header .imagotype {
+  .page_es header .imagotype, .page_es-ES header .imagotype {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1956,15 +1952,15 @@ TYPOGRAPHY
     justify-content: space-between;
     align-items: center;
   }
-  .page_es header .imagotype .isotype {
+  .page_es header .imagotype .isotype, .page_es-ES header .imagotype .isotype {
     display: flex;
     height: auto;
     margin: 0 0 0 0rem;
   }
-  .page_es header .imagotype .logoheader {
+  .page_es header .imagotype .logoheader, .page_es-ES header .imagotype .logoheader {
     width: 3.5rem;
   }
-  .page_es header .imagotype .logotype {
+  .page_es header .imagotype .logotype, .page_es-ES header .imagotype .logotype {
     display: flex;
     width: auto;
     font-size: 2.7rem;
@@ -1973,17 +1969,17 @@ TYPOGRAPHY
     color: #5441ff;
     padding: 0 6rem 0 0.7rem;
   }
-  .page_es header .imagotype span {
+  .page_es header .imagotype span, .page_es-ES header .imagotype span {
     color: #ff9900;
   }
-  .page_es header .menu_icon .close {
+  .page_es header .menu_icon .close, .page_es-ES header .menu_icon .close {
     display: none;
   }
-  .page_es header .menu_icon .show {
+  .page_es header .menu_icon .show, .page_es-ES header .menu_icon .show {
     padding: 2% 0 0 0;
     display: none;
   }
-  .page_es header .menu {
+  .page_es header .menu, .page_es-ES header .menu {
     width: 100%;
     font-weight: 600;
     margin: 0 0rem 0 0;
@@ -1991,46 +1987,45 @@ TYPOGRAPHY
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 1.6rem 0rem 0 0rem;
   }
-  .page_es header .menu ul {
+  .page_es header .menu ul, .page_es-ES header .menu ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     font-size: 1.2rem;
-    gap: 1.2rem;
+    gap: 2rem;
   }
-  .page_es header .lang_switcher {
+  .page_es header .lang_switcher, .page_es-ES header .lang_switcher {
     position: absolute;
     right: 2rem;
     top: 2.4rem;
   }
-  .page_es header .lang_switcher div {
+  .page_es header .lang_switcher div, .page_es-ES header .lang_switcher div {
     margin: 0rem;
   }
 }
 @media (min-width: 750px) {
-  .page_es header .lang_switcher {
+  .page_es header .lang_switcher, .page_es-ES header .lang_switcher {
     position: relative;
     right: 0rem;
     top: 0rem;
   }
 }
 @media (min-width: 970px) {
-  .page_es header .imagotype .logoheader {
+  .page_es header .imagotype .logoheader, .page_es-ES header .imagotype .logoheader {
     width: 2.75rem;
   }
-  .page_es header .imagotype .logotype {
+  .page_es header .imagotype .logotype, .page_es-ES header .imagotype .logotype {
     font-size: 1.7rem;
   }
-  .page_es header .menu {
+  .page_es header .menu, .page_es-ES header .menu {
     width: auto;
     font-weight: 600;
     margin: 0;
     padding: 0rem;
     justify-content: right;
   }
-  .page_es header ul {
+  .page_es header ul, .page_es-ES header ul {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
@@ -2038,18 +2033,18 @@ TYPOGRAPHY
   }
 }
 @media (min-width: 1400px) {
-  .page_es header {
+  .page_es header, .page_es-ES header {
     padding: 1.5rem 2.5rem 1.5rem 2.5rem;
   }
-  .page_es header .imagotype .logotype {
+  .page_es header .imagotype .logotype, .page_es-ES header .imagotype .logotype {
     font-size: 2.4rem;
   }
-  .page_es header .imagotype .isotype .logoheader {
+  .page_es header .imagotype .isotype .logoheader, .page_es-ES header .imagotype .isotype .logoheader {
     width: 3.25rem;
   }
 }
 @media (min-width: 150px) {
-  .page_es .banner {
+  .page_es .banner, .page_es-ES .banner {
     margin-top: 46px;
     height: 7.4em;
     background-image: url("/assets/img/headers/projects-banner-phone.svg");
@@ -2059,45 +2054,45 @@ TYPOGRAPHY
     display: flex;
     align-items: flex-end;
   }
-  .page_es .banner h1 {
+  .page_es .banner h1, .page_es-ES .banner h1 {
     color: white;
   }
-  .page_es #banner-publications {
+  .page_es #banner-publications, .page_es-ES #banner-publications {
     background-image: url("/assets/img/headers/publications-banner-phone.svg");
   }
-  .page_es .parallax__layer {
+  .page_es .parallax__layer, .page_es-ES .parallax__layer {
     margin-top: 74px;
   }
 }
 @media (min-width: 601px) {
-  .page_es .banner {
+  .page_es .banner, .page_es-ES .banner {
     margin-top: 112px;
     height: 14vw;
     width: 100%;
     background-image: url("/assets/img/headers/projects-banner-desktop.svg");
   }
-  .page_es #banner-publications {
+  .page_es #banner-publications, .page_es-ES #banner-publications {
     background-image: url("/assets/img/headers/publications-banner-desktop.svg");
   }
-  .page_es .parallax__layer {
+  .page_es .parallax__layer, .page_es-ES .parallax__layer {
     margin-top: 132px;
   }
 }
 @media (min-width: 970px) {
-  .page_es .banner {
+  .page_es .banner, .page_es-ES .banner {
     margin-top: 60px;
     height: 14vw;
   }
-  .page_es .parallax__layer {
+  .page_es .parallax__layer, .page_es-ES .parallax__layer {
     margin-top: 90px;
   }
 }
 @media (min-width: 1400px) {
-  .page_es .banner {
+  .page_es .banner, .page_es-ES .banner {
     margin-top: 72px;
     height: 14vw;
   }
-  .page_es .head {
+  .page_es .head, .page_es-ES .head {
     margin-top: 72px;
   }
 }
@@ -2177,10 +2172,11 @@ TYPOGRAPHY
     width: 100vw;
     display: flex;
     flex-flow: wrap row;
+    gap: 1.5rem;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    padding: 1.5rem 2.5rem 1.5rem 2.25rem;
+    padding: 1.5rem 2.25rem 1.5rem 2.25rem;
   }
   .page_en header .imagotype {
     width: 100%;
@@ -2225,14 +2221,13 @@ TYPOGRAPHY
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 1.6rem 0rem 0 0rem;
   }
   .page_en header .menu ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     font-size: 1.2rem;
-    gap: 1.2rem;
+    gap: 2rem;
   }
   .page_en header .lang_switcher {
     position: absolute;
@@ -2343,6 +2338,7 @@ TYPOGRAPHY
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-wrap: balance;
 }
 *::-moz-selection {
   background-color: #b0a7ff;
@@ -2596,6 +2592,10 @@ button {
   text-decoration: none;
   color: inherit;
 }
+.projects main {
+  max-width: 1440px;
+  margin: 2.5rem auto;
+}
 .projects main .our_projects .project {
   display: flex;
   flex-flow: row wrap;
@@ -2666,17 +2666,6 @@ button {
   font-weight: 700;
   text-decoration: none;
 }
-.tools .nav_bar li.li-selected a {
-  border-bottom: 5px solid #ff9900;
-}
-.tools .nav_bar li.li-selected a:hover {
-  border-bottom: 5px solid #ff9900;
-}
-.tools .nav_bar li a:hover {
-  border-bottom: 5px dashed white;
-  text-decoration: none;
-  color: inherit;
-}
 .tools main .our_tools {
   display: flex;
   flex-direction: column;
@@ -2689,7 +2678,7 @@ button {
   @apply text-ca_blue-900;
 }
 .tools main .our_tools .tool_main h3 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 .tools main .our_tools .tool_main .button_container {

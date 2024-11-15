@@ -507,25 +507,7 @@ button {
       }
     }
 
-    li {
-      &.li-selected {
-        a {
-          border-bottom: $border1 $ca-or-300 ;
-
-          &:hover {
-            border-bottom: $border1 $ca-or-300;
-          }
-        }
-      }
-
-      a {
-        &:hover {
-          border-bottom: $border2 white;
-          text-decoration: none;
-          color: inherit;
-        }
-      }
-    }
+   
   }
 
   main {
