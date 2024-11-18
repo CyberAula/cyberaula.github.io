@@ -24,7 +24,7 @@ export default function BulletElements(props) {
     }));
 
     const containerVariants = {
-        hidden: { opacity: 0, x: '-100vw' },
+        hidden: { opacity: 0, x: '-100%' },
         visible: {
             opacity: 1,
             x: 0,

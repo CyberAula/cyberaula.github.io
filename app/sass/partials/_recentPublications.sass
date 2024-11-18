@@ -1,7 +1,9 @@
 @import '../lib/_variables.sass'
 @import "../lib/_mixins.sass"
 
+
 ._recent_publications
+    height: fit-content
     a 
         height: 100%
 
@@ -16,8 +18,7 @@
 
 .article
     transition: 200ms ease-in-out
-    height: 260px
-    // @apply flex flex-col min-h-[260px]
+    @apply flex flex-col min-h-[260px] h-full
     @apply bg-primary-50
     &:hover
         transition: 200ms ease-in-out
