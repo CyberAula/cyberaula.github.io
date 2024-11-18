@@ -38,10 +38,12 @@ export default function RecentPublications(props) {
                     <div className={`article_stroke ${stroke}`}></div>
                     <div className="article_content">
                       <div className="article_date">
-                        <span><small>{date}</small></span>
+                        <small>{date}</small>
                       </div>
-                      <h5 className="article_title">{title}</h5>
-                      <p className="article_author">{author}</p>
+                      <div className="article_info">
+                        <h5 className="article_title">{title}</h5>
+                        <p className="article_author">{author}</p>
+                      </div>
                       {doi ? (
                         <button className="paper_link text-nowrap">
                           <Link

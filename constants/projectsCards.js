@@ -1,57 +1,125 @@
 export const myProjectCards = [
   {
-    date: "2023",
-    route:
-      "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
-    title:
-      "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
-    subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
+    date: "2014",
+    route: "https://cordis.europa.eu/project/rcn/100728/factsheet/es",
+    title: "Global-excursion",
+    subtitle: "GLOBAL-excursion se propuso mejorar la enseñanza de las ciencias en las escuelas europeas. Este ambicioso objetivo se ha alcanzado con la creación de un portal innovador que ofrece a los profesores y a sus alumnos, así como a los científicos y a los responsables políticos, un paquete de actividades, materiales y herramientas para facilitar la integración de contenidos e infraestructuras científicas en los programas escolares.",
+    tags: "Innovación educativa,Ciencia en colegios,Gamificación, ViSH",
+    category: "european",
+  },
+  {
+    date: "2024",
+    route: "https://erasmus-plus.ec.europa.eu/projects/search/details/2024-1-ES01-KA220-HED-000256356",
+    title: "IGLUE",
+    subtitle: "Implementation of Game-based Learning Using Escape rooms",
     //max 6 tags
-    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
-    category: "erg",
+    tags: "Escape Rooms, Aprendizaje Activo, Gamificación",
+    category: "european",
   },
   {
     date: "2023",
-    route:
-      "http://ging.github.io/ediphy/",
-    title:
-      "Ediphy",
-    subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2023-2024&id=1164",
+    title: "CTFs educativas en Ciberseguridad",
+    subtitle: "La finalidad de este Proyecto de Innovación Educativa (PIE) es diseñar, implementar y evaluar un CTF que permita desarrollarse según el nivel de conocimiento de un grupo de alumnos, tomando en cuenta su nivel de formación en ciberseguridad, siendo bajo para personal no técnico especializado, medio para personal técnico y avanzado para personal técnico especializado.",
     //max 6 tags
-    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
-    category: "ind",
+    tags: "Ciberseguridad, CTF, Gamificación",
+    category: "PIE",
   },
   {
     date: "2023",
-    route:
-      "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
-    title:
-      "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
-    subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2023-2024&id=1227",
+    title: "IoT y LEGO",
+    subtitle: "Desarrollo de experiencias de aprendizaje inmersivos en el ámbito universitario por medio de la interacción con modelos a escala de ciudades inteligentes construidas con piezas de LEGO",
     //max 6 tags
-    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
-    category: "other",
+    tags: "LEGO, Aprendizaje Activo, Gamificación, Trabajo en Equipo",
+    category: "PIE",
   },
   {
     date: "2023",
-    route:
-      "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
-    title:
-      "Utilización de escape rooms",
-    subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
-    //max 6 tags
-    tags: "Aprendizaje Activo,Aprendizaje, Gamificación,Trabajo en Equipo",
-    category: "other",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2023-2024&id=1113",
+    title: "Aplicación y evaluación del aprendizaje basado en juegos en el área de la informática",
+    subtitle: "La finalidad del proyecto es realizar y evaluar empíricamente una serie de actividades de aprendizaje basado en juegos de diversos tipos en diferentes asignaturas de la UPM en las que se imparten conocimientos del área de la informática",
+    tags: "Aprendizaje Activo, Aprendizaje Autónomo, Aula Invertida, Gamificación",
+    category: "PIE",
   },
   {
-    date: "2023",
-    route:
-      "https://innovacioneducativa.upm.es/mooc/informacion-mooc?idmooc=356",
-    title:
-      "Utilización de escape rooms y videojuegos educativos en la Educación Universitaria",
-    subtitle: "E.T.S DE ING. DE SISTEMAS INFORMÁTICOS",
-    //max 6 tags
-    tags: "Aprendizaje Activo,Aprendizaje Autónomo,Investigación educativa,Aula Invertida,Gamificación",
-    category: "ind",
+    date: "2022",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2022-2023&id=837",
+    title: "Mejora de un sistema de corrección automatizada para la realización de experiencias de aprendizaje basado en retos en cursos de programación",
+    subtitle: "Este proyecto ha servido para mejorar la herramienta autocorector de corrección autónoma y automática de prácticas. También se ha añadido la opción de hacer analíticas de aprendizaje sobre los datos recopilados por la herramienta.",
+    tags: "Autocorrección, prácticas, autocorector, Aprendizaje Activo, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2022",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2022-2023&id=767",
+    title: "Videojuegos educativos y analíticas de aprendizaje como medio para mejorar la motivación y resultados de aprendizaje de los estudiantes",
+    subtitle: "El objetivo de este proyecto es mejorar la plataforma SGAME a fin de permitir a los docentes de la UPM la realización experiencias de aprendizaje basado en juegos que aúnen videojuegos educativos y analíticas de aprendizaje, así como realizar y evaluar cuatro experiencias de este tipo",
+    tags: "Videosjuegos educativos, Gamificación, analíticas de aprendizaje",
+    category: "PIE",
+  },
+  {
+    date: "2021",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2021-2022&id=491",
+    title: "Desarrollo y evaluación de un sistema de corrección automatizada para la realización de experiencias de aprendizaje basado en retos en cursos de programación",
+    subtitle: "El objetivo de este proyecto es desarrollar una herramienta de corrección de prácticas. El resultado es la herramienta autocorector.",
+    tags: "Autocorrección, prácticas, autocorector, Aprendizaje Activo, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2021",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2021-2022&id=432",
+    title: "Realización de experiencias de aprendizaje adaptativo basado en videojuegos educativos en la educación universitaria",
+    subtitle: "Este proyecto tiene como objetivo diseñar, desarrollar, desplegar y ofrecer a todos los docentes de la UPM una herramienta para crear videojuegos educativos adaptativos. De este modo, cualquier docente de la UPM interesado en realizar una experiencia de aprendizaje basado en juegos empleando videojuegos adaptativos, podrá hacerlo empleando la herramienta desarrollada en este PIE.",
+    tags: "Videosjuegos educativos, Gamificación, analíticas de aprendizaje",
+    category: "PIE",
+  },
+  {
+    date: "2021",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2021-2022&id=426",
+    title: "Diseño y realización de escape rooms educativas asistidas por una plataforma web para mejorar la motivación y rendimiento académico de los estudiantes",
+    subtitle: "El objetivo de este proyecto es mejorar la plataforma web Escapp empleada para la realización de las escape rooms en base a las lecciones aprendidas y las necesidades derivadas de los nuevos contextos de aplicación explorados.",
+    tags: "Escape Rooms, EscApp, Aprendizaje Activo, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2020",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2019-2020&id=3099",
+    title: "Desarrollo y validación de una plataforma web para la gestión de escape rooms educativas en la UPM",
+    subtitle: "La finalidad de este proyecto es desarrollar y validar una plataforma web para la gestión de escape rooms educativas en la UPM",
+    tags: "Escape Rooms, EscApp, Aprendizaje Activo, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2019",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2018-2019&id=2782",
+    title: "Propuesta y validación de una metodología para el uso de escape rooms educativas mediante una plataforma web",
+    subtitle: "La finalidad de este Proyecto de Innovación Educativa es fomentar y facilitar la realización de escape rooms educativas en asignaturas de la UPM.Se elaborará una guía metodológica para importar el concepto de escape room a las enseñanzas universitarias utilizando la plataforma desarrollada. Se llevará a cabo una experiencia piloto en la asignatura de Ingeniería Web.  ",
+    tags: "Aprendizaje Activo, Aprendizaje Autónomo, Aula Invertida, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2019",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2018-2019&id=2793",
+    title: "Uso de juegos educativos creados mediante una plataforma web para mejorar la motivación y rendimiento académico de los estudiantes",
+    subtitle: "Este proyecto tiene como objetivo realizar experiencias piloto en varias asignaturas de la ETSIT (Escuela Técnica Superior de Ingenieros de Telecomunicación), en la que se utilice un juego educativo creado con la plataforma SGAME para impartir parte de los contenidos de las asignaturas.",
+    tags: "Aprendizaje Activo, Aprendizaje Autónomo, Aula Invertida, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2020-2024",
+    route: "https://online.orangedigitalcenter.es/",
+    title: "Orange Digital Center",
+    subtitle: "Este proyecto consiste en el desarrollo y soporte de la plataforma Orange Digital Center. En esta plataforma educativa gratuita encontrarás cursos y webinars adaptados a tus necesidades. Diviértete aprendiendo con formación preparada por especialistas para afrontar los retos de esta nueva era digital: fabricación 3D, medio ambiente o uso responsable de la tecnología son solo algunos ejemplos de lo que descubrirás.",
+    tags: "Cursos, Webinars, Autismo, Aprendizaje Activo, Aprendizaje Autónomo",
+    category: "Other",
+  },
+  {
+    date: "2014-2024",
+    route: "https://educainternet.es/",
+    title: "EducaInternet",
+    subtitle: "EducaInternet es una plataforma creada para que los docentes puedan formarse en el uso seguro y responsable de la tecnología, así como un lugar donde crear y compartir con el resto de la comunidad sus recursos y materiales didácticos. El objetivo final es que los educadores puedan compartir buenas prácticas sobre un uso correcto y seguro de las TIC con sus alumnos.",
+    tags: "E-safety, Uso Seguro TIC, Aprendizaje Activo, Aprendizaje Autónomo, Gamificación",
+    category: "Other",
   },
 ];

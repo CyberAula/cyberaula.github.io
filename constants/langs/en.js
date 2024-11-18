@@ -13,9 +13,9 @@ export const en = {
     "front": {
         "title": "Welcome to CyberAula",
         "title2": "innovation group of the UPM",
-        "awardH2":"EIG AWARDED IN 2017",
+        "awardH2":"EIG AWARDED IN 2017 and 2024",
         "awardTitle": "Award to the educational innovation groups",
-        "awardBody": "Award granted to the CyberAula group, coordinated by professor Juan Quemada Vives (H.T.S. of Telecommunication engineering) ",
+        "awardBody": "Award granted to the CyberAula group, coordinated by associate professor Enrique Barra Arias (E.T.S.I. Telecommunication engineering) ",
         "latestPublicationsTitle": "Latest publications",
         "latestPublicationsButton": "See all publications",
         "linesOfActTitle": "Lines of action",
@@ -32,7 +32,7 @@ export const en = {
             "topR":"Performing of advanced tele-education experiments",
             "bottomL":"Creation of advanced platforms for the introduction of ICTs in education",
             "bottomM":"Research on educational standards",
-            "bottomMsub":"SCROM | LOM",
+            "bottomMsub":"SCORM | LOM",
             "bottomR":"Creation of learning objects through authoring tools ",
             
         },
@@ -62,10 +62,10 @@ export const en = {
     "projects": {
         "title": "Projects",
         "filterTitle1":"All",
-        "filterTitle2":"Projects - individual",
-        "filterTitle3":"Educational Research Group (GIE/ERG)",
+        "filterTitle2":"Educational innovation project",
+        "filterTitle3":"European projects",
         "filterTitle4":"Other",
-        "button":"Details",
+        "button":"See project",
         //traducir tags?  cuando estén
     },
     "team": {
@@ -74,9 +74,10 @@ export const en = {
                 "roles":{
                     "1":"Professor",
                     "2":"Associate professor",
-                    "3":"Assistant professor",
-                    "4":"Researcher",
-                    "5":"Intern",
+                    "3":"Associate professor",
+                    "4":"Assistant professor",
+                    "5":"Researcher",
+                    "6":"Intern",
                 },
                 "positions":{
                     "1":"Coordinator",
@@ -113,7 +114,9 @@ export const en = {
                     "6": "LOEP (Learning Object Evaluation Platform) is an open source web-based platform developed using Ruby on Rails that aims to facilitate the evaluation of small and self-contained web educational resources, known as Learning Objects, in different scenarios and educational contexts. It has been designed to provide systematic evaluation of Learning Objects and generation of quality scores to e-Learning systems according to multiple evaluation models and quality metrics. LOEP provides several features including user and Learning Object management, Learning Object evaluations tools, review assignments, interoperability with e-Learning systems, and statistics. ",
                     "7":"A Hybrid Learning Object Recommender System based on Europeana. ",
                     "8": "RESCORM is a boilerplate for creating SCORM-compliant React applications that aims to facilitate developers the creation of SCORM-compliant learning resources.",
-    
+                    "9": "EducaInternet is a collaborative platform whose main objective is to facilitate the teaching community to learn and teach the safe and responsible use of technologies. The EducaInternet platform offers an authoring tool to create content, a contest for the best resources created and training courses. EducaInternet has more than 15,000 resources on the Secure Use of ICT and more than 4000 registered users to date.",
+                    "10": "ViSH (Virtual Science Hub) is an open source platform that allows users to create and share educational resources in interactive presentation format. ",
+                    "11": "The SAGA (Automated Advanced Recording System) set allows the teacher the agile production of high quality videos for MOOCs, video tutorials, flipped classroom, etc. Once the audiovisual managers set up the set with the customized profiles for a teacher, he/she can record his/her videos autonomously without the need of support operators, as shown in the video below. The recorded videos do not require post-production and can be uploaded directly to YouTube, Moodle, etc."
                 },
                 "button":"Go to tool",
             

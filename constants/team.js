@@ -18,6 +18,17 @@ export const myteam = {
     "associate":{
        "title":"Associate Professors",
        "members":[
+         {
+            "name":"Enrique Barra",
+            "position":"team.professorCards.positions.1",
+            "translationKey": "team.professorCards.roles.3",
+            "description":"Enrique Barra is a professor at Telematic Engineering Department, School of Telecommunications Engineering. He received the Ph.D. degree in Telematic Engineering with minoring in Multimedia and Technology Enhanced Learning from  Universidad Politécnica de Madrid (UPM).He has participated in many European projects, such as GLOBAL, FIWARE, and C@R. He is currently involved in several projects contributing to the generation and distribution of educational content in TEL environments. His research interests include videoconferencing, games in education, and social networks in education.",
+            "photo":"/assets/img/team/enrique-barra.jpg",
+            "github":"https://github.com/ebarra",
+            "email": "enrique.barra@upm.es",
+            "center": "E.T.S. de ingenieros de telecomunicacion",
+            "key": "5"
+         },
           {
              "name":"Joaquín Salvachúa",
              "translationKey": "team.professorCards.roles.2",
@@ -50,21 +61,10 @@ export const myteam = {
              "email": "gabriel.huecas@upm.es",
              "center": "E.T.S. de ingenieros de telecomunicacion",
              "key": "4"
-          },
-          {
-             "name":"Enrique Barra",
-             "position":"team.professorCards.positions.1",
-             "translationKey": "team.professorCards.roles.2",
-             "description":"Enrique Barra is a professor at Telematic Engineering Department, School of Telecommunications Engineering. He received the Ph.D. degree in Telematic Engineering with minoring in Multimedia and Technology Enhanced Learning from  Universidad Politécnica de Madrid (UPM).He has participated in many European projects, such as GLOBAL, FIWARE, and C@R. He is currently involved in several projects contributing to the generation and distribution of educational content in TEL environments. His research interests include videoconferencing, games in education, and social networks in education.",
-             "photo":"/assets/img/team/enrique-barra.jpg",
-             "github":"https://github.com/ebarra",
-             "email": "enrique.barra@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
-             "key": "5"
-          },
+          },          
           {
              "name":"Álvaro Alonso",
-             "translationKey": "team.professorCards.roles.2",
+             "translationKey": "team.professorCards.roles.3",
              "description":"Álvaro Alonso, Ph.D. in Telecommunications Engineering, Professor at the Telematic Systems Engineering Department, School of Telecommunications Engineering, is a WebHTML5 Videoconference and Cloud Computing expert.He is the author of several articles and participates in a lot of Spanish and European research projects. His research interests include multi-conferencing systems in cloud computing, security, and the IoT in the future Internet.",
              "photo":"/assets/img/team/alvaro-alonso.jpg",
              "github":"https://github.com/aalonsog",
@@ -74,7 +74,7 @@ export const myteam = {
           },
           {
              "name":"Aldo Gordillo", 
-             "translationKey": "team.professorCards.roles.2",
+             "translationKey": "team.professorCards.roles.3",
              "description":"Aldo Gordillo received the degree in Telecommunications Engineering and the PhD degree in Telematics Engineering from UPM, in 2012 and 2017, respectively. From 2012 to 2017, he was a Research and Development Engineer with the Telematics Engineering Department, UPM. He is currently an Assistant Professor with the Computer Science Department, also at UPM. His research interests include the field of technology-enhanced learning, with a special focus on creation, evaluation, and dissemination of e-learning resources, computer science education, game-based learning, and e-learning systems.",
              "photo":"/assets/img/team/aldo-gordillo.jpg",
              "github":"https://github.com/agordillo",
@@ -98,7 +98,7 @@ export const myteam = {
        "members":[
           {
              "name":"Jose Andres Muñoz",
-             "translationKey": "team.professorCards.roles.3",
+             "translationKey": "team.professorCards.roles.4",
              "description":"Andrés received the B.S. in Telematic Engineering from Escuela Superior Politécnica del Litoral (ESPOL) in 2013 He received the M.Sc. in Telematic Services and Network Engineering from Universidad Politécnica de Madrid (UPM). Andrés is currently a Ph.D. student in Telecommunications Engineering and a Researcher with the Next Generation Internet Research Group. His previous experience includes Telematic Laboratories Coordination or Servers and Communications Assistant, both in ESPOL.Andres has carried out different research projects, such as Web Platform Development for Control and Monitoring of Environmental Parameters in Agriculture or Kiswar Proyect Reactive Evacuation Management Systemsfor Emergency Situations.",
              "photo":"/assets/img/team/jose-andres-munoz.jpg",
              "github":"https://github.com/anmunoz",
@@ -108,7 +108,7 @@ export const myteam = {
           },
           {
              "name":"Alejandro Pozo",
-             "translationKey": "team.professorCards.roles.3",
+             "translationKey": "team.professorCards.roles.4",
              "description":"Researcher and Ph.D. student at Politécnica of Madrid (UPM). He received the M.Sc. in Telecommunications Engineering from the UPM, Spain, in 2017, where he is currently pursuing the Ph.D. in Telecommunications Engineering and is a Research Assistant with the Next Generation Internet Research Group. He participates in several European projects and publishes results in journals related to the Internet of Things, security, and identity management.",
              "photo":"/assets/img/team/alejandro-pozo.jpg",
              "github":"https://github.com/apozohue10",
@@ -118,23 +118,13 @@ export const myteam = {
           },
           {
              "name":"Javier Conde",
-             "translationKey": "team.professorCards.roles.3",
+             "translationKey": "team.professorCards.roles.4",
              "description":"PhD student in Telematics Engineering at UPM and researcher in the Department of Telematics Engineering. He received the B.S. and M.Sc. in Telecommunications Engineering from UPM in 2018 and 2020. His research interests lie in the fields of Open Linked Data, Digital Twins, Big Data and Machine Learning.",
              "photo":"/assets/img/team/javier-conde.jpg",
              "github":"https://github.com/javicond3",
              "email": "javier.conde.diaz@upm.es",
              "center": "E.T.S. de ingenieros de telecomunicacion",
              "key": "11",
-          },
-          {
-             "name":"Sonsoles López-Pernas",
-             "translationKey": "team.professorCards.roles.3",
-             "description":"Sonsoles has a PhD in Telematics Engineering from Universidad Politécnica de Madrid (UPM). Since 2015, she has conducted her research at the GING research group. She is currently an Assistant Professor at the Department of Computer Science at UPM. Her research interests include technology-enhanced learning, educational escape rooms, learning analytics, and data usage control.",
-             "photo":"/assets/img/team/sonsoles-lopez.jpg",
-             "github":"https://github.com/sonsoleslp",
-             "email": "sonsoles.lopez.pernas@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
-             "key": "12",
           }
        ]
     },
@@ -143,7 +133,7 @@ export const myteam = {
        "members":[
           {
              "name":"Carlos Arriaga",
-             "translationKey": "team.professorCards.roles.4",
+             "translationKey": "team.professorCards.roles.5",
              "description":" Carlos is a Ph.D. student in Telecommunication Engineering at Universidad Politécnica de Madrid (UPM).  He received the B.S. and M.Sc. in Telecommunications Engineering from UPM in 2020 and 2022. His research interests lie in primarily in the field of video-conference scalability and WebRTC.",
              "photo":"/assets/img/team/carlos-arriaga.jpg",
              "github":"https://github.com/Arri98",
@@ -153,7 +143,7 @@ export const myteam = {
           },
           {
              "name":"Iciar Villamayor",
-             "translationKey": "team.professorCards.roles.4",
+             "translationKey": "team.professorCards.roles.5",
              "description":"Iciar is a UX/UI designer. She received the B.S and M.Sc in graphic design and interactive graphic design from Escuela Superior de Diseño de Madrid in 2020 and 2021. She's currently teaching at Escuela Superior de Diseño de Madrid. She collaborates with the GING as a Graphic Designer.",
              "photo":"/assets/img/team/iciar-villamayor.jpg",
              "github":"https://github.com/IciarVillamayor",
@@ -163,7 +153,7 @@ export const myteam = {
           },
           {
              "name":"Abel Carril",
-             "translationKey": "team.professorCards.roles.4",
+             "translationKey": "team.professorCards.roles.5",
              "description":"Videoconference and streaming support specialist with more than 10 years of experience. Audio/Video encoding expert and Windows .NET C# desktop applications developer.",
              "photo":"/assets/img/team/abel-carril.jpg",
              "github":"https://github.com/eibol",
@@ -171,31 +161,6 @@ export const myteam = {
              "center": "E.T.S. de ingenieros de telecomunicacion",
              "key": "15",
           }
-       ]
-    },
-    "interns":{
-       "title":"Interns (Becarios)",
-       "members":[                 
-          {
-             "name":"Pablo Uxó",
-             "translationKey": "team.professorCards.roles.5",
-             "description":"",
-             "photo":"/assets/img/team/pablo-uxo.jpeg",
-             "github":"https://github.com/",
-             "email": "p.uxo@alumnos.upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
-             "key": "16",
-          },
-          {
-             "name":"Samuel García",
-             "translationKey": "team.professorCards.roles.5",
-             "description":"Samuel is a M.S. student in Telecommunication Engineering at Universidad Politécnica de Madrid (UPM). He collaborates with the GING research group as a Software Developer.",
-             "photo":"/assets/img/team/samuel-garcia.jpg",
-             "github":"https://github.com/samugs13",
-             "email": "samuel.garcia.sanchez@alumnos.upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
-             "key": "17",
-          }          
        ]
     }
  }

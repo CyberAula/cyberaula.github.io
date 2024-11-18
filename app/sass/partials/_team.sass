@@ -4,40 +4,39 @@
 .team
     main
         .teammates
-            // margin: 0 1rem 
+            @apply md:place-content-center
             .teammate
-                display: block
-                width: 80%
-                margin-bottom: 1rem
-                margin-left: auto
-                margin-right: auto
-                // @apply bg-yellow-300
+                @apply mx-auto max-w-fit
+                @apply flex flex-col items-center text-center
                 .mate_img 
                     img
                         height: 100px
                         width:100px
-                        object-fit: cover
+                        @apply object-cover
                         border-radius: 50px
                 .mate_info
-                    .mate_name
-                        margin-bottom: 1rem
-                        font-size:1.5rem
-
-                    @apply text-black
+                    @apply text-black h-fit
+                    @apply flex flex-col items-center text-center gap-2
                     margin-top: 0.6rem
+                    .mate_name
+                        // @apply  mb-4
+                        @apply flex justify-center
+                        @apply text-center
+                        h4
+                            @apply h-fit min-h-16
                     .mate_role
-                        margin-bottom: 1em
-                        height: 100%
-                        margin-top: -0.3rem
+                        // @apply mb-4 h-fit
                         span
-                            padding:  0.2em 0.65em 0.25em 0.65em 
-                            border: 1px solid #333333 // cómo meter variables en team
+                            padding:  0.2em 0.65em 0.25em 0.65em
+                            @apply border border-black border-solid
                             border-radius: 4px
                             font-weight: 600
                     .mate_position
-                        margin: 1.6rem 0 0.6rem 0
+                        @apply max-w-[25ch] text-center mt-2
+                        p
+                            @apply text-center
                     .mate_email
-                        margin: 01.6rem 0 0.6rem 0
+                        @apply mt-2 mb-1
                         font-weight: 600
                         display: inline
                         word-break: break-all
@@ -50,7 +49,7 @@
                             border-radius: 24px
                     .mate_description
                         span
-                            img
-                                height: 18px
-                                width: 18px
+                            // img
+                            //     height: 18px
+                            //     width: 18px
                                 

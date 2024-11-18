@@ -87,7 +87,7 @@ export default function Footer(props) {
             <li className="mb-2 text-left">
               <Link
                 className="font-medium"
-                href="https://www.youtube.com/@ging-upm"
+                href="https://www.youtube.com/@CyberAula"
                 target="_blank"
              >
                 <FontAwesomeIcon className="mr-2 " icon={faYoutube} />
@@ -127,7 +127,7 @@ export default function Footer(props) {
               <a
                 className="font-normal text-base"
                 rel="noopener noreferrer"
-                href="http://www.etsit.upm.es/de.html"
+                href="http://www.etsit.upm.es/"
                 target="_blank"
               >
                 {t('footer.titleRight2')}
@@ -137,7 +137,7 @@ export default function Footer(props) {
               <a
                 className="font-normal text-base"
                 rel="noopener noreferrer"
-                href="http://www.upm.es/internacional"
+                href="http://www.upm.es/"
                 target="_blank"
               >
                 UPM

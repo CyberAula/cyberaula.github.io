@@ -45,7 +45,7 @@ export default function Tools(props) {
   return (
     <div className={"tools page_"+ currentLang}>
       <Header route="/tools" />
-      <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
+      <div className="banner">
         <h1>{t('tools.title')}</h1>
       </div>
       <main>

@@ -1,5 +1,23 @@
 export const mytools = [
   {
+    "logo": "/assets/img/logos/vish.png",
+    "route": "https://vishub.org",
+    "title": "ViSH",
+    "translationKey": "tools.toolCards.description.10",
+    "github": "https://github.com/CyberAula/vish",
+    "gradient": "bg-blue-gradient-plain ",
+    "key":"1",
+  },
+  {
+    "logo": "/assets/img/logos/educaInternet.png",
+    "route": "https://educainternet.es/",
+    "title": "EducaInternet",
+    "translationKey": "tools.toolCards.description.9",
+    "github": "https://github.com/CyberAula/vish_orange",
+    "gradient": "bg-blue-gradient-plain ",
+    "key":"1",
+  },
+  {
     "logo": "/assets/img/logos/sgame.svg",
     "route": "https://sgame.etsisi.upm.es/",
     "title": "SGAME",
@@ -73,5 +91,14 @@ export const mytools = [
     "gradient": "bg-yellow-gradient-plain",
     "key":"8",
   },
+  {
+    "logo": "/assets/img/logos/mooc.svg",
+    "route": "https://innovacioneducativa.upm.es/saga/plato-saga",
+    "title": "SAGA",
+    "translationKey": "tools.toolCards.description.11",
+    "github": "https://github.com/CyberAula/SAGA",
+    "gradient": "bg-blue-gradient-plain",
+    "key":"9",
+  }
 
 ];

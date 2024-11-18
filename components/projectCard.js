@@ -29,13 +29,15 @@ export default function projectCards(props) {
     <div>
       <div className="filter_options flex">
         <button className={`button_filter  ${selectedCategory === "all" ? "selected" : ""}`} onClick={() => handleCategoryChange("all")}>{t('projects.filterTitle1')}</button>
-        <button className={`button_filter  ${selectedCategory === "ind" ? "selected" : ""} `} onClick={() => handleCategoryChange("ind")}>
+        <button className={`button_filter  ${selectedCategory === "european" ? "selected" : ""} `} onClick={() => handleCategoryChange("european")}>
+          {t('projects.filterTitle3')}
+        </button>
+        <button className={`button_filter ${selectedCategory === "PIE" ? "selected" : ""}`} onClick={() => handleCategoryChange("PIE")}>
           {t('projects.filterTitle2')}
         </button>
-        <button className={`button_filter ${selectedCategory === "erg" ? "selected" : ""}`} onClick={() => handleCategoryChange("erg")}>
-        {t('projects.filterTitle3')}
+        <button className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("Other")}>
+          {t('projects.filterTitle4')}
         </button>
-        <button className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`} onClick={() => handleCategoryChange("other")}>{t('projects.filterTitle4')}</button>
       </div>
       <div className="project_cards my-4 sm:my-6 lg:my-10 sm:grid sm:grid-cols-2 sm:gap-4">
         {projectCards.map(
@@ -43,15 +45,19 @@ export default function projectCards(props) {
             <div key={index} className="project_card mb-4 sm:mb-0 p-4 md:p-6">
               <div className="year_and_cta">
                 <span><p className="date">{date}</p> </span>
-                <a href={route} target="_blank">
+                {/* <a href={route} target="_blank">
                   {" "}
                   <p> {t('projects.button')}</p>
                   <FontAwesomeIcon icon={faUpRightFromSquare} />
-                </a>
+                </a> */}
               </div>
               <div className="project_info">
-                <h4 className="project_title">{title}</h4>
-                <h5 className="project_subtitle">{subtitle}</h5>
+              <a className="project_title" href={route} target="_blank">
+                <h4 className="mb-0" >{title} 
+                 
+               </h4> 
+               <FontAwesomeIcon icon={faUpRightFromSquare} /> </a>
+                <p className="project_subtitle text-gray-600">{subtitle}</p>
               </div>
               <div className="project_tags ">
                 {tags.split(',').map((tag, tagIndex) => (
