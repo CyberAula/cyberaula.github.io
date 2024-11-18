@@ -23,40 +23,48 @@ export default function Tools(props) {
   const currentLang = i18n.language;
   const [tools, setTools] = useState([]);
 
-
   // Update tools when language changes
   useEffect(() => {
-    const translatedTools = mytools.map(({ logo, route, title, translationKey, github, gradient, key, description }) => ({
-      title,
-      logo,
-      route,
-      github,
-      gradient,
-      key,
-      description:t(translationKey)
-    }));
+    const translatedTools = mytools.map(
+      ({
+        logo,
+        route,
+        title,
+        translationKey,
+        github,
+        gradient,
+        key,
+        description,
+      }) => ({
+        title,
+        logo,
+        route,
+        github,
+        gradient,
+        key,
+        description: t(translationKey),
+      })
+    );
     setTools(translatedTools);
   }, [i18n.language, t]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
-    <div className={"tools page_"+ currentLang}>
+    <div className={"tools page_" + currentLang}>
       <Header route="/tools" />
       <div className="banner">
-        <h1>{t('tools.title')}</h1>
+        <h1>{t("tools.title")}</h1>
       </div>
       <main>
-       
         <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20  xl:mx-44 2xl:mx-60">
-        <div className="tools_description text-slate-700 pb-8">
-        
-        <p>{t('tools.desc')}</p><br />
-        <p>{t('tools.desc2')} </p>
-      
-    </div>
+          <div className="tools_description text-slate-700 pb-8">
+            <p>{t("tools.desc")}</p>
+            <br />
+            <p>{t("tools.desc2")} </p>
+          </div>
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 150: 1, 600: 2, 900: 3 }}
           >
@@ -70,9 +78,16 @@ export default function Tools(props) {
                       </div>
 
                       <div className="tool_content">
-                        <div className="tool_title">
+                        <h3 className="tool_title">
+                        <Link
+                          href={route}
+                          target="_blank"  
+                          className="hover:underline"
+                        >
                           <h3>{title}</h3>
-                        </div>
+                        </Link>
+                        </h3>
+
                         <div className="tool_description">
                           <small>{description}</small>
                         </div>
@@ -84,7 +99,7 @@ export default function Tools(props) {
                                 icon={faArrowRight}
                               />
 
-                               <span> {t('tools.toolCards.button')}</span>
+                              <span> {t("tools.toolCards.button")}</span>
                             </CreateLink>
                           </button>
                           <button className="tool_github">

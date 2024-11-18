@@ -110,6 +110,7 @@
                 display: flex
                 flex-direction: column
                 .tool_title
+                    @apply hover:underline
                     h2
                         line-height: 115%
                         font-weight: 700
@@ -120,13 +121,14 @@
                     margin-top: 1rem
                     .tool_button
                         @include button
-                        @apply text-ca_blue-700 /*apply siempre al inicio del sass, sino da error (lo hemos vivido)*/
+                        @apply text-ca_blue-700 
                         display: flex
                         flex-wrap: wrap
                         align-items: center
                         background: none                                                                  
                         a
                             @include big-border-button-blue
+                            @apply border-2
                             display: flex
                             
                         svg

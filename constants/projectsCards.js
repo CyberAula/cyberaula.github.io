@@ -1,13 +1,5 @@
 export const myProjectCards = [
   {
-    date: "2014",
-    route: "https://cordis.europa.eu/project/rcn/100728/factsheet/es",
-    title: "Global-excursion",
-    subtitle: "GLOBAL-excursion se propuso mejorar la enseñanza de las ciencias en las escuelas europeas. Este ambicioso objetivo se ha alcanzado con la creación de un portal innovador que ofrece a los profesores y a sus alumnos, así como a los científicos y a los responsables políticos, un paquete de actividades, materiales y herramientas para facilitar la integración de contenidos e infraestructuras científicas en los programas escolares.",
-    tags: "Innovación educativa,Ciencia en colegios,Gamificación, ViSH",
-    category: "european",
-  },
-  {
     date: "2024",
     route: "https://erasmus-plus.ec.europa.eu/projects/search/details/2024-1-ES01-KA220-HED-000256356",
     title: "IGLUE",
@@ -122,4 +114,12 @@ export const myProjectCards = [
     tags: "E-safety, Uso Seguro TIC, Aprendizaje Activo, Aprendizaje Autónomo, Gamificación",
     category: "Other",
   },
+  {
+    date: "2014",
+    route: "https://cordis.europa.eu/project/rcn/100728/factsheet/es",
+    title: "Global-excursion",
+    subtitle: "GLOBAL-excursion se propuso mejorar la enseñanza de las ciencias en las escuelas europeas. Este ambicioso objetivo se ha alcanzado con la creación de un portal innovador que ofrece a los profesores y a sus alumnos, así como a los científicos y a los responsables políticos, un paquete de actividades, materiales y herramientas para facilitar la integración de contenidos e infraestructuras científicas en los programas escolares.",
+    tags: "Innovación educativa,Ciencia en colegios,Gamificación, ViSH",
+    category: "european",
+  }
 ];

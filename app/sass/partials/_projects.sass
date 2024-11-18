@@ -5,6 +5,64 @@
 $windowHeight: 100vh
 $windowWidth: 100% 
 
+.filter_options
+    display: flex
+    justify-content: center
+    gap:0
+    border-radius: 99999px
+    @apply w-fit mx-auto 
+    @apply bg-ca_blue-100
+    .button_filter
+        @include button
+        font-weight: 600
+        padding: 2rem 4rem
+        transition: 100ms ease-out
+        cursor: pointer
+        @apply text-ca_blue-500 w-fit h-full
+        border-top: 4px solid #EBF0FF
+        border-bottom: 4px solid  #EBF0FF
+        border-radius:99999px
+        
+        &:hover
+            @apply bg-ca_blue-200
+            transition: 100ms ease-out
+            
+        &:active
+            @apply bg-ca_blue-300
+            @apply text-blue-950
+
+    .selected
+        @apply bg-ca_blue-300
+        font-weight: 600 
+        @apply text-blue-950
+        
+        &:hover
+            @apply bg-ca_blue-300
+.project_card
+    @apply bg-ca_blue-200
+    border-radius: 8px
+    display: grid
+    grid-template-rows: 40px 1fr auto
+    align-items: left
+    justify-content: space-between
+    height: 100%
+    .year_and_cta
+        display: flex
+        justify-content: space-between
+        .date
+            @include border-tag
+    .project_info
+        @apply text-gray-400
+        .project_title 
+            @apply my-4 hover:underline
+        .project_subtitle
+            @apply max-h-28 line-clamp-3
+            // text-overflow: ellipsis
+            font-weight: 400     
+                    
+                    
+
+
 @media (min-width: 150px) 
     .filter_options
         display: flex
@@ -99,64 +157,5 @@ $windowWidth: 100%
             grid-template-columns: 1fr
 
         
-@media (min-width: 804px)
-  
-    .filter_options
-        display: flex
-        justify-content: center
-        gap:0
-        .button_filter
-            @include button
 
-            @apply bg-ca_blue-100
-            font-weight: 600
-            padding: 1.2rem 2rem
-            transition: 100ms ease-out
-            cursor: pointer
-            @apply text-ca_blue-500
-            border-top: 4px solid #EBF0FF
-            border-bottom: 4px solid  #EBF0FF
-            border-radius:0px
-            
-            &:hover
-                @apply bg-ca_blue-200
-                transition: 100ms ease-out
-                
-            &:active
-                @apply bg-ca_blue-300
-                @apply text-blue-950
-        .button_filter:first-child
-            border-radius: 48px 2px 2px 48px
-            border-left: #EBF0FF 4px solid
-        .button_filter:last-child
-            border-radius: 2px 48px 48px 2px
-            border-right: #EBF0FF 4px solid
-        .selected
-            @apply bg-ca_blue-300
-            font-weight: 600 
-            padding: 1.2rem 1.96rem
-            @apply text-blue-950
-            
-            &:hover
-                @apply bg-ca_blue-300
-        .project_card
-            @apply bg-ca_blue-200
-            border-radius: 8px
-            display: grid
-            grid-template-rows: 40px 1fr auto
-            align-items: left
-            justify-content: space-between
-            height: 100%
-            .year_and_cta
-                display: flex
-                justify-content: space-between
-                .date
-                    @include border-tag
-            .project_info
-                @apply text-gray-400
-                .project_title 
-                .project_subtitle
-                    font-weight: 400     
-                        
-                        
-                .project_subtitle
+
