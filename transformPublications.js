@@ -9,6 +9,10 @@ fs.readFile("constants/publications.bib", function(err, buf) {
 	  lang: 'en-US',
 	  prepend (entry) {
 	  	let {id, issued, DOI, type, title, volume, page, keyword} = entry;
+		//keyword contains the research lines separated by comma, but sometimes it is empty
+		if(!keyword){
+			keyword = "";
+		}	
 
 	  	if (DOI && !DOI.match(/http/)) {
 	  		DOI = "https://doi.org/" + DOI;
@@ -54,7 +58,16 @@ fs.readFile("constants/publications.bib", function(err, buf) {
 	output = output.replace('<div class="csl-bib-body">',"");
 	output = output.replace(/,([^,]*)$/,"$1");
 	output = "["+output+"]";
-	const str = JSON.parse(output).sort(function(a, b){
+	//transform keyword from "keyword1,keyword2" to ["keyword1", "keyword2"]
+	let jsonoutput = JSON.parse(output);
+	jsonoutput = jsonoutput.map((item) => {
+		if (item.keyword) {
+			item.keyword = item.keyword.split(",");
+		}
+		return item;
+	});
+
+	const str = jsonoutput.sort(function(a, b){
 		if (a.date && b.date) {
 			return b.date[0] - a.date[0]
 		} else if (a.date) {

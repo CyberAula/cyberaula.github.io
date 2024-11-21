@@ -114,7 +114,7 @@ export default function Research() {
                           </div>
                           <div className="paper_subtitle">
                             <p>{author}. {journal}</p>
-                          </div>
+                          </div>                          
                         </div>
                       </div>
                       {doi ? (
