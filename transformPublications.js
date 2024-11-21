@@ -8,7 +8,8 @@ fs.readFile("constants/publications.bib", function(err, buf) {
 	  template: 'apa',
 	  lang: 'en-US',
 	  prepend (entry) {
-	  	let {id, issued, DOI, type, title, volume, page} = entry;
+	  	let {id, issued, DOI, type, title, volume, page, keyword} = entry;
+
 	  	if (DOI && !DOI.match(/http/)) {
 	  		DOI = "https://doi.org/" + DOI;
 	  	}
@@ -42,6 +43,7 @@ fs.readFile("constants/publications.bib", function(err, buf) {
 				${ type ? ('"month": "' + month + '",'): "" }
 				${ type ? ('"volume": "' + volume + '",'): "" }
 				${ type ? ('"pages": "' + page + '",'): "" }
+				${ type ? ('"keyword": "' + keyword + '",'): "" }
 	    		"content": "`
 	  },
 	  append: () => '"},'
