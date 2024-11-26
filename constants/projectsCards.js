@@ -1,4 +1,4 @@
-export const myProjectCards = [
+export const projectCards = [
   {
     date: "2014",
     route: "https://cordis.europa.eu/project/rcn/100728/factsheet/es",

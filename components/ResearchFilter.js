@@ -1,47 +1,37 @@
 "use client";
 
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React from "react";
 
-export default function Filters (props) {
-	const { t } = useTranslation();
-	function getYears(papers) {
-		let yearSet = new Set()
-		for (let i in papers) {
-			try {
-				const date = papers[i].date[0];
-				yearSet.add(date.toString())
-			} catch(e) {
-			}
-		}
-		return Array.from(yearSet);
-	}
+import { useTranslation } from "react-i18next";
+import { Badge } from "@/components/ui/badge";
 
-		let years = getYears(props.papers);		
+import FilterText from "./FilterText";
+import FilterDate from "./FilterDate";
+import FilterCategory from "./FilterCategory";
 
-		return (<div className="filters">
-			<div className="filter">
-				<label htmlFor="search">{t('publications.filter.fieldTitle')}</label>
-				<input key={" "} type={"text"} value ={props.search || ""}
-					   onChange={e => props.changeSearch(e.target.value === "" ? undefined: e.target.value)}
-				/>
-			</div>
-			<div className="filter">
-				<label className="publicationType" htmlFor="publication">{t('publications.filter.fieldTitle2')}</label>
-				<select id="publication" name="publication" onChange={(e)=>props.changeType(e.target.value === "all" ? undefined: e.target.value)}>
-					<option key={"all"} value={"all"}>{t('publications.filter.fieldOpt')}</option>
-					<option key={"journal"} value={"article-journal"}>{t('publications.filter.fieldOpt2')}</option>
-					<option key={"conference"} value={"paper-conference"}>{t('publications.filter.fieldOpt3')}</option>
-				</select>
-			</div>
-			<div className="filter" id="filter_year">
-				<label htmlFor="year">{t('publications.filter.fieldTitle3')}</label>
-				<select id="year" name="year" onChange={(e)=>props.changeYear(e.target.value === "all" ? undefined: e.target.value)}>
-					<option key={"all"} value={"all"}>{t('publications.filter.fieldOpt')}</option>
-					{years.map(y=><option key={y} value={y}>{y}</option>)}
-				</select>
-			</div>
-			{props.results === undefined ? null:<div className='research_results'><div> <p> {t('publications.filter.text')}<b> {props.results} </b> </p></div></div>}
-		</div>)
-	
+export default function Filters({ search, changeSearch, year, changeYear, items, category, changeCategory, results, categories }) {
+  const { t } = useTranslation();
+
+  return (
+    <div className="filters standard_margin ">
+      <div className="filter-block flex flex-col md:flex-row gap_filter">
+        <FilterText search={search} changeSearch={changeSearch} ></FilterText>
+        {/* <div className="container_selects gap_div flex flex-row"> */}
+       <div className="w-full md:w-1/2 flex gap_grid">
+          <FilterCategory category={category} changeCategory={changeCategory} categories={categories} />
+    
+          <FilterDate items={items} year={year} changeYear={changeYear} />
+          </div>
+      </div>
+      {results === undefined ? null : (
+        <Badge className="research_results">
+          <p className="">
+            {" "}
+            {t("publications.filter.text")}
+            <b> {results} </b>{" "}
+          </p>
+        </Badge>
+      )}
+    </div>
+  );
 }

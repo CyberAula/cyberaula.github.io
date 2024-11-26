@@ -1,4 +1,4 @@
-export const myprojects = [	
+export const projects = [	
 	{
 		"logo": "/assets/img/logos/vish.svg",
 		"route": "http://vishub.org",

@@ -19,19 +19,24 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: 'en',
+    fallbackLng: 'en', // Set the fallback language to English
+    resources: {
+      en: {
+        translation: en
+      },
+      es: {
+        translation: es
+      }
+    },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
-    resources: {}});
-
-    i18n.addResourceBundle('en', 'translation', {
-        ...en
-    });
-    i18n.addResourceBundle('es', 'translation', {
-        ...es
-    });
-
-
+    detection: {
+      // order and from where user language should be detected
+      order: ['localStorage', 'navigator'],
+      // keys or params to lookup language from
+      lookupLocalStorage: 'i18nextLng',
+    }
+  });
 
 export default i18n;

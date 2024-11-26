@@ -1,108 +1,77 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { myteam } from "@/constants/team";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import team from "@/constants/placeholder-constants/team.json";
 import { useTranslation } from "react-i18next";
 
-export default function Team(props) {
-  const [team, setTeam] = useState(myteam);
+// Components
+import { Button } from "@/components/ui/button";
+import Heading from "@/components/ui/Heading";
+import Text from "@/components/ui/Text";
+import { Card, CardVariants } from "@/components/core/Cards";
+import { CardStackIcon } from "@radix-ui/react-icons";
+
+import dynamic from "next/dynamic";
+
+const Team = (props) => {
+  // Puedes usar directamente el array 'team' en lugar de 'teamData', pero si prefieres manejar el estado:
+  const [members, setMembers] = useState(team || []); // Inicializa el estado con los datos de 'team'
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const renderMembers = (members) => {
+    return members.map(
+      (
+        {
+          name,
+          description,
+          position,
+          img,
+          github,
+          email,
+          center,
+          roleTranslationKey,
+        },
+        key
+      ) => {
+        const translatedRole = t(`${roleTranslationKey}`);
+        const translatedPosition = t(position);
+        return (
+          <Card
+            key={key}
+            cardType={"team"}
+            className={CardVariants({
+              variant: "team",
+            })}
+            img={img}
+            name={name}
+            position={position}
+            role={translatedRole}
+            center={center}
+            email={email}
+          />
+        );
+      }
+    );
+  };
 
   return (
-    <div className={"team page_"+ currentLang}>
-      <Header route={"/team"} />
-      <div className="banner">
-        <h1>{t("team.title")}</h1>
-      </div>
-      <main>
-        <section className="teammates flex flex-col gap-14 sm:grid sm:grid-cols-2 md:grid-cols-3 md:place-content-center lg:grid-cols-4 
-        mx-8 md:mx-14 lg:mx-36 xl:mx-44 2xl:mx-60 my-2 sm:my-8 md:my-8 lg:my-12 xl:my-16 2xl:my-20">
-          {Object.values(team).map(({ members }) => {
-            return members.map(
-              ({
-                name,
-                description,
-                role,
-                position,
-                photo,
-                github,
-                email,
-                center,
-                translationKey,
-              }) => {
-                const emailAddress = email ? email.split("@") : null;
-                const translatedRole = t(`${translationKey}`);
-                const translatedPosition = t(position);
-                return (
-                  <div className="teammate text-center" key={name}>
-                    <div className="mate_img">
-                      <a
-                        href={github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          alt={"Team member"}
-                          src={process.env.PUBLIC_URL + photo}
-                          className="grayscale"
-                        />
-                      </a>
-                    </div>
-
-                    <div className="mate_info">
-                      <div className="mate_name">
-                        <h4>{name}</h4>
-                      </div>
-                      <div className="mate_role">
-                        <span>
-                          <small>{translatedRole}</small>{" "}
-                        </span>
-                      </div>
-                      <div className="mate_position">
-                        <p>{center}</p>
-                       
-                      </div>
-                      <div className="mate_email">
-                          <small>{email}</small>
-                        </div>
-                      <div className="mate_coordination">
-                        <span
-                          className={
-                            position === "Coordinator" ? "coordinator" : ""
-                          }
-                        >
-                          {translatedPosition}
-                        </span>
-                      </div>
-                      <div className="mate_description">
-                        {/* <p>{description}</p> */}
-                        <p>
-                          <b>
-                            {/*emailAddress ? 
-														(<span>{emailAddress[0]}  <img alt="at" className="at" src={process.env.PUBLIC_URL + "/assets/img/arroba-symbol.svg"}/>
-														 {emailAddress[1]}</span>
-														):""*/}
-                          </b>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
-            );
-          })}
+    <main className={"team page_" + currentLang}>
+      <main className="standard_margin">
+        <Heading level="h2" className="mx-auto mb-8 sm:mx-0 text-center">
+          {t("team.title")}
+        </Heading>
+        <section className="flex flex-wrap justify-center xs:gap-x-6 md:gap-x-8 gap-y-8 md:gap-y-12">
+          {Array.isArray(members) && members.length > 0 ? (
+            renderMembers(members)
+          ) : (
+            <p>No members found.</p>
+          )}
         </section>
       </main>
-      <Footer />
-    </div>
+    </main>
   );
-}
+};
+
+export default dynamic(() => Promise.resolve(Team), { ssr: false });

@@ -1,83 +1,147 @@
 "use client";
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { projects } from "@/constants/projects.js";
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
+import {
+  FaceIcon,
+  FigmaLogoIcon,
+  HeartIcon,
+  Pencil2Icon,
+  ScissorsIcon,
+} from "@radix-ui/react-icons";
+import Heading from "@/components/ui/Heading";
+import { Button, ButtonVariants } from "@/components/ui/button";
+import {
+  CustomCard,
+  CardContent,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/customCard";
 
-export default function About(props) {
+export default function About() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   return (
-    <div className={"about page_"+ currentLang}>
-      <Header route={"/about"} />
-      <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
-        <h1>{t("contact.title")}</h1>
-      </div>
-      <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
-        <section className="md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg about_description text-slate-700">
-          <p>
-          {t("contact.body")}
-          </p>
-        </section>
-        <section className="contact_info ">
-          <div className="contact col1">
-            <div className="contact_title">
-              <h4>{t("contact.title2")}</h4>
-            </div>
-            <div className="contact_content ">
-              <ul  className="text-slate-700">
-                <li>
-                  <h5>
-                    <FontAwesomeIcon className="icon" icon={faAt} />
-                    E-mail
-                  </h5>
-                  <p>enrique.barra@upm.es</p>
-                </li>
-                <li>
-                  <h5>
-                    {" "}
-                    <FontAwesomeIcon className="icon" icon={faPhone} />
-                    {t("contact.listTitle2")}
-                  </h5>
-                  <p>91 336 73 31</p>
-                </li>
-              </ul>
-            </div>
+    <div className={"projects page_" + currentLang}>
+      {/* INTRO */}
+      <section className="parallax__layer standard_margin">
+        <div className="flex flex-col">
+          <Heading level="h3" className="text-left">
+            {t("about.Intro.sectionTitle")}
+          </Heading>
+          <div className="flex flex-col md:flex-row gap-4 lg:gap-12 items-start">
+            <p className="basis-3/4">{t("about.Intro.sectionBody")}</p>
+            <Heading
+              level="highlight"
+              className="basis-1/4 font-semibold mt-4 md:mt-0 text-primary"
+            >
+              {t("about.Intro.sectionHighlight")}
+            </Heading>
           </div>
-          <div className="location col2">
-            <div className="location_title">
-              <h4>
-                {" "}
-                <FontAwesomeIcon className="icon" icon={faLocationDot} />{" "}
-                {t("contact.title3")}
-              </h4>
-            </div>
-            <div className="location_info ">
-              <div className="location_map map-responsive">
-                <iframe
-                  title="maps"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0248536844406!2d-3.7286225846430923!3d40.45258687936105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422834b7a8fb4d%3A0x2a3c66a12ada73f9!2sUPM+Escuela+T%C3%A9cnica+Superior+de+Ingenieros+de+Telecomunicaci%C3%B3n!5e0!3m2!1ses!2ses!4v1561459882911!5m2!1ses!2ses"
-                  width="600"
-                  height="450"
-                  frameBorder="0"
-                  style={{ border: 0 }}
-                  allowfullscreen
-                ></iframe>
+        </div>
+      </section>
+
+      {/* CARDS */}
+      <section className="standard_margin">
+        <Heading level="h3" className="text-left ">
+          {t("about.Goals.sectionTitle")}
+        </Heading>
+
+        <div className=" flex items-center sm:items-strech sm:justify-stretch flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-20">
+        <CustomCard className="h-full w-full flex flex-col justify-start gap-4 xs:w-3/4 sm:w-full  shadow-md shadow-primary/15 rounded text-center padding_card_highlight">
+             <div className="mx-auto h-12 w-12 rounded-full flex bg-primary-300 justify-center items-center"> 
+             <FigmaLogoIcon className="m-auto h-7 w-7  text-primary" />
+             </div>
+            <CardTitle level="h4">{t("about.Goals.Goal1.GoalTitle")}</CardTitle>
+            <CardDescription>{t("about.Goals.Goal1.GoalBody")}</CardDescription>
+          </CustomCard>
+
+          <CustomCard className="h-full w-full flex flex-col justify-start gap-4 xs:w-3/4 sm:w-full  shadow-md shadow-primary/15 rounded text-center padding_card_highlight">
+          <div className="mx-auto h-12 w-12 rounded-full flex bg-primary-300 justify-center items-center"> 
+              <ScissorsIcon className="m-auto h-7 w-7  text-primary"/>
               </div>
-              <div className="map_info 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
-                {" "}
-                <p>E.T.S. DE INGENIEROS DE TELECOMUNICACIÓN</p>
-                <p>Av. Complutense, 30, 28040 Madrid Edificio B</p>
+            <CardTitle level="h4">{t("about.Goals.Goal2.GoalTitle")}</CardTitle>
+            <CardDescription>{t("about.Goals.Goal2.GoalBody")}</CardDescription>
+          </CustomCard>
+
+          <CustomCard className="h-full w-full flex flex-col justify-start gap-4 xs:w-3/4 sm:w-full  shadow-md shadow-primary/15 rounded text-center padding_card_highlight">
+          <div className="mx-auto h-12 w-12 rounded-full flex bg-primary-300 justify-center items-center"> 
+              <HeartIcon className="m-auto h-7 w-7  text-primary" />
               </div>
-            </div>
+            <CardTitle level="h4">{t("about.Goals.Goal3.GoalTitle")}</CardTitle>
+            <CardDescription>{t("about.Goals.Goal3.GoalBody")}</CardDescription>
+          </CustomCard>
+        </div>
+      </section>
+
+      <section className="standard_padding-y px-16 bg-secondary-300">
+        <Heading level="h3">
+          {t("about.Columns.sectionTitle")}
+        </Heading>
+        <div className="flex flex-col  sm:flex-row sm:justify-between gap-0 sm:gap-16">
+          <article className="basis-1/2">
+            <Heading level="h5" className="mb-1">
+              {t("about.Columns.Column1.Title")}
+            </Heading>
+            <h5> {t("about.Columns.Column1.Subtitle")}</h5>
+            <p> {t("about.Columns.Column1.Body")} </p>
+            <Button
+              variant="outline"
+              className="action_button margin_top_button mt-5 "
+
+              // onHoverStart={() => setIsHovered1(true)}
+              // onHoverEnd={() => setIsHovered1(false)}
+            >
+              <Link rel="noopener noreferrer" target="_blank" href="#">
+                <span>{t("about.Columns.Column1.Button")}</span>
+              </Link>
+            </Button>
+          </article>
+
+          <article className="basis-1/2">
+            <Heading level="h5" className="mb-1">
+              {t("about.Columns.Column2.Title")}
+            </Heading>
+            <h5> {t("about.Columns.Column2.Subtitle")}</h5>
+            <p> {t("about.Columns.Column2.Body")} </p>
+            <Button
+              variant="outline"
+              className="action_button margin_top_button mt-5 "
+            >
+              <Link rel="noopener noreferrer" target="_blank" href="#">
+                <span>{t("about.Columns.Column2.Button")}</span>
+              </Link>
+            </Button>
+          </article>
+        </div>
+      </section>
+
+      <section className="highlight-section">
+        <div className="standard_padding">
+          <div className="flex flex-col sm:gap-4 md:gap-4">
+            <Heading level="h3" className="text-left">
+              {t("about.Impact.sectionTitle")}
+            </Heading>
+            <p className="sm:w-5/6">{t("about.Impact.sectionBody")}</p>
           </div>
-        </section>
-      </main>
-      <Footer />
+        </div>
+      </section>
     </div>
   );
 }
+
+const CreateLink = (props) => {
+  return props.route.match("http") ? (
+    <a target="_blank" href={props.route} rel="noopener noreferrer">
+      {props.children}
+    </a>
+  ) : (
+    <Link href={props.route}>{props.children}</Link>
+  );
+};

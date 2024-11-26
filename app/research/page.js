@@ -1,33 +1,47 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Filters from "@/components/ResearchFilter";
 import Link from "next/link";
-import { mypublications } from "@/constants/publications";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { useTranslation } from 'react-i18next';
+import { publications } from "@/constants/publications";
+
+import { useTranslation } from "react-i18next";
+import { Card, CardVariants } from "@/components/core/Cards";
+import { Button, ButtonVariants } from "@/components/ui/button";
+import Heading from "@/components/ui/Heading";
+import Text from "@/components/ui/Text";
+import {Divider, DividerVariants} from "@/components/ui/divider";
 
 export default function Research() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  // if (currentLang == "es") {
+  //   console.log("true, language true")
+  // } else {
+  //   console.log("false, language false")
+  // }
   const [state, setState] = useState({
-    papers: mypublications,
+    items: publications,
     search: "",
     year: undefined,
-    type: undefined,
+    category: undefined,
     papersToShow: 6, // Number of papers to show initially
   });
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
-  const { papers, search, year, type, papersToShow } = state;
+  // desestructuración state
+  const { items, search, year, category, papersToShow } = state;
 
-  let papersFiltered = papers.filter((paper) => {
+  // creado array de categorías de publications 
+  const categories = [...new Set(publications.map(publication => publication.category))];
+  categories.push("all")
+
+  console.log(categories)
+  
+  let papersFiltered = items.filter((paper) => {
     return (
       (!search ||
         search
@@ -64,7 +78,7 @@ export default function Research() {
           )) &&
       (!year ||
         (paper.date && paper.date[0] && paper.date[0].toString() === year)) &&
-      (!type || (paper.type && paper.type === type))
+      (!category || (paper.category && paper.category === category))
     );
   });
 
@@ -76,69 +90,68 @@ export default function Research() {
   };
 
   return (
-
-      <div className={"research page_"+ currentLang}>
-        <Header route={"/research"} />
-        <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6" id="banner-publications">
-          <h1>{t('publications.title')}</h1>
-        </div>
-        <main>
-          <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
-            <Filters
-              search={search}
-              year={year}
-              type={type}
-              papers={papers}
-              changeSearch={(search) => setState({ ...state, search: search })}
-              changeYear={(year) => setState({ ...state, year: year })}
-              changeType={(type) => setState({ ...state, type: type })}
-              results={
-                papersFiltered instanceof Array ? papersFiltered.length : 0
-              }
-            />
-            <div className="papers">
-              {papersFiltered
-                .slice(0, papersToShow)
-                .map(({ date, doi, author, title, journal }, ind) => {
-                  return (
-                    <div key={ind} className="paper">
-                      <div className="paper_main">
-                        <div className="paper_date">
-                          <span>
-                            <p className="year">{date ? date[0] : ""}</p>
-                          </span>
-                        </div>
-                        <div className="paper_content">
-                          <div className="paper_title">
-                            <h4>{title}</h4>
-                          </div>
-                          <div className="paper_subtitle">
-                            <p>{author}. {journal}</p>
-                          </div>
-                        </div>
-                      </div>
-                      {doi ? (
-                        <button className="paper_link text-nowrap">
-                          <Link rel="noopener noreferrer" target="_blank" href={doi}>
-                            <span>{t('publications.button')}</span>
-                            <FontAwesomeIcon icon={faArrowRight} />
-                          </Link>
-                        </button>
-                      ) : null}
-                    </div>
-                  );
-                })}
-            </div>
-            <div className="load_more">
-              {papersFiltered.length > papersToShow && (
-                <button onClick={handleLoadMore}>{t('publications.button2')}</button>
-              )}
-            </div>
-          </section>
-        </main>
-        <Footer />
+    <div className={"research page_" + currentLang}>
+      <div className="standard_margin" id="banner-publications">
+        <Heading level="h2">{t("publications.title")}</Heading>
+        <Text type="p">
+          {t("publications.description")}
+        </Text>
       </div>
-  
+      <main className="research">
+        <Filters
+          search={search} // filtro 1: busqueda de texto
+          year={year} // filtro 2: busqueda por año
+          category={category} // filtro 3: busqueda por tipo de publicacion
+          items={items} // lista de papers
+          // con estas funciones se comunica el hijo con el padre 
+          changeSearch={(search) => setState({ ...state, search: search })} // función para cambiar estado de texto de busqueda
+          changeYear={(year) => setState({ ...state, year: year })} // función para cambiar estado de input del año
+          changeCategory={(category) => setState({ ...state, category: category })} // función para cambiar estado de input del tipo de publicacion
+          categories={categories}
+          results={
+            papersFiltered instanceof Array ? papersFiltered.length : 0
+          }
+        />
+        <section className="flex flex-col gap-4 standard_margin">
+          {papersFiltered
+            .slice(0, papersToShow)
+            .map(({ date, category, doi, author, title, journal }, key) => {
+              return (
+                <Card 
+                key={key}
+                  currentLang={currentLang}
+                  cardType={"publication"}
+                  className={CardVariants({
+                    variant: "publication",
+                  })}
+                  date={date}
+                  category={category}
+                  title={title}
+                  author={author}
+                  doi={doi}
+                ></Card>
+              );
+            })}
+        </section>
 
+        <div className="mb-4 w-full flex justify-center">
+          {papersFiltered.length > papersToShow && (
+            <Button
+              onClick={handleLoadMore}
+              className={
+                ButtonVariants({
+                  variant: "default",
+                  size: "lg",
+                  radius: "rounded_sm",
+                }) + " w-fit mt-4 my-auto"
+              }
+            >
+              {t("publications.button2")}
+            </Button>
+          )}
+        </div>
+        <Divider/>
+      </main>
+    </div>
   );
 }
