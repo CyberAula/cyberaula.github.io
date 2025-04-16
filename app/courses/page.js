@@ -32,38 +32,37 @@ export default function Courses() {
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">
             {courses.map(({ date, gradient, edition, title, description, route }) => {
               return (
-                <div
-                  key={title}
-                  className={`rounded-lg px-6 py-4 course  ${gradient}`}
-                >
-                  <div className="course_main transition">
-                    <div className="course_content">
-                      <div className="card_container_top">
-                        <div className="flex gap-3">
-                        <span className="course_tag">
-                          <small>{date}</small>
-                        </span>
-                        <span className="course_tag">
-                          <small> {edition}{t('courses.tag')}</small>
-                        </span>
+                <div key={title} className={`rounded-lg px-6 py-4 course  ${gradient}`} >
+                  <CreateLink route={route}>
+                    <div className="course_main transition">
+                      <div className="course_content">
+                        <div className="card_container_top">
+                          <div className="flex gap-3">
+                          <span className="course_tag">
+                            <small>{date}</small>
+                          </span>
+                          <span className="course_tag">
+                            <small> {edition}{t('courses.tag')}</small>
+                          </span>
+                          </div>
+                          <button className="course_route">
+                          
+                          <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
+                            <span>{t('courses.button')}</span>
+                          
+                          </button>
                         </div>
-                        <button className="course_route">
-                        <CreateLink route={route}>
-                        <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
-                          <span>{t('courses.button')}</span>
-                        </CreateLink>
-                        </button>
-                      </div>
-                      <div className="course_text_block">
-                        <div className="course_title">
-                          <h4>{title}</h4>
-                        </div>
-                        <div className="course_description">
-                          <small> {description}</small>
+                        <div className="course_text_block">
+                          <div className="course_title">
+                            <h4>{title}</h4>
+                          </div>
+                          <div className="course_description">
+                            <small> {description}</small>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </CreateLink>
                 </div>
               );
             })}

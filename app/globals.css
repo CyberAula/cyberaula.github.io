@@ -138,6 +138,7 @@
     padding: 0.3rem 1rem 0.4rem 0.8rem;
     color: white;
     transition: 200ms ease-in-out;
+    cursor: pointer;
   }
   .card_container_top .course_route p {
     margin-bottom: 0;
@@ -176,6 +177,7 @@
     display: flex;
     align-items: center;
     padding: auto;
+    cursor: pointer;
   }
   .course .card_container_top .course_route div {
     margin-top: 0.14rem;
