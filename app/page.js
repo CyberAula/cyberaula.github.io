@@ -11,6 +11,7 @@ import BulletElement from "@/components/BulletElement";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 import { useTranslation } from "react-i18next";
 
@@ -56,6 +57,9 @@ export default function Home() {
                       <small>{t("front.awardBody")}</small>
                     </div>
                   </div>
+                  <a href="https://innovacioneducativa.upm.es/premios-2024" target="_blank" rel="noopener noreferrer" className="">
+                  <FontAwesomeIcon icon={faUpRightFromSquare} className="ml-2 award_link_wrapper" />
+                  </a>
                 </section>
 
                 <section className="latest_publications">

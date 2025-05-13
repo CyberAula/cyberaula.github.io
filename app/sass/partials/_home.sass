@@ -24,7 +24,6 @@
         gap: $spacing_md
         border-radius: 24px
         border: 2px $ca-or-100 solid
-        @apply text-orange-500
         width:100%
         flex-direction: column
         align-self: center
@@ -32,6 +31,7 @@
         text-align: center
         .award_title
             display: flex
+        
             flex-direction: column
             align-self: center
             align-items: center
@@ -42,15 +42,16 @@
                 flex-direction: column
                 align-items: center
         h3
-            @apply text-slate-600
+            @apply text-black
+            
             margin-bottom: 0.3rem   
         h5
-            @apply text-gray-600
+            @apply text-black
             font-weight: 500
             margin-bottom: 0rem 
         
         small
-            @apply  text-slate-500
+            @apply text-black
             padding-bottom: 1rem
             display: block
        
@@ -67,8 +68,13 @@
             border-radius: 80px
             @apply text-orange-400
             @include drop-shadow-lighter
-      
-
+        .award_link_wrapper
+            text-decoration: none
+            color: $black
+            max-width: 2rem
+            height: 2rem
+            padding: 0.75rem
+            
 
 @media (min-width: 600px)
     .award_section
