@@ -48,9 +48,9 @@ export default function Footer(props) {
         {" "}
         <nav>
           <ul>
-            <li className="sections_title smallcaps text-left mb-4">
+            <div className="sections_title smallcaps text-left mb-4">
               {t("footer.title1")}
-            </li>
+            </div>
             {routes.map((route, index) => (
               <li
                 key={index}
@@ -74,7 +74,7 @@ export default function Footer(props) {
             {t("footer.title2")}
           </div>
           <ul>
-            <li className="mb-2 text-left ">
+            <li className=" text-left p-2">
               <Link
                 className="font-medium"
                 href="https://github.com/CyberAula/"
@@ -84,7 +84,7 @@ export default function Footer(props) {
                 Github
               </Link>
             </li>
-            <li className="mb-2 text-left">
+            <li className=" text-left p-2">
               <Link
                 className="font-medium"
                 href="https://www.youtube.com/@CyberAula"
@@ -94,7 +94,7 @@ export default function Footer(props) {
                 Youtube
               </Link>
             </li>
-            <li className="mb-2 text-left">
+            <li className=" text-left p-2">
               <Link
                 className="font-medium"
                 target="_blank"
@@ -112,7 +112,7 @@ export default function Footer(props) {
         <div className="copyright">
           {" "}
           <ul>
-            <li className="md:mb-4 mb-2">2024 &copy;</li>
+            <div className="md:mb-4 mb-2">2024 &copy;</div>
             <li className="md:mb-4 mb-2">
               <a
                 className="font-normal text-base"
