@@ -6,6 +6,8 @@ import { myProjectCards } from "@/constants/projectsCards";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function ProjectCards() {
   const [projectCards, setProjectCards] = useState(myProjectCards);
@@ -62,13 +64,13 @@ export default function ProjectCards() {
               <span>
                 <p className="date">{date}</p>
               </span>
-              <Link href={route} target="_blank" className="flex items-center">
+              {/* <Link href={route} target="_blank" className="flex items-center">
                   <FontAwesomeIcon icon={faUpRightFromSquare} className="ml-2" />
-                </Link>
+                </Link> */}
             </div>
             <div className="project_info">
-              <h4 className="project_title mb-0 flex items-center">
-                <Link href={route} target="_blank" className="flex items-center">
+              <h4 className="project_title mb-0 flex items-center" >
+                <Link href={route} target="_blank" className="flex items-center text-xl">
                   {title}
                 </Link>
               </h4>
@@ -82,10 +84,11 @@ export default function ProjectCards() {
               ))}
             </div>
             <div className="project_cta mt-auto">
-              <Link href={route} target="_blank">
-                <button className="view_project_button">
+              <Link href={route} target="_blank" className="view_project_button">
+                <span >
                   {t("projects.viewProject")} 
-                </button>
+                </span>
+                <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </div>
 

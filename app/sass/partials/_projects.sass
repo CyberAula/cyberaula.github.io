@@ -33,7 +33,7 @@ $windowWidth: 100%
 
     .selected
         @apply bg-ca_blue-700
-        font-weight: 600 
+        font-weight: 500 
         @apply text-white
         
         &:hover
@@ -64,18 +64,23 @@ $windowWidth: 100%
                 display: flex
                 justify-content: flex-end
                 margin-top: auto
-                cursor: pointer                  
+                                
 
                 .view_project_button
-                @apply text-white bg-ca_blue-700
-                padding: 0.5rem 1.25rem
-                border-radius: 9999px
-                font-weight: 600
-                font-size: 0.95rem
-                transition: background-color 200ms ease-in-out
+                    @apply text-ca_blue-600 w-fit border-ca_blue-600 border-2 border-solid
+                    padding: 0.7rem 0.9rem
+                    border-radius: 9999px
+                    font-weight: 600
+                    font-size: 1.1rem
+                    transition: background-color 200ms ease-in-out
+                    font-weight: 600
+                    &:hover
+                        @apply text-white bg-ca_blue-600 border-ca_blue-700  border-solid border-2
+                        cursor: pointer 
+                        font-weight: 600
+                    span
+                        padding-right: 0.6rem
 
-                &:hover
-                    @apply bg-ca_blue-800   
 
 
 @media (min-width: 150px) 
@@ -85,7 +90,7 @@ $windowWidth: 100%
         .button_filter
             @include button
             @apply bg-ca_blue-200
-            font-weight: 600
+            font-weight: 500
             padding: 0.6rem 1rem
             transition: 100ms ease-out
             cursor: pointer
@@ -96,12 +101,13 @@ $windowWidth: 100%
     
             &:active
                 @apply bg-ca_blue-400
-            @apply text-ca_blue-700
+                @apply text-ca_blue-700
 
         .selected
             @apply bg-ca_blue-700
-            font-weight: 600 
+            font-weight: 500 
             @apply text-white
+            padding: 0.6rem 1rem
         
             &:hover
                 @apply bg-ca_blue-800
@@ -170,15 +176,20 @@ $windowWidth: 100%
                 margin-top: auto
 
                 .view_project_button
-                @apply text-white bg-ca_blue-700
-                padding: 0.5rem 1.25rem
-                border-radius: 9999px
-                font-weight: 600
-                font-size: 0.95rem
-                transition: background-color 200ms ease-in-out
+                    @apply text-ca_blue-600 w-fit border-ca_blue-600 border-2
+                    padding: 0.7rem 0.9rem
+                    border-radius: 9999px
+                    font-weight: 500
+                    font-size: 1.1rem
+                    transition: background-color 200ms ease-in-out
+                    font-weight: 600
 
-                &:hover
-                    @apply bg-ca_blue-800
+                    &:hover
+                        @apply text-white bg-ca_blue-600 border-ca_blue-700 border-2 
+                        cursor: pointer 
+                        font-weight: 600
+
+
 @media (min-width: 640px)
     
 
