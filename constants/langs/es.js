@@ -67,7 +67,7 @@ export const es = {
         "filterTitle3":"Proyectos Europeos",
         "filterTitle4":"Otros",
         "button":"Ver proyecto",
-
+        "viewProject": "Ver proyecto"
     },
     "team": {
         "title": "Equipo",

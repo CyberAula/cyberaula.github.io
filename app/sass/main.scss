@@ -93,6 +93,7 @@ html {
   & > * {
     text-wrap: balance; // equilibra los párrafos evitando viudas
   }
+  background-color: $ca_blue-50;
 }
 section {
     @media (min-width:150px) {
@@ -347,6 +348,7 @@ button {
   //padding: 5rem 0 0 0;
 
   .nav_bar {
+    
     .imagotype {
       .logotype {
         color: $blue_primary;

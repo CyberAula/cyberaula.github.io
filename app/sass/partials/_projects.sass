@@ -8,36 +8,36 @@ $windowWidth: 100%
 .filter_options
     display: flex
     justify-content: center
-    gap:0
+    gap:2rem
     border-radius: 99999px
-    @apply w-fit mx-auto 
-    @apply bg-ca_blue-100
+    @apply w-fit mx-auto p-2 pl-4 pr-4
+    @apply bg-ca_blue-200 
     .button_filter
         @include button
+        @apply text-ca_blue-700 w-fit h-full bg-ca_blue-200 
         font-weight: 600
-        padding: 2rem 4rem
+        padding: 2rem 
         transition: 100ms ease-out
         cursor: pointer
-        @apply text-ca_blue-500 w-fit h-full
-        border-top: 4px solid #EBF0FF
-        border-bottom: 4px solid  #EBF0FF
         border-radius:99999px
+        // border-top: 4px solid #EBF0FF
+        // border-bottom: 4px solid  #EBF0FF
         
         &:hover
-            @apply bg-ca_blue-200
+            @apply bg-ca_blue-300
             transition: 100ms ease-out
             
         &:active
-            @apply bg-ca_blue-300
-            @apply text-blue-950
+            @apply bg-ca_blue-400
+            @apply text-ca_blue-700
 
     .selected
-        @apply bg-ca_blue-300
+        @apply bg-ca_blue-700
         font-weight: 600 
-        @apply text-blue-950
+        @apply text-white
         
         &:hover
-            @apply bg-ca_blue-300
+            @apply bg-ca_blue-800
 .project_card
     @apply bg-ca_blue-200
     border-radius: 8px
@@ -51,6 +51,7 @@ $windowWidth: 100%
         justify-content: space-between
         .date
             @include border-tag
+            @apply text-ca_blue-600
     .project_info
         @apply text-gray-400
         .project_title 
@@ -59,36 +60,51 @@ $windowWidth: 100%
             @apply max-h-28 line-clamp-3
             // text-overflow: ellipsis
             font-weight: 400     
-                    
-                    
+    .project_cta
+                display: flex
+                justify-content: flex-end
+                margin-top: auto
+                cursor: pointer                  
+
+                .view_project_button
+                @apply text-white bg-ca_blue-700
+                padding: 0.5rem 1.25rem
+                border-radius: 9999px
+                font-weight: 600
+                font-size: 0.95rem
+                transition: background-color 200ms ease-in-out
+
+                &:hover
+                    @apply bg-ca_blue-800   
 
 
 @media (min-width: 150px) 
     .filter_options
         display: flex
-        gap: 0.4rem
         flex-wrap: wrap
         .button_filter
             @include button
-            @apply bg-ca_blue-100
+            @apply bg-ca_blue-200
             font-weight: 600
             padding: 0.6rem 1rem
             transition: 100ms ease-out
             cursor: pointer
-            @apply text-ca_blue-500
+            @apply text-ca_blue-700
             // border-top: 4px solid #EBF0FF
             // border-bottom: 4px solid  #EBF0FF
             border-radius: 24px
     
             &:active
-                @apply bg-ca_blue-300
-                @apply text-blue-950
+                @apply bg-ca_blue-400
+            @apply text-ca_blue-700
 
         .selected
-            @apply bg-ca_blue-300
-            //font-weight: 600 
-            //padding: 1.2rem 1.96rem
-            @apply text-blue-950
+            @apply bg-ca_blue-700
+            font-weight: 600 
+            @apply text-white
+        
+            &:hover
+                @apply bg-ca_blue-800
 
     .project_cards
         .project_card
@@ -106,6 +122,8 @@ $windowWidth: 100%
                 justify-content: space-between
                 .date
                     @include border-tag
+                    @apply text-ca_blue-600 border-2 border-ca_blue-600
+
                 a
                     @apply text-ca_blue-700
                     p
@@ -140,12 +158,27 @@ $windowWidth: 100%
                 flex-wrap: wrap
                 .project_tag
                     @apply bg-ca_blue-200
-                    @apply text-blue-900
+                    @apply text-ca_blue-600
                     border-radius:4px
                     margin: 0 0.6rem 0.6rem 0
                     padding: 4px 7px
                     //font-size: 0.83rem
                     font-weight:600
+            .project_cta
+                display: flex
+                justify-content: flex-end
+                margin-top: auto
+
+                .view_project_button
+                @apply text-white bg-ca_blue-700
+                padding: 0.5rem 1.25rem
+                border-radius: 9999px
+                font-weight: 600
+                font-size: 0.95rem
+                transition: background-color 200ms ease-in-out
+
+                &:hover
+                    @apply bg-ca_blue-800
 @media (min-width: 640px)
     
 

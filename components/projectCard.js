@@ -46,7 +46,7 @@ export default function ProjectCards() {
           {t("projects.filterTitle2")}
         </button>
         <button
-          className={`button_filter ${selectedCategory === "other" ? "selected" : ""}`}
+          className={`button_filter ${selectedCategory === "Other" ? "selected" : ""}`}
           onClick={() => handleCategoryChange("Other")}
         >
           {t("projects.filterTitle4")}
@@ -81,6 +81,14 @@ export default function ProjectCards() {
                 </small>
               ))}
             </div>
+            <div className="project_cta mt-auto">
+              <Link href={route} target="_blank">
+                <button className="view_project_button">
+                  {t("projects.viewProject")} 
+                </button>
+              </Link>
+            </div>
+
           </div>
         ))}
       </div>

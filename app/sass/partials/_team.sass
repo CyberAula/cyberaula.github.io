@@ -6,14 +6,32 @@
         .teammates
             @apply md:place-content-center
             .teammate
-                @apply mx-auto max-w-fit
-                @apply flex flex-col items-center text-center
+                @apply mx-auto max-w-max w-max
+                @apply flex flex-col items-center text-center p-8
+                @apply bg-ca_blue-100 rounded-xl
+                box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.18)
                 .mate_img 
+                    position: relative
                     img
                         height: 100px
                         width:100px
                         @apply object-cover
                         border-radius: 50px
+                    .mate_coordination
+                        position: absolute
+                        display: flex
+                        justify-content: center
+                        top: 90px
+                        span
+                            background-color: $ca-or-50
+                            color: $ca-blue-700
+                            padding:  0.4em 0.8em 
+                            border-radius: 8px
+                            font-weight: 600
+                            z-index: 10
+                    .mate_coordination 
+                        span:empty 
+                            display: none  
                 .mate_info
                     @apply text-black h-fit
                     @apply flex flex-col items-center text-center gap-2
@@ -26,9 +44,10 @@
                             @apply h-fit min-h-16
                     .mate_role
                         // @apply mb-4 h-fit
+                        width: max-content
                         span
-                            padding:  0.2em 0.65em 0.25em 0.65em
-                            @apply border border-black border-solid
+                            @apply bg-ca_blue-200 text-primary 
+                            padding:  0.25em 0.65em 
                             border-radius: 4px
                             font-weight: 600
                     .mate_position
@@ -36,17 +55,19 @@
                         p
                             @apply text-center
                     .mate_email
-                        @apply mt-2 mb-1
+                        @apply mt-2 mb-1 p-2 
+                        color: $ca-blue-600
+                        border: 2px solid $ca-blue-600
+                        border-radius: 100px
                         font-weight: 600
                         display: inline
                         word-break: break-all
+                    .mate_email:hover
+                        @apply bg-ca_blue-200
+                        text-decoration: underline
+                        cursor: pointer
 
-                    .mate_coordination
-                        margin: 0.8rem 0 0 0
-                        .coordinator
-                            @apply bg-yellow-300
-                            padding:  0.12em 0.65em 0.25em 0.65em
-                            border-radius: 24px
+                 
                     .mate_description
                         span
                             // img

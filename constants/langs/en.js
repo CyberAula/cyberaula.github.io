@@ -66,6 +66,7 @@ export const en = {
         "filterTitle3":"European projects",
         "filterTitle4":"Other",
         "button":"See project",
+        "viewProject": "See project"
         //traducir tags?  cuando estén
     },
     "team": {

@@ -24,8 +24,8 @@ export default function Team(props) {
         <h1>{t("team.title")}</h1>
       </div>
       <main>
-        <section className="teammates flex flex-col gap-14 sm:grid sm:grid-cols-2 md:grid-cols-3 md:place-content-center lg:grid-cols-4 
-        mx-8 md:mx-14 lg:mx-36 xl:mx-44 2xl:mx-60 my-2 sm:my-8 md:my-8 lg:my-12 xl:my-16 2xl:my-20">
+        <section className="teammates flex flex-col gap-auto sm:grid sm:grid-cols-2 md:grid-cols-3 md:place-content-center lg:grid-cols-4 
+        mx-8 md:mx-14 lg:mx-34 xl:mx-44 2xl:mx-60 my-2 sm:my-8 md:my-8 lg:my-12 xl:my-16 2xl:my-20">
           {Object.values(team).map(({ members }) => {
             return members.map(
               ({
@@ -56,6 +56,15 @@ export default function Team(props) {
                           className="grayscale"
                         />
                       </a>
+                      <div className="mate_coordination">
+                        <span
+                          className={
+                            position === "Coordinator" ? "coordinator" : ""
+                          }
+                        >
+                          {translatedPosition}
+                        </span>
+                      </div>
                     </div>
 
                     <div className="mate_info">
@@ -72,17 +81,10 @@ export default function Team(props) {
                        
                       </div>
                       <div className="mate_email">
+                      <a href={`mailto:${email}`}>
                           <small>{email}</small>
+                          </a>
                         </div>
-                      <div className="mate_coordination">
-                        <span
-                          className={
-                            position === "Coordinator" ? "coordinator" : ""
-                          }
-                        >
-                          {translatedPosition}
-                        </span>
-                      </div>
                       <div className="mate_description">
                         {/* <p>{description}</p> */}
                         <p>
