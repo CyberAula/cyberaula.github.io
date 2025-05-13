@@ -22,7 +22,8 @@
             flex-wrap: wrap
             min-height: 3rem
             align-content: center
-            margin-right: 1rem       
+            margin-right: 1rem 
+            color: $ca-blue-700      
             //width: 13rem
             justify-content: flex-end
             b 
@@ -38,13 +39,22 @@
         display: flex
         justify-content: center
         button 
-            outline: none
-            border: none
-            @include button-load-more
+            @apply text-ca_blue-600 w-fit border-ca_blue-600 border-solid border-2
+            padding: 0.7rem 0.9rem
+            border-radius: 9999px
+            font-weight: 500
+            font-size: 1.1rem
+            transition: background-color 200ms ease-in-out
+            font-weight: 600
+            &:hover
+                @apply text-white bg-ca_blue-600 border-ca_blue-700  border-solid border-2
+                cursor: pointer 
+                font-weight: 600
         
 
 
     .filters 
+        @apply w-full max-w-max
         text-align: left
         display: flex
         flex-wrap: wrap
@@ -62,26 +72,25 @@
                 padding-right: 1.6rem
                 margin-bottom: 0.4rem
                 line-height:120%
-                color: $blue_primary
+                color: $ca-blue-700
             select,
             input 
                 padding: 0.5rem 1rem 0.5rem 0.5rem 
                 margin-right: 0.3rem
                 width: 100%
                 height: 3.2rem
-                background-color: white
-                border: 1px solid $ca-blue-600
+                background-color: $ca-blue-50
+                border: 1px solid $ca-blue-700
                 border-radius: 4px
-                background-color: white
                 font-family: $montserrat
-                color: $blue_primary
+                color: $ca-blue-700
                 &:focus
                     @apply text-gray-700
-                    border: $ca-blue-500 solid 1px
+                    border: $ca-blue-600 solid 1px
                     filter: drop-shadow(0 0 0.5rem $ca-blue-300)               
                 &:focus-within
                     @apply text-gray-700
-                    border: $ca-blue-500  solid 1px
+                    border: $ca-blue-600  solid 1px
                     filter: drop-shadow(0 0 0.5rem $ca-blue-300)
                     outline: none
                 &:focus-visible
@@ -89,13 +98,14 @@
             select
                 //width: 20.5rem
                 @apply text-gray-200
-                background: white
+                background-color: $ca-blue-50
+                color: $ca-blue-700
             
                 &:focus
-                    border: $ca-blue-500 solid 1px
+                    border: $ca-blue-600 solid 1px
                     filter: drop-shadow(0 0 0.2rem $ca-blue-300)
                 &:focus-within
-                    border: $ca-blue-500  solid 1px
+                    border: $ca-blue-600  solid 1px
                     filter: drop-shadow(0 0 0.5rem $ca-blue-300)
                     outline: none
                 &:focus-visible
@@ -113,9 +123,9 @@
     .papers 
         @apply max-w-7xl mx-auto
         .paper 
+            @apply flex flex-row items-center
             padding: $spacing_sm 0 
-            display: flex
-            flex-direction: column
+          
             border-bottom: $ca-blue-200 1px solid
             @apply text-pretty
             
@@ -126,6 +136,7 @@
                 display: flex
                 p
                     @include border-tag
+                    @apply text-ca_blue-600 border-2 border-ca_blue-600
                     display: block
                 
             .paper_content
@@ -161,10 +172,11 @@
 @media (min-width: 640px) 
     .research
         .filters
+            @apply w-full max-w-max
             text-align: right
             display: flex
             flex-wrap: wrap
-            gap: 4px
+            gap: 1rem
             padding-bottom: $spacing_lg
             border-bottom: solid 1px $ca-blue-100
             justify-content: space-between
@@ -180,6 +192,7 @@
                     display: inline-block
                     margin-bottom: 0rem
                     min-width: 10.2rem
+                    color: $ca-blue-700
                 input
                     width: 20.6rem
     .papers 
@@ -190,14 +203,14 @@
         flex-direction: column
         padding: $spacing_sm 0 $spacing_md 0
         .paper 
+            @apply flex flex-row items-center
+
             padding: $spacing_sm 0 $spacing_md 0
        
 
 
         .paper_main 
-            display: flex
-            flex-direction: row
-            justify-content: left
+            @apply flex flex-col justify-between
             gap: $spacing_md
             .paper_date
                 h5
