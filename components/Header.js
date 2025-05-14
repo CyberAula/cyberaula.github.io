@@ -82,8 +82,9 @@ export default function Header(props) {
               <Link href={route.route} >{t(route.key)}</Link>
             </li>
           ))}
+          <li><LangSwitcher /></li>
+
         </ul>
-        <LangSwitcher />
       </div>
     </header>
   );

@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react"; // Importa useState
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import clsx from "clsx"; // Importa clsx (útil para clases condicionales)
+import clsx from "clsx";
+import Link from "next/link";
 
 const lngs = {
   en: {
@@ -12,65 +13,76 @@ const lngs = {
     abbreviation: "EN",
   },
   es: {
-    nativeName: "Español", // Corregido a "Español" para el menú
+    nativeName: "Español",
     abbreviation: "ES",
   },
-  // Añade otros idiomas si es necesario, como en tu primer ejemplo:
-  // fi: { nativeName: "Suomeksi", abbreviation: "FI" },
-  // sr: { nativeName: "Srpski", abbreviation: "SR" },
 };
 
 export default function LangSwitcher() {
   const { i18n } = useTranslation();
-  const [open, setOpen] = useState(false); // Estado para controlar el menú
+  const [open, setOpen] = useState(false);
 
   const handleSelect = (lng) => {
     i18n.changeLanguage(lng);
-    setOpen(false); // Cierra el menú al seleccionar
+    setOpen(false);
   };
 
-  // Obtiene la abreviación del idioma actual para mostrarla en el botón
   const currentLangAbbreviation = lngs[i18n.language]?.abbreviation || "EN";
 
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
+
+  const handleLinkClick = (event) => {
+    event.preventDefault();
+    setOpen(!open);
+  };
+
   return (
-    // Contenedor principal con posición relativa para el menú absoluto
-    <div className="relative inline-block">
-      {/* Botón que alterna la visibilidad del menú */}
-      <button
-        onClick={() => setOpen(!open)}
+    <div className="relative inline-block" ref={dropdownRef}>
+      <Link
+        href="#"
+        onClick={handleLinkClick}
         className={clsx(
-          "flex items-center gap-1", // Icono y texto en línea, con espacio
-          "px-3 py-1.5", // Relleno del botón (ajusta según Figma)
-          "rounded-full", // Bordes redondeados (ajusta: rounded-md, rounded-lg, etc.)
-          "border border-solid", // Borde del botón
-          "cursor-pointer", // Indica que es clickeable
-          "transition-colors duration-200", // Transición para hover/estado abierto
-          {
-            // Estilos cuando el menú está abierto (ejemplo con colores azules/morados de Figma)
-            "bg-blue-100 border-blue-500 text-blue-700": open, // Ajusta colores y opacidad
-            // Estilos cuando el menú está cerrado (ejemplo con colores neutros)
-            "bg-transparent border-gray-300 text-gray-700 hover:bg-gray-100": !open, // Ajusta colores y hover
-          }
+        "w-full",
+        "flex justify-center",
+        "w-full",
+        "align-middle",
+          "flex items-center justify-center",
+          "gap-1",
+          "cursor-pointer",
+          "transition-colors duration-200",
+          "text-primary" // Color de texto del Link activador
         )}
       >
-        {/* Icono de globo */}
-        <FontAwesomeIcon icon={faGlobe} className="icon" />
-        {/* Muestra solo la abreviación del idioma actual */}
+        <FontAwesomeIcon icon={faGlobe} className="text-base" />
         <span>{currentLangAbbreviation}</span>
-      </button>
+      </Link>
 
-      {/* Menú Desplegable (visible solo si 'open' es true) */}
       {open && (
         <ul
           className={clsx(
-            "absolute right-0 z-20", // Posición a la derecha, encima de otros elementos
-            "mt-2", // Margen superior (ajusta)
-            "w-fit", // Ancho ajustado al contenido
-            "bg-white", // Fondo blanco (ajusta color)
-            "rounded-md", // Bordes redondeados (ajusta)
-            "shadow-lg", // Sombra (ajusta)
-            "py-1", // Relleno vertical interno
-            "border border-gray-200" // Borde sutil (ajusta color)
+            "absolute right-0 z-20",
+            "flex !flex-col",
+            "!gap-0",
+            "mt-12",
+            "w-fit",
+            "bg-primary-50", // Fondo del menú: primary-50 de tu paleta
+            "rounded-md", // Bordes redondeados del menú
+            "shadow-lg", // Sombra del menú
+            "border border-primary",
           )}
         >
           {Object.keys(lngs).map((lngKey) => (
@@ -79,19 +91,18 @@ export default function LangSwitcher() {
               onClick={() => handleSelect(lngKey)}
               className={clsx(
                 "cursor-pointer",
-                "px-4 py-2", // Relleno de cada ítem (ajusta)
-                "whitespace-nowrap", // Evita que el texto se rompa
-                "text-gray-800", // Color del texto por defecto (ajusta)
-                "hover:bg-gray-100", // Fondo en hover (ajusta color)
-                "transition-colors duration-150", // Transición en hover
+                "rounded-md",
+                "px-8 py-4", // Relleno de cada ítem
+                "whitespace-nowrap",
+                "text-primary", // Color del texto por defecto de los ítems: primary
+                "hover:bg-primary-200", // Fondo en hover de los ítems: primary-100 (ajústalo si prefieres otro tono)
+                "transition-colors duration-150",
                 {
-                  // Estilo para el idioma activo
-                  "font-semibold text-blue-600": i18n.language === lngKey, // Negrita y color diferente (ajusta)
+                  "font-semibold": i18n.language === lngKey, // Estilo del idioma activo: negrita y primary-700 (ajústalo si prefieres otro tono o peso)
                   "font-normal": i18n.language !== lngKey,
                 }
               )}
             >
-              {/* Muestra "Nombre Nativo - Abreviación" como en el prototipo de Figma */}
               {`${lngs[lngKey].nativeName} - ${lngs[lngKey].abbreviation}`}
             </li>
           ))}
