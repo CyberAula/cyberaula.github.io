@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { myBulletElements } from "@/constants/BulletElement";
 import { motion, useAnimation, useScroll } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function BulletElements(props) {
     const { t } = useTranslation();
@@ -17,10 +18,12 @@ export default function BulletElements(props) {
    
 
    
-    const bulletElements = myBulletElements.map(({ translationKey, letter, key }) => ({
+    const bulletElements = myBulletElements.map(({ translationKey, letter, key, icon }) => ({
         title: t(translationKey),
         letter,
         key,
+        icon,
+
     }));
 
     const containerVariants = {
@@ -57,6 +60,22 @@ export default function BulletElements(props) {
         //         </div>
         //     ))}
         // </div>
+
+        // COPIA DE LO QUE YA HABIA:
+        // <motion.div
+        //     className="bullet_elements"
+        //     ref={ref}
+        //     initial="hidden"
+        //     animate={controls}
+        //     variants={containerVariants}
+        // >
+        //     {bulletElements.map(({ title, letter, key }) => (
+        //         <motion.div key={key} className="bullet_element" variants={textVariants}>
+        //             <h5 className="title pl-8">{title}</h5>
+        //             <h1 className="letter pr-8">{letter}</h1>
+        //         </motion.div>
+        //     ))}
+        // </motion.div>
         <motion.div
             className="bullet_elements"
             ref={ref}
@@ -64,10 +83,13 @@ export default function BulletElements(props) {
             animate={controls}
             variants={containerVariants}
         >
-            {bulletElements.map(({ title, letter, key }) => (
-                <motion.div key={key} className="bullet_element" variants={textVariants}>
-                    <h5 className="title pl-8">{title}</h5>
-                    <h1 className="letter pr-8">{letter}</h1>
+            {bulletElements.map(({ title, letter, key, icon }) => (
+                <motion.div key={key} className="bullet_element" variants={textVariants} >
+                    <FontAwesomeIcon icon={icon} className="icono" />
+                    <h1 className="letter">{letter}</h1>
+                    <h5 className="title">
+                        <a href="https://innovacioneducativa.upm.es/grupos-ie/lineas" target="_blank">
+                        {title} </a></h5>
                 </motion.div>
             ))}
         </motion.div>
