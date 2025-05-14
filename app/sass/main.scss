@@ -282,26 +282,7 @@ button {
       }
     }
 
-    .latest_publications {
-
-      .more {
-        // font-size: 1.2rem;
-        // font-weight: bold;
-        // color: $ca-or-100;
-        // text-align: left;
-        // padding: 2% 2% 2% 2%;
-        @apply text-ca_blue-600;
-        @include button-load-more;
-        // display: flex;
-        align-content: center;
-
-        svg {
-          align-self: center;
-          margin-left: 0.6rem;
-        }
-
-      }
-    }
+   
   }
 }
 

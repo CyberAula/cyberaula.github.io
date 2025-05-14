@@ -18,7 +18,7 @@ export default function RecentPublications(props) {
   }, []);
 
   return (
-    <div className="_publications _recent_publications ">
+    <div className="_publications _recent_publications">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 2 }}>
         <Masonry gutter="24px">
           {papers
@@ -34,11 +34,11 @@ export default function RecentPublications(props) {
                 //   target="_blank"
                 //   rel="noopener noreferrer"
                 // >
-                  <div key={doi} className={`article`}>
+                  <div key={doi} className={`article`} >
                     <div className={`article_stroke ${stroke}`}></div>
                     <div className="article_content">
                       <div className="article_date">
-                        <small>{date}</small>
+                        <span>{date}</span>
                       </div>
                       <div className="article_info">
                         <h5 className="article_title">{title}</h5>
@@ -63,15 +63,13 @@ export default function RecentPublications(props) {
             })}
         </Masonry>
       </ResponsiveMasonry>
-      <a
-        className="flex justify-center"
-        href="/research"
-        rel="noopener noreferrer"
-      >
-        <div className="more mt-4 sm:mt-6 md:mt-8 2xl:mt-10">
+      <div className="load_">
+        <a href="/research" rel="noopener noreferrer">
+        <button className="more mt-4 sm:mt-6 md:mt-8 2xl:mt-10" >
           {t("front.latestPublicationsButton")}
-        </div>
-      </a>
+        </button>
+        </a>
+      </div>
     </div>
   );
 }
