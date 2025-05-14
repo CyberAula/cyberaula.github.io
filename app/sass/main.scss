@@ -84,6 +84,7 @@ TYPOGRAPHY
 
 body,
 html {
+  @apply bg-primary-50;
   color: black;
   @apply text-primary w-full overflow-x-hidden;
   font-size: 12px;

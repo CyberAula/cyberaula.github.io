@@ -2046,7 +2046,7 @@ TYPOGRAPHY
 @media (min-width: 150px) {
   .page_es .banner, .page_es-ES .banner {
     height: 7.4em;
-    background-image: url("/assets/img/headers/projects-banner-phone.svg");
+    background-image: url("/assets/img/headers/publications-banner-phone.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2068,7 +2068,7 @@ TYPOGRAPHY
     margin-top: 112px;
     height: 14vw;
     width: 100%;
-    background-image: url("/assets/img/headers/projects-banner-desktop.svg");
+    background-image: url("/assets/img/headers/publications-banner-desktop.svg");
   }
   .page_es #banner-publications, .page_es-ES #banner-publications {
     background-image: url("/assets/img/headers/publications-banner-desktop.svg");
@@ -2280,7 +2280,7 @@ TYPOGRAPHY
   .page_en .banner {
     margin-top: 46px;
     height: 7.4em;
-    background-image: url("/assets/img/headers/projects-banner-phone.svg");
+    background-image: url("/assets/img/headers/publications-banner-phone.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2302,7 +2302,7 @@ TYPOGRAPHY
     margin-top: 112px;
     height: 14vw;
     width: 100%;
-    background-image: url("/assets/img/headers/projects-banner-desktop.svg");
+    background-image: url("/assets/img/headers/publications-banner-desktop.svg");
   }
   .page_en #banner-publications {
     background-image: url("/assets/img/headers/publications-banner-desktop.svg");
