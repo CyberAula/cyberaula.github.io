@@ -28,25 +28,33 @@ export default function About(props) {
             <div className="contact_title">
               <h4>{t("contact.title2")}</h4>
             </div>
-            <div className="contact_content ">
-              <ul  className="text-slate-700">
-                <li>
-                  <h5>
-                    <FontAwesomeIcon className="icon" icon={faAt} />
-                    E-mail
-                  </h5>
-                  <p>enrique.barra@upm.es</p>
-                </li>
-                <li>
-                  <h5>
-                    {" "}
-                    <FontAwesomeIcon className="icon" icon={faPhone} />
-                    {t("contact.listTitle2")}
-                  </h5>
-                  <p>91 336 73 31</p>
-                </li>
-              </ul>
-            </div>
+           <div className="contact_content ">
+  <ul className="text-slate-700">
+    <li>
+      <h5>
+        <FontAwesomeIcon className="icon" icon={faAt} />
+        E-mail
+      </h5>
+      <p>
+        <a href="mailto:enrique.barra@upm.es" className="contact_link">
+          enrique.barra@upm.es
+        </a>
+      </p>
+    </li>
+    <li>
+      <h5>
+        <FontAwesomeIcon className="icon" icon={faPhone} />
+        {t("contact.listTitle2")}
+      </h5>
+      <p>
+        <a href="tel:+34913367331" className="contact_link">
+          91 336 73 31
+        </a>
+      </p>
+    </li>
+  </ul>
+</div>
+
           </div>
           <div className="location col2">
             <div className="location_title">
