@@ -7,23 +7,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
+import useHeaderOffset from "@/hook/useHeaderOffset";
 
 export default function About(props) {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  const headerOffset = useHeaderOffset();
+
   return (
     <div className={"about page_"+ currentLang}>
       <Header route={"/about"} />
+      <main style={{ paddingTop: `${headerOffset}px` }} >
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t("contact.title")}</h1>
       </div>
-      <main className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2">
-        <section className="md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg about_description text-slate-700">
+        <section className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2 about_description text-slate-700">
           <p>
           {t("contact.body")}
           </p>
         </section>
-        <section className="contact_info ">
+        <section className="contact_info xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2 ">
           <div className="contact col1">
             <div className="contact_title">
               <h4>{t("contact.title2")}</h4>

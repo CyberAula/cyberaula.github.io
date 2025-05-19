@@ -18,7 +18,7 @@ export const mytools = [
     "key":"1",
   },
   {
-    "logo": "/assets/img/logos/sgame.svg",
+    "logo": "/assets/img/logos/.svg",
     "route": "https://sgame.etsisi.upm.es/",
     "title": "SGAME",
     "translationKey": "tools.toolCards.description.1",
