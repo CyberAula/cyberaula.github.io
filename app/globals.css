@@ -1957,7 +1957,7 @@ TYPOGRAPHY
     display: none;
   }
   .page_es header .menu li, .page_es-ES header .menu li {
-    padding: 0.66rem 0;
+    padding: 0.66rem;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #becaff;
@@ -2191,7 +2191,7 @@ TYPOGRAPHY
     display: none;
   }
   .page_en header .menu li {
-    padding: 0.66rem 0;
+    padding: 0.66rem;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #becaff;

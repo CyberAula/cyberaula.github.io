@@ -253,7 +253,7 @@ header li.li-selected a:hover {
   left: 0;
 }
 
-@media (min-width: 150px) {
+/* @media (min-width: 150px) {
   .lang_switcher {
     @apply text-gray-600;
     margin-left: 2.4rem;
@@ -273,7 +273,7 @@ header li.li-selected a:hover {
   .lang_switcher a:last-child {
     margin-left: 0.26rem;
   }
-}
+} */
 @media (max-width: 600px) {
   .responsive-hidden {
     display: none !important;
@@ -1109,6 +1109,7 @@ h4, h5 {
   .tools .tool .tool_content .tool_button_container .tool_github:hover {
     @apply text-ca_blue-600;
   }
+ 
 }
 @media (min-width: 730px) {
   .tools .tool .tool_content .tool_button_container {
@@ -1923,7 +1924,7 @@ TYPOGRAPHY
     display: none;
   }
   .page_es header .menu li, .page_es-ES header .menu li {
-    padding: 0.66rem 0;
+    padding: 0.66rem;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #becaff;
@@ -1931,6 +1932,8 @@ TYPOGRAPHY
   .page_es header .menu li:last-child, .page_es-ES header .menu li:last-child {
     border-bottom: 0px;
   }
+
+
 }
 @media (min-width: 601px) {
   .page_es header, .page_es-ES header {
@@ -1995,7 +1998,7 @@ TYPOGRAPHY
     font-size: 1.2rem;
     gap: 2rem;
   }
-  .page_es header .lang_switcher, .page_es-ES header .lang_switcher {
+  /* .page_es header .lang_switcher, .page_es-ES header .lang_switcher {
     position: absolute;
     right: 2rem;
     top: 2.4rem;
@@ -2010,7 +2013,7 @@ TYPOGRAPHY
     right: 0rem;
     top: 0rem;
   }
-}
+} */
 @media (min-width: 970px) {
   .page_es header .imagotype .logoheader, .page_es-ES header .imagotype .logoheader {
     width: 2.75rem;
@@ -2156,14 +2159,18 @@ TYPOGRAPHY
     display: none;
   }
   .page_en header .menu li {
-    padding: 0.66rem 0;
+    padding: 0.66rem;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #becaff;
   }
   .page_en header .menu li:last-child {
-    border-bottom: 0px;
+    border-bottom: 0px; 
   }
+  .page_en .menu li:last-child ul li{
+    
+  }
+ 
 }
 @media (min-width: 601px) {
   .page_en header {
@@ -2228,7 +2235,7 @@ TYPOGRAPHY
     font-size: 1.2rem;
     gap: 2rem;
   }
-  .page_en header .lang_switcher {
+  /* .page_en header .lang_switcher {
     position: absolute;
     right: 2rem;
     top: 2.4rem;
@@ -2242,8 +2249,8 @@ TYPOGRAPHY
     position: relative;
     right: 0rem;
     top: 0rem;
-  }
-}
+  }*/
+} 
 @media (min-width: 860px) {
   .page_en header .imagotype .logoheader {
     width: 2.75rem;
@@ -2894,4 +2901,5 @@ RESPONSIVE
 }
 body :not(.menu) a:hover {
   text-decoration: none;
-}/*# sourceMappingURL=main.css.map */
+}
+}

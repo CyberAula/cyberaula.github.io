@@ -56,15 +56,13 @@ export default function LangSwitcher() {
         href="#"
         onClick={handleLinkClick}
         className={clsx(
-        "w-full",
-        "flex justify-center",
-        "w-full",
-        "align-middle",
-          "flex items-center justify-center",
+          "w-full",
+          "flex justify-center",
+          "items-center",
           "gap-1",
           "cursor-pointer",
           "transition-colors duration-200",
-          "text-primary" // Color de texto del Link activador
+          "text-primary"
         )}
       >
         <FontAwesomeIcon icon={faGlobe} className="text-base" />
@@ -74,15 +72,17 @@ export default function LangSwitcher() {
       {open && (
         <ul
           className={clsx(
-            "absolute right-0 z-20",
+            "absolute z-20",
             "flex !flex-col",
             "!gap-0",
-            "mt-12",
+            "mt-2 sm:mt-12",
             "w-fit",
-            "bg-primary-50", // Fondo del menú: primary-50 de tu paleta
-            "rounded-md", // Bordes redondeados del menú
-            "shadow-lg", // Sombra del menú
+            "bg-primary-50",
+            "rounded-md",
+            "shadow-lg",
             "border border-primary",
+            "left-1/2 -translate-x-1/2",
+            "sm:left-auto sm:right-0 sm:translate-x-0"
           )}
         >
           {Object.keys(lngs).map((lngKey) => (
@@ -92,13 +92,13 @@ export default function LangSwitcher() {
               className={clsx(
                 "cursor-pointer",
                 "rounded-md",
-                "px-8 py-4", // Relleno de cada ítem
+                "px-8 py-4", // <--- CORRECCIÓN AQUÍ
                 "whitespace-nowrap",
-                "text-primary", // Color del texto por defecto de los ítems: primary
-                "hover:bg-primary-200", // Fondo en hover de los ítems: primary-100 (ajústalo si prefieres otro tono)
+                "text-primary",
+                "hover:bg-primary-200",
                 "transition-colors duration-150",
                 {
-                  "font-semibold": i18n.language === lngKey, // Estilo del idioma activo: negrita y primary-700 (ajústalo si prefieres otro tono o peso)
+                  "font-semibold": i18n.language === lngKey,
                   "font-normal": i18n.language !== lngKey,
                 }
               )}
