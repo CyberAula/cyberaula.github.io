@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import useHeaderOffset from "@/hook/useHeaderOffset";
 
 import { useTranslation } from "react-i18next";
 
@@ -19,6 +20,7 @@ export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  const headerOffset = useHeaderOffset();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,7 +31,7 @@ export default function Home() {
       <div className={"home_page page_" + currentLang}>
         <Header route={"/"} />
         <div className="parallax__layer parallax__layer--base">
-          <main>
+          <main style={{ paddingTop: `${headerOffset}px` }}>
             <section className="home">
               <div className="head ">
                 <div className="group_description block sm:flex sm:flew-row sm:justify-between md:gap-8 sm:items-center ">

@@ -9,11 +9,14 @@ import { mycourses } from "@/constants/courses.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import useHeaderOffset from "@/hook/useHeaderOffset";
 
 export default function Courses() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const [courses, setCourses] = useState(mycourses);
+  const headerOffset = useHeaderOffset();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,10 +24,10 @@ export default function Courses() {
   return (
     <div className={"courses page_" + currentLang}>
       <Header route={"/courses"} />
+      <main style={{ paddingTop: `${headerOffset}px` }}> 
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t('courses.title')}</h1>
       </div>
-      <main>
         <section className="lg:mx-36 md:mx-14 sm:mx-8 mx-4 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20 xl:mx-44 2xl:mx-60">
           <div className="courses_description text-slate-700 pb-8">
             <p>{t('courses.desc')}</p>

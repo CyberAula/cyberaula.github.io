@@ -76,7 +76,9 @@ export default function BulletElements(props) {
         //         </motion.div>
         //     ))}
         // </motion.div>
-        <motion.div
+
+
+        <div
             className="bullet_elements"
             ref={ref}
             initial="hidden"
@@ -84,14 +86,14 @@ export default function BulletElements(props) {
             variants={containerVariants}
         >
             {bulletElements.map(({ title, letter, key, icon }) => (
-                <motion.div key={key} className="bullet_element" variants={textVariants} >
+                <div key={key} className="bullet_element" variants={textVariants} >
                     <FontAwesomeIcon icon={icon} className="icono" />
                     <h1 className="letter">{letter}</h1>
                     <h5 className="title">
                         <a href="https://innovacioneducativa.upm.es/grupos-ie/lineas" target="_blank">
                         {title} </a></h5>
-                </motion.div>
+                </div>
             ))}
-        </motion.div>
+        </div>
     );
 }

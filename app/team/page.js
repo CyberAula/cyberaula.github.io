@@ -7,11 +7,13 @@ import { myteam } from "@/constants/team";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import useHeaderOffset from "@/hook/useHeaderOffset";
 
 export default function Team(props) {
   const [team, setTeam] = useState(myteam);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  const headerOffset = useHeaderOffset();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,10 +22,10 @@ export default function Team(props) {
   return (
     <div className={"team page_"+ currentLang}>
       <Header route={"/team"} />
+      <main style={{ paddingTop: `${headerOffset}px` }}>
       <div className="banner">
         <h1>{t("team.title")}</h1>
       </div>
-      <main>
         <section className="teammates flex flex-col gap-auto sm:grid sm:grid-cols-2 md:grid-cols-3 md:place-content-center lg:grid-cols-4 
         mx-8 md:mx-14 lg:mx-34 xl:mx-44 2xl:mx-60 my-2 sm:my-8 md:my-8 lg:my-12 xl:my-16 2xl:my-20">
           {Object.values(team).map(({ members }) => {

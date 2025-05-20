@@ -17,11 +17,13 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
+import useHeaderOffset from "@/hook/useHeaderOffset";
 
 export default function Tools(props) {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const [tools, setTools] = useState([]);
+  const headerOffset = useHeaderOffset();
 
   // Update tools when language changes
   useEffect(() => {
@@ -55,18 +57,18 @@ export default function Tools(props) {
   return (
     <div className={"tools page_" + currentLang}>
       <Header route="/tools" />
+      <main  style={{ paddingTop: `${headerOffset}px` }}>
       <div className="banner">
         <h1>{t("tools.title")}</h1>
       </div>
-      <main>
-        <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-4 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20  xl:mx-44 2xl:mx-60">
+        <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-16 my-16 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20  xl:mx-44 2xl:mx-60">
           <div className="tools_description text-slate-700 pb-8">
             <p>{t("tools.desc")}</p>
             <br />
             <p>{t("tools.desc2")} </p>
           </div>
           <ResponsiveMasonry
-            columnsCountBreakPoints={{ 150: 1, 600: 2, 900: 3 }}
+            columnsCountBreakPoints={{ 150: 1, 690: 2, 1175: 3 }}
           >
             <Masonry gutter="12px">
               {tools.map(
@@ -79,29 +81,14 @@ export default function Tools(props) {
 
                       <div className="tool_content">
                         <h3 className="tool_title">
-                        <Link
-                          href={route}
-                          target="_blank"  
-                          className="hover:underline"
-                        >
+                       
                           <h3>{title}</h3>
-                        </Link>
                         </h3>
 
                         <div className="tool_description">
                           <small>{description}</small>
                         </div>
                         <div className="tool_button_container">
-                          <button className="tool_button">
-                            <CreateLink route={route}>
-                              <FontAwesomeIcon
-                                className="award_icon"
-                                icon={faArrowRight}
-                              />
-
-                              <span> {t("tools.toolCards.button")}</span>
-                            </CreateLink>
-                          </button>
                           <button className="tool_github">
                             <CreateLink route={github}>
                               <FontAwesomeIcon
@@ -110,6 +97,16 @@ export default function Tools(props) {
                                 size="lg"
                               />
                               <span> Github </span>{" "}
+                            </CreateLink>
+                          </button>
+                          <button className="tool_button">
+                            <CreateLink route={route}>
+                              <span> {t("tools.toolCards.button")}</span>
+                              <FontAwesomeIcon
+                                className="award_icon"
+                                icon={faArrowRight}
+                              />
+
                             </CreateLink>
                           </button>
                         </div>

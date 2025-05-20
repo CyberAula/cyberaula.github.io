@@ -9,8 +9,11 @@ import { mypublications } from "@/constants/publications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
+import useHeaderOffset from "@/hook/useHeaderOffset";
 
 export default function Research() {
+  const headerOffset = useHeaderOffset();
+
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const [state, setState] = useState({
@@ -79,10 +82,10 @@ export default function Research() {
 
       <div className={"research page_"+ currentLang}>
         <Header route={"/research"} />
+        <main  style={{ paddingTop: `${headerOffset}px` }}>
         <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6" id="banner-publications">
           <h1>{t('publications.title')}</h1>
         </div>
-        <main>
           <section className="research lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
             <Filters
               search={search}
