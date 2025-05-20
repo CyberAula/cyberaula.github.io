@@ -27,7 +27,7 @@ export default function Header(props) {
   console.log(props.route);
 
   return (
-    <header className={"nav_bar header_" + currentLang} id="header_home">
+    <header className={"nav_bar header_" + currentLang} id="header_fixed">
       <a href="/">
         <div className="imagotype">
           <div className="isotype">
@@ -69,9 +69,7 @@ export default function Header(props) {
       </div>
 
       <div
-        className={
-          "menu " + (state.open ? "responsive-shown" : "responsive-hidden")
-        }
+        className={`menu ${state.open ? "responsive-shown" : "responsive-hidden"}`}
       >
         <ul>
           {routes.map((route, index) => (
