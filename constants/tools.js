@@ -1,6 +1,6 @@
 export const mytools = [
   {
-    "logo": "/assets/img/logos/vish.png",
+    "logo": "/assets/img/logos/vish2.svg",
     "route": "https://vishub.org",
     "title": "ViSH",
     "translationKey": "tools.toolCards.description.10",
@@ -18,7 +18,7 @@ export const mytools = [
     "key":"1",
   },
   {
-    "logo": "/assets/img/logos/.svg",
+    "logo": "/assets/img/logos/sgame2.svg",
     "route": "https://sgame.etsisi.upm.es/",
     "title": "SGAME",
     "translationKey": "tools.toolCards.description.1",

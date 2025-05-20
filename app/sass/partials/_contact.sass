@@ -1,8 +1,11 @@
 .about
     .banner
     main
-        padding-bottom: $spacing-lg
+        
         .about_description
+            padding-top: $spacing-lg
+            padding-left: $spacing-md
+            padding-right: $spacing-md
         .contact_info
             display: flex
             flex-direction: column
@@ -86,13 +89,13 @@ h4, h5
     display: flex
     align-items: center
 
-@media (max-width: 640px)
+@media (min-width: 640px)
     .about
         main
-            padding-top: $spacing-lg
-            padding-left: $spacing-md
-            padding-right: $spacing-md
+
             .about_description
+                padding-left: 0
+                padding-right: 0
             .contact_info
                 display: flex
                 .contact

@@ -20,7 +20,7 @@ export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
-  const headerOffset = useHeaderOffset();
+  const headerOffset = useHeaderOffset("#header_fixed");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
 
               
-              <div className="body lg:mx-36 md:mx-14 sm:mx-8 mx-4 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
+              <div className="body lg:mx-36 md:mx-14 sm:mx-14 mx-12 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
                 <section className="award_section">
                   <FontAwesomeIcon className="award_icon" icon={faTrophy} />
                   <div className="award_title">

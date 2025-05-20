@@ -21,12 +21,12 @@ export default function About(props) {
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
         <h1>{t("contact.title")}</h1>
       </div>
-        <section className=" xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2 about_description text-slate-700">
+        <section className=" xs:my-4 sm:mx-14 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2 about_description text-slate-700">
           <p>
           {t("contact.body")}
           </p>
         </section>
-        <section className="contact_info xs:my-4 sm:mx-8 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2 ">
+        <section className="contact_info mx-12 xs:my-4 sm:mx-14 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2 ">
           <div className="contact col1">
             <div className="contact_title">
               <h4>{t("contact.title2")}</h4>

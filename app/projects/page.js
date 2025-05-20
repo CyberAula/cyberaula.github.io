@@ -28,7 +28,7 @@ export default function Projects() {
         <h1> {t('projects.title')}</h1>
       </div>
         
-        <section className="lg:mx-36 md:mx-14 sm:mx-8 my-4 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20 mx-4 xl:mx-44 2xl:mx-60">
+        <section className="lg:mx-36 md:mx-14 sm:mx-14 mx-12 my-12 sm:my-12 md:my-8 lg:my-12 xl:my-16 2xl:my-20 xl:mx-44 2xl:mx-60">
           <ProjectCard />
         </section>
       </main>

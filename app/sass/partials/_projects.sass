@@ -87,6 +87,8 @@ $windowWidth: 100%
     .filter_options
         display: flex
         flex-wrap: wrap
+        align-items: center
+    
         .button_filter
             @include button
             @apply bg-ca_blue-200
@@ -194,7 +196,8 @@ $windowWidth: 100%
 
 @media (min-width: 640px)
     
-
+    .filter_options
+        flex-wrap: nowrap
     .project_cards
         .project_card
             display: grid

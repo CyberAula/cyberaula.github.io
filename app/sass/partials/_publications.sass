@@ -6,11 +6,13 @@
 @media (min-width: 150px)  
     .research 
         .filters
+            margin-left: auto
+            margin-right: auto
             justify-content: space-between
-        .filter
-            display: flex
-            flex-direction: column
-            align-items: start
+            .filter
+                display: flex
+                flex-direction: column
+                align-items: start
            
         // .main
         //     min-height: calc(100vh - 150px)
@@ -69,7 +71,7 @@
                 display: flex
                 //min-width: 5.1rem
                 //width: 100%
-                padding-right: 1.6rem
+                // padding-right: 1.6rem
                 margin-bottom: 0.4rem
                 line-height:120%
                 color: $ca-blue-700
@@ -174,29 +176,30 @@
 @media (min-width: 640px) 
     .research
         .filters
-            @apply w-full max-w-max
-            text-align: right
-            display: flex
-            flex-wrap: wrap
-            gap: 1rem
-            padding-bottom: $spacing_lg
-            border-bottom: solid 1px $ca-blue-100
-            justify-content: space-between
+            // @apply w-full max-w-max
+            // text-align: right
+            // display: flex
+            // flex-wrap: wrap
+            // gap: 1rem
+            // padding-bottom: $spacing_lg
+            // border-bottom: solid 1px $ca-blue-100
+            // justify-content: space-between
             .filter
-                display: flex
-                flex-direction: row
-                align-items: center
-                font-size: 1.3rem
-                margin: 0
-                height: 42px
-                width: auto
+                // display: flex
+                // flex-direction: row
+                // align-items: center
+                // font-size: 1.3rem
+                // margin: 0
+                // height: 42px
+                // width: auto
                 label
-                    display: inline-block
+                    // display: inline-block
                     margin-bottom: 0rem
-                    min-width: 10.2rem
                     color: $ca-blue-700
+                    min-width: auto
+                    padding-right: 0.5rem
                 input
-                    width: 20.6rem
+                    // width: 20.6rem
     .papers 
         display: flex
         flex-direction: column
@@ -246,24 +249,45 @@
             a
                 display: flex
 @media (min-width: 750px)
-    .research
-      .filters       
-        .filter      
-            label
-                width: auto !important
-                min-width: 6.5rem
-        .research-results
-            margin-top: 0
+  .research
+        .filters
+            @apply w-full max-w-max
+            text-align: right
+            display: flex
+            flex-wrap: nowrap
+            gap: 1rem
+            padding-bottom: $spacing_lg
+            border-bottom: solid 1px $ca-blue-100
+            justify-content: space-between
+            .filter
+                display: flex
+                flex-direction: row
+                align-items: center
+                font-size: 1.3rem
+                margin: 0
+                height: 42px
+                width: auto     
+                label
+                    width: auto !important
+            .research-results
+                margin-top: 0
 
 @media (min-width: 900px)
     .research
-        .filters       
+        .filters   
+            gap: 2.5rem    
             .filter      
                 label
                     width: auto !important
-                    min-width: 6rem
         .papers
             .paper
                 .paper_main
                     .paper_content 
                         width:70%
+
+@media (min-width: 1100px)
+    .research
+        .filters   
+            gap: 5rem    
+            .filter      
+                label
