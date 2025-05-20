@@ -40,7 +40,7 @@ export default function Footer(props) {
         </div>
         <div className="flex">
           <FontAwesomeIcon className="mr-3" icon={faEnvelope} size="lg" />{" "}
-          <div className="footer_email"> enrique.barra@upm.es</div>
+          <a href="mailto:enrique.barra@upm.es" className="footer_email"> enrique.barra@upm.es</a>
         </div>
       </div>
 
