@@ -1,5 +1,13 @@
 export const myProjectCards = [
   {
+    date: "2025",
+    route: "https://endgameproject.github.io/",
+    title: "ENDGAME",
+    subtitle: "Escaping New Disinformation through Gamified cross-border Media literacy Education",
+    //max 6 tags
+    tags: "Desinformación, Escape Rooms, Aprendizaje Activo, Gamificación",
+    category: "european",
+  },{
     date: "2024",
     route: "https://erasmus-plus.ec.europa.eu/projects/search/details/2024-1-ES01-KA220-HED-000256356",
     title: "IGLUE",

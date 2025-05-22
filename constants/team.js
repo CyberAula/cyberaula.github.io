@@ -12,7 +12,16 @@ export const myteam = {
              "email": "juan.quemada@upm.es",
              "center": "E.T.S. de ingenieros de telecomunicación",
              "key": "1"
-          }
+          },          
+          {
+             "name":"Pedro Reviriego",
+             "translationKey": "team.professorCards.roles.1",
+             "description":"Pedro Reviriego received the M.Sc. and Ph.D. degrees in telecommunications engineering from the Technical University of Madrid, Madrid, Spain, in 1994 and 1997, respectively. From 1997 to 2000, he was an Engineer with Teldat, Madrid, working on router implementation. In 2000, he joined Massana to work on the development of 1000BASE-T transceivers. From 2004 to 2007, he was a Distinguished Member of Technical Staff with the LSI Corporation, working on the development of Ethernet transceivers. From 2007 to 2018 he was with Nebrija University, from 2018 to 2022 with Universidad Carlos III de Madrid. He is currently with Universidad Politécnica de Madrid working on probabilistic data structures, high speed packet processing and machine learning.",
+             "photo":"/assets/img/team/PR.jpg", 
+             "email": "pedro.reviriego@upm.es",
+             "center": "E.T.S. de ingenieros de telecomunicación",
+             "key": "8",
+          },
        ]
     },
     "associate":{
@@ -83,22 +92,8 @@ export const myteam = {
              "key": "7",
           },
           {
-             "name":"Pedro Reviriego",
-             "translationKey": "team.professorCards.roles.2",
-             "description":"Pedro Reviriego received the M.Sc. and Ph.D. degrees in telecommunications engineering from the Technical University of Madrid, Madrid, Spain, in 1994 and 1997, respectively. From 1997 to 2000, he was an Engineer with Teldat, Madrid, working on router implementation. In 2000, he joined Massana to work on the development of 1000BASE-T transceivers. From 2004 to 2007, he was a Distinguished Member of Technical Staff with the LSI Corporation, working on the development of Ethernet transceivers. From 2007 to 2018 he was with Nebrija University, from 2018 to 2022 with Universidad Carlos III de Madrid. He is currently with Universidad Politécnica de Madrid working on probabilistic data structures, high speed packet processing and machine learning.",
-             "photo":"/assets/img/team/PR.jpg", 
-             "email": "pedro.reviriego@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
-             "key": "8",
-          }
-       ]
-    },
-    "assistant":{
-       "title":"Assistant Professors",
-       "members":[
-          {
              "name":"Jose Andres Muñoz",
-             "translationKey": "team.professorCards.roles.4",
+             "translationKey": "team.professorCards.roles.3",
              "description":"Andrés received the B.S. in Telematic Engineering from Escuela Superior Politécnica del Litoral (ESPOL) in 2013 He received the M.Sc. in Telematic Services and Network Engineering from Universidad Politécnica de Madrid (UPM). Andrés is currently a Ph.D. student in Telecommunications Engineering and a Researcher with the Next Generation Internet Research Group. His previous experience includes Telematic Laboratories Coordination or Servers and Communications Assistant, both in ESPOL.Andres has carried out different research projects, such as Web Platform Development for Control and Monitoring of Environmental Parameters in Agriculture or Kiswar Proyect Reactive Evacuation Management Systemsfor Emergency Situations.",
              "photo":"/assets/img/team/jose-andres-munoz.jpg",
              "github":"https://github.com/anmunoz",
@@ -108,14 +103,19 @@ export const myteam = {
           },
           {
              "name":"Alejandro Pozo",
-             "translationKey": "team.professorCards.roles.4",
+             "translationKey": "team.professorCards.roles.3",
              "description":"Researcher and Ph.D. student at Politécnica of Madrid (UPM). He received the M.Sc. in Telecommunications Engineering from the UPM, Spain, in 2017, where he is currently pursuing the Ph.D. in Telecommunications Engineering and is a Research Assistant with the Next Generation Internet Research Group. He participates in several European projects and publishes results in journals related to the Internet of Things, security, and identity management.",
              "photo":"/assets/img/team/alejandro-pozo.jpg",
              "github":"https://github.com/apozohue10",
              "email": "alejandro.pozo@upm.es",
              "center": "E.T.S. de ingenieros de telecomunicación",
              "key": "10",
-          },
+          }
+       ]
+    },
+    "assistant":{
+       "title":"Assistant Professors",
+       "members":[          
           {
              "name":"Javier Conde",
              "translationKey": "team.professorCards.roles.4",
@@ -125,7 +125,17 @@ export const myteam = {
              "email": "javier.conde.diaz@upm.es",
              "center": "E.T.S. de ingenieros de telecomunicacion",
              "key": "11",
-          }
+          },
+          {
+             "name":"Gonzalo Martínez",
+             "translationKey": "team.professorCards.roles.4",
+             "description":"PhD student in Telematics Engineering at UPM and researcher in the Department of Telematics Engineering. He received the B.S. and M.Sc. in Telecommunications Engineering from UPM in 2018 and 2020. His research interests lie in the fields of Open Linked Data, Digital Twins, Big Data and Machine Learning.",
+             "photo":"/assets/img/team/gonzalo.jpg",
+             "github":"https://github.com/javicond3",
+             "email": "Gonzalo.martinez.ruizdearcaute@upm.es",
+             "center": "E.T.S de ing. de sistemas informáticos",
+             "key": "12",
+          },
        ]
     },
     "researchers":{
