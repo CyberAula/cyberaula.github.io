@@ -10,7 +10,7 @@ export const myteam = {
              "photo":"/assets/img/team/juan-quemada.jpg",
              "github":"https://github.com/jquemada",
              "email": "juan.quemada@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "1"
           },          
           {
@@ -19,7 +19,7 @@ export const myteam = {
              "description":"Pedro Reviriego received the M.Sc. and Ph.D. degrees in telecommunications engineering from the Technical University of Madrid, Madrid, Spain, in 1994 and 1997, respectively. From 1997 to 2000, he was an Engineer with Teldat, Madrid, working on router implementation. In 2000, he joined Massana to work on the development of 1000BASE-T transceivers. From 2004 to 2007, he was a Distinguished Member of Technical Staff with the LSI Corporation, working on the development of Ethernet transceivers. From 2007 to 2018 he was with Nebrija University, from 2018 to 2022 with Universidad Carlos III de Madrid. He is currently with Universidad Politécnica de Madrid working on probabilistic data structures, high speed packet processing and machine learning.",
              "photo":"/assets/img/team/PR.jpg", 
              "email": "pedro.reviriego@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "8",
           },
        ]
@@ -35,7 +35,7 @@ export const myteam = {
             "photo":"/assets/img/team/enrique-barra.jpg",
             "github":"https://github.com/ebarra",
             "email": "enrique.barra@upm.es",
-            "center": "E.T.S. de ingenieros de telecomunicación",
+            "center": "E.T.S. de Ingenieros de Telecomunicación",
             "key": "5"
          },
           {
@@ -46,7 +46,7 @@ export const myteam = {
              "photo":"/assets/img/team/joaquin-salvachua.jpg",
              "github":"https://github.com/jsalvachua",
              "email": "joaquin.salvachua@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "2"
           },
           {
@@ -57,7 +57,7 @@ export const myteam = {
              "photo":"/assets/img/team/santiago-pavon.jpg",
              "github":"https://github.com/sanpago",
              "email": "santiago.pavon@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "3"
           },
           {
@@ -68,7 +68,7 @@ export const myteam = {
              "photo":"/assets/img/team/gabriel-huecas.jpg",
              "github":"https://github.com/ghuecas",
              "email": "gabriel.huecas@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "4"
           },          
           {
@@ -78,7 +78,7 @@ export const myteam = {
              "photo":"/assets/img/team/alvaro-alonso.jpg",
              "github":"https://github.com/aalonsog",
              "email": "alvaro.alonso@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "6"
           },
           {
@@ -88,7 +88,7 @@ export const myteam = {
              "photo":"/assets/img/team/aldo-gordillo.jpg",
              "github":"https://github.com/agordillo",
              "email": "a.gordillo@upm.es",
-             "center": "E.T.S de ing. de sistemas informáticos",
+             "center": "E.T.S de ing. de Sistemas Informáticos",
              "key": "7",
           },
           {
@@ -98,7 +98,7 @@ export const myteam = {
              "photo":"/assets/img/team/jose-andres-munoz.jpg",
              "github":"https://github.com/anmunoz",
              "email": "joseandres.munoz@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "9",
           },
           {
@@ -108,7 +108,7 @@ export const myteam = {
              "photo":"/assets/img/team/alejandro-pozo.jpg",
              "github":"https://github.com/apozohue10",
              "email": "alejandro.pozo@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "10",
           }
        ]
@@ -123,17 +123,17 @@ export const myteam = {
              "photo":"/assets/img/team/javier-conde.jpg",
              "github":"https://github.com/javicond3",
              "email": "javier.conde.diaz@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicacion",
+             "center": "E.T.S. de Ingenieros de telecomunicacion",
              "key": "11",
           },
           {
              "name":"Gonzalo Martínez",
              "translationKey": "team.professorCards.roles.4",
-             "description":"PhD student in Telematics Engineering at UPM and researcher in the Department of Telematics Engineering. He received the B.S. and M.Sc. in Telecommunications Engineering from UPM in 2018 and 2020. His research interests lie in the fields of Open Linked Data, Digital Twins, Big Data and Machine Learning.",
+             "description":"Gonzalo Martínez Ruiz de Arcaute obtained his PhD in Telematics Engineering from Universidad Carlos III de Madrid in 2024. After that, he joined the Universidad Politécnica de Madrid (ETSISI) as Assistant Professor. His research is at the intersection between communication networks and Artificial Intelligence.",
              "photo":"/assets/img/team/gonzalo.jpg",
-             "github":"https://github.com/javicond3",
-             "email": "Gonzalo.martinez.ruizdearcaute@upm.es",
-             "center": "E.T.S de ing. de sistemas informáticos",
+             "github":"https://github.com/gonz-mart",
+             "email": "gonzalo.martinez.ruizdearcaute@upm.es",
+             "center": "E.T.S de ing. de Sistemas Informáticos",
              "key": "12",
           },
        ]
@@ -148,7 +148,7 @@ export const myteam = {
              "photo":"/assets/img/team/carlos-arriaga.jpg",
              "github":"https://github.com/Arri98",
              "email": "carlos.arriaga.prieto@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "13",
           },
           {
@@ -158,7 +158,7 @@ export const myteam = {
              "photo":"/assets/img/team/iciar-villamayor.jpg",
              "github":"https://github.com/IciarVillamayor",
              "email": "iciarvillamayor@hotmail.com",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "14",
           },
           {
@@ -168,7 +168,7 @@ export const myteam = {
              "photo":"/assets/img/team/abel-carril.jpg",
              "github":"https://github.com/eibol",
              "email": "abel.carril@upm.es",
-             "center": "E.T.S. de ingenieros de telecomunicación",
+             "center": "E.T.S. de Ingenieros de Telecomunicación",
              "key": "15",
           }
        ]
