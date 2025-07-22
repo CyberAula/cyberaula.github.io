@@ -12,7 +12,7 @@ export const en = {
     },
     "front": {
         "title": "Welcome to CyberAula",
-        "title2": "innovation group of the UPM",
+        "title2": "educational innovation group of UPM",
         "awardH2":"EIG AWARDED IN 2017 and 2024",
         "awardTitle": "Award to the educational innovation groups",
         "awardBody": "Award granted to the CyberAula group, coordinated by associate professor Enrique Barra Arias (E.T.S.I. Telecommunication engineering) ",

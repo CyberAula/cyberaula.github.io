@@ -1,5 +1,14 @@
 export const mytools = [
   {
+    "logo": "/assets/img/logos/escapp.svg",
+    "route": "https://escapp.es",
+    "title": "Educational Escape Rooms", 
+    "translationKey": "tools.toolCards.description.2",
+    "github": "https://github.com/ging/escapp",
+    "gradient": "bg-yellow-gradient-plain",
+    "key":"2",
+  },
+  {
     "logo": "/assets/img/logos/vish2.svg",
     "route": "https://vishub.org",
     "title": "ViSH",
@@ -25,16 +34,7 @@ export const mytools = [
     "github": "https://github.com/CyberAula/sgame_platform",
     "gradient": "bg-blue-gradient-plain ",
     "key":"1",
-  },
-  {
-    "logo": "/assets/img/logos/escapp.svg",
-    "route": "https://escape.dit.upm.es/",
-    "title": "Educational Escape Rooms", 
-    "translationKey": "tools.toolCards.description.2",
-    "github": "https://github.com/ging/escapp",
-    "gradient": "bg-purple-gradient-plain",
-    "key":"2",
-  },
+  },  
   {
     "logo": "/assets/img/logos/school.svg",
     "route": "https://cyberaula.github.io/quiz-converter/",
@@ -69,7 +69,7 @@ export const mytools = [
     "title": "LOEP",
     "translationKey": "tools.toolCards.description.3",
     "github": "https://github.com/agordillo/LOEP",
-    "gradient": "bg-yellow-gradient-plain",
+    "gradient": "bg-purple-gradient-plain",
     "key":"6",
   },
   {
@@ -78,7 +78,7 @@ export const mytools = [
     "title": "EuropeanaRS",
     "translationKey": "tools.toolCards.description.3",
     "github": "https://github.com/agordillo/EuropeanaRS",
-    "gradient": "bg-purple-gradient-plain",
+    "gradient": "bg-yellow-gradient-plain",
     "key":"7",
   },
  
