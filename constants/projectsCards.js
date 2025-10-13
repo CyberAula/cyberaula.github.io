@@ -9,7 +9,7 @@ export const myProjectCards = [
     category: "european",
   },{
     date: "2024",
-    route: "https://erasmus-plus.ec.europa.eu/projects/search/details/2024-1-ES01-KA220-HED-000256356",
+    route: "https://iglue.dit.upm.es/",
     title: "IGLUE",
     subtitle: "Implementation of Game-based Learning Using Escape rooms",
     //max 6 tags
