@@ -17,6 +17,33 @@ export const myProjectCards = [
     category: "european",
   },
   {
+    date: "2025",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2024-2025&id=1645",
+    title: "CTFs Educativas en Ciberseguridad - Multi equipos",
+    subtitle: "La finalidad de este Proyecto de Innovación Educativa (PIE) es diseñar, implementar y evaluar un CTF que permita desarrollarse según el nivel de conocimiento de un grupo de alumnos, tomando en cuenta su nivel de formación en ciberseguridad, siendo bajo para personal no técnico especializado, medio para personal técnico y avanzado para personal técnico especializado.",
+    //max 6 tags
+    tags: "Ciberseguridad, CTF, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2025",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2024-2025&id=1501",
+    title: "Mejora del aprendizaje mediante la promoción y uso de escape rooms educativas asistidas por ordenador",
+    subtitle: "La finalidad del proyecto es promover y evaluar el uso de escape rooms educativas como herramienta de aprendizaje basado en juegos en diversas asignaturas de la UPM. Estas actividades, en las que los estudiantes trabajan en equipo resolviendo retos en un tiempo limitado, han demostrado mejorar la motivación y el rendimiento académico, aunque su adopción sigue siendo baja debido al esfuerzo que requiere su diseño. Para facilitar su implementación, el GIE CyberAula desarrolla Escapp, una plataforma que permite crear y realizar escape rooms asistidas por ordenador, tanto presenciales como online. Este proyecto busca mejorar dicha plataforma y ofrecer nuevos recursos docentes, además de aplicar y evaluar cinco escape rooms en ocho asignaturas de la UPM, alcanzando a más de mil estudiantes. El objetivo final es mejorar la enseñanza universitaria y generar evidencia empírica sobre el impacto del aprendizaje basado en juegos en la educación superior.",
+    //max 6 tags
+    tags: "Escape Rooms, EscApp, Aprendizaje Activo, Gamificación",
+    category: "PIE",
+  },
+  {
+    date: "2025",
+    route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2024-2025&id=1550",
+    title: "Aprendizaje Adaptativo a través de servicios asistidos por Inteligencia Artificial Generativa en la educación superior",
+    subtitle: "La finalidad del proyecto es mejorar la herramienta AIQUIZ, una aplicación de código abierto que emplea inteligencia artificial generativa para crear cuestionarios tipo test de forma automática, facilitando su uso en distintas asignaturas de la UPM. Los cuestionarios son una herramienta esencial en la educación superior, pero su efectividad se ve reducida cuando los bancos de preguntas se comparten o quedan desactualizados. AIQUIZ aborda este reto utilizando IA para generar preguntas actualizadas y variadas, y este proyecto busca incorporar funcionalidades avanzadas de aprendizaje adaptativo que ajusten los cuestionarios al progreso y nivel de cada estudiante mediante técnicas de Learning Analytics. Además, se evaluará su impacto en la enseñanza y el aprendizaje, analizando la calidad y precisión de las preguntas generadas. Con la experiencia previa del equipo en el uso de IA en educación y sus contribuciones científicas, el proyecto aspira a potenciar una experiencia educativa más personalizada, dinámica y eficaz en la UPM.",
+    //max 6 tags
+    tags: "Inteligencia Artificial, Aprendizaje Adaptativo, Learning Analytics, Gamificación",
+    category: "PIE",
+  },
+  {
     date: "2023",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2023-2024&id=1164",
     title: "CTFs educativas en Ciberseguridad",
