@@ -44,7 +44,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2023",
+    date: "2024",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2023-2024&id=1164",
     title: "CTFs educativas en Ciberseguridad",
     subtitle: "La finalidad de este Proyecto de Innovación Educativa (PIE) es diseñar, implementar y evaluar un CTF que permita desarrollarse según el nivel de conocimiento de un grupo de alumnos, tomando en cuenta su nivel de formación en ciberseguridad, siendo bajo para personal no técnico especializado, medio para personal técnico y avanzado para personal técnico especializado.",
@@ -53,7 +53,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2023",
+    date: "2024",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2023-2024&id=1227",
     title: "IoT y LEGO",
     subtitle: "Desarrollo de experiencias de aprendizaje inmersivos en el ámbito universitario por medio de la interacción con modelos a escala de ciudades inteligentes construidas con piezas de LEGO",
@@ -62,7 +62,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2023",
+    date: "2024",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2023-2024&id=1113",
     title: "Aplicación y evaluación del aprendizaje basado en juegos en el área de la informática",
     subtitle: "La finalidad del proyecto es realizar y evaluar empíricamente una serie de actividades de aprendizaje basado en juegos de diversos tipos en diferentes asignaturas de la UPM en las que se imparten conocimientos del área de la informática",
@@ -70,7 +70,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2022",
+    date: "2023",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2022-2023&id=837",
     title: "Mejora de un sistema de corrección automatizada para la realización de experiencias de aprendizaje basado en retos en cursos de programación",
     subtitle: "Este proyecto ha servido para mejorar la herramienta autocorector de corrección autónoma y automática de prácticas. También se ha añadido la opción de hacer analíticas de aprendizaje sobre los datos recopilados por la herramienta.",
@@ -78,7 +78,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2022",
+    date: "2023",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2022-2023&id=767",
     title: "Videojuegos educativos y analíticas de aprendizaje como medio para mejorar la motivación y resultados de aprendizaje de los estudiantes",
     subtitle: "El objetivo de este proyecto es mejorar la plataforma SGAME a fin de permitir a los docentes de la UPM la realización experiencias de aprendizaje basado en juegos que aúnen videojuegos educativos y analíticas de aprendizaje, así como realizar y evaluar cuatro experiencias de este tipo",
@@ -86,7 +86,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2021",
+    date: "2022",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2021-2022&id=491",
     title: "Desarrollo y evaluación de un sistema de corrección automatizada para la realización de experiencias de aprendizaje basado en retos en cursos de programación",
     subtitle: "El objetivo de este proyecto es desarrollar una herramienta de corrección de prácticas. El resultado es la herramienta autocorector.",
@@ -94,7 +94,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2021",
+    date: "2022",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2021-2022&id=432",
     title: "Realización de experiencias de aprendizaje adaptativo basado en videojuegos educativos en la educación universitaria",
     subtitle: "Este proyecto tiene como objetivo diseñar, desarrollar, desplegar y ofrecer a todos los docentes de la UPM una herramienta para crear videojuegos educativos adaptativos. De este modo, cualquier docente de la UPM interesado en realizar una experiencia de aprendizaje basado en juegos empleando videojuegos adaptativos, podrá hacerlo empleando la herramienta desarrollada en este PIE.",
@@ -102,7 +102,7 @@ export const myProjectCards = [
     category: "PIE",
   },
   {
-    date: "2021",
+    date: "2022",
     route: "https://innovacioneducativa.upm.es/proyectos-ie/informacion?anyo=2021-2022&id=426",
     title: "Diseño y realización de escape rooms educativas asistidas por una plataforma web para mejorar la motivación y rendimiento académico de los estudiantes",
     subtitle: "El objetivo de este proyecto es mejorar la plataforma web Escapp empleada para la realización de las escape rooms en base a las lecciones aprendidas y las necesidades derivadas de los nuevos contextos de aplicación explorados.",
