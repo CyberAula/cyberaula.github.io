@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
        <title>Cyberaula UPM</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="Cyberaula"></meta>
+        <meta name="description" content="El grupo CyberAula impulsa la innovación docente y educativa en telemática con metodologías activas, juegos, escaperooms e IA para mejorar motivación y aprendizaje." />
+        <meta name="keywords" content="Cyberaula, innovación educativa, innovación, educación, inteligencia artificial, escaperooms, telemática"></meta>
       <body className={montserrat.className}>{isClient ? children:null}</body>
     </html>
   );
