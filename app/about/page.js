@@ -19,7 +19,7 @@ export default function About(props) {
       <Header route={"/about"} />
       <main style={{ paddingTop: `${headerOffset}px` }} >
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">
-        <h1>{t("contact.title")}</h1>
+        <h2>{t("contact.title")}</h2>
       </div>
         <section className=" xs:my-4 sm:mx-14 md:mx-14  lg:mx-36 xl:mx-44 2xl:mx-60 2xl:my-20 xl:my-16 lg:my-12 md:my-8 sm:my-4 xs:my-2 about_description text-slate-700">
           <p>

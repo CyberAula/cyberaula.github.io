@@ -30,7 +30,7 @@ export default function Footer(props) {
     <footer>
       <div className="footer_left md:mb-0 mb-8">
         <div className="footer_title">
-          <h1>CyberAula</h1>
+        <h2>CyberAula</h2>
         </div>
         <div className="footer_subtitle">
           <h5 className="font-medium">

@@ -19,7 +19,10 @@ export default function RootLayout({ children }) {
   }, [])
 
   return (
-    <html hola="bye">
+    <html lang="es">
+       <title>Cyberaula UPM</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="Cyberaula"></meta>
       <body className={montserrat.className}>{isClient ? children:null}</body>
     </html>
   );

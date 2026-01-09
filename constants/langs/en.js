@@ -11,8 +11,10 @@ export const en = {
         "publicationstab": "Publications",
     },
     "front": {
-        "title": "Welcome to CyberAula",
-        "title2": "educational innovation group of UPM",
+        "title": "CyberAula",
+        "title2": "an educational innovation group of the Polytechnic University of Madrid (UPM)",
+        "descriptionTitle":"About CyberAula",
+        "description":"At the CyberAula Educational Innovation group, we promote teaching improvement in telematics subjects through active methodologies, games, escape rooms, and artificial intelligence tools. We are committed to gradual innovation, guided by feedback from students and teachers. For us, technology is a means to increase motivation, participation, and long-term learning efficiency.",
         "awardH2":"EIG AWARDED IN 2017 and 2024",
         "awardTitle": "Award to the educational innovation groups",
         "awardBody": "Award granted to the CyberAula group, coordinated by associate professor Enrique Barra Arias (E.T.S.I. Telecommunication engineering) ",

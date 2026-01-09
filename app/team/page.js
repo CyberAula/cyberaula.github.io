@@ -24,7 +24,7 @@ export default function Team(props) {
       <Header route={"/team"} />
       <main style={{ paddingTop: `${headerOffset}px` }}>
       <div className="banner">
-        <h1>{t("team.title")}</h1>
+        <h2>{t("team.title")}</h2>
       </div>
         <section className="teammates flex flex-col gap-auto sm:grid sm:grid-cols-2 md:grid-cols-3 md:place-content-center lg:grid-cols-4 
         mx-8 md:mx-14 lg:mx-34 xl:mx-44 2xl:mx-60 my-2 sm:my-8 md:my-8 lg:my-12 xl:my-16 2xl:my-20">
@@ -53,7 +53,7 @@ export default function Team(props) {
                         rel="noopener noreferrer"
                       >
                         <img
-                          alt={"Team member"}
+                          alt={`${name} member`}
                           src={process.env.PUBLIC_URL + photo}
                           className="grayscale"
                         />

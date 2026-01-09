@@ -45,10 +45,10 @@ module.exports = {
           50: "#F5F8FF",
         },
         ca_orange: {
-          300: "FF9900",
-          200: "FFBD1B",
-          100: "FFCA00",
-          50: "FFE685",
+          300: "#FF9900",
+          200: "#FFBD1B",
+          100: "#FFCA00",
+          50: "#FFE685",
         },
 
         gray: {

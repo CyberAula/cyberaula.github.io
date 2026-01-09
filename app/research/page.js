@@ -84,7 +84,7 @@ export default function Research() {
         <Header route={"/research"} />
         <main  style={{ paddingTop: `${headerOffset}px` }}>
         <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6" id="banner-publications">
-          <h1>{t('publications.title')}</h1>
+          <h2>{t('publications.title')}</h2>
         </div>
           <section className="research lg:mx-36 md:mx-14 sm:mx-14 mx-12 lg:my-12 md:my-8 sm:my-14 my-12 xl:mx-44 2xl:mx-60">
             <Filters

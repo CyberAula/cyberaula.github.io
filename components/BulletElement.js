@@ -79,7 +79,7 @@ export default function BulletElements(props) {
 
 
         <div
-            className="bullet_elements"
+            className="bullet_elements "
             ref={ref}
             initial="hidden"
             animate={controls}
@@ -89,9 +89,9 @@ export default function BulletElements(props) {
                 <div key={key} className="bullet_element" variants={textVariants} >
                     <FontAwesomeIcon icon={icon} className="icono" />
                     <h1 className="letter">{letter}</h1>
-                    <h5 className="title">
-                        <a href="https://innovacioneducativa.upm.es/grupos-ie/lineas" target="_blank">
-                        {title} </a></h5>
+                    <h4 className="">
+                        <a href="https://innovacioneducativa.upm.es/grupos-ie/lineas" target="_blank" className="!text-[20px]">
+                        {title} </a></h4>
                 </div>
             ))}
         </div>

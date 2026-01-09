@@ -59,7 +59,7 @@ export default function Tools(props) {
       <Header route="/tools" />
       <main  style={{ paddingTop: `${headerOffset}px` }}>
       <div className="banner">
-        <h1>{t("tools.title")}</h1>
+        <h2>{t("tools.title")}</h2>
       </div>
         <section className="our_tools lg:mx-36 md:mx-14 sm:mx-8 mx-16 my-16 sm:my-4 md:my-8 lg:my-12 xl:my-16 2xl:my-20  xl:mx-44 2xl:mx-60">
           <div className="tools_description text-slate-700 pb-8">
@@ -76,7 +76,7 @@ export default function Tools(props) {
                   return (
                     <div className="tool" key={title}>
                       <div className={`tool_logo ${gradient}`}>
-                        <img alt={"Project Logo"} src={logo} />
+                        <img alt={`${title} Logo`} src={logo} />
                       </div>
 
                       <div className="tool_content">

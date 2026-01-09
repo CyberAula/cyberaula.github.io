@@ -32,9 +32,9 @@ export default function Home() {
         <Header route={"/"} />
         <div className="parallax__layer parallax__layer--base">
           <main style={{ paddingTop: `${headerOffset}px` }}>
-            <section className="home">
+            <section className="home ">
               <div className="head ">
-                <div className="group_description block sm:flex sm:flew-row sm:justify-between md:gap-8 sm:items-center ">
+                <div className="group_description bg-ca_blue-100 block sm:flex sm:flew-row sm:justify-between md:gap-8 sm:items-center ">
                   <h1 className="mx-4 sm:mx-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24">
                     <b>{t("front.title")}, </b>
                     {t("front.title2")}
@@ -42,41 +42,55 @@ export default function Home() {
                   <img
                     className="mt-4 sm:mt-0"
                     src="/assets/img/banner_prov.svg"
+                    alt="Cyberaula UPM"
                   />
                 </div>
               </div>
 
-              
-              <div className="body lg:mx-36 md:mx-14 sm:mx-14 mx-12 lg:my-12 md:my-8 sm:my-4 my-4 xl:mx-44 2xl:mx-60">
-                <section className="award_section">
-                  <FontAwesomeIcon className="award_icon" icon={faTrophy} />
-                  <div className="award_title">
-                    <div>
-                      <h3> {t("front.awardH2")} </h3>
-                      <h5>{t("front.awardTitle")}</h5>
+              <div className="body ">
+                <section className="bg-ca_orange-50/60 standard_padding">
+                  <h3 className="!text-black/90">{t("front.descriptionTitle")}</h3>
+                  <h5 className="!font-medium !text-black/80">
+                    {t("front.description")}
+                  </h5>
+                  <div className="award_section">
+                    <FontAwesomeIcon className="award_icon" icon={faTrophy} />
+                    <div className="award_title">
+                      <div>
+                        <h3> {t("front.awardH2")} </h3>
+                        <h5>{t("front.awardTitle")}</h5>
+                      </div>
+                      <div className="award_card_text">
+                        <small>{t("front.awardBody")}</small>
+                      </div>
                     </div>
-                    <div className="award_card_text">
-                      <small>{t("front.awardBody")}</small>
-                    </div>
+                    <a
+                      href="https://innovacioneducativa.upm.es/premios-2024"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className=""
+                    >
+                      <FontAwesomeIcon
+                        icon={faUpRightFromSquare}
+                        className="ml-2 award_link_wrapper"
+                      />
+                    </a>
                   </div>
-                  <a href="https://innovacioneducativa.upm.es/premios-2024" target="_blank" rel="noopener noreferrer" className="">
-                  <FontAwesomeIcon icon={faUpRightFromSquare} className="ml-2 award_link_wrapper" />
-                  </a>
                 </section>
 
-                <section className="latest_publications">
+                <section className="latest_publications standard_padding">
                   <h3>{t("front.latestPublicationsTitle")}</h3>
                   <div className="recent_pubs_container">
                     <RecentPublications />
                   </div>
                 </section>
-                <section className="lines_of_act">
-                  <h3>{t("front.linesOfActTitle")}</h3>
-                  <p>{t("front.linesOfActBody")}</p>
+                <section className="lines_of_act bg-ca_blue-600 standard_padding !pb-0 text-white">
+                  <h3 className="!text-white">{t("front.linesOfActTitle")}</h3>
+                  <p className="!text-white">{t("front.linesOfActBody")}</p>
 
                   <BulletElement></BulletElement>
                 </section>
-                <section className="our_goals">
+                <section className="our_goals standard_padding ">
                   <div>
                     <h3 className="title_text">{t("front.goalsTitle")}</h3>
                     <p>{t("front.goalsBody")}</p>
@@ -84,8 +98,7 @@ export default function Home() {
 
                   <GridElement />
                 </section>
-              </div> 
-
+              </div>
             </section>
           </main>
           <Footer />

@@ -12,8 +12,10 @@ export const es = {
         "publicationstab": "Publicaciones",
     },
     "front": {
-        "title": "Bienvenido a CyberAula",
-        "title2": "grupo de innovación educativa de la UPM",
+        "title": "CyberAula",
+        "title2": "grupo de innovación educativa de la Universidad Politécnica de Madrid (UPM)",
+          "descriptionTitle":"Sobre CyberAula",
+        "description":"Desde el grupo de Innovación Educativa CyberAula, impulsamos la mejora docente en materias de telemática mediante metodologías activas, juegos, escaperooms y herramientas de inteligencia artificial. Apostamos por una innovación gradual, guiada por el feedback de alumnos y profesores. Para nosotros, la tecnología es un medio para aumentar la motivación, la participación y la eficiencia del aprendizaje a largo plazo. ",
         "awardH2":"GIE PREMIADO EN 2017 y 2024",
         "awardTitle": "Premio a los Grupos de Innovación Educativa ",
         "awardBody": "Premio otorgado al GIE CyberAula, coordinado por el profesor Enrique Barra Arias (E.T.S. DE INGENIEROS DETELECOMUNICACIÓN) ",

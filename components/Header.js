@@ -34,7 +34,7 @@ export default function Header(props) {
             <img
               className="logoheader"
               src="/assets/img/iso_logo.png"
-              alt="logo"
+              alt="Cyberaula logo"
             />
           </div>
           <div className="logotype">
