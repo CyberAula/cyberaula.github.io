@@ -92,7 +92,7 @@ export const en = {
         "title2": "Any questions? Contact us. ",
         "title3": "Where are we?",
         "listTitle2":"Phone",
-        "body": "Do you want to get in touch with us for any consultation or colaborations ( course, project or publication) ? In the CyberAula group we are open to work together with other groups or educational institutions, as well as the participation in european or national projects as long as they are related to our main lines of action. Ask and we'll be glad to establish contact for possible colaborations.",
+        "body": "Do you want to get in touch with us for any enquiry or colaborations ( course, project or publication) ? In the CyberAula group we are open to work together with other groups or educational institutions, as well as the participation in european or national projects as long as they are related to our main lines of action. Ask and we'll be glad to establish contact for possible colaborations.",
     },
     "footer": {
         "title1":"sections",
