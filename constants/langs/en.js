@@ -57,7 +57,7 @@ export const en = {
     },
     "courses": {
         "title": "Courses",
-        "desc":"In this page you will find some of the courses we have given recently.",
+        "desc":"Discover our latest free online courses (MOOCs) designed and launched recently. These courses cover key topics such as application development, programming technologies, databases, artificial intelligence, GitHub version control, and more. All our MOOCs are 100% free and open to learners worldwide. Stay tuned for upcoming editions and new learning opportunities!",
         "tag": ". edition",
         "button": "Go to course",
     },
@@ -104,7 +104,7 @@ export const en = {
     },
     "tools":{
         "title":"Tools",
-        "desc":"These are some of the tools we have developed.",
+        "desc":"Discover the tools and resources developed by Cyberaula UPM. These tools are designed to improve the learning experience of strudents, and help teachers in the development of content and educational activities.",
         "desc2":"If you are interested in any of our tools, whether it's to use or customize it, you can get in touch with us. "
       ,
         "toolCards":{

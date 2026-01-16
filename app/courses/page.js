@@ -11,6 +11,16 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import useHeaderOffset from "@/hook/useHeaderOffset";
 
+
+//SEO
+import SEO from "@/components/SEOWrapper";
+import StructuredData from "@/components/StructuredData";
+
+//metadata for SEO
+import { getPageMetadata } from "@/constants/metadata";
+import { coursesPageSchema } from "@/constants/schemas";
+
+
 export default function Courses() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
@@ -20,9 +30,16 @@ export default function Courses() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+   const metadata = getPageMetadata('courses', currentLang);
 
   return (
     <div className={"courses page_" + currentLang}>
+        <SEO 
+              title={metadata.title}
+              description={metadata.description}
+              keywords={metadata.keywords}
+            />
+            <StructuredData data={coursesPageSchema} />
       <Header route={"/courses"} />
       <main style={{ paddingTop: `${headerOffset}px` }}> 
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">

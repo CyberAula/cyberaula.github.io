@@ -16,11 +16,20 @@ import useHeaderOffset from "@/hook/useHeaderOffset";
 
 import { useTranslation } from "react-i18next";
 
+//SEO
+import SEO from "@/components/SEOWrapper";
+import StructuredData from "@/components/StructuredData";
+
+//metadata for SEO
+import { getPageMetadata } from "@/constants/metadata";
+import { homePageSchema } from "@/constants/schemas";
+
 export default function Home() {
   const [carousel, setCarousel] = useState(mycarousel);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const headerOffset = useHeaderOffset("#header_fixed");
+  const metadata = getPageMetadata("home", currentLang);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,6 +37,12 @@ export default function Home() {
 
   return (
     <div className="App">
+      <SEO
+        title={metadata.title}
+        description={metadata.description}
+        keywords={metadata.keywords}
+      />
+      <StructuredData data={homePageSchema} />
       <div className={"home_page page_" + currentLang}>
         <Header route={"/"} />
         <div className="parallax__layer parallax__layer--base">
@@ -49,7 +64,9 @@ export default function Home() {
 
               <div className="body ">
                 <section className="bg-ca_orange-50/60 standard_padding">
-                  <h3 className="!text-black/90">{t("front.descriptionTitle")}</h3>
+                  <h3 className="!text-black/90">
+                    {t("front.descriptionTitle")}
+                  </h3>
                   <h5 className="!font-medium !text-black/80">
                     {t("front.description")}
                   </h5>

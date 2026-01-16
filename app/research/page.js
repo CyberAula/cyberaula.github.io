@@ -11,6 +11,15 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 import useHeaderOffset from "@/hook/useHeaderOffset";
 
+//SEO
+import SEO from "@/components/SEOWrapper";
+import StructuredData from "@/components/StructuredData";
+
+//metadata for SEO
+import { getPageMetadata } from "@/constants/metadata";
+import { researchPageSchema } from "@/constants/schemas";
+
+
 export default function Research() {
   const headerOffset = useHeaderOffset();
 
@@ -29,6 +38,8 @@ export default function Research() {
   }, []);
 
   const { papers, search, year, type, papersToShow } = state;
+  const metadata = getPageMetadata('research', currentLang);
+
 
   let papersFiltered = papers.filter((paper) => {
     return (
@@ -81,7 +92,14 @@ export default function Research() {
   return (
 
       <div className={"research page_"+ currentLang}>
-        <Header route={"/research"} />
+        
+          <SEO 
+                title={metadata.title}
+                description={metadata.description}
+                keywords={metadata.keywords}
+              />
+              <StructuredData data={researchPageSchema} />
+              <Header route={"/research"} />
         <main  style={{ paddingTop: `${headerOffset}px` }}>
         <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6" id="banner-publications">
           <h2>{t('publications.title')}</h2>

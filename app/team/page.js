@@ -9,11 +9,21 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import useHeaderOffset from "@/hook/useHeaderOffset";
 
+//SEO
+import SEO from "@/components/SEOWrapper";
+import StructuredData from "@/components/StructuredData";
+
+//metadata for SEO
+import { getPageMetadata } from "@/constants/metadata";
+import { teamPageSchema } from "@/constants/schemas";
+
 export default function Team(props) {
   const [team, setTeam] = useState(myteam);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const headerOffset = useHeaderOffset();
+ const metadata = getPageMetadata('team', currentLang);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,6 +31,12 @@ export default function Team(props) {
 
   return (
     <div className={"team page_"+ currentLang}>
+        <SEO 
+              title={metadata.title}
+              description={metadata.description}
+              keywords={metadata.keywords}
+            />
+            <StructuredData data={teamPageSchema} />
       <Header route={"/team"} />
       <main style={{ paddingTop: `${headerOffset}px` }}>
       <div className="banner">

@@ -19,11 +19,20 @@ import {
 import { useTranslation } from "react-i18next";
 import useHeaderOffset from "@/hook/useHeaderOffset";
 
+//SEO
+import SEO from "@/components/SEOWrapper";
+import StructuredData from "@/components/StructuredData";
+
+//metadata for SEO
+import { getPageMetadata } from "@/constants/metadata";
+import { toolsPageSchema } from "@/constants/schemas";
+
 export default function Tools(props) {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const [tools, setTools] = useState([]);
   const headerOffset = useHeaderOffset();
+  const metadata = getPageMetadata('tools', currentLang);
 
   // Update tools when language changes
   useEffect(() => {
@@ -56,6 +65,12 @@ export default function Tools(props) {
 
   return (
     <div className={"tools page_" + currentLang}>
+       <SEO 
+        title={metadata.title}
+        description={metadata.description}
+        keywords={metadata.keywords}
+      />
+      <StructuredData data={toolsPageSchema} />
       <Header route="/tools" />
       <main  style={{ paddingTop: `${headerOffset}px` }}>
       <div className="banner">

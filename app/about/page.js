@@ -9,13 +9,31 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import useHeaderOffset from "@/hook/useHeaderOffset";
 
+
+//SEO
+import SEO from "@/components/SEOWrapper";
+import StructuredData from "@/components/StructuredData";
+
+//metadata for SEO
+import { getPageMetadata } from "@/constants/metadata";
+import { contactPageSchema } from "@/constants/schemas";
+
+
 export default function About(props) {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const headerOffset = useHeaderOffset();
+   const metadata = getPageMetadata('contact', currentLang);
+  
 
   return (
     <div className={"about page_"+ currentLang}>
+        <SEO 
+              title={metadata.title}
+              description={metadata.description}
+              keywords={metadata.keywords}
+            />
+            <StructuredData data={contactPageSchema} />
       <Header route={"/about"} />
       <main style={{ paddingTop: `${headerOffset}px` }} >
       <div className="banner px-4 sm:px-8 md:px-14 md:py-2 lg:px-24 lg:py-4 xl:px-28 xl:py-4 2xl:px-32 2xl:py-6">

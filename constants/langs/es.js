@@ -58,7 +58,7 @@ export const es = {
     },
     "courses": {
         "title": "Cursos",
-        "desc":"En esta página encontrarás los últimos cursos que hemos impartido.",
+        "desc":"Descubre nuestros últimos cursos online gratuitos (MOOC) diseñados y lanzados recientemente. Estos cursos cubren temas clave como el desarrollo de aplicaciones, tecnologías de programación, bases de datos, inteligencia artificial, control de versiones GitHub y mucho más. Todos nuestros MOOC son 100 % gratuitos y están abiertos a estudiantes de todo el mundo. ¡Estate atento a las próximas ediciones y nuevas oportunidades de aprendizaje!",
         "tag": "º edición",
         "button": "Ir al curso",
     },
@@ -108,7 +108,7 @@ export const es = {
     },
     "tools":{
     "title":"Herramientas",
-    "desc":"Estas son algunas de las herramientas que hemos desarrollado.",
+    "desc":"Descubra las herramientas y recursos desarrollados por Cyberaula UPM. Estas herramientas están diseñadas para mejorar la experiencia de aprendizaje de los estudiantes y ayudar a los profesores en el desarrollo de contenidos y actividades educativas.",
     "desc2":"Si estás interesado en alguna herramienta, ya sea para utilizarla o personalizarla puedes ponerte en contacto con nosotros.",
       
     "toolCards":{
