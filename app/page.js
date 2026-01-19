@@ -50,24 +50,22 @@ export default function Home() {
             <section className="home ">
               <div className="head ">
                 <div className="group_description bg-ca_blue-100 block sm:flex sm:flew-row sm:justify-between md:gap-8 sm:items-center ">
-                  <h1 className="mx-4 sm:mx-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24">
+                  <div className="w-full md:w-4/5 lg:w-2/3 2xl:w-3/5 ">
+                  <h1 className=" text-left mx-4 p-4 md:py-8 md:px-12 sm:mx-8 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24 bg-white">
                     <b>{t("front.title")}, </b>
                     {t("front.title2")}
                   </h1>
-                  <img
-                    className="mt-4 sm:mt-0"
-                    src="/assets/img/banner_prov.svg"
-                    alt="Cyberaula UPM"
-                  />
+                   </div>
+               
                 </div>
               </div>
 
               <div className="body ">
-                <section className="bg-ca_orange-50/60 standard_padding">
-                  <h3 className="!text-black/90">
+                <section className="bg-ca_blue-200 standard_padding">
+                  <h2 className="!text-blue-950">
                     {t("front.descriptionTitle")}
-                  </h3>
-                  <h5 className="!font-medium !text-black/80">
+                  </h2>
+                  <h5 className="!font-medium !text-blue-950">
                     {t("front.description")}
                   </h5>
                   <div className="award_section">

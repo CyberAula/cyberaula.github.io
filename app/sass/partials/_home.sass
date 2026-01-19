@@ -12,6 +12,9 @@
             @apply max-w-[75ch]
             @apply text-gray-800
     .group_description 
+        background-image: url("/assets/img/banner_prueba.png")
+        height:50vh
+        background-size:  100vw
         img
             width:100%
             height:26.2vw
@@ -20,10 +23,10 @@
     .award_section 
         display: flex
         margin: $spacing_md auto $spacing_md  0
-        background: #fff9e6
+        background: #BECAFF
         gap: $spacing_xsm
         border-radius: 24px
-        border: 2px $ca-or-100 solid
+        border: 2px 97A7FF solid
         width:100%
         flex-direction: column
         align-self: center
@@ -95,6 +98,11 @@
             object-fit: cover
             object-position: 50% 0
 @media (min-width: 900px)
+    .group_description
+        height:70vh
+        background-size:  80vw
+        img
+            height: 35rem   
     .award_section
         flex-direction: row
         width:70%
@@ -119,17 +127,18 @@
             height: 6rem
             padding:  1.5rem
             align-self: flex-start
-        small
-            
-    .group_description 
-        
-        img
-            height: 35rem
-
+@media (min-width: 1150px)
+ .group_description 
+        background-size: 72vw
 @media (min-width: 1400px)
     .award_section
         flex-direction: row
         width:60%
     .group_description 
+        background-size:  65vw
         img
             height: 50rem
+
+@media (min-width: 1750px)
+    .group_description 
+        background-size: 55vw
