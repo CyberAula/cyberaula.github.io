@@ -43,6 +43,7 @@ export const en = {
     },
     "publications": {
         "title": "Publications",
+        "description": "Explore Cyberaula UPM research publications and scientific contributions. Our research focuses on educational innovation, gamification, serious games, escape rooms, artificial intelligence in education, telematics education, and research and development in education.",
         "filter":{
             "fieldTitle":"Search",
             "fieldTitle2":"Publication type",
@@ -63,6 +64,7 @@ export const en = {
     },
     "projects": {
         "title": "Projects",
+        "description": "At Cyberaula, we participate in various European and national projects. These projects are related to educational innovation, the use of emerging technologies in teaching and learning, and the development of open educational resources.",
         "filterTitle1":"All",
         "filterTitle2":"Educational innovation project",
         "filterTitle3":"European projects",
@@ -73,6 +75,7 @@ export const en = {
     },
     "team": {
         "title": "Team",
+        "description":"Meet our team of professors and PhD candidates. We are currently working on educational innovation projects, developing tools and resources to improve teaching and learning in telematics.",
             "professorCards":{
                 "roles":{
                     "1":"Professor",
@@ -104,7 +107,7 @@ export const en = {
     },
     "tools":{
         "title":"Tools",
-        "desc":"Discover the tools and resources developed by Cyberaula UPM. These tools are designed to improve the learning experience of strudents, and help teachers in the development of content and educational activities.",
+        "desc":"Learn about the tools and resources developed by Cyberaula UPM. These tools are designed to improve the learning experience of strudents, and help teachers in the development of content and educational activities.",
         "desc2":"If you are interested in any of our tools, whether it's to use or customize it, you can get in touch with us. "
       ,
         "toolCards":{

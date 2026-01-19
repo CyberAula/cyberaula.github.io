@@ -75,14 +75,14 @@ export default function LangSwitcher() {
             "absolute z-20",
             "flex !flex-col",
             "!gap-0",
-            "mt-2 sm:mt-12",
+            "mt-2 sm:mt-9",
             "w-fit",
             "bg-primary-50",
             "rounded-md",
             "shadow-lg",
             "border border-primary",
             "left-1/2 -translate-x-1/2",
-            "sm:left-auto sm:right-0 sm:translate-x-0"
+            "sm:left-auto sm:right-[-16px] sm:translate-x-0"
           )}
         >
           {Object.keys(lngs).map((lngKey) => (

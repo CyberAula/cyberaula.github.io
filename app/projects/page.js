@@ -45,6 +45,9 @@ export default function Projects() {
       </div>
         
         <section className="lg:mx-36 md:mx-14 sm:mx-14 mx-12 my-12 sm:my-12 md:my-8 lg:my-12 xl:my-16 2xl:my-20 xl:mx-44 2xl:mx-60">
+          <div className=" text-slate-700 pb-16">
+         <p>{t('projects.description')}</p>
+         </div>
           <ProjectCard />
         </section>
       </main>

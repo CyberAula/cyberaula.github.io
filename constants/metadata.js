@@ -50,12 +50,12 @@ export const metadataByPage = {
   research: {
     en: {
       title: "Research - Cyberaula UPM",
-      description: "Explore our groups' publications and scientific contributions in the field of educational innovation, impact of escaperooms in the learening process, and much more.",
+      description: "Explore Cyberaula UPM research publications and scientific contributions. Our research focuses on educational innovation, gamification, serious games, escape rooms, artificial intelligence in education, telematics education, and research and development in education.",
       keywords: "research, publications, impact, escaperooms, learning, artificial intelligence, serious games, gamification, educational innovation, education, telematics",
     },
     es: {
       title: "Publicaciones - Cyberaula UPM",
-      description: "Explora las publicaciones y contribuciones científicas de nuestro grupo en el campo de la innovación educativa, el impacto de las salas de escape en el proceso de aprendizaje y mucho más.",
+      description: "Explora las publicaciones de investigación y las contribuciones científicas de Cyberaula UPM. Nuestra investigación se centra en la innovación educativa, la gamificación, los juegos serios, las salas de escape, la inteligencia artificial en la educación, la educación telemática y la investigación y el desarrollo en la educación.",
      keywords: "investigación, publicaciones, impacto, salas de escape, aprendizaje, inteligencia artificial, juegos serios, gamificación, innovación educativa, educación, telemática",
     },
   },
@@ -74,13 +74,13 @@ export const metadataByPage = {
   tools: {
     en: {
       title: "Tools - Cyberaula UPM",       
-        description: "Discover the tools and resources developed by Cyberaula UPM. These tools are designed to improve the learning experience of strudents, and help teachers in the development of content and educational activities.",
+        description: "Learn about the tools and resources developed by Cyberaula UPM. These tools are designed to improve the learning experience of strudents, and help teachers in the development of content and educational activities.",
         keywords: "tools, resources, programs, software",
     },              
 
     es: {
         title: "Herramientas - Cyberaula UPM",
-        description: "Descubra las herramientas y recursos desarrollados por Cyberaula UPM. Estas herramientas están diseñadas para mejorar la experiencia de aprendizaje de los estudiantes y ayudar a los profesores en el desarrollo de contenidos y actividades educativas.",
+        description: "Conoce las herramientas y recursos desarrollados por Cyberaula UPM. Estas herramientas están diseñadas para mejorar la experiencia de aprendizaje de los estudiantes y ayudar a los profesores en el desarrollo de contenidos y actividades educativas.",
         keywords: "herramientas, recursos, programas, softwware",
     },
   },

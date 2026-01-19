@@ -44,6 +44,7 @@ export const es = {
     },
     "publications": {
         "title": "Publicaciones",
+        "description": "Explora las publicaciones de investigación y las contribuciones científicas de Cyberaula UPM. Nuestra investigación se centra en la innovación educativa, la gamificación, los juegos serios, las salas de escape, la inteligencia artificial en la educación, la educación telemática y la investigación y el desarrollo en la educación.",
         "filter":{
             "fieldTitle":"Buscar",
             "fieldTitle2":"Tipo de publicación",
@@ -64,6 +65,7 @@ export const es = {
     },
     "projects": {
         "title": "Proyectos",
+        "description":"En Cyberaula participamos en diversos proyectos europeos y nacionales. Estos proyectos están relacionados con la innovación educativa, el uso de tecnologías emergentes en la enseñanza y el aprendizaje, y el desarrollo de recursos educativos abiertos.",
         "filterTitle1":"Todos",
         "filterTitle2":"Proyectos Innovación Educativa (PIE)",
         "filterTitle3":"Proyectos Europeos",
@@ -73,6 +75,7 @@ export const es = {
     },
     "team": {
         "title": "Equipo",
+        "description": "Conoce a nuestro equipo formado por profesores y candidatos a doctorado. Trabajamos actualmente en proyectos de innovación educativa, desarrollando herramientas y recursos para mejorar la enseñanza y el aprendizaje en telemática.",
         "professorCards":{
             "roles":{
                 "1":"Catedrático",
@@ -108,7 +111,7 @@ export const es = {
     },
     "tools":{
     "title":"Herramientas",
-    "desc":"Descubra las herramientas y recursos desarrollados por Cyberaula UPM. Estas herramientas están diseñadas para mejorar la experiencia de aprendizaje de los estudiantes y ayudar a los profesores en el desarrollo de contenidos y actividades educativas.",
+    "desc":"Conoce las herramientas y recursos desarrollados por Cyberaula UPM. Estas herramientas están diseñadas para mejorar la experiencia de aprendizaje de los estudiantes y ayudar a los profesores en el desarrollo de contenidos y actividades educativas.",
     "desc2":"Si estás interesado en alguna herramienta, ya sea para utilizarla o personalizarla puedes ponerte en contacto con nosotros.",
       
     "toolCards":{
