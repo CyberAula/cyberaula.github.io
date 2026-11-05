@@ -1,5 +1,14 @@
 export const mytools = [
   {
+    "route": "https://servicios-ging.dit.upm.es/aiquiz",
+    "title": "AIQUIZ: MCQ generator with AI",
+    "translationKey": "tools.toolCards.description.12",
+    "github": "https://github.com/CyberAula/aiquiz",
+    "logoText": "AIQUIZ",
+    "gradient": "bg-purple-gradient-plain",
+    "key":"12",
+  },
+  {
     "logo": "/assets/img/logos/escapp.svg",
     "route": "https://escapp.es",
     "title": "Educational Escape Rooms", 

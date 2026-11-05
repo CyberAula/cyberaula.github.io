@@ -73,15 +73,15 @@ export const metadataByPage = {
   },
   tools: {
     en: {
-      title: "Tools - Cyberaula UPM",       
-        description: "Learn about the tools and resources developed by Cyberaula UPM. These tools are designed to improve the learning experience of strudents, and help teachers in the development of content and educational activities.",
-        keywords: "tools, resources, programs, software",
+      title: "Educational Tools and Software - Cyberaula UPM",
+      description: "Explore Cyberaula UPM's educational software and digital tools, including AIQUIZ, escape room platforms, quiz creators, and resources for teaching and learning.",
+      keywords: "educational tools, educational software, AI quiz generator, AIQUIZ, digital learning resources, quiz creator, educational escape rooms, Cyberaula UPM",
     },              
 
     es: {
-        title: "Herramientas - Cyberaula UPM",
-        description: "Conoce las herramientas y recursos desarrollados por Cyberaula UPM. Estas herramientas están diseñadas para mejorar la experiencia de aprendizaje de los estudiantes y ayudar a los profesores en el desarrollo de contenidos y actividades educativas.",
-        keywords: "herramientas, recursos, programas, softwware",
+        title: "Herramientas educativas y software - Cyberaula UPM",
+        description: "Descubre el software educativo y las herramientas digitales de Cyberaula UPM: AIQUIZ, plataformas de escape rooms, creadores de cuestionarios y recursos para la enseñanza y el aprendizaje.",
+        keywords: "herramientas educativas, software educativo, generador de cuestionarios con IA, AIQUIZ, recursos digitales de aprendizaje, creador de cuestionarios, escape rooms educativas, Cyberaula UPM",
     },
   },
   contact: {

@@ -13,7 +13,7 @@ function SEOContent({
   const searchParams = useSearchParams();
   const lang = searchParams.get('lang') || 'en';
   
-  const baseUrl = 'https://cyberaula.github.io/';
+  const baseUrl = 'https://cyberaula.github.io';
   const fullUrl = `${baseUrl}${pathname}`;
   
   useEffect(() => {

@@ -50,18 +50,26 @@ export default function Courses() {
             <p>{t('courses.desc')}</p>
           </div>
           <div className=" grid gap-4 md:grid-cols-2 sm:grid-cols-1">
-            {courses.map(({ date, gradient, edition, title, description, route }) => {
+            {courses.map(({ status, date, gradient, edition, title, description, route }) => {
+              const isActive = status === "active";
               return (
-                <div key={title} className={`rounded-lg px-6 py-4 course transition ${gradient}`} >
+                <div key={title} className={`rounded-lg px-6 py-4 course transition ${gradient} ${isActive ? "" : "course-past"}`} >
                   <div className="course_content">
                     <div className="card_container_top">
                       <div className="flex gap-3">
                         <span className="course_tag">
-                          <small>{date}</small>
+                          <small>{t(isActive ? 'courses.active' : 'courses.past')}</small>
                         </span>
-                        <span className="course_tag">
-                          <small> {edition}{t('courses.tag')}</small>
-                        </span>
+                        {date && (
+                          <span className="course_tag">
+                            <small>{date}</small>
+                          </span>
+                        )}
+                        {edition && (
+                          <span className="course_tag">
+                            <small> {edition}{t('courses.tag')}</small>
+                          </span>
+                        )}
                       </div>
                     </div>
 
@@ -75,18 +83,16 @@ export default function Courses() {
 
                     </div>
                   </div>
-                  <div className="course_button">
-                    <CreateLink route={route}>
-
-                      <button className="course_route">
-
-                        <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
-                        <span>{t('courses.button')}</span>
-
-                      </button>
-                    </CreateLink>
-
-                  </div>
+                  {isActive && (
+                    <div className="course_button">
+                      <CreateLink route={route}>
+                        <button className="course_route">
+                          <FontAwesomeIcon className="award_icon" icon={faArrowRight} />
+                          <span>{t('courses.button')}</span>
+                        </button>
+                      </CreateLink>
+                    </div>
+                  )}
                 </div>
               );
             })}

@@ -1,3 +1,5 @@
+import { mytools } from './tools';
+
 // Schema.org Structured Data para SEO semántico
 // https://schema.org/
 
@@ -76,10 +78,24 @@ export const projectsPageSchema = {
 export const toolsPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  'name': 'Tools - Cyberaula UPM',
+  'name': 'Herramientas educativas y software - Cyberaula UPM',
   'url': 'https://cyberaula.github.io/tools',
-  'description': 'Discover Cyberaula UPM tools and resources developed to improve learning experience of students and help teachers in the development of content and educational activities.',
-  'organizer': baseOrganizationSchema
+  'description': 'Descubre el software educativo y las herramientas digitales de Cyberaula UPM: AIQUIZ, plataformas de escape rooms, creadores de cuestionarios y recursos para la enseñanza y el aprendizaje.',
+  'publisher': baseOrganizationSchema,
+  'mainEntity': {
+    '@type': 'ItemList',
+    'itemListElement': mytools.map((tool, index) => ({
+      '@type': 'ListItem',
+      'position': index + 1,
+      'item': {
+        '@type': 'SoftwareApplication',
+        'name': tool.title,
+        'url': tool.route,
+        'applicationCategory': 'EducationalApplication',
+        'operatingSystem': 'Web browser'
+      }
+    }))
+  }
 };
 
 export const contactPageSchema = {
@@ -147,4 +163,3 @@ export function createArticleSchema(article) {
     'publisher': baseOrganizationSchema
   };
 }
-

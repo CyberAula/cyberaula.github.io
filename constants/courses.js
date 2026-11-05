@@ -1,5 +1,23 @@
 export const mycourses = [	
 	{
+		"status": "active",
+		"logo": "/assets/img/courses/fondo-cursos.png",
+		"edition": "3",
+		"route": "https://eventos.upm.es/160057/detail/introduccion-a-la-inteligencia-artificial-generativa-a-traves-de-los-grandes-modelos-de-lenguaje-ed.html",
+		"title": "Introducción a la inteligencia artificial generativa a través de los grandes modelos de lenguaje",
+		"description": "Curso para obtener una base técnica sólida en IA generativa, entender y adaptar Grandes Modelos de Lenguaje (LLMs), y aplicarlos de forma segura.",
+	    "gradient": "bg-yellow-gradient",
+	},
+	{
+		"status": "active",
+		"logo": "/assets/img/courses/fondo-cursos.png",
+		"route": "https://eventos.upm.es/157281/detail/diseno-creacion-y-realizacion-de-escape-rooms-educativas.html",
+		"title": "Diseño, creación y realización de escape rooms educativas",
+		"description": "En este curso aprenderás todo lo que necesitas para diseñar, crear y realizar escape rooms educativas.",
+	    "gradient": "bg-purple-gradient",
+	},
+	{
+		"status": "past",
 		"date": "2025",
 		"logo": "/assets/img/courses/fondo-cursos.png",
 		"edition": "1",
@@ -9,6 +27,7 @@ export const mycourses = [
 	    "gradient": "bg-yellow-gradient",
 	},
 	{
+		"status": "past",
 		"date": "2025",
 		"logo": "/assets/img/courses/fondo-cursos.png",
 		"edition": "3",
@@ -17,7 +36,8 @@ export const mycourses = [
 		"description": "Este itinerario ha sido diseñado como una serie 5 MOOC para cubrir las competencias necesarias para el desarrollo de aplicaciones fullstack. Incluyendo desarrollo de aplicaciones web de cliente con HTML/JS/CSS y con React, desarrollo del servidor con node.js, bases de datos (relacionales y no relacionales) y aplicaciones móviles Android e iOS con React Native.",
 	    "gradient": "bg-purple-gradient",
 	},
-	{	"date": "2025",
+	{	"status": "past",
+		"date": "2025",
 		"logo": "/assets/img/courses/fondo-cursos.png",
 		"edition": "2",
 		"route": "https://eventos.upm.es/124560/detail/bases-de-datos-relacionales-y-no-relacionales-conceptos-diseno-y-aplicacion-a-entornos-web-edicion-.html",
@@ -26,6 +46,7 @@ export const mycourses = [
         "gradient": "bg-blue-gradient",
     },
     {
+		"status": "past",
 		"date": "2025",
 		"logo": "/assets/img/courses/fondo-cursos.png",
 		"edition": "3",
@@ -35,6 +56,7 @@ export const mycourses = [
         "gradient": "bg-purple-gradient",
     },    
     {
+		"status": "past",
 		"date": "2025",
 		"logo": "/assets/img/courses/fondo-cursos.png",
 		"edition": "7",
@@ -44,6 +66,7 @@ export const mycourses = [
 		"gradient": "bg-yellow-gradient",
 	},
 	{
+		"status": "past",
 		"date": "2025",
 		"logo": "/assets/img/courses/fondo-cursos.png",
 		"edition": "15",
@@ -53,6 +76,7 @@ export const mycourses = [
 		"gradient": "bg-yellow-gradient",
 	},
 	{
+		"status": "past",
 		"date": "2025",
 		"logo": "/assets/img/courses/fondo-cursos-png",
 		"edition": "8",
@@ -62,6 +86,7 @@ export const mycourses = [
 		"gradient": "bg-blue-gradient",
 	},
     {
+		"status": "past",
 		"date": "2021",
 		"logo": "/assets/img/courses/fondo-cursos.png",
 		"edition": "5",
@@ -71,6 +96,7 @@ export const mycourses = [
 		"gradient": "bg-purple-gradient",
 	},
     {
+		"status": "past",
 		"date": "2018",
 		"logo": "/assets/img/courses/fondo-cursos-png",
 		"edition": "2",

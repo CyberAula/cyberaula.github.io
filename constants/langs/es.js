@@ -62,6 +62,8 @@ export const es = {
         "desc":"Descubre nuestros últimos cursos online gratuitos (MOOC) diseñados y lanzados recientemente. Estos cursos cubren temas clave como el desarrollo de aplicaciones, tecnologías de programación, bases de datos, inteligencia artificial, control de versiones GitHub y mucho más. Todos nuestros MOOC son 100 % gratuitos y están abiertos a estudiantes de todo el mundo. ¡Estate atento a las próximas ediciones y nuevas oportunidades de aprendizaje!",
         "tag": "º edición",
         "button": "Ir al curso",
+        "active": "Activo",
+        "past": "Pasado",
     },
     "projects": {
         "title": "Proyectos",
@@ -127,7 +129,9 @@ export const es = {
                 "8": "RESCORM es un boilerplate para crear aplicaciones de React que cumplan con SCORM cuya finalidad es facilitar a los desarrolladores la creación de recursos de aprendizaje SCORM.",
                 "9": "EducaInternet es una plataforma para fomentar el uso seguro y responsable de las TIC. Contiene presentaciones, recursos, cursos, y materiales variados sobre el tema.",
                 "10": "ViSH (Virtual Science Hub) es una plataforma de código abierto que permite a los usuarios crear y compartir recursos educativos en formato de presentaciones interactivas. ",
-                "11": "El plató SAGA (Sistema automatizado de grabación avanzada) permite al profesor la producción ágil de vídeos de alta calidad para MOOCs, videotutoriales, flipped classroom, etc. Una vez que los responsables de audiovisuales configuran el plato con los perfiles personalizados para un profesor, éste puede grabar sus videos autónomamente sin necesidad de operadores de soporte, tal y como muestra el video que viene al final. Los videos grabados no necesitan postproducción y pueden subirse directamente a YouTube, Moodle, etc."
+                "11": "El plató SAGA (Sistema automatizado de grabación avanzada) permite al profesor la producción ágil de vídeos de alta calidad para MOOCs, videotutoriales, flipped classroom, etc. Una vez que los responsables de audiovisuales configuran el plato con los perfiles personalizados para un profesor, éste puede grabar sus videos autónomamente sin necesidad de operadores de soporte, tal y como muestra el video que viene al final. Los videos grabados no necesitan postproducción y pueden subirse directamente a YouTube, Moodle, etc.",
+                "12": "AIQUIZ es una herramienta que permite generar cuestionarios de opción múltiple (MCQ) a partir de un texto o documento. Utiliza inteligencia artificial para analizar el contenido y crear preguntas relevantes, lo que facilita la creación de evaluaciones y actividades de aprendizaje."
+
 
             },
             "button":"Ir a herramienta",

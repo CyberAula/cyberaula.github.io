@@ -61,6 +61,8 @@ export const en = {
         "desc":"Discover our latest free online courses (MOOCs) designed and launched recently. These courses cover key topics such as application development, programming technologies, databases, artificial intelligence, GitHub version control, and more. All our MOOCs are 100% free and open to learners worldwide. Stay tuned for upcoming editions and new learning opportunities!",
         "tag": ". edition",
         "button": "Go to course",
+        "active": "Active",
+        "past": "Past",
     },
     "projects": {
         "title": "Projects",
